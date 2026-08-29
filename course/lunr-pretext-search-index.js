@@ -37,6 +37,141 @@ var ptx_lunr_docs = [
   "body": "extensions must be requested 12 hours PRIOR to the assigned deadline "
 },
 {
+  "id": "ClassPrep",
+  "level": "1",
+  "url": "ClassPrep.html",
+  "type": "Section",
+  "number": "",
+  "title": "Class Preparation Policies",
+  "body": " Class Preparation Policies   Purpose  This component of assessment has several purposes:   Get exposed to new content. Each day in class will be spent working on problems, so that I’m there to help you when you and your teammates get stuck. So some of the content will be introduced via video or reading before class. This has a couple of advantages: (1) you can go at your own pace (retry, rewind, rewatch, change the speed, pause, whatever!) and (2) your second exposure in class will likely make more sense after you’ve seen it once!   Generation. This is when you attempt to solve a problem before being shown how to do it. This has been shown to help with learning and remembering. It is often the case that this doesn’t feel like learning, but the truth is that learning sometimes hurts a little!   Help me tailor the class to you. If everyone says they understand the content of the class preparation, I will not bore you with going over it. If you ask a question on the class preparation I will do my best to answer it. If everyone seems confused we can spend more time on it. Please answer the questions honestly so we can make sure the class works for you!      Feedback and Grading  The class gets feedback as a whole at the start of class. These are graded for completeness, not correctness. Make sure you watch any videos, do any reading, and answer all the questions on the Preview Activity and you will earn credit. Your overall grade for this component will be the percentage you completed. That is, if you complete all of the class preparation assignments, you earn 100% for this part. The class preparations are due at class time. I will likely need to review them 1-2 hours before class. If I don't address a question you asked in class, please ask when we review the class preparation! Since the benefit of these assignments come from doing them before class, class preparation assignments done after class are not accepted.    Academic Honesty  You may collaborate and use any resources you would like for the class preparations. That being said, please do not enter anything you do not understand. Part of the purpose is for me to pace the class appropriately - entering answers you don’t understand will mean you don’t get the help you need!   "
+},
+{
+  "id": "ClassPrep-2-2",
+  "level": "2",
+  "url": "ClassPrep.html#ClassPrep-2-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Get exposed to new content. Generation. Help me tailor the class to you. "
+},
+{
+  "id": "HW",
+  "level": "1",
+  "url": "HW.html",
+  "type": "Section",
+  "number": "",
+  "title": "Written Homework Policies",
+  "body": " Written Homework Policies   Purpose  The main purpose of the homework is practice . Importantly, you will practice the idea of explaining your reasoning - which is going to be key for success in this class (and probably in life).    Instructions  Problems will be assigned every week and due in class on Wednesdays. You will be provided a physical copy of the homework assignment where you will write your final solutions. Any other work should be completed in your notebook or on scratch paper.   You are expected to give solutions (not just answers) to each problem. This will be helpful with your own studying and reviewing of material and helps me see what you understand so far.    Writing Math Well  Here are some tips to help you write your homework well:   Your audience is other students in this class that have not seen this problem before. Remind the reader of any relevant facts from class or the book. Your solution should give adequate detail so that the reader can follow your solution.   Write in sentences. A sentence is a complete thought. You may still of course write equations, but they should be part of complete thoughts. Use paragraphs to separate important ideas.   It is possible to write too much. If you write out every triviality, the reader may get lost in the details. This is not good writing, either. (In particular, really trivial calculations need not be shown.)   Avoid shorthand. Do not to use arrows when you could use words like \"if\", \"then\", \"so\", \"therefore\", \"we see that\", \"recall that\".   You may wish to outline your problem-solving strategy at the beginning of the problem. This could help readers follow your solution.    Here are two examples, one good, and one not so good, so you can see how these ideas help. These students are solving the same problem!    Example 1     Why this is not so good:  You don't know what problem the writer is solving.  You can't tell what's an assumption and what's a conclusion.  Where does on thought end and another begin? There are no sentences!  In the 2nd line: combining two thoughts can create untruths ( , but it isn't ).  The 3rd line dangles; what's being said here? It's not a sentence.  What's the relationship between all these phrases? Connective phrases would help!      Example 2   Problem. Find a point in the plane on the positive -axis that has a distance of from the point .   Solution. The desired point is .  To find this, we note that if is a solution, then must satisfy the equation , which follows from the planar distance formula between the points and . It follows that . Then Factoring, we obtain satisfied by either or . Since we assumed and , we see that is the desired point.  Why this is much better:  The writer described the problem, and strategy for solution.  Every thought is a complete sentence with subject and verb (the \"equals\" sign is a verb).  She answered the question right at the beginning. (You can box your answers to help!)  Notice even the equations have punctuation (comma, periods) as they are part of sentences.  She highlighted important ingredients, displayed important equations, avoided trivial algebra.      Grading and Revisions  Each problem will be graded at an \"E\" for \"exemplary\" (100%), an \"S\" for \"satisfactory\" (75%), or \"NY\" for \"not yet\" (0%). You earn an \"E\" if your work demonstrates thorough understanding of the concepts of the problem. You are allowed to resubmit up to 2 problems per week. The resubmission can be from any assignment and you submit a problem as many times as you want. Here is what a revised problem requires:  Make sure you include the problem #.  Rewrite your whole solution as if you are doing the problem for the first time.  Write at least 2 sentences about what you learned from redoing the problem. You could say something like \"I used to think that... But now I know that...\".  You must have submitted the first draft by the deadline (or asked for an extension before the deadline) to be able to resubmit.  Hand resubmissions to me in person during class time or office hours.      Academic Honesty  You are allowed to collaborate on the homework. I believe that collaboration can lead to greater mathematical growth and so I encourage you to work together. However, you must be academically honest. A quick check for academic honesty on homework is that you are using collaboration for greater understanding of course content. Here are some more specifics:   You may   collaborate with other students from our class on homework  ask me about the concepts and for hints after having made a serious attempt at understanding  ask your fellow students for critique of your reasoning on written homework  use the math center     You may not   collaborate with students outside of our class  look up solutions on the internet, in textbooks, ask chatGPT or any AI, or use any resources besides our course textbook  copy any or all of your work from another source (another student or the internet)     You must   Be able to defend anything you turn in (i.e., your work must be a representation of your understanding)  Write up your solutions in your own words     "
+},
+{
+  "id": "HW-2-2",
+  "level": "2",
+  "url": "HW.html#HW-2-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "practice "
+},
+{
+  "id": "HW-3-3",
+  "level": "2",
+  "url": "HW.html#HW-3-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "You are expected to give solutions (not just answers) to each problem. "
+},
+{
+  "id": "HW-4-2",
+  "level": "2",
+  "url": "HW.html#HW-4-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Your audience is other students in this class that have not seen this problem before. Write in sentences. It is possible to write too much. Avoid shorthand. You may wish to outline your problem-solving strategy at the beginning of the problem. "
+},
+{
+  "id": "HW-6-2",
+  "level": "2",
+  "url": "HW.html#HW-6-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Problem. "
+},
+{
+  "id": "HW-6-3",
+  "level": "2",
+  "url": "HW.html#HW-6-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Solution. "
+},
+{
+  "id": "HW-8-3",
+  "level": "2",
+  "url": "HW.html#HW-8-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "You may "
+},
+{
+  "id": "HW-8-4",
+  "level": "2",
+  "url": "HW.html#HW-8-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "You may not "
+},
+{
+  "id": "HW-8-5",
+  "level": "2",
+  "url": "HW.html#HW-8-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "You must "
+},
+{
+  "id": "LabsPolicies",
+  "level": "1",
+  "url": "LabsPolicies.html",
+  "type": "Section",
+  "number": "",
+  "title": "Lab Policies",
+  "body": " Lab Policies   Purpose  The purpose of labs is to use Sage to explore linear algebra almost always through investigating important applications of the subject.    Instructions  Lab activities will be more involved than class activities. There will be approximately six labs this semester. We'll start these labs in class and you will work as a team of 2-4. Your final solutions should be neatly written on the provided paper and turned in with all of the team members' names who contributed. Lab due dates will be communicated on the assignment and through Blackboard.    Grading and Revisions  Each lab will be graded out of a number of points specified on the document. There will be 6 labs. Your total score for this part will be the number of points you earn divided by the total possible. The labs are worth 10% of your final grade. At the end of the semester you'll have the opportunity to revise and turn in 2 labs for a better grade. This will be done individually.    Academic Honesty  You can work together within your group and ask your Professor for help. Using resources besides Sage, your classmates, your Professor, and our textbook is not allowed. In particular do not google or ask ChatGPT these questions! All answers should be in your own words. Do not share electronic documents with people outside your group. Give yourself time and ask for help!   "
+},
+{
+  "id": "LTs",
+  "level": "1",
+  "url": "LTs.html",
+  "type": "Section",
+  "number": "",
+  "title": "Quizzes",
+  "body": " Quizzes   Purpose  This component of the assessment is intended to emphasize a few things:   Learning is a process. You will not be penalized for not earning an \"exemplary\" on a target the first time, but you are expected to eventually get there.   Frequent assessment is good for learning. I would like you to think of these checkpoints as a tool for learning rather than just assessment - studies show that retrieval of information makes it easier to recall that information later. This is called \"the testing effect.\"   Keeping up with course material is important. These quizzes will be one way of informing both you and me about your progress in the course.   Knowing the basics well is crucial for tackling more difficult problems. These skills were chosen because they are fundamental. You will have time to practice these skills before, briefly during, and after class, but we will be using the majority of class time to tackle difficult problems. You will need to understand the basics well to keep up and contribute to your group.      Instructions and Grading  Each item in the list below is a learning target.  We will have a quiz at the end of each class every Friday assessing these targets.  Each skill will be graded as only \"E\" for \"exemplary,\" “S\" for “satisfactory,\" or “NY\" for “not yet\". To earn an E your solution needs to show all work and explanations, use correct notation, and arrive at a correct answer. In short, you need to convince me that you understand.  Once you earned an \"E\" on a skill you do not need to do so again.   The grades will be indicated on Blackboard. You will be notified which skills will be on a quiz, but it is your responsibility to know which skills you have yet to demonstrate by consulting Blackboard for your graded checkpoints.  The checkpoints are closed book and notes  Since you have multiple attempts on each target there will be no make ups.  Each target will be on three checkpoints, and then you will have one additional attempt in office hours (or by making an appointment).     Each of 14 targets counts as 2% of your final grade.      Academic Honesty  You may use Sage cells if instructed (though, note carefully when asked to do something by hand). You may not use your textbook, other notes, the internet\/AI nor talk to anyone about the quiz until they are handed back (via Blackboard). Any violations of this policy will result in not earning credit for the skill permanently. By policy , all incidents of academic dishonesty will be reported to the Dean of Students.   A recommendation. If you don't earn an \"E\" on the first attempt, be sure to read feedback. It's a good idea to redo the problem and ask me about it!    Learning Targets    I can execute the next 2-3 steps of Gaussian elimination by hand that are needed to work toward RREF (and recognize that additional steps are needed to achieve RREF), and identify which row operations were used. (Section 1.2).  I can use information about pivots to make conclusions about the solutions of a system of linear equations, and explain the underlying reasoning (using appropriate terminology) regarding the existence and uniqueness of solutions and consistency or inconsistency of a system. (Section 1.4)  I can determine if and how a given vector can be written as a linear combination of a given set of vectors and explain what this means geometrically. (Section 2.1)  I can represent a linear system in three different ways and be able to translate back and forth among the forms: as , as a question about linear combinations, and as a question about an augmented matrix (Section 2.2 - Prop 2.2.4)  I can reformulate and answer questions about span in terms of linear combinations, matrix equations, and geometrically. (Section 2.3)  I can reformulate and answer questions about linearly dependent or linearly independent vectors using appropriate computations, and explain the meaning of the results of computations in the language of linear combinations. (Section 2.4)  I can find the matrix of a linear transformation using elementary vectors, apply a transformation to a vector or shape, and compose transformations using matrix multiplication. (Section 2.5)  I can determine if a matrix is invertible, find an inverse, and use inverses to solve matrix equations. (Section 3.1)  I can determine whether or not a set of vectors is a basis for , and give examples and non-examples of bases. (Section 3.2)  I can convert a vector given in the standard basis into a vector in another basis and vice versa. (Section 3.2)  I can find the determinant of a given matrix using cofactor expansion and explain what information this tells us about the invertibility of a matrix. (Section 3.4)  I can find and clearly justify bases for the null space and the column space of a matrix (including why the set of vectors is a basis, i.e., why it is linearly independent and spans the relevant spaces) and thus their dimensions. (Section 3.5)  I can verify that a vector is an eigenvector algebraically and explain what this means about the vector geometrically. (Section 4.1)  I can use the characteristic polynomial of a matrix to identify its eigenvalues, and then find a basis of eigenvectors for each associated eigenspace and, if there is a basis of eigenvectors for , use such a basis to describe the matrix product . (Section 4.2)     "
+},
+{
+  "id": "LTs-2-2",
+  "level": "2",
+  "url": "LTs.html#LTs-2-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Learning is a process. Frequent assessment is good for learning. Keeping up with course material is important. Knowing the basics well is crucial for tackling more difficult problems. "
+},
+{
+  "id": "LTs-4-3",
+  "level": "2",
+  "url": "LTs.html#LTs-4-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "A recommendation. "
+},
+{
   "id": "notes-week-01",
   "level": "1",
   "url": "notes-week-01.html",
