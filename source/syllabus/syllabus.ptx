@@ -1,86 +1,917 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<section xml:id="syllabus" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Syllabus</title>
+<section xml:id="syllabusM" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Mathematical Modeling - Fall 2026 - (MTH 305-01) Syllabus</title>
 
-  <introduction>
-    <p>
-    </p>
-  </introduction>
-  <!-- Include chapters -->
-  <subsection xml:id="sec-course-info">
-    <title>Course Information</title>
+    <introduction>
+        <p/>
+    </introduction>
+    <!-- Include chapters -->
+    <subsection>
+        <title>Course Information</title>
 
-    <p>
-      This is the syllabus for <term>course name (MATH xxx, section xxx)</term> for [term] 20xx.
-      It is a [n] credit course.
-      <!-- use a description list (dl) for short items -->
-      <dl>
-        <li>
-          <title>Instructor</title>
+        <p>
+            This is the syllabus for
+            <term>Mathematical Modeling (MATH 305, Section 1)</term> for Fall
+            2026.
+            It is a 3 credit course.
+            <!-- use a description list (dl) for short items -->
+            <dl>
+                <li>
+                    <title>Instructor</title>
 
-          <p>
-            Prof. Lastname, Office Location, <url href="mailto:prof.lastname@example.edu">prof.lastname@example.edu</url>.
-          </p>
-        </li>
+                    <p>
+                        Prof.
+                        Regan, MAK C-2-410, 616-331-2045,
+                        <url href="mailto:reganmar@gvsu.edu">reganmar@gvsu.edu</url>.
+                        You can call me Dr./Prof.
+                        Regan or Dr./Prof.
+                        Maggie.
+                    </p>
 
-        <li>
-          <title>Student Hours</title>
+                    <p>
+                        The best way to reach me is by email.
+                        I will do my best to respond within 24 hours (except
+                        weekends).
+                        My general working hours are 8 am - 5 pm ET Monday
+                        through Friday.
+                    </p>
+                </li>
 
-          <p>
-            TBD
-          </p>
-        </li>
+                <li>
+                    <title>Office Hours</title>
 
-        <li>
-          <title>Class meets</title>
+                    <p>
+                        Tuesday from 1 - 2 pm ET (MAK A-2-610)
+                    </p>
 
-          <p>
-            course times and location.
-          </p>
-        </li>
+                    <p>
+                        Wednesday from 11 am - 12 pm ET (MAK A-2-610)
+                    </p>
 
-        <li>
-          <title>Course Description</title>
+                    <p>
+                        Thursday from 1 - 2 pm ET (MAK A-2-610)
+                    </p>
 
-          <p>
-            course description from catalog
-          </p>
-        </li>
+                    <p>
+                        or by appointment
+                    </p>
+                </li>
 
-        <li>
-          <title>Prerequisite</title>
+                <li>
+                    <title>Class Meets</title>
 
-          <p>
-            list of prerequisites
-          </p>
-        </li>
+                    <p>
+                        TTh 11:30 am - 12:45 pm ET in MAK A-1-111
+                    </p>
+                </li>
 
-        <li>
-          <title>Textbook and course materials</title>
+                <li>
+                    <title>Textbook and Course Materials</title>
 
-          <p>
-            <pubtitle>textbook name</pubtitle>
-            by textbook author.
-          </p>
-        </li>
-      </dl>
-    </p>
+                    <p>
+                        No textbook -- I will provide notes and worksheets.
+                    </p>
 
-  <!-- Use paragraphs to break apart subsections -->
-    <paragraphs>
-      <title>Course Overview</title>
+                    <p>
+                        We will use online resources such as
+                        <url href="https://colab.research.google.com/">Google Colab</url>.
+                    </p>
+                </li>
 
-      <p>
-      </p>
-    </paragraphs>
-  </subsection>
+                <li>
+                    <title>Being Successful in MTH 305</title>
 
-  <!-- Other subsections for larger dividers -->
-  <subsection xml:id="sec-assessments">
-    <title>Assessments and Grades</title>
+                    <p>
+                        My main priority in this course is for you to grow as a
+                        mathematician: to be able to understand and apply
+                        complex statements, to solve challenging problems, and
+                        to communicate orally and in writing.
+                        I want you to succeed.
+                        My teaching philosophy is that everyone has the right to
+                        understand and enjoy mathematics, and to feel part of a
+                        mathematical community.
+                        Please see me when you need help.
+                        Additionally, consider the following things you can do
+                        to be successful.
+                    </p>
 
-    <p>
-    </p>
-  </subsection>
+                    <p>
+                        <ul>
+                            <li>
+                                <term>Attend class.</term> Attendance is
+                                expected and is correlated to success.
+                            </li>
+
+                            <li>
+                                <term>Aim for deep conceptual understanding.</term>
+                                Linear algebra makes sense!
+                                If you aim for sensemaking the answers (and good
+                                grades) will follow.
+                            </li>
+
+                            <li>
+                                <term>Use office hours wisely.</term> Office
+                                hours are for you to ask questions!
+                                Please drop in whenever you have questions!
+                                I ask that you prepare by first making your best
+                                effort and forming specific questions.
+                                This helps our meetings be the most productive.
+                            </li>
+
+                            <li>
+                                <term>Talk to your peers.</term> Talking through
+                                math can lead to huge insights - try it!
+                            </li>
+
+                            <li>
+                                <term> Please ask for anything that would help your learning. </term>
+                                In particular, I know you are human and things
+                                come up.
+                                Keep me in the loop so I can help.
+                                Just email me and we can make an appointment or
+                                talk over email.
+                            </li>
+                        </ul>
+                    </p>
+                </li>
+
+                <li>
+                    <title> Diversity, Equity, and Inclusion</title>
+
+                    <p>
+                        We live in a wonderfully diverse world.
+                        Acknowledging and listening to the perspectives and
+                        experiences of people from a different cultural
+                        background than your own (e.g., gender, race, sexual
+                        orientation, nationality, religion, socioeconomic
+                        status) is a vital part of the learning process and your
+                        personal development.
+                        It is my intent that students from all backgrounds and
+                        perspectives be well-served by this course, that
+                        students' learning needs be addressed both in and out of
+                        the classroom, and that the diversity students bring to
+                        this class be viewed as a resource, strength, and
+                        benefit.
+                        All voices need to be heard.
+                        I welcome and appreciate any suggestions you have
+                        pertaining to diversity, equity, and inclusion, and
+                        commit to listen reflectively to your concerns, without
+                        defensiveness, in recognition that receiving honest
+                        feedback is a necessary step in improving the
+                        inclusiveness of our academic environment.
+                    </p>
+                </li>
+
+                <li>
+                    <title> Climate Goals</title>
+
+                    <p>
+                        <ul>
+                            <li>
+                                <em>Axiom 1.</em> Mathematical potential is
+                                distributed equally among different groups,
+                                irrespective of geographic, demographic, and
+                                economic boundaries.
+                            </li>
+
+                            <li>
+                                <em>Axiom 2.</em> Everyone can have joyful,
+                                meaningful, and empowering mathematical
+                                experiences.
+                            </li>
+
+                            <li>
+                                <em>Axiom 3.</em> Mathematics is a powerful,
+                                malleable tool that can be shaped and used
+                                differently by various communities to serve
+                                their needs.
+                            </li>
+
+                            <li>
+                                <em>Axiom 4.</em> Every student deserves to be
+                                treated with dignity and respect.
+                            </li>
+                        </ul>
+                    </p>
+                </li>
+            </dl>
+        </p>
+        <!-- Use paragraphs to break apart subsections -->
+        <paragraphs>
+            <title>What is Mathematical Modeling?</title>
+
+            <p>
+                Mathematical modeling is the process of using math to describe,
+                analyze, and predict real-world situations.
+                Many applications rely on mathematical models within their
+                study.
+                We will learn how to collect and clean data, how to ask a good
+                question, and how to apply the life cycle of mathematical
+                modeling in a variety of scenarios, some of which are:
+                <ul>
+                    <li>
+                        Modeling, representation, and sensitivity – an
+                        introduction to how equations can be used to understand
+                        real life systems
+                    </li>
+
+                    <li>
+                        Modeling with Calculus – e.g., rates of change,
+                        optimization, volume, sequences and series
+                    </li>
+
+                    <li>
+                        Modeling with Differential Equations – e.g., first and
+                        second order differential equations, systems of first
+                        order differential equations
+                    </li>
+
+                    <li>
+                        Modeling with Linear Algebra – e.g., systems of linear
+                        equations, discrete stochastic processes, optimization,
+                        data analysis
+                    </li>
+                </ul>
+            </p>
+        </paragraphs>
+
+        <paragraphs>
+            <title>What should you do if you need help?</title>
+
+            <p>
+                Successful students reach out for help when they need it.
+                You should strive to be aware of when you are struggling.
+                Whether you are having a technology issue or a mathematical
+                issue or a personal issue impeding your work, reach out to me!
+                I'm here to help you be successful in this class.
+                If something in your life is preventing you from showing me your
+                best work, I would like to help you.
+                The earlier you get in touch the easier it is to catch up.
+                You can always reach me by email.
+                I generally check my email throughout the day but rarely at
+                night or on the weekend.
+                I'm pretty good about responding to email quickly (and
+                definitely within 24 hours during the work week).
+                Don't struggle alone!
+            </p>
+        </paragraphs>
+    </subsection>
+    <!-- Other subsections for larger dividers -->
+    <subsection xml:id="sec-assessmentsM">
+        <title>Assessments and Grades</title>
+
+        <p>
+            <dl>
+                <li>
+                    <title>Class Preparation [CP] (5%)</title>
+
+                    <p>
+                        There will be class preparation assignments due every
+                        Tuesday before class (once a week).
+                        These are graded for completeness, not correctness.
+                        Your grade for this part is the percentage you
+                        completed.
+                    </p>
+                </li>
+
+                <li>
+                    <title>Homework [HW] (25%)</title>
+
+                    <p>
+                        Several homework problems will be assigned every week
+                        involving both coding and written mathematical ideas.
+                        These are your chance to show your best work on advanced
+                        ideas, including explanation and illustration.
+                        All assignments will be submitted and receive feedback
+                        on Blackboard.
+                        See the HW policies for more information (including info
+                        about revisions).
+                    </p>
+                </li>
+
+                <li>
+                    <title>Quizzes [Q] (20%)</title>
+
+                    <p>
+                        There will be a quiz each Thursday.
+                        These will include questions on recent material --
+                        announced the week prior to the quiz.
+                    </p>
+                </li>
+
+                <li>
+                    <title>Labs [L] (20%)</title>
+
+                    <p>
+                        Each lab is worth a varying number of points and there
+                        will be approximately 3 labs.
+                        You can earn partial credit.
+                        These will be done in teams.
+                        See the lab policies for more information (including
+                        info about revisions).
+                    </p>
+                </li>
+
+                <li>
+                    <title>Final Project (30%)</title>
+
+                    <p>
+                        The final project will consist of a paper and
+                        presentation.
+                        More details will be posted on Blackboard with due dates
+                        for various components/check-ins.
+                        We will start planning early!
+                        Most (if not all) presentations will occur during the
+                        final exam time:
+                        <term>Tuesday, December 15, 10:00 am - 11:50 am ET.</term>
+                        As needed, we might have a few presentations the last
+                        day of class.
+                    </p>
+                </li>
+            </dl>
+            The following table allows you to convert your weighted percentage
+            to a letter grade.
+            Note the percentage you earned will not be rounded (e.g.
+            92.8% is an A-).
+        </p>
+
+        <tabular top="minor" bottom="minor" left="minor" right="minor">
+            <row header="yes">
+                <cell>A</cell>
+                <cell>A-</cell>
+                <cell>B+</cell>
+                <cell>B</cell>
+                <cell>B-</cell>
+                <cell>C+</cell>
+                <cell>C</cell>
+                <cell>C-</cell>
+                <cell>D+</cell>
+                <cell>D</cell>
+                <cell>F</cell>
+            </row>
+
+            <row>
+                <cell><m>\ge 93</m></cell>
+                <cell><m>\ge 90</m></cell>
+                <cell><m>\ge 87</m></cell>
+                <cell><m>\ge 83</m></cell>
+                <cell><m>\ge 80</m></cell>
+                <cell><m>\ge 77</m></cell>
+                <cell><m>\ge 73</m></cell>
+                <cell><m>\ge 70</m></cell>
+                <cell><m>\ge 67</m></cell>
+                <cell><m>\ge 63</m></cell>
+                <cell><m>\lt 63</m></cell>
+            </row>
+        </tabular>
+
+        <image width="75%">
+            <shortdescription>Grade breakdown.</shortdescription>
+            <prefigure xmlns="https://prefigure.org" label="SyllabusGradesM">
+                <diagram dimensions="(350,200)" margins="5">
+                    <coordinates bbox="(-1,-1,2.5,1)">
+                        <arc at="ClassPreparation" center="(0,0)" radius="1" range="(0*360,0.05*360)" stroke="black" fill="orange" sector="yes" opacity="0.5"/>
+                        <arc at="WrittenHomework" center="(0,0)" radius="1" range="(0.05*360, 0.3*360)" stroke="black" fill="magenta" sector="yes" miterlimit="1" opacity="0.4"/>
+                        <arc at="Quizzes" center="(0,0)" radius="1" range="(0.3*360, 0.5*360)" stroke="black" fill="green" sector="yes" miterlimit="1" opacity="0.4"/>
+                        <arc at="Labs" center="(0,0)" radius="1" range="(0.5*360, 0.7*360)" stroke="black" fill="purple" sector="yes" miterlimit="1" opacity="0.4"/>
+                        <arc at="FinalExam" center="(0,0)" radius="1" range="(0.7*360, 360)" stroke="black" fill="cyan" sector="yes" miterlimit="1" opacity="0.4"/>
+                        <arc center="(0,0)" radius="1" range="(0, 0.05*360)" stroke="black" sector="yes" miterlimit="1"/>
+                        <arc center="(0,0)" radius="1" range="(0.05*360, 0.3*360)" stroke="black" sector="yes" miterlimit="1"/>
+                        <arc center="(0,0)" radius="1" range="(0.3*360, 0.5*360)" stroke="black" sector="yes" miterlimit="1"/>
+                        <arc center="(0,0)" radius="1" range="(0.5*360, 0.7*360)" stroke="black" sector="yes" miterlimit="1"/>
+                        <arc center="(0,0)" radius="1" range="(0.7*360,360)" stroke="black" sector="yes" miterlimit="1"/>
+                        <label anchor="(0.57,0.12)" alignment="east" scale="0.7">
+                            [CP] 5%
+                        </label>
+                        <label anchor="(-0.05,0.8)" alignment="east" scale="0.7">
+                            [HW] 25%
+                        </label>
+                        <label anchor="(-0.95,0.15)" alignment="east" scale="0.7">
+                            [Q] 20%
+                        </label>
+                        <label anchor="(-0.68,-0.65)" alignment="east" scale="0.7">
+                            [L] 20%
+                        </label>
+                        <label anchor="(0.15,-0.65)" alignment="east" scale="0.7">
+                            [Final] 30%
+                        </label>
+                        <circle center="(0,0)" radius="1" stroke="black"/>
+                    </coordinates>
+                </diagram>
+            </prefigure>
+        </image>
+
+        <p>
+            <em>Grades are updated on Blackboard regularly. Please check and verify regularly!</em>
+        </p>
+
+        <paragraphs>
+            <title>Technology</title>
+
+            <p>
+                You will need a laptop/tablet/Chromebook on which they can
+                access a modern internet browser such as Chrome.
+                You should plan to bring a laptop to class every day.
+                (Please let me know if you don't have one and I can bring one!)
+                You should have or develop proficiencies in the following (which
+                are all free):
+                <ul>
+                    <li>
+                        <em>GVSU Email:</em> You should check your
+                        @mail.gvsu.edu email at least once each weekday for
+                        important announcements.
+                        You should also email me from your @mail.gvsu.edu
+                        account so it doesn't go to spam!
+                    </li>
+
+                    <li>
+                        <p>
+                            <em>Blackboard:</em> You should know how to navigate
+                            Blackboard.
+                            In particular:
+                            <ul>
+                                <li>
+                                    Poke around in the first week to see how
+                                    things are organized.
+                                    If you can't find something, email me.
+                                    (It's possible I forgot to post.)
+                                </li>
+
+                                <li>
+                                    Assignments: You need to know how to view an
+                                    assignment and upload your work.
+                                </li>
+
+                                <li>
+                                    Grades and Feedback: I will upload your
+                                    current grades to Blackboard on a weekly
+                                    basis as well as give you feedback on
+                                    homework.
+                                    If you don't know how to find your grades or
+                                    read the feedback please email me!
+                                </li>
+                            </ul>
+                        </p>
+                    </li>
+
+                    <li>
+                        <em> Google Colab:</em> You aren't expected to know this
+                        yet!
+                        We will develop proficiency in this as a class.
+                        You have access to Google Colab
+                        <url href="https://colab.research.google.com/">here</url>.
+                    </li>
+                </ul>
+            </p>
+        </paragraphs>
+
+        <paragraphs>
+            <title>Academic Honesty</title>
+
+            <p>
+                See each individual assignment document linked on Blackboard for
+                information on academic honesty.
+                You are responsible for knowing the policies - academic
+                dishonesty will not be tolerated and all instances will be
+                reported to the dean of students.
+                I ask that you take your learning seriously and take advantage
+                of the opportunities you are given to succeed.
+                To avoid academic dishonesty please make sure you know the
+                policies, and avoid situations where you may feel desperate
+                (say, by procrastinating).
+                Academic honesty is worth the reward of learning, and dishonesty
+                is not worth the risk.
+            </p>
+        </paragraphs>
+
+        <paragraphs>
+            <title>AI Policy</title>
+
+            <p>
+                You may not use AI or ChatGPT for any component of this course.
+                In this course, we'll be developing skills that are important to
+                practice on your own.
+                Because use of generative AI may inhibit the development of
+                those skills, you aren't allowed employing AI tools in this
+                course.
+                Using such tools for any purposes, or attempting to represent
+                AI-generated work as your own, will violate our academic
+                integrity policy.
+            </p>
+
+            <p>
+                This is complicated, and we’ll talk about it in class.
+                If you can think of a way that AI or ChatGPT can support (and
+                not replace) your learning, please let me know!
+                I am open to discussion on how these tools can be used in a
+                constructive way.
+                You may think:
+                <ul>
+                    <li>
+                        "I will be using AI in my career." With the current
+                        state of AI, you won't be using it to learn new ways of
+                        thinking, like we're trying to do in our course.
+                        AI will not help you develop an understanding of
+                        mathematics.
+                    </li>
+
+                    <li>
+                        "I only use it to check my work when I don't feel
+                        totally confident." A colleague is part of a math
+                        education research study that investigates how students
+                        learn math from textbooks.
+                        Interviews with students clearly show how using AI
+                        causes students to become less confident over time since
+                        they come to trust what comes from AI more than they
+                        trust their own work.
+                        Learning will be challenging and facing challenges
+                        requires you to have the confidence that you can do it.
+                        Please don't surrender the trust that you have in your
+                        own abilities.
+                    </li>
+                </ul>
+            </p>
+
+            <p>
+                Here is one research study, among many others:
+                <url href="https://www.media.mit.edu/publications/your-brain-on-chatgpt/">Your Brain on ChatGPT</url>.
+                From the abstract:
+                <dl>
+                    <li>
+                        <title/>
+                        <p>
+                            <em>Over four months, LLM users consistently underperformed at neural, linguistic, and behavioral levels. These results raise concerns about the long-term educational implications of LLM reliance and underscore the need for deeper inquiry into AI's role in learning.</em>
+                        </p>
+                    </li>
+                </dl>
+            </p>
+
+            <p>
+                <url href="https://arxiv.org/pdf/2608.16753"> "In some areas, particularly in education and in the training of young mathematicians, it will
+                be crucial to emphasize the irreducibly human aspect of our work, and to restrict the use of
+                AI tools quite tightly; the goal of training a mathematician is not achieved by producing correct
+                homework." </url>-
+                Terry Tao
+            </p>
+        </paragraphs>
+
+        <paragraphs>
+            <title>Attendance and Missed Classes</title>
+
+            <p>
+                Attendance does not count towards your final grade, however, I
+                do expect that you will be in class and I will take attendance.
+                The class is counting on your contributions and being in class
+                is important for your learning.
+                I've seen many capable students fail because they miss class.
+                If you must miss class you should:
+                <ul>
+                    <li>Email me to let me know. (I worry about you!)</li>
+                    <li>
+                        Check Blackboard to make sure you turn in assignments.
+                    </li>
+
+                    <li>
+                        Look over the class notes and textbook.
+                        Get in touch with a classmate to get notes and find out
+                        what you should do to catch up.
+                    </li>
+                </ul>
+            </p>
+        </paragraphs>
+
+        <paragraphs>
+            <title>Phone Policy</title>
+
+            <p>
+                Inside our classroom, please keep your phone stored in your
+                belongings and away from your work space, unless you have an
+                exceptional situation such as concern for a friend or family
+                member.
+                This includes time when you are waiting for class to begin as
+                this provides everyone with the opportunity to develop
+                productive working relationships.
+            </p>
+
+            <p>
+                We live in an age where your attention is being monetized by
+                others, and it is not readily apparent the price that you are
+                paying.
+                An overwhelming amount of research, however, plainly shows how
+                disruptive this technology is to your learning.
+                <url href="https://www.nytimes.com/2018/10/26/style/phones-children-silicon-valley.html?unlocked_article_code=1.dk8.6ygB.2TOc7QaMEx3N=url-share">“On the scale between candy and crack cocaine, it’s closer to crack cocaine,” Mr. Anderson [former editor of Wired magazine] said of screens.</url>
+            </p>
+        </paragraphs>
+
+        <paragraphs>
+            <title>Late Work and Deadlines</title>
+
+            <p>
+                Learning takes time, and sometimes time doesn't work out the way
+                you expect.
+                I'd much rather see what you know, rather than enforcing
+                arbitrary deadlines and rules (I don't enjoy that any more than
+                you do!).
+                While I am open to extensions on the assignment due dates, I
+                will make two notes: (1) getting behind on assignments can be a
+                slippery slope and potentially lead to a delay in learning the
+                material/an inability to catch-up; (2)
+                <term>extensions must
+                be requested 12 hours PRIOR to the assigned
+                deadline</term>-
+                unless there are unusual circumstances.
+                if requested afterwards, the extension will not be granted.
+                Please send me an email to request any extensions.
+                As applicable, late homework will receive a grade deduction.
+            </p>
+        </paragraphs>
+    </subsection>
+
+    <subsection xml:id="sec-otherPoliciesM">
+        <title>Other Information and Policies</title>
+
+        <p>
+            <dl>
+                <li>
+                    <title/>
+                    <p>
+                        This course is subject to all policies at
+                        <url href="http://www.gvsu.edu/coursepolicies/" visual="http://www.gvsu.edu/coursepolicies/">GVSU policies</url>.
+                    </p>
+                </li>
+
+                <li>
+                    <title> Important Dates</title>
+
+                    <p>
+                        View the
+                        <url href="https://www.gvsu.edu/registrar/academiccalendar.htm" visual="https://www.gvsu.edu/registrar/academiccalendar.htm">academic calendar</url>
+                        for all important dates.
+                        In particular, the last chance to add a class or drop
+                        with 100% tuition refund is September 4th by 5PM.
+                        The last day to change to credit/no credit is September
+                        25th by 5PM.
+                        The last day to drop with a "W" is November 13th by 5PM.
+                    </p>
+                </li>
+
+                <li>
+                    <title>Remote Status and Faculty Absence</title>
+
+                    <p>
+                        In the event that the university moves to remote status
+                        or the professor is unable to make it to campus for
+                        class, instruction will be moved either synchronously or
+                        asynchronously online.
+                        This will be communicated by the instructor through
+                        Blackboard and email ASAP.
+                        This also applies to final exams, where there is a
+                        possibility the exam will move to online, take-home, or
+                        another arrangement.
+                        Make sure to check all announcements on Blackboard in a
+                        timely manner!
+                    </p>
+                </li>
+
+                <li>
+                    <title>Student Accessibility Resources Office</title>
+
+                    <p>
+                        If you are in need of accommodations due to a learning,
+                        physical, or other disability you must present a memo to
+                        me from Student Accessibility Resources, indicating the
+                        existence of a disability and the suggested reasonable
+                        accommodations.
+                        If you have not already done so, please contact the
+                        Student Accessibility Resources office (215 CON):
+                        616-331-2490 or access@gvsu.edu.
+                        Please note that I cannot provide accommodations based
+                        upon disability until you have provided me with a copy
+                        of the SAR issued memo.
+                        All discussions will remain confidential.
+                        If you have a physical disability and think you will
+                        need assistance evacuating this classroom and/or
+                        building in an emergency situation, please make me aware
+                        so I can develop a plan to assist you.
+                    </p>
+                </li>
+
+                <li>
+                    <title>Tutoring and Reading Center Appointments</title>
+
+                    <p>
+                        GVSU’s Tutoring and Reading Center offers appointment
+                        tutoring both in-person and virtually.
+                        You can sign up for 50-minute tutoring appointments for
+                        many Math courses.
+                        Request a tutor
+                        <url href="https://www.gvsu.edu/trc/" visual="https://www.gvsu.edu/trc/">here</url>
+                        or schedule directly on Navigate.
+                    </p>
+                </li>
+
+                <li>
+                    <title>Mental Health and Wellness</title>
+
+                    <p>
+                        If your mental health concerns and/or stressful events
+                        negatively affect your daily emotional state, academic
+                        performance, or ability to participate in your daily
+                        activities, there are resources available to you.
+                        GVSU encourages all students to access these resources,
+                        particularly as we navigate the transition and emotions
+                        associated with this time.
+                        The University Counseling Center offers a range of
+                        psychological services to meet the mental health needs
+                        of students, with the primary goal being to support
+                        students negotiating their transition into adulthood.
+                        The University Counseling Center can be reached by
+                        calling (616)-331-3266.
+                        If you are in distress and need to speak with someone
+                        urgently, an on-call crisis counselor can be reached
+                        24/7 at the following numbers:
+                        <ul>
+                            <li>
+                                Call or Text 988: Suicide and Crisis Lifeline
+                            </li>
+
+                            <li>Text HOME to 741741: Crisis Text Line</li>
+                        </ul>
+                        In addition, managing daily stress and self-care are
+                        also important to well-being.
+                        There are resources to help with this in the form of
+                        peer tutoring, academic skills and success coaching, and
+                        more at this
+                        <url href="https://www.gvsu.edu/support/" visual="https://www.gvsu.edu/support/">website</url>.
+                        The campus recreation center and student wellness
+                        education are also available to support the wellness of
+                        your mind, body and soul so you can thrive during your
+                        time at GVSU.
+                    </p>
+                </li>
+
+                <li>
+                    <title>Classroom and Campus Safety</title>
+
+                    <p>
+                        Classroom and campus safety are our shared
+                        responsibility.
+                        Please familiarize yourself with the classroom emergency
+                        placard, which contains important information that could
+                        prove useful should an emergency arise.
+                        Emergency situations could include a fire alarm, tornado
+                        warning, medical emergency, or hostile intruder, and our
+                        response might consist of evacuating MAK Hall in an
+                        orderly manner, moving as a group to a different
+                        location in the building, rendering assistance to a
+                        class member, or staying put and locking the classroom
+                        door.
+                        Please make sure to have your primary mobile number
+                        listed in Banner so that you will automatically receive
+                        any campus alerts.
+                    </p>
+
+                    <p>
+                        Additional information about campus safety can be found
+                        at the following sites:
+                        <ul>
+                            <li>
+                                <url href="https://www.gvsu.edu/dps/warnings-and-alerts-133.htm">Directions for enabling additional contact means to the campus alert system</url>
+                            </li>
+
+                            <li>
+                                <url href="https://www.gvsu.edu/emergency/">Emergency alert information</url>
+                            </li>
+
+                            <li>
+                                <url href="https://www.gvsu.edu/emergency/tornado-safety-location-2.htm">List of campus tornado safety locations</url>
+                            </li>
+
+                            <li>
+                                <url href="https://www.gvsu.edu/emergency/medical-emergency-15.htm">Medical emergencies</url>
+                                and
+                                <url href="https://www.gvsu.edu/emergency/automated-external-defibrillator-33.htm">campus AED locations</url>
+                            </li>
+
+                            <li>
+                                <url href="https://www.gvsu.edu/dps/active-shooter-response-85.htm">Active shooter response</url>
+                            </li>
+                        </ul>
+                    </p>
+                </li>
+
+                <li>
+                    <title>Religious Accommodation</title>
+
+                    <p>
+                        In accordance with the
+                        <url href="https://www.gvsu.edu/policies/policy.htm?policyId=129535EB-9F42-2683-61E9033594C870D2"> Religious Inclusion Policy</url>,
+                        GVSU will provide reasonable accommodations for faculty,
+                        staff, and students to observe their religious beliefs,
+                        except where accommodating the request would result in
+                        undue hardship on the University in its mission,
+                        operation, or in meeting its academic standards.
+                        If you would like to request a reasonable accommodation,
+                        please complete this
+                        <url href="https://www.gvsu.edu/affirmative/religious-request.htm">form</url>
+                        and submit it to me within the first two weeks of the
+                        semester or as soon as reasonably possible.
+                    </p>
+                </li>
+
+                <li>
+                    <title>CLAS Voyage Experiential Learning</title>
+
+                    <p>
+                        This course has been identified as one of the
+                        experiential learning courses that is embedded in your
+                        major as part of the CLAS Voyage.
+                        These courses ensure that you have the opportunity to
+                        participate in high-impact, hands-on learning, while
+                        also developing insight into your abilities and values,
+                        which will help prepare you for life after graduation.
+                        Depending on your major the course might be an
+                        internship, study away and abroad, community-based
+                        learning, scholarly and creative practice, or student
+                        learning communities.
+                        Whatever your area of study, in this course you’ll be
+                        encouraged to apply your learning to the real world,
+                        reflect on your progress, and share your learning.
+                        To learn more visit
+                        <url href="www.gvsu.edu/clas/voyage">their website</url>.
+                    </p>
+                </li>
+
+                <li>
+                    <title>Course Description</title>
+
+                    <p>
+                        Introduction to the mathematical modeling process.
+                        Students will gain experience in the construction,
+                        computational implementation, and analysis of
+                        mathematical models arising from various applications.
+                        Models will be developed in mathematical contexts
+                        including linear algebra, calculus, discrete dynamical
+                        systems, and differential equations.
+                        Prerequisites: CIS 161, or CIS 162, or EGR 112; and MTH
+                        302 or MTH 304; (304 may be taken concurrently).
+                    </p>
+                </li>
+
+                <li>
+                    <title>Course Objectives</title>
+
+                    <p>
+                        After successful completion of the course, students will
+                        be able to:
+                        <ol>
+                            <li>
+                                Construct a mathematical model based on
+                                identified physical, biological, or social
+                                principles.
+                            </li>
+
+                            <li>
+                                Identify and develop mathematical algorithms to
+                                obtain approximate solutions to mathematical
+                                models.
+                            </li>
+
+                            <li>
+                                Implement mathematical algorithms using a
+                                programming language.
+                            </li>
+
+                            <li>
+                                Measure the validity and accuracy of the model
+                                based on the computational results.
+                            </li>
+
+                            <li>
+                                Analyze the computation results in the context
+                                of the application.
+                            </li>
+                        </ol>
+                    </p>
+                </li>
+
+                <li>
+                    <title> Syllabus Changes</title>
+
+                    <p>
+                        This syllabus is meant to serve as a general overview of
+                        the course.
+                        I reserve the right to make adjustments to the syllabus
+                        as necessary, typically in consultation with you.
+                        Any changes will be announced in at least one
+                        synchronous class meeting and via a Blackboard
+                        announcement.
+                        Changes will be made to the live version of this
+                        syllabus which is linked on Blackboard.
+                    </p>
+                </li>
+            </dl>
+        </p>
+    </subsection>
 </section>
