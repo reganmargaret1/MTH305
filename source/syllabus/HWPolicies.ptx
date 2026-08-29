@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<section xml:id="HW" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Written Homework Policies</title>
+
+    <paragraphs>
+        <title>Purpose</title>
+
+        <p>
+            The main purpose of the homework is <term>practice</term>.
+            Importantly, you will practice the idea of
+            <em>explaining your reasoning</em>- which is going to be key for
+            success in this class (and probably in life).
+        </p>
+    </paragraphs>
+
+    <paragraphs>
+        <title>Instructions</title>
+
+        <p>
+            Problems will be assigned every week and due in class on Wednesdays.
+            You will be provided a physical copy of the homework assignment
+            where you will write your final solutions.
+            Any other work should be completed in your notebook or on scratch
+            paper.
+        </p>
+
+        <p>
+            <term> You are expected to give solutions (not just answers) to each
+            problem.</term>
+            This will be helpful with your own studying and reviewing of
+            material and helps me see what you understand so far.
+        </p>
+    </paragraphs>
+
+    <paragraphs>
+        <title>Writing Math Well</title>
+
+        <p>
+            Here are some tips to help you write your homework well:
+            <ol>
+                <li>
+                    <term>Your audience is other students in this class that have not seen this problem before.</term>
+                    Remind the reader of any relevant facts from class or the
+                    book.
+                    Your solution should give adequate detail so that the reader
+                    can follow your solution.
+                </li>
+
+                <li>
+                    <term>Write in sentences.</term> A sentence is a complete
+                    thought.
+                    You may still of course write equations, but they should be
+                    part of complete thoughts.
+                    Use paragraphs to separate important ideas.
+                </li>
+
+                <li>
+                    <term>It is possible to write too much.</term> If you write
+                    out every triviality, the reader may get lost in the
+                    details.
+                    This is not good writing, either.
+                    (In particular, really trivial calculations need not be
+                    shown.)
+                </li>
+
+                <li>
+                    <term>Avoid shorthand.</term> Do not to use arrows when you
+                    could use words like "if", "then", "so", "therefore", "we
+                    see that", "recall that".
+                </li>
+
+                <li>
+                    <term>You may wish to outline your problem-solving strategy at the beginning of the problem.</term>
+                    This could help readers follow your solution.
+                </li>
+            </ol>
+        </p>
+
+        <p>
+            Here are two examples, one good, and one not so good, so you can see
+            how these ideas help.
+            These students are solving the same problem!
+        </p>
+    </paragraphs>
+
+    <paragraphs>
+        <title>Example 1</title>
+
+        <p>
+            <md>
+                (0-3)^2 + (x-2)^2 = 25 \\
+            3^2 = 9 + (x^2 - 4x + 4) = 25 \\
+            x^2 - 4x - 12 \\
+            (x-6)(x+2) \Rightarrow x = -2, 6 \,\,\,\, x \gt 0 \,\,\,\, x = 6
+            </md>
+        </p>
+
+        <p>
+            Why this is not so good:
+            <ul>
+                <li>You don't know what problem the writer is solving.</li>
+                <li>
+                    You can't tell what's an assumption and what's a conclusion.
+                </li>
+
+                <li>
+                    Where does on thought end and another begin?
+                    There are no sentences!
+                </li>
+
+                <li>
+                    In the 2nd line: combining two thoughts can create untruths
+                    ( <m>3^2 = 9</m>, but it isn't <m>25</m> ).
+                </li>
+
+                <li>
+                    The 3rd line dangles; what's being said here?
+                    It's not a sentence.
+                </li>
+
+                <li>
+                    What's the relationship between all these phrases?
+                    Connective phrases would help!
+                </li>
+            </ul>
+        </p>
+    </paragraphs>
+
+    <paragraphs>
+        <title>Example 2</title>
+
+        <p>
+            <term>Problem.</term> Find a point in the plane on the positive
+            <m>x</m>-axis that has a distance of <m>5</m> from the point
+            <m>(2,3)</m>.
+        </p>
+
+        <p>
+            <term>Solution.</term> The desired point is <m>{(6,0)}</m>.
+        </p>
+
+        <p>
+            To find this, we note that if <m>{(x,0)}</m> is a solution, then
+            <m>x</m> must satisfy the equation <m>{(x-2)^2 + (0-3)^2 = 25}</m>,
+            which follows from the planar distance formula between the points
+            <m>{(x,0)}</m> and <m>{(2,3)}</m>.
+            It follows that <m>{x^2 - 4x + 13 = 25}</m>.
+            Then
+            <md>
+                x^2 - 4x - 12 = 0.
+            </md>
+            Factoring, we obtain
+            <md>
+                (x-6)(x+2) = 0,
+            </md>
+            satisfied by either <m>x=-2</m> or <m>x=6</m>.
+            Since we assumed <m>x \gt 0</m> and <m>y=0</m>, we see that
+            <m>{(6,0)}</m> is the desired point.
+        </p>
+
+        <p>
+            Why this is much better:
+            <ul>
+                <li>
+                    The writer described the problem, and strategy for solution.
+                </li>
+
+                <li>
+                    Every thought is a complete sentence with subject and verb
+                    (the "equals" sign is a verb).
+                </li>
+
+                <li>
+                    She answered the question right at the beginning.
+                    (You can box your answers to help!)
+                </li>
+
+                <li>
+                    Notice even the equations have punctuation (comma, periods)
+                    as they are part of sentences.
+                </li>
+
+                <li>
+                    She highlighted important ingredients, displayed important
+                    equations, avoided trivial algebra.
+                </li>
+            </ul>
+        </p>
+    </paragraphs>
+
+    <paragraphs>
+        <title>Grading and Revisions</title>
+
+        <p>
+            Each problem will be graded at an "E" for "exemplary" (100%), an "S"
+            for "satisfactory" (75%), or "NY" for "not yet" (0%).
+            You earn an "E" if your work demonstrates thorough understanding of
+            the concepts of the problem.
+            You are allowed to resubmit up to 2 problems per week.
+            The resubmission can be from any assignment and you submit a problem
+            as many times as you want.
+            Here is what a revised problem requires:
+            <ul>
+                <li>Make sure you include the problem #.</li>
+                <li>
+                    Rewrite your whole solution as if you are doing the problem
+                    for the first time.
+                </li>
+
+                <li>
+                    Write at least 2 sentences about what you learned from
+                    redoing the problem.
+                    You could say something like "I used to think that...
+                    But now I know that...".
+                </li>
+
+                <li>
+                    You must have submitted the first draft by the deadline (or
+                    asked for an extension before the deadline) to be able to
+                    resubmit.
+                </li>
+
+                <li>
+                    Hand resubmissions to me in person during class time or
+                    office hours.
+                </li>
+            </ul>
+        </p>
+    </paragraphs>
+
+    <paragraphs>
+        <title>Academic Honesty</title>
+
+        <p>
+            You are allowed to collaborate on the homework.
+            I believe that collaboration can lead to greater mathematical growth
+            and so I encourage you to work together.
+            However, you must be academically honest.
+            A quick check for academic honesty on homework is that you are using
+            collaboration for greater understanding of course content.
+            Here are some more specifics:
+        </p>
+
+        <p>
+            <term>You may</term>
+            <ul>
+                <li>
+                    collaborate with other students from our class on homework
+                </li>
+
+                <li>
+                    ask me about the concepts and for hints after having made a
+                    serious attempt at understanding
+                </li>
+
+                <li>
+                    ask your fellow students for critique of your reasoning on
+                    written homework
+                </li>
+
+                <li>use the math center</li>
+            </ul>
+        </p>
+
+        <p>
+            <term>You may not</term>
+            <ul>
+                <li>collaborate with students outside of our class</li>
+                <li>
+                    look up solutions on the internet, in textbooks, ask
+                    chatGPT or any AI, or use any resources besides our course
+                    textbook
+                </li>
+
+                <li>
+                    copy any or all of your work from another source (another
+                    student or the internet)
+                </li>
+            </ul>
+        </p>
+
+        <p>
+            <term>You must</term>
+            <ul>
+                <li>
+                    Be able to defend anything you turn in (i.e., your work must
+                    be a representation of your understanding)
+                </li>
+
+                <li>Write up your solutions in your own words</li>
+            </ul>
+        </p>
+    </paragraphs>
+</section>

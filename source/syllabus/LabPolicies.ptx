@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<section xml:id="LabsPolicies">
+    <title>Lab Policies</title>
+
+    <paragraphs>
+        <title>Purpose</title>
+
+        <p>
+            The purpose of labs is to use Sage to explore linear algebra almost
+            always through investigating important applications of the subject.
+        </p>
+    </paragraphs>
+
+    <paragraphs>
+        <title>Instructions</title>
+
+        <p>
+            Lab activities will be more involved than class activities.
+            There will be approximately six labs this semester.
+            We'll start these labs in class and you will work as a team of 2-4.
+            Your final solutions should be neatly written on the provided paper
+            and turned in with all of the team members' names who contributed.
+            Lab due dates will be communicated on the assignment and through
+            Blackboard.
+        </p>
+    </paragraphs>
+
+    <paragraphs>
+        <title>Grading and Revisions</title>
+
+        <p>
+            Each lab will be graded out of a number of points specified on the
+            document.
+            There will be 6 labs.
+            Your total score for this part will be the number of points you earn
+            divided by the total possible.
+            The labs are worth 10% of your final grade.
+            At the end of the semester you'll have the opportunity to revise and
+            turn in 2 labs for a better grade.
+            This will be done individually.
+        </p>
+    </paragraphs>
+
+    <paragraphs>
+        <title>Academic Honesty</title>
+
+        <p>
+            You can work together within your group and ask your Professor for
+            help.
+            Using resources besides Sage, your classmates, your Professor, and
+            our textbook is not allowed.
+            In particular do not google or ask ChatGPT these questions!
+            All answers should be in your own words.
+            Do not share electronic documents with people outside your group.
+            Give yourself time and ask for help!
+        </p>
+    </paragraphs>
+</section>

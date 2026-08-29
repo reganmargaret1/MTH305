@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<section xml:id="LTs" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Quizzes</title>
+
+    <paragraphs>
+        <title>Purpose</title>
+
+        <p>
+            This component of the assessment is intended to emphasize a few
+            things:
+            <ul>
+                <li>
+                    <term>Learning is a process.</term> You will not be
+                    penalized for not earning an "exemplary" on a target the
+                    first time, but you are expected to eventually get there.
+                </li>
+
+                <li>
+                    <term>Frequent assessment is good for learning.</term> I
+                    would like you to think of these checkpoints as a tool for
+                    learning rather than just assessment - studies show that
+                    retrieval of information makes it easier to recall that
+                    information later.
+                    This is called "the testing effect."
+                </li>
+
+                <li>
+                    <term> Keeping up with course material is important.</term>
+                    These quizzes will be one way of informing both you and me
+                    about your progress in the course.
+                </li>
+
+                <li>
+                    <term>Knowing the basics well is crucial for tackling more difficult problems.</term>
+                    These skills were chosen because they are fundamental.
+                    You will have time to practice these skills before, briefly
+                    during, and after class, but we will be using the majority
+                    of class time to tackle difficult problems.
+                    You will need to understand the basics well to keep up and
+                    contribute to your group.
+                </li>
+            </ul>
+        </p>
+    </paragraphs>
+
+    <paragraphs>
+        <title>Instructions and Grading</title>
+
+        <p>
+            Each item in the list below is a learning target.
+            <ul>
+                <li>
+                    We will have a quiz at the end of each class every Friday
+                    assessing these targets.
+                </li>
+
+                <li>
+                    Each skill will be graded as only "E" for "exemplary," “S"
+                    for “satisfactory," or “NY" for “not yet".
+                    To earn an E your solution needs to show all work and
+                    explanations, use correct notation, and arrive at a correct
+                    answer.
+                    In short, you need to convince me that you understand.
+                </li>
+
+                <li>
+                    Once you earned an "E" on a skill you do not need to do so
+                    again.
+                </li>
+
+                <li>
+                    <p>
+                    The grades will be indicated on Blackboard.
+                    You will be notified which skills will be on a quiz, but it
+                    is your responsibility to know which skills you have yet to
+                    demonstrate by consulting Blackboard for your graded
+                    checkpoints.
+                    <ul>
+                        <li>The checkpoints are closed book and notes</li>
+                        <li>
+                            Since you have multiple attempts on each target
+                            there will be no make ups.
+                        </li>
+
+                        <li>
+                            Each target will be on three checkpoints, and then
+                            you will have one additional attempt in office hours
+                            (or by making an appointment).
+                        </li>
+                    </ul>
+                    </p>
+                </li>
+
+                <li>Each of 14 targets counts as 2% of your final grade.</li>
+            </ul>
+        </p>
+    </paragraphs>
+
+    <paragraphs>
+        <title>Academic Honesty</title>
+
+        <p>
+            You may use
+            <url href="https://gvsu.edu/s/0Ng" visual="https://gvsu.edu/s/0Ng">Sage</url>
+            cells if instructed (though, note carefully when asked to do
+            something by hand).
+            You may not use your textbook, other notes, the internet/AI nor talk
+            to anyone about the quiz until they are handed back (via
+            Blackboard).
+            Any violations of this policy will result in not earning credit for
+            the skill permanently.
+            By
+            <url href="https://www.gvsu.edu/policies/policy.htm?policyId=EFAB64E1-C25B-E1A3-CA2B08B0B821C774" visual="https://www.gvsu.edu/policies/policy.htm?policyId=EFAB64E1-C25B-E1A3-CA2B08B0B821C774">policy</url>,
+            all incidents of academic dishonesty will be reported to the Dean of
+            Students.
+        </p>
+
+        <p>
+            <term>A recommendation.</term> If you don't earn an "E" on the first
+            attempt, be sure to read feedback.
+            It's a good idea to redo the problem and ask me about it!
+        </p>
+    </paragraphs>
+
+    <paragraphs>
+        <title>Learning Targets</title>
+
+        <p>
+            <ol>
+                <li>
+                    I can execute the next 2-3 steps of Gaussian elimination by
+                    hand that are needed to work toward RREF (and recognize that
+                    additional steps are needed to achieve RREF), and identify
+                    which row operations were used.
+                    (Section 1.2).
+                </li>
+
+                <li>
+                    I can use information about pivots to make conclusions about
+                    the solutions of a system of linear equations, and explain
+                    the underlying reasoning (using appropriate terminology)
+                    regarding the existence and uniqueness of solutions and
+                    consistency or inconsistency of a system.
+                    (Section 1.4)
+                </li>
+
+                <li>
+                    I can determine if and how a given vector can be written as
+                    a linear combination of a given set of vectors and explain
+                    what this means geometrically.
+                    (Section 2.1)
+                </li>
+
+                <li>
+                    I can represent a linear system in three different ways and
+                    be able to translate back and forth among the forms: as
+                    <m>A\xvec = \bvec</m>, as a question about linear
+                    combinations, and as a question about an augmented matrix
+                    (Section 2.2 - Prop 2.2.4)
+                </li>
+
+                <li>
+                    I can reformulate and answer questions about span in terms
+                    of linear combinations, matrix equations, and geometrically.
+                    (Section 2.3)
+                </li>
+
+                <li>
+                    I can reformulate and answer questions about linearly
+                    dependent or linearly independent vectors using appropriate
+                    computations, and explain the meaning of the results of
+                    computations in the language of linear combinations.
+                    (Section 2.4)
+                </li>
+
+                <li>
+                    I can find the matrix of a linear transformation using
+                    elementary vectors, apply a transformation to a vector or
+                    shape, and compose transformations using matrix
+                    multiplication.
+                    (Section 2.5)
+                </li>
+
+                <li>
+                    I can determine if a matrix is invertible, find an inverse,
+                    and use inverses to solve matrix equations.
+                    (Section 3.1)
+                </li>
+
+                <li>
+                    I can determine whether or not a set of vectors is a basis
+                    for <m>\mathbb{R}^n</m>, and give examples and non-examples
+                    of bases.
+                    (Section 3.2)
+                </li>
+
+                <li>
+                    I can convert a vector given in the standard basis into a
+                    vector in another basis and vice versa.
+                    (Section 3.2)
+                </li>
+
+                <li>
+                    I can find the determinant of a given matrix using cofactor
+                    expansion and explain what information this tells us about
+                    the invertibility of a matrix.
+                    (Section 3.4)
+                </li>
+
+                <li>
+                    I can find and clearly justify bases for the null space and
+                    the column space of a matrix (including why the set of
+                    vectors is a basis, i.e., why it is linearly independent and
+                    spans the relevant spaces) and thus their dimensions.
+                    (Section 3.5)
+                </li>
+
+                <li>
+                    I can verify that a vector is an eigenvector algebraically
+                    and explain what this means about the vector geometrically.
+                    (Section 4.1)
+                </li>
+
+                <li>
+                    I can use the characteristic polynomial of a matrix <m>A</m>
+                    to identify its eigenvalues, and then find a basis of
+                    eigenvectors for each associated eigenspace and, if there is
+                    a basis of eigenvectors for <m>\mathbb{R}^n</m>, use such a
+                    basis to describe the matrix product <m>A\xvec</m>.
+                    (Section 4.2)
+                </li>
+            </ol>
+        </p>
+    </paragraphs>
+</section>

@@ -19,6 +19,10 @@
       <!-- Course syllabus -->
       <xi:include href="./syllabus/syllabus.ptx" />
       <!-- Other documents could go here, like a schedule, project description, etc. -->
+      <xi:include href="./syllabus/ClassPreparationPolicies.ptx" />
+      <xi:include href="./syllabus/HWPolicies.ptx" />
+      <xi:include href="./syllabus/LabPolicies.ptx" />
+      <xi:include href="./syllabus/Quizzes.ptx" />
     </chapter>
 
     <chapter xml:id="course-notes">
