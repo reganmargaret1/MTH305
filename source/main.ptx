@@ -6,9 +6,9 @@
   <xi:include href="./docinfo.ptx" />
   <!-- By creating a PreTeXt "book" for the course, we can split components into "chapters" -->
   <book>
-    <title>Course Name (change me)</title>
+    <title>Mathematical Modeling</title>
 
-    <subtitle>MATH xxx Semester 20xx</subtitle>
+    <subtitle>MATH 305 Fall 2026</subtitle>
 
     <!-- Optional: include frontmatter with author info and date -->
     <xi:include href="./frontmatter.ptx" />
@@ -25,23 +25,6 @@
       <xi:include href="./syllabus/Quizzes.ptx" />
     </chapter>
 
-    <chapter xml:id="course-notes">
-      <title>Course Notes</title>
-
-      <introduction>
-        <p>
-          The following notes are intended to remind you what we covered each week.
-          They are not a substitute for attending class and not a substitute for reading the textbook.
-        </p>
-      </introduction>
-
-      <xi:include href="./notes/week01.ptx"/>
-      <xi:include href="./notes/week02.ptx"/>
-      <!-- etc. -->
-
-    </chapter>
-
-
     <chapter xml:id="activities">
       <title>In-Class Activities</title>
 
@@ -55,12 +38,6 @@
       <xi:include href="./activities/01-intro-activity.ptx"/>
 
       <!-- Add more xi:include files here to include them in the main course -->
-    </chapter>
-
-    <chapter xml:id="handouts">
-      <title>Handouts</title>
-      <!-- Include handouts -->
-      <!--<xi:include href="./handouts/handout-filename.ptx"/>-->
     </chapter>
 
     <chapter xml:id="homework">
