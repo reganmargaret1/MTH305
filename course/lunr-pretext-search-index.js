@@ -172,24 +172,6 @@ var ptx_lunr_docs = [
   "body": "A recommendation. "
 },
 {
-  "id": "notes-week-01",
-  "level": "1",
-  "url": "notes-week-01.html",
-  "type": "Section",
-  "number": "",
-  "title": "Week 1",
-  "body": " Week 1   This is an outline of the topics we covered in the first week of class.     Monday 8\/22      Wednesday 8\/24      Friday 8\/26     "
-},
-{
-  "id": "notes-week-02",
-  "level": "1",
-  "url": "notes-week-02.html",
-  "type": "Section",
-  "number": "",
-  "title": "Week 2",
-  "body": " Week 2   Monday      Wednesday      Friday     "
-},
-{
   "id": "activity-01-intro-activity",
   "level": "1",
   "url": "activity-01-intro-activity.html",
@@ -206,15 +188,6 @@ var ptx_lunr_docs = [
   "number": "1",
   "title": "",
   "body": "  This is the first exercise.   "
-},
-{
-  "id": "handouts",
-  "level": "1",
-  "url": "handouts.html",
-  "type": "Chapter",
-  "number": "",
-  "title": "Handouts",
-  "body": " Handouts    "
 },
 {
   "id": "homework",
