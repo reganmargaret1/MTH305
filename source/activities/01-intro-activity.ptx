@@ -2,91 +2,173 @@
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
 <worksheet xml:id="activity-01-intro-activity">
-  <title>Introduction Activity - What is a good question?</title>
+    <title>Introduction Activity - What is a good question?</title>
 
-  <!-- Optional introduction -->
-  <introduction>
-    <p>
-      In this activity we are going to explore what it means to
-      ask a good question.  How would we define the word "good?"
-      Does the definition depend on anything? If so, what? 
-    </p>
+    <!-- Optional introduction -->
+    <introduction>
+        <p>
+            In this activity we are going to explore what it means to ask a good
+            question.
+            How would we define the word "good?" Does the definition depend on
+            anything?
+            If so, what?
+        </p>
 
-    <p>
-      Mathematical modeling is the process of adding a mathematical
-      algorithm/language to a real-world phenomena.  This starts 
-      with a goal or question in order to know how to formulate
-      the model!
-    </p>
-  </introduction>
+        <p>
+            Mathematical modeling is the process of adding a mathematical
+            algorithm/language to a real-world phenomena.
+            This starts with a goal or question in order to know how to
+            formulate the model!
+        </p>
+    </introduction>
+    <!-- Exercises start here. -->
+    <exercise>
+        <introduction>
+            <p>
+                Consider the following data table labels.
+            </p>
 
-  <!-- Exercises start here. -->
-  <exercise>
-  <introduction>
-  <p>
-    Consider the following data table labels. 
-    </p>
-  </introduction>
-  <task  workspace="2in">
-    <statement>
-      <p>
-        Take 5 minutes to write down as
-        many questions as you can think of to explore! If you think of statements,
-        try to transform them into questions.
-      </p>
-    </statement>
-    </task>
+            <tabular top="minor" bottom="minor" left="minor" right="minor">
+                <col width="30%" halign="center"/>
+                <col width="70%"/>
+                <row header="yes">
+                    <cell>name</cell>
+                    <cell>rank</cell>
+                    <cell>gender</cell>
+                    <cell>year</cell>
+                </row>
+            </tabular>
+        </introduction>
 
-    <task  workspace="2in">
-    <statement>
-      <p>
-        Which ones do we consider "good" questions? Explain why.
-      </p>
-    </statement>
-    </task>
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Take 5 minutes to write down as many questions as you can
+                    think of to explore!
+                    If you think of statements, try to transform them into
+                    questions.
+                </p>
+            </statement>
+        </task>
 
-    <task  workspace="2in">
-    <statement>
-      <p>
-        Now consider a portion of the data in the table. Do the 
-        "good" questions change? Would you ask new questions?
-      </p>
-    </statement>
-    </task>
-  </exercise>
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Which ones do we consider "good" questions?
+                    Explain why.
+                </p>
+            </statement>
+        </task>
 
-  <exercise>
-  <introduction>
-  <p>
-    Let's do the same thing, but now for a graph. 
-    </p>
-  </introduction>
-  <task  workspace="2in">
-    <statement>
-      <p>
-        Take 5 minutes to write down as
-        many questions as you can think of to explore! If you think of statements,
-        try to transform them into questions.
-      </p>
-    </statement>
-    </task>
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Now consider a portion of the data in the table.
+                    Do the "good" questions change?
+                    Would you ask new questions?
+                </p>
 
-    <task  workspace="2in">
-    <statement>
-      <p>
-        Which ones do we consider "good" questions? Explain why.
-      </p>
-    </statement>
-    </task>
+                <tabular top="minor" bottom="minor" left="minor" right="minor">
+                    <col width="30%" halign="center"/>
+                    <col width="70%"/>
+                    <row header="yes">
+                        <cell>name</cell>
+                        <cell>rank</cell>
+                        <cell>gender</cell>
+                        <cell>year</cell>
+                    </row>
 
-    <task  workspace="2in">
-    <statement>
-      <p>
-        Now consider a portion of the data in the table. Do the 
-        "good" questions change? Would you ask new questions?
-      </p>
-    </statement>
-    </task>
-  </exercise>
+                    <row>
+                        <cell>Jacob</cell>
+                        <cell>1</cell>
+                        <cell>boy</cell>
+                        <cell>2010</cell>
+                    </row>
 
+                    <row>
+                        <cell>Isabella</cell>
+                        <cell>1</cell>
+                        <cell>girl</cell>
+                        <cell>2010</cell>
+                    </row>
+
+                    <row>
+                        <cell>Ethan</cell>
+                        <cell>2</cell>
+                        <cell>boy</cell>
+                        <cell>2010</cell>
+                    </row>
+
+                    <row>
+                        <cell>Sophia</cell>
+                        <cell>2</cell>
+                        <cell>girl</cell>
+                        <cell>2010</cell>
+                    </row>
+
+                    <row>
+                        <cell>Michael</cell>
+                        <cell>3</cell>
+                        <cell>boy</cell>
+                        <cell>2010</cell>
+                    </row>
+                </tabular>
+            </statement>
+        </task>
+
+        <task workspace="3in">
+            <statement>
+                <p>
+                    What if now you know the title of the dataset file?
+                    "Table of baby-name data (2005-2010)"
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Let's do the same thing, but now for a graph.
+            </p>
+
+            <image source="images/01_graph_unlabeled.png" width="50%">
+                <shortdescription>Unlabeled sample graph.</shortdescription>
+            </image>
+        </introduction>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Take 5 minutes to write down as many questions as you can
+                    think of to explore!
+                    If you think of statements, try to transform them into
+                    questions.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Which ones do we consider "good" questions?
+                    Explain why.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Now what if you have the axis labels and title...
+                    Do the "good" questions change?
+                    Would you ask new questions?
+                </p>
+
+                <image source="images/01_graph_labeled.png" width="50%">
+                    <shortdescription>Labeled sample graph.</shortdescription>
+                </image>
+            </statement>
+        </task>
+    </exercise>
 </worksheet>
