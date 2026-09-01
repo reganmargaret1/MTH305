@@ -178,7 +178,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Introduction Activity - What is a good question?",
-  "body": " Introduction Activity - What is a good question?    In this activity we are going to explore what it means to ask a good question. How would we define the word \"good?\" Does the definition depend on anything? If so, what?  Mathematical modeling is the process of adding a mathematical algorithm\/language to a real-world phenomena. This starts with a goal or question in order to know how to formulate the model!      Consider the following data table labels.     Take 5 minutes to write down as many questions as you can think of to explore! If you think of statements, try to transform them into questions.      Which ones do we consider \"good\" questions? Explain why.      Now consider a portion of the data in the table. Do the \"good\" questions change? Would you ask new questions?       Let's do the same thing, but now for a graph.     Take 5 minutes to write down as many questions as you can think of to explore! If you think of statements, try to transform them into questions.      Which ones do we consider \"good\" questions? Explain why.      Now consider a portion of the data in the table. Do the \"good\" questions change? Would you ask new questions?     "
+  "body": " Introduction Activity - What is a good question?    In this activity we are going to explore what it means to ask a good question. How would we define the word \"good?\" Does the definition depend on anything? If so, what?  Mathematical modeling is the process of adding a mathematical algorithm\/language to a real-world phenomena. This starts with a goal or question in order to know how to formulate the model!      Consider the following data table labels.      name  rank  gender  year       Take 5 minutes to write down as many questions as you can think of to explore! If you think of statements, try to transform them into questions.      Which ones do we consider \"good\" questions? Explain why.      Now consider a portion of the data in the table. Do the \"good\" questions change? Would you ask new questions?      name  rank  gender  year    Jacob  1  boy  2010    Isabella  1  girl  2010    Ethan  2  boy  2010    Sophia  2  girl  2010    Michael  3  boy  2010        What if now you know the title of the dataset file? \"Table of baby-name data (2005-2010)\"       Let's do the same thing, but now for a graph.   Unlabeled sample graph.      Take 5 minutes to write down as many questions as you can think of to explore! If you think of statements, try to transform them into questions.      Which ones do we consider \"good\" questions? Explain why.      Now what if you have the axis labels and title... Do the \"good\" questions change? Would you ask new questions?   Labeled sample graph.      "
 },
 {
   "id": "activity-01-intro-activity-3",
@@ -187,7 +187,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Consider the following data table labels.     Take 5 minutes to write down as many questions as you can think of to explore! If you think of statements, try to transform them into questions.      Which ones do we consider \"good\" questions? Explain why.      Now consider a portion of the data in the table. Do the \"good\" questions change? Would you ask new questions?    "
+  "body": "  Consider the following data table labels.      name  rank  gender  year       Take 5 minutes to write down as many questions as you can think of to explore! If you think of statements, try to transform them into questions.      Which ones do we consider \"good\" questions? Explain why.      Now consider a portion of the data in the table. Do the \"good\" questions change? Would you ask new questions?      name  rank  gender  year    Jacob  1  boy  2010    Isabella  1  girl  2010    Ethan  2  boy  2010    Sophia  2  girl  2010    Michael  3  boy  2010        What if now you know the title of the dataset file? \"Table of baby-name data (2005-2010)\"    "
 },
 {
   "id": "activity-01-intro-activity-4",
@@ -196,7 +196,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  Let's do the same thing, but now for a graph.     Take 5 minutes to write down as many questions as you can think of to explore! If you think of statements, try to transform them into questions.      Which ones do we consider \"good\" questions? Explain why.      Now consider a portion of the data in the table. Do the \"good\" questions change? Would you ask new questions?    "
+  "body": "  Let's do the same thing, but now for a graph.   Unlabeled sample graph.      Take 5 minutes to write down as many questions as you can think of to explore! If you think of statements, try to transform them into questions.      Which ones do we consider \"good\" questions? Explain why.      Now what if you have the axis labels and title... Do the \"good\" questions change? Would you ask new questions?   Labeled sample graph.     "
 },
 {
   "id": "homework",
