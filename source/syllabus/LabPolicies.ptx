@@ -7,8 +7,9 @@
         <title>Purpose</title>
 
         <p>
-            The purpose of labs is to use Sage to explore linear algebra almost
-            always through investigating important applications of the subject.
+            The purpose of labs is to use Google Colab/Python to explore linear
+            algebra almost always through investigating important applications
+            of the subject.
         </p>
     </paragraphs>
 
@@ -17,12 +18,28 @@
 
         <p>
             Lab activities will be more involved than class activities.
-            There will be approximately six labs this semester.
+            There will be three labs this semester.
             We'll start these labs in class and you will work as a team of 2-4.
-            Your final solutions should be neatly written on the provided paper
-            and turned in with all of the team members' names who contributed.
+            Your final solutions should be typed up in a report and turned in
+            with all of the team members' names who contributed.
             Lab due dates will be communicated on the assignment and through
             Blackboard.
+        </p>
+
+        <p>
+            Your lab should have the following components:
+            <ol>
+                <li>Title with author names</li>
+                <li>Abstract</li>
+                <li>Introduction</li>
+                <li>Methods and Model Description</li>
+                <li>Results</li>
+                <li>Discussion</li>
+            </ol>
+            See descriptions and further details related to these components
+            <url href="https://www.reed.edu/writing/paper_help/labreport.html">at this website from Reed College</url>.
+            You can use Word, LaTeX, or another document typing application to
+            write up your report.
         </p>
     </paragraphs>
 
@@ -32,10 +49,10 @@
         <p>
             Each lab will be graded out of a number of points specified on the
             document.
-            There will be 6 labs.
+            There will be 3 labs.
             Your total score for this part will be the number of points you earn
             divided by the total possible.
-            The labs are worth 10% of your final grade.
+            The labs are worth 20% of your final grade.
             At the end of the semester you'll have the opportunity to revise and
             turn in 2 labs for a better grade.
             This will be done individually.
@@ -48,8 +65,8 @@
         <p>
             You can work together within your group and ask your Professor for
             help.
-            Using resources besides Sage, your classmates, your Professor, and
-            our textbook is not allowed.
+            Using resources besides Google Colab, your classmates, and your
+            Professor is not allowed.
             In particular do not google or ask ChatGPT these questions!
             All answers should be in your own words.
             Do not share electronic documents with people outside your group.

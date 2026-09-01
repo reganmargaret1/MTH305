@@ -50,5 +50,13 @@
 
     <!-- Include additional chapters for other categories -->
 
+    <chapter xml:id="labs">
+      <title>Labs</title>
+
+      <!-- Include lab files -->
+      <!--<xi:include href="./homework/homework01.ptx"/>-->
+
+    </chapter>
+
     </book>
   </pretext>
