@@ -50,7 +50,7 @@
 
     <!-- Include additional chapters for other categories -->
 
-    <chapter xml:id="labs">
+    <chapter xml:id="labdocuments">
       <title>Labs</title>
 
       <!-- Include lab files -->
