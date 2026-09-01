@@ -2,22 +2,91 @@
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
 <worksheet xml:id="activity-01-intro-activity">
-  <title>Introduction Activity</title>
+  <title>Introduction Activity - What is a good question?</title>
 
   <!-- Optional introduction -->
   <introduction>
     <p>
-      This is the introduction to the activity.
+      In this activity we are going to explore what it means to
+      ask a good question.  How would we define the word "good?"
+      Does the definition depend on anything? If so, what? 
+    </p>
+
+    <p>
+      Mathematical modeling is the process of adding a mathematical
+      algorithm/language to a real-world phenomena.  This starts 
+      with a goal or question in order to know how to formulate
+      the model!
     </p>
   </introduction>
 
   <!-- Exercises start here. -->
-  <exercise workspace="2in">
+  <exercise>
+  <introduction>
+  <p>
+    Consider the following data table labels. 
+    </p>
+  </introduction>
+  <task  workspace="2in">
     <statement>
       <p>
-        This is the first exercise.
+        Take 5 minutes to write down as
+        many questions as you can think of to explore! If you think of statements,
+        try to transform them into questions.
       </p>
     </statement>
+    </task>
+
+    <task  workspace="2in">
+    <statement>
+      <p>
+        Which ones do we consider "good" questions? Explain why.
+      </p>
+    </statement>
+    </task>
+
+    <task  workspace="2in">
+    <statement>
+      <p>
+        Now consider a portion of the data in the table. Do the 
+        "good" questions change? Would you ask new questions?
+      </p>
+    </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+  <introduction>
+  <p>
+    Let's do the same thing, but now for a graph. 
+    </p>
+  </introduction>
+  <task  workspace="2in">
+    <statement>
+      <p>
+        Take 5 minutes to write down as
+        many questions as you can think of to explore! If you think of statements,
+        try to transform them into questions.
+      </p>
+    </statement>
+    </task>
+
+    <task  workspace="2in">
+    <statement>
+      <p>
+        Which ones do we consider "good" questions? Explain why.
+      </p>
+    </statement>
+    </task>
+
+    <task  workspace="2in">
+    <statement>
+      <p>
+        Now consider a portion of the data in the table. Do the 
+        "good" questions change? Would you ask new questions?
+      </p>
+    </statement>
+    </task>
   </exercise>
 
 </worksheet>

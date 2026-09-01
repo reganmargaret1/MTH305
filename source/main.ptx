@@ -28,12 +28,6 @@
     <chapter xml:id="activities">
       <title>In-Class Activities</title>
 
-      <introduction>
-        <p>
-          These are copies of the in-class activities distributed during the semester.
-        </p>
-      </introduction>
-
       <!-- Remove the example and replace with your own activities -->
       <xi:include href="./activities/01-intro-activity.ptx"/>
 
