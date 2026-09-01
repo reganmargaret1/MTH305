@@ -177,8 +177,8 @@ var ptx_lunr_docs = [
   "url": "activity-01-intro-activity.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Introduction Activity",
-  "body": " Introduction Activity    This is the introduction to the activity.      This is the first exercise.    "
+  "title": "Introduction Activity - What is a good question?",
+  "body": " Introduction Activity - What is a good question?    In this activity we are going to explore what it means to ask a good question. How would we define the word \"good?\" Does the definition depend on anything? If so, what?  Mathematical modeling is the process of adding a mathematical algorithm\/language to a real-world phenomena. This starts with a goal or question in order to know how to formulate the model!      Consider the following data table labels.     Take 5 minutes to write down as many questions as you can think of to explore! If you think of statements, try to transform them into questions.      Which ones do we consider \"good\" questions? Explain why.      Now consider a portion of the data in the table. Do the \"good\" questions change? Would you ask new questions?       Let's do the same thing, but now for a graph.     Take 5 minutes to write down as many questions as you can think of to explore! If you think of statements, try to transform them into questions.      Which ones do we consider \"good\" questions? Explain why.      Now consider a portion of the data in the table. Do the \"good\" questions change? Would you ask new questions?     "
 },
 {
   "id": "activity-01-intro-activity-3",
@@ -187,7 +187,16 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  This is the first exercise.   "
+  "body": "  Consider the following data table labels.     Take 5 minutes to write down as many questions as you can think of to explore! If you think of statements, try to transform them into questions.      Which ones do we consider \"good\" questions? Explain why.      Now consider a portion of the data in the table. Do the \"good\" questions change? Would you ask new questions?    "
+},
+{
+  "id": "activity-01-intro-activity-4",
+  "level": "2",
+  "url": "activity-01-intro-activity.html#activity-01-intro-activity-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Let's do the same thing, but now for a graph.     Take 5 minutes to write down as many questions as you can think of to explore! If you think of statements, try to transform them into questions.      Which ones do we consider \"good\" questions? Explain why.      Now consider a portion of the data in the table. Do the \"good\" questions change? Would you ask new questions?    "
 },
 {
   "id": "homework",
