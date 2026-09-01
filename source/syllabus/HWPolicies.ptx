@@ -18,11 +18,11 @@
         <title>Instructions</title>
 
         <p>
-            Problems will be assigned every week and due in class on Wednesdays.
-            You will be provided a physical copy of the homework assignment
-            where you will write your final solutions.
-            Any other work should be completed in your notebook or on scratch
-            paper.
+            Problems will be assigned every week and due for online submission
+            through Blackboard on Friday by 11:59 pm ET. For any assignments
+            that involve both writing and coding, you can submit a Google Colab
+            and/or the Python file.  You can also submit written solutions 
+            separately from the coding.
         </p>
 
         <p>
@@ -30,6 +30,9 @@
             problem.</term>
             This will be helpful with your own studying and reviewing of
             material and helps me see what you understand so far.
+            Our goal is to connect all solutions back to the life-cycle of
+            modeling and its components! We also want to put our ideas into
+            context of the application/problem at hand.
         </p>
     </paragraphs>
 
@@ -222,8 +225,7 @@
                 </li>
 
                 <li>
-                    Hand resubmissions to me in person during class time or
-                    office hours.
+                    Email resubmissions to me.
                 </li>
             </ul>
         </p>
