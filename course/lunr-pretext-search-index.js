@@ -199,9 +199,9 @@ var ptx_lunr_docs = [
   "body": " Homework    "
 },
 {
-  "id": "labs",
+  "id": "labdocuments",
   "level": "1",
-  "url": "labs.html",
+  "url": "labdocuments.html",
   "type": "Chapter",
   "number": "",
   "title": "Labs",
