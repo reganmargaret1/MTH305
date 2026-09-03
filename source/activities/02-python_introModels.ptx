@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="activity-02-python_introModels">
+    <title>Introduction to Python and Models</title>
+
+    <!-- Optional introduction -->
+    <introduction>
+        <p>
+            In this activity we are going to start by learning some of the
+            basics of using Python within Google Colab.
+        </p>
+
+        <p>
+            There are a few important things to make sure to consider each time
+            you are going to code using Python:
+            <ul>
+                <li>
+                    import packages that contain predefined functions:
+                    <ul>
+                        <li>math - contains many basic math functions</li>
+                        <li>numpy - contains additional math functions</li>
+                        <li>
+                            matplotlib.pyplot - contains basic plotting
+                            functions
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    a command to use the functions in these packages will look
+                    like <c>math.sqrt()</c> or <c>np.zeros()</c>
+                </li>
+
+                <li>indentation is important within your code!</li>
+                <li>name your variables wisely</li>
+                <li>
+                    in Google Colab you will need to hit the play button on a
+                    code cell to run that code (there is also a "Run all" button
+                    just under the toolbar)
+                </li>
+            </ul>
+        </p>
+    </introduction>
+    <!-- Exercises start here. -->
+    <exercise>
+        <statement>
+            <p>
+                Complete the Python tasks within this
+                <url href="https://drive.google.com/file/d/1dbCWzPwTUC9v0mO17K6dqwfhMRhbgPU6/view?usp=sharing">Google Colab notebook</url>.
+                Start by creating a folder in your Google Drive and then making
+                your own copy of the notebook.
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Let's now consider a scenario...
+            </p>
+
+            <p>
+                A printed magazine with 80,000 subscribers is considering to
+                raise it's subscription price.
+                The current price is $1.50 a week.
+                The magazine estimates it will lose 5,000 subscribers per 10
+                cent increase in its weekly rate.
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Write down any variables and parameters needed to describe
+                    this scenario mathematically.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What assumptions are being made?
+                    What are some of the considerations it may be simplifying?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What questions could you ask?
+                    What might the company want to learn?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    For the question you'd like to answer, write a mathematical
+                    model for the scenario.
+                    You don't need to go big here!
+                    A function can be a model.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What mathematical knowledge would you need in order to solve
+                    this problem?
+                    What might be useful?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What additional information might the company consider in
+                    order to make the model more accurate?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    With that new information, what are additional questions
+                    that you could ask?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</worksheet>
