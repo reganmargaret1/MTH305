@@ -16,15 +16,17 @@
             you are going to code using Python:
             <ul>
                 <li>
-                    import packages that contain predefined functions:
-                    <ul>
-                        <li>math - contains many basic math functions</li>
-                        <li>numpy - contains additional math functions</li>
-                        <li>
-                            matplotlib.pyplot - contains basic plotting
-                            functions
-                        </li>
-                    </ul>
+                    <p>
+                        import packages that contain predefined functions
+                        <ul>
+                            <li>math - contains many basic math functions</li>
+                            <li>numpy - contains additional math functions</li>
+                            <li>
+                                matplotlib.pyplot - contains basic plotting
+                                functions
+                            </li>
+                        </ul>
+                    </p>
                 </li>
 
                 <li>
