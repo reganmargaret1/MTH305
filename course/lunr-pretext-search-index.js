@@ -199,6 +199,33 @@ var ptx_lunr_docs = [
   "body": "  Let's do the same thing, but now for a graph.   Unlabeled sample graph.      Take 5 minutes to write down as many questions as you can think of to explore! If you think of statements, try to transform them into questions.      Which ones do we consider \"good\" questions? Explain why.      Now what if you have the axis labels and title... Do the \"good\" questions change? Would you ask new questions?   Labeled sample graph.     "
 },
 {
+  "id": "activity-02-python_introModels",
+  "level": "1",
+  "url": "activity-02-python_introModels.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Introduction to Python and Models",
+  "body": " Introduction to Python and Models    In this activity we are going to start by learning some of the basics of using Python within Google Colab.  There are a few important things to make sure to consider each time you are going to code using Python:   import packages that contain predefined functions  math - contains many basic math functions  numpy - contains additional math functions  matplotlib.pyplot - contains basic plotting functions     a command to use the functions in these packages will look like math.sqrt() or np.zeros()   indentation is important within your code!  name your variables wisely  in Google Colab you will need to hit the play button on a code cell to run that code (there is also a \"Run all\" button just under the toolbar)        Complete the Python tasks within this Google Colab notebook . Start by creating a folder in your Google Drive and then making your own copy of the notebook.      Let's now consider a scenario...  A printed magazine with 80,000 subscribers is considering to raise it's subscription price. The current price is $1.50 a week. The magazine estimates it will lose 5,000 subscribers per 10 cent increase in its weekly rate.     Write down any variables and parameters needed to describe this scenario mathematically.      What assumptions are being made? What are some of the considerations it may be simplifying?      What questions could you ask? What might the company want to learn?      For the question you'd like to answer, write a mathematical model for the scenario. You don't need to go big here! A function can be a model.      What mathematical knowledge would you need in order to solve this problem? What might be useful?      What additional information might the company consider in order to make the model more accurate?      With that new information, what are additional questions that you could ask?     "
+},
+{
+  "id": "activity-02-python_introModels-3",
+  "level": "2",
+  "url": "activity-02-python_introModels.html#activity-02-python_introModels-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Complete the Python tasks within this Google Colab notebook . Start by creating a folder in your Google Drive and then making your own copy of the notebook.   "
+},
+{
+  "id": "activity-02-python_introModels-4",
+  "level": "2",
+  "url": "activity-02-python_introModels.html#activity-02-python_introModels-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Let's now consider a scenario...  A printed magazine with 80,000 subscribers is considering to raise it's subscription price. The current price is $1.50 a week. The magazine estimates it will lose 5,000 subscribers per 10 cent increase in its weekly rate.     Write down any variables and parameters needed to describe this scenario mathematically.      What assumptions are being made? What are some of the considerations it may be simplifying?      What questions could you ask? What might the company want to learn?      For the question you'd like to answer, write a mathematical model for the scenario. You don't need to go big here! A function can be a model.      What mathematical knowledge would you need in order to solve this problem? What might be useful?      What additional information might the company consider in order to make the model more accurate?      With that new information, what are additional questions that you could ask?    "
+},
+{
   "id": "homework",
   "level": "1",
   "url": "homework.html",
