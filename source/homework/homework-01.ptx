@@ -1,21 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet>
-  <title>Homework 01</title>
-  <introduction>
+    <title>Problem 1 - Homework MTH 305</title>
+
     <p>
-      <alert>Instructions:</alert> Complete all the exercises below and submit your work by the due date.
+        You should present solutions neatly to all problems, making sure to show
+        all your work and follow the homework policies (see Blackboard document
+        for details).
+        You will turn in the assignment on Blackboard by 11:59 pm ET on Friday.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        and/or classmates.
+        No AI resources.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
     </p>
-  </introduction>
 
-  <page>
     <exercise>
-      <statement>
-        <p>
-          This is the first homework exercise.
-        </p>
-      </statement>
-    </exercise>
+        <introduction>
+            <p>
+                Let's consider the same problem we looked at in class:
+            </p>
 
-  </page>
+            <p>
+                A printed magazine with 80,000 subscribers is considering to
+                raise it's subscription price.
+                The current price is $1.50 a week.
+                The magazine estimates it will lose 5,000 subscribers per 10
+                cent increase in its weekly rate.
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Write a mathematical model for the scenario if the magazine
+                    company is to maximize its profit.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Use concepts within Calculus to find the solution to this
+                    mathematical model.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    In class we discussed the assumptions being made and additional
+                    information that might make the model more accurate.  Choose
+                    one of the ones discussed and incorporate it into your model.
+                    How did the solution change? 
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Give at least two additional questions that come up. This could be 
+                    related to the original model and its accuracy, about the solution,
+                    or to continue the modeling into a new realm for the company.
+                </p>
+            </statement>
+        </task>
+    </exercise>
 </worksheet>
