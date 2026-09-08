@@ -177,8 +177,8 @@ var ptx_lunr_docs = [
   "url": "activity-01-intro-activity.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Introduction Activity - What is a good question?",
-  "body": " Introduction Activity - What is a good question?    In this activity we are going to explore what it means to ask a good question. How would we define the word \"good?\" Does the definition depend on anything? If so, what?  Mathematical modeling is the process of adding a mathematical algorithm\/language to a real-world phenomena. This starts with a goal or question in order to know how to formulate the model!      Consider the following data table labels.      name  rank  gender  year       Take 5 minutes to write down as many questions as you can think of to explore! If you think of statements, try to transform them into questions.      Which ones do we consider \"good\" questions? Explain why.      Now consider a portion of the data in the table. Do the \"good\" questions change? Would you ask new questions?      name  rank  gender  year    Jacob  1  boy  2010    Isabella  1  girl  2010    Ethan  2  boy  2010    Sophia  2  girl  2010    Michael  3  boy  2010        What if now you know the title of the dataset file? \"Table of baby-name data (2005-2010)\"       Let's do the same thing, but now for a graph.   Unlabeled sample graph.      Take 5 minutes to write down as many questions as you can think of to explore! If you think of statements, try to transform them into questions.      Which ones do we consider \"good\" questions? Explain why.      Now what if you have the axis labels and title... Do the \"good\" questions change? Would you ask new questions?   Labeled sample graph.      "
+  "title": "01 - Introduction Activity - What is a good question?",
+  "body": " 01 - Introduction Activity - What is a good question?    In this activity we are going to explore what it means to ask a good question. How would we define the word \"good?\" Does the definition depend on anything? If so, what?  Mathematical modeling is the process of adding a mathematical algorithm\/language to a real-world phenomena. This starts with a goal or question in order to know how to formulate the model!      Consider the following data table labels.      name  rank  gender  year       Take 5 minutes to write down as many questions as you can think of to explore! If you think of statements, try to transform them into questions.      Which ones do we consider \"good\" questions? Explain why.      Now consider a portion of the data in the table. Do the \"good\" questions change? Would you ask new questions?      name  rank  gender  year    Jacob  1  boy  2010    Isabella  1  girl  2010    Ethan  2  boy  2010    Sophia  2  girl  2010    Michael  3  boy  2010        What if now you know the title of the dataset file? \"Table of baby-name data (2005-2010)\"       Let's do the same thing, but now for a graph.   Unlabeled sample graph.      Take 5 minutes to write down as many questions as you can think of to explore! If you think of statements, try to transform them into questions.      Which ones do we consider \"good\" questions? Explain why.      Now what if you have the axis labels and title... Do the \"good\" questions change? Would you ask new questions?   Labeled sample graph.      "
 },
 {
   "id": "activity-01-intro-activity-3",
@@ -204,8 +204,8 @@ var ptx_lunr_docs = [
   "url": "activity-02-python_introModels.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Introduction to Python and Models",
-  "body": " Introduction to Python and Models    In this activity we are going to start by learning some of the basics of using Python within Google Colab.  There are a few important things to make sure to consider each time you are going to code using Python:   import packages that contain predefined functions  math - contains many basic math functions  numpy - contains additional math functions  matplotlib.pyplot - contains basic plotting functions     a command to use the functions in these packages will look like math.sqrt() or np.zeros()   indentation is important within your code!  name your variables wisely  in Google Colab you will need to hit the play button on a code cell to run that code (there is also a \"Run all\" button just under the toolbar)        Complete the Python tasks within this Google Colab notebook . Start by creating a folder in your Google Drive and then making your own copy of the notebook.      Let's now consider a scenario...  A printed magazine with 80,000 subscribers is considering to raise it's subscription price. The current price is $1.50 a week. The magazine estimates it will lose 5,000 subscribers per 10 cent increase in its weekly rate.     Write down any variables and parameters needed to describe this scenario mathematically.      What assumptions are being made? What are some of the considerations it may be simplifying?      What questions could you ask? What might the company want to learn?      For the question you'd like to answer, write a mathematical model for the scenario. You don't need to go big here! A function can be a model.      What mathematical knowledge would you need in order to solve this problem? What might be useful?      What additional information might the company consider in order to make the model more accurate?      With that new information, what are additional questions that you could ask?     "
+  "title": "02 - Introduction to Python and Models",
+  "body": " 02 - Introduction to Python and Models    In this activity we are going to start by learning some of the basics of using Python within Google Colab.  There are a few important things to make sure to consider each time you are going to code using Python:   import packages that contain predefined functions  math - contains many basic math functions  numpy - contains additional math functions  matplotlib.pyplot - contains basic plotting functions     a command to use the functions in these packages will look like math.sqrt() or np.zeros()   indentation is important within your code!  name your variables wisely  in Google Colab you will need to hit the play button on a code cell to run that code (there is also a \"Run all\" button just under the toolbar)        Complete the Python tasks within this Google Colab notebook . Start by creating a folder in your Google Drive and then making your own copy of the notebook.      Let's now consider a scenario...  A printed magazine with 80,000 subscribers is considering to raise it's subscription price. The current price is $1.50 a week. The magazine estimates it will lose 5,000 subscribers per 10 cent increase in its weekly rate.     Write down any variables and parameters needed to describe this scenario mathematically.      What assumptions are being made? What are some of the considerations it may be simplifying?      What questions could you ask? What might the company want to learn?      For the question you'd like to answer, write a mathematical model for the scenario. You don't need to go big here! A function can be a model.      What mathematical knowledge would you need in order to solve this problem? What might be useful?      What additional information might the company consider in order to make the model more accurate?      With that new information, what are additional questions that you could ask?     "
 },
 {
   "id": "activity-02-python_introModels-3",
@@ -226,13 +226,40 @@ var ptx_lunr_docs = [
   "body": "  Let's now consider a scenario...  A printed magazine with 80,000 subscribers is considering to raise it's subscription price. The current price is $1.50 a week. The magazine estimates it will lose 5,000 subscribers per 10 cent increase in its weekly rate.     Write down any variables and parameters needed to describe this scenario mathematically.      What assumptions are being made? What are some of the considerations it may be simplifying?      What questions could you ask? What might the company want to learn?      For the question you'd like to answer, write a mathematical model for the scenario. You don't need to go big here! A function can be a model.      What mathematical knowledge would you need in order to solve this problem? What might be useful?      What additional information might the company consider in order to make the model more accurate?      With that new information, what are additional questions that you could ask?    "
 },
 {
-  "id": "homework",
+  "id": "activity-03-formulate",
   "level": "1",
-  "url": "homework.html",
-  "type": "Chapter",
+  "url": "activity-03-formulate.html",
+  "type": "Worksheet",
   "number": "",
-  "title": "Homework",
-  "body": " Homework    "
+  "title": "03 - Identifying and Formulating Models",
+  "body": " 03 - Identifying and Formulating Models    In this activity we are going to practice the first and second stages of the life cycle of modeling: identify and formulate.      Consider the following scenario. Gas prices change on a nearly daily basis, and not every gas station offers the same price for a gallon of gas. The gas station selling the cheapest gas may be across town from where you are driving. Is it worth the drive across town for less expensive gas? Create a mathematical model that can be used to help understand under what conditions it is worth the drive?  In creating your mathematical model, it might be helpful to consider the following:  What is the problem we are trying to solve?  What are the variables and parameters?  Are any assumptions being made?      "
+},
+{
+  "id": "activity-03-formulate-3",
+  "level": "2",
+  "url": "activity-03-formulate.html#activity-03-formulate-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Consider the following scenario. Gas prices change on a nearly daily basis, and not every gas station offers the same price for a gallon of gas. The gas station selling the cheapest gas may be across town from where you are driving. Is it worth the drive across town for less expensive gas? Create a mathematical model that can be used to help understand under what conditions it is worth the drive?  In creating your mathematical model, it might be helpful to consider the following:  What is the problem we are trying to solve?  What are the variables and parameters?  Are any assumptions being made?     "
+},
+{
+  "id": "homework-2",
+  "level": "1",
+  "url": "homework-2.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Problem 1 - Homework MTH 305",
+  "body": " Problem 1 - Homework MTH 305  You should present solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the assignment on Blackboard by 11:59 pm ET on Friday. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor and\/or classmates. No AI resources. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!    Let's consider the same problem we looked at in class:  A printed magazine with 80,000 subscribers is considering to raise it's subscription price. The current price is $1.50 a week. The magazine estimates it will lose 5,000 subscribers per 10 cent increase in its weekly rate.     Write a mathematical model for the scenario if the magazine company is to maximize its profit.      Use concepts within Calculus to find the solution to this mathematical model.      In class we discussed the assumptions being made and additional information that might make the model more accurate. Choose one of the ones discussed and incorporate it into your model. How did the solution change?      Give at least two additional questions that come up. This could be related to the original model and its accuracy, about the solution, or to continue the modeling into a new realm for the company.     "
+},
+{
+  "id": "homework-2-3",
+  "level": "2",
+  "url": "homework-2.html#homework-2-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Let's consider the same problem we looked at in class:  A printed magazine with 80,000 subscribers is considering to raise it's subscription price. The current price is $1.50 a week. The magazine estimates it will lose 5,000 subscribers per 10 cent increase in its weekly rate.     Write a mathematical model for the scenario if the magazine company is to maximize its profit.      Use concepts within Calculus to find the solution to this mathematical model.      In class we discussed the assumptions being made and additional information that might make the model more accurate. Choose one of the ones discussed and incorporate it into your model. How did the solution change?      Give at least two additional questions that come up. This could be related to the original model and its accuracy, about the solution, or to continue the modeling into a new realm for the company.    "
 },
 {
   "id": "labdocuments",
