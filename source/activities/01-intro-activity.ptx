@@ -2,7 +2,7 @@
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
 <worksheet xml:id="activity-01-intro-activity">
-    <title>Introduction Activity - What is a good question?</title>
+    <title>01 - Introduction Activity - What is a good question?</title>
 
     <!-- Optional introduction -->
     <introduction>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="activity-03-formulate">
+    <title>03 - Identifying and Formulating Models</title>
+
+    <!-- Optional introduction -->
+    <introduction>
+        <p>
+            In this activity we are going to practice the first and second
+            stages of the life cycle of modeling: identify and formulate.
+        </p>
+    </introduction>
+    <!-- Exercises start here. -->
+    <exercise>
+        <statement>
+            <p>
+                Consider the following scenario.
+                Gas prices change on a nearly daily basis, and not every gas
+                station offers the same price for a gallon of gas.
+                The gas station selling the cheapest gas may be across town from
+                where you are driving.
+                Is it worth the drive across town for less expensive gas?
+                Create a mathematical model that can be used to help understand
+                under what conditions it is worth the drive?
+            </p>
+
+            <p>
+                In creating your mathematical model, it might be helpful to
+                consider the following:
+                <ul>
+                    <li>What is the problem we are trying to solve?</li>
+                    <li>What are the variables and parameters?</li>
+                    <li>Are any assumptions being made?</li>
+                </ul>
+            </p>
+        </statement>
+    </exercise>
+</worksheet>

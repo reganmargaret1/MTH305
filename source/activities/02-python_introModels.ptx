@@ -2,7 +2,7 @@
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
 <worksheet xml:id="activity-02-python_introModels">
-    <title>Introduction to Python and Models</title>
+    <title>02 - Introduction to Python and Models</title>
 
     <!-- Optional introduction -->
     <introduction>
