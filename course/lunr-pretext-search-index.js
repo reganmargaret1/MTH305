@@ -232,7 +232,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "03 - Identifying and Formulating Models",
-  "body": " 03 - Identifying and Formulating Models    In this activity we are going to practice the first and second stages of the life cycle of modeling: identify and formulate.      Consider the following scenario. Gas prices change on a nearly daily basis, and not every gas station offers the same price for a gallon of gas. The gas station selling the cheapest gas may be across town from where you are driving. Is it worth the drive across town for less expensive gas? Create a mathematical model that can be used to help understand under what conditions it is worth the drive?  In creating your mathematical model, it might be helpful to consider the following:  What is the problem we are trying to solve?  What are the variables and parameters?  Are any assumptions being made?      "
+  "body": " 03 - Identifying and Formulating Models    In this activity we are going to practice the first and second stages of the life cycle of modeling: identify and formulate.      Consider the following scenario. Gas prices change on a nearly daily basis, and not every gas station offers the same price for a gallon of gas. The gas station selling the cheapest gas may be across town from where you are driving. Is it worth the drive across town for less expensive gas? Create a mathematical model that can be used to help understand under what conditions it is worth the drive.  In creating your mathematical model, it might be helpful to consider the following:  What is the problem we are trying to solve?  What are the variables and parameters?  Are any assumptions being made?      "
 },
 {
   "id": "activity-03-formulate-3",
@@ -241,7 +241,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Consider the following scenario. Gas prices change on a nearly daily basis, and not every gas station offers the same price for a gallon of gas. The gas station selling the cheapest gas may be across town from where you are driving. Is it worth the drive across town for less expensive gas? Create a mathematical model that can be used to help understand under what conditions it is worth the drive?  In creating your mathematical model, it might be helpful to consider the following:  What is the problem we are trying to solve?  What are the variables and parameters?  Are any assumptions being made?     "
+  "body": "  Consider the following scenario. Gas prices change on a nearly daily basis, and not every gas station offers the same price for a gallon of gas. The gas station selling the cheapest gas may be across town from where you are driving. Is it worth the drive across town for less expensive gas? Create a mathematical model that can be used to help understand under what conditions it is worth the drive.  In creating your mathematical model, it might be helpful to consider the following:  What is the problem we are trying to solve?  What are the variables and parameters?  Are any assumptions being made?     "
 },
 {
   "id": "homework-2",
