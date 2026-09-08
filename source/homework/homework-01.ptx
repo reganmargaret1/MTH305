@@ -33,7 +33,7 @@
             </p>
         </introduction>
 
-        <task workspace="1in">
+        <task>
             <statement>
                 <p>
                     Write a mathematical model for the scenario if the magazine
@@ -42,7 +42,7 @@
             </statement>
         </task>
 
-        <task workspace="1in">
+        <task>
             <statement>
                 <p>
                     Use concepts within Calculus to find the solution to this
@@ -51,23 +51,26 @@
             </statement>
         </task>
 
-        <task workspace="1in">
+        <task>
             <statement>
                 <p>
-                    In class we discussed the assumptions being made and additional
-                    information that might make the model more accurate.  Choose
-                    one of the ones discussed and incorporate it into your model.
-                    How did the solution change? 
+                    In class we discussed the assumptions being made and
+                    additional information that might make the model more
+                    accurate.
+                    Choose one of the ones discussed and incorporate it into
+                    your model.
+                    How did the solution change?
                 </p>
             </statement>
         </task>
 
-        <task workspace="1in">
+        <task>
             <statement>
                 <p>
-                    Give at least two additional questions that come up. This could be 
-                    related to the original model and its accuracy, about the solution,
-                    or to continue the modeling into a new realm for the company.
+                    Give at least two additional questions that come up.
+                    This could be related to the original model and its
+                    accuracy, about the solution, or to continue the modeling
+                    into a new realm for the company.
                 </p>
             </statement>
         </task>
