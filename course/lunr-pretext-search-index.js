@@ -244,6 +244,42 @@ var ptx_lunr_docs = [
   "body": "  Consider the following scenario. Gas prices change on a nearly daily basis, and not every gas station offers the same price for a gallon of gas. The gas station selling the cheapest gas may be across town from where you are driving. Is it worth the drive across town for less expensive gas? Create a mathematical model that can be used to help understand under what conditions it is worth the drive.  In creating your mathematical model, it might be helpful to consider the following:  What is the problem we are trying to solve?  What are the variables and parameters?  Are any assumptions being made?     "
 },
 {
+  "id": "activity-04-interpret",
+  "level": "1",
+  "url": "activity-04-interpret.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "04 - Solving and Interpreting Models",
+  "body": " 04 - Solving and Interpreting Models    In this activity we are going to practice the third and forth stages of the life cycle of modeling: solve and interpret.      The population of Zika mosquitoes can be modeled with the function where is given in months.   Graph of the population of Zika mosquitoes over time for differing c values.      State two ways in which seems to affect the model. What do your observations mean for the mosquito population and the risk of infection?      Identify the first inflection point for each curve and describe how it changes for the different values of . What is their significance in the context of the model?      Generate two more questions for this scenario.       Consider being asking the question \"How can we determine how a particular enzyme is metabolized?\"  The following variables are defined:   : concentration of a particular chemical being metabolized in mg\/L   : rate of metabolism of a particular enzyme in mg\/h  That then forms the following model: .     What must the units of the parameters 25 and 7 be?      What is the maximum rate of metabolism of the enzyme? Justify analytically!      What concentration of the chemical results in half of the maximum metabolic rate? Justify analytically!      Can you use Python code to confirm any of the answers above?      Write Python code to reduce the metabolic rate by 30%.       Tigers in North America have poor reproductive rates, mainly caused by the limited number of male tigers in captivity. Suppose a zoo hires you to determine the best male tigers to bring into their zoo in order to have the best change of breeding baby tigers (known as cubs or whelps). With a little research, you find that the probability of a new tiger whelp depends on the age of the male tiger and can be modeling by the function where is the age of the male tiger in years.     Would it be better to bring in tigers between ages 3 and 4, or ages 4 and 5?      When is the probability decreasing?      Does this model seem valid for long term?     "
+},
+{
+  "id": "activity-04-interpret-3",
+  "level": "2",
+  "url": "activity-04-interpret.html#activity-04-interpret-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  The population of Zika mosquitoes can be modeled with the function where is given in months.   Graph of the population of Zika mosquitoes over time for differing c values.      State two ways in which seems to affect the model. What do your observations mean for the mosquito population and the risk of infection?      Identify the first inflection point for each curve and describe how it changes for the different values of . What is their significance in the context of the model?      Generate two more questions for this scenario.    "
+},
+{
+  "id": "activity-04-interpret-4",
+  "level": "2",
+  "url": "activity-04-interpret.html#activity-04-interpret-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Consider being asking the question \"How can we determine how a particular enzyme is metabolized?\"  The following variables are defined:   : concentration of a particular chemical being metabolized in mg\/L   : rate of metabolism of a particular enzyme in mg\/h  That then forms the following model: .     What must the units of the parameters 25 and 7 be?      What is the maximum rate of metabolism of the enzyme? Justify analytically!      What concentration of the chemical results in half of the maximum metabolic rate? Justify analytically!      Can you use Python code to confirm any of the answers above?      Write Python code to reduce the metabolic rate by 30%.    "
+},
+{
+  "id": "activity-04-interpret-5",
+  "level": "2",
+  "url": "activity-04-interpret.html#activity-04-interpret-5",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Tigers in North America have poor reproductive rates, mainly caused by the limited number of male tigers in captivity. Suppose a zoo hires you to determine the best male tigers to bring into their zoo in order to have the best change of breeding baby tigers (known as cubs or whelps). With a little research, you find that the probability of a new tiger whelp depends on the age of the male tiger and can be modeling by the function where is the age of the male tiger in years.     Would it be better to bring in tigers between ages 3 and 4, or ages 4 and 5?      When is the probability decreasing?      Does this model seem valid for long term?    "
+},
+{
   "id": "homework-2",
   "level": "1",
   "url": "homework-2.html",
@@ -269,6 +305,42 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "Labs",
   "body": " Labs    "
+},
+{
+  "id": "quiz_documents-2",
+  "level": "1",
+  "url": "quiz_documents-2.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Quiz 1 - MTH 305",
+  "body": " Quiz 1 - MTH 305  This quiz covers the topics of asking questions and the life-cycle of mathematical modeling. You are allowed to use a calculator which does NOT have graphing or symbolic capabilities. Read all DIRECTIONS carefully. Good luck!     Modeling life-cycle:     Circle the answer below that has the 4 stages of the mathematical modeling life-cycle:     assess, question, solve, report    identify, formulate, solve, interpret    assess, adjust, change, interpret    identify, building, testing, making it better         After interpreting the output of a mathematical model, is the modeling process done? Explain why or why not.       Suppose you are told that after warming a cup of coffee is cold 7 minutes after heating it in a microwave for 1 minute, but it takes a cup of soup 35 minutes to get cold after heating for the same amount of time. What are some modeling questions you could ask related to this scenario? What assumptions might you make?    "
+},
+{
+  "id": "quiz_documents-2-2",
+  "level": "2",
+  "url": "quiz_documents-2.html#quiz_documents-2-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "DIRECTIONS "
+},
+{
+  "id": "quiz_documents-2-3",
+  "level": "2",
+  "url": "quiz_documents-2.html#quiz_documents-2-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Modeling life-cycle:     Circle the answer below that has the 4 stages of the mathematical modeling life-cycle:     assess, question, solve, report    identify, formulate, solve, interpret    assess, adjust, change, interpret    identify, building, testing, making it better         After interpreting the output of a mathematical model, is the modeling process done? Explain why or why not.    "
+},
+{
+  "id": "quiz_documents-2-4",
+  "level": "2",
+  "url": "quiz_documents-2.html#quiz_documents-2-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Suppose you are told that after warming a cup of coffee is cold 7 minutes after heating it in a microwave for 1 minute, but it takes a cup of soup 35 minutes to get cold after heating for the same amount of time. What are some modeling questions you could ask related to this scenario? What assumptions might you make?   "
 }
 ]
 

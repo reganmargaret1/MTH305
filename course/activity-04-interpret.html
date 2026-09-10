@@ -14,7 +14,7 @@
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>02 - Introduction to Python and Models</title>
+<title>04 - Solving and Interpreting Models</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -119,7 +119,7 @@ eBookConfig.enable_chatcodes =  false;
 <legend>Assistive technologies</legend>
 <label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
 </fieldset>
-<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="activity-01-intro-activity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="activities.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="activity-03-formulate.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="activity-03-formulate.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="activities.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="homework.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
@@ -154,9 +154,9 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">In-Class Activities</span></a></div>
 <ul class="structural toc-item-list contains-active" id="ptx-toc-group-activities">
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-01-intro-activity.html" class="internal"><span class="title">01 - Introduction Activity - What is a good question?</span></a></div></li>
-<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="activity-02-python_introModels.html" class="internal"><span class="title">02 - Introduction to Python and Models</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-02-python_introModels.html" class="internal"><span class="title">02 - Introduction to Python and Models</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-03-formulate.html" class="internal"><span class="title">03 - Identifying and Formulating Models</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-04-interpret.html" class="internal"><span class="title">04 - Solving and Interpreting Models</span></a></div></li>
+<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="activity-04-interpret.html" class="internal"><span class="title">04 - Solving and Interpreting Models</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -194,116 +194,138 @@ eBookConfig.enable_chatcodes =  false;
 <button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
 </div>
 </div>
-<section class="worksheet" id="activity-02-python_introModels" data-margins="0.75in 0.75in 0.75in 0.75in">
+<section class="worksheet" id="activity-04-interpret" data-margins="0.75in 0.75in 0.75in 0.75in">
 <h1 class="heading hide-type">
-<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">02 - Introduction to Python and Models</span><div class="print-links"><a href="?printpreview=activity-02-python_introModels" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">04 - Solving and Interpreting Models</span><div class="print-links"><a href="?printpreview=activity-04-interpret" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h1>
-<section class="introduction" id="activity-02-python_introModels-2">
-<div class="para" id="activity-02-python_introModels-2-1">In this activity we are going to start by learning some of the basics of using Python within Google Colab.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-02-python_introModels-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="activity-02-python_introModels-2-2">
-<div class="para">There are a few important things to make sure to consider each time you are going to code using Python:</div>
-<ul class="disc" id="activity-02-python_introModels-2-2-1">
-<li id="activity-02-python_introModels-2-2-1-1">
-<div class="para logical" id="activity-02-python_introModels-2-2-1-1-1">
-<div class="para">import packages that contain predefined functions</div>
-<ul class="circle" id="activity-02-python_introModels-2-2-1-1-1-1">
-<li id="activity-02-python_introModels-2-2-1-1-1-1-1">
-<div class="para" id="p-derived-activity-02-python_introModels-2-2-1-1-1-1-1">math - contains many basic math functions</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#activity-02-python_introModels-2-2-1-1-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="activity-02-python_introModels-2-2-1-1-1-1-2">
-<div class="para" id="p-derived-activity-02-python_introModels-2-2-1-1-1-1-2">numpy - contains additional math functions</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#activity-02-python_introModels-2-2-1-1-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="activity-02-python_introModels-2-2-1-1-1-1-3">
-<div class="para" id="p-derived-activity-02-python_introModels-2-2-1-1-1-1-3">matplotlib.pyplot - contains basic plotting functions</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#activity-02-python_introModels-2-2-1-1-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-</ul>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-02-python_introModels-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#activity-02-python_introModels-2-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="activity-02-python_introModels-2-2-1-2">
-<div class="para" id="p-derived-activity-02-python_introModels-2-2-1-2">a command to use the functions in these packages will look like <code class="code-inline tex2jax_ignore">math.sqrt()</code> or <code class="code-inline tex2jax_ignore">np.zeros()</code>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#activity-02-python_introModels-2-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="activity-02-python_introModels-2-2-1-3">
-<div class="para" id="p-derived-activity-02-python_introModels-2-2-1-3">indentation is important within your code!</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#activity-02-python_introModels-2-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="activity-02-python_introModels-2-2-1-4">
-<div class="para" id="p-derived-activity-02-python_introModels-2-2-1-4">name your variables wisely</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#activity-02-python_introModels-2-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="activity-02-python_introModels-2-2-1-5">
-<div class="para" id="p-derived-activity-02-python_introModels-2-2-1-5">in Google Colab you will need to hit the play button on a code cell to run that code (there is also a "Run all" button just under the toolbar)</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#activity-02-python_introModels-2-2-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-</ul>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-02-python_introModels-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="activity-04-interpret-2">
+<div class="para" id="activity-04-interpret-2-1">In this activity we are going to practice the third and forth stages of the life cycle of modeling: solve and interpret.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-04-interpret-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section>
-<article class="exercise exercise-like" id="activity-02-python_introModels-3"><h2 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
-<div class="para" id="activity-02-python_introModels-3-1-1">Complete the Python tasks within this <a class="external" href="https://colab.research.google.com/drive/1dbCWzPwTUC9v0mO17K6dqwfhMRhbgPU6?authuser=2#scrollTo=fGouprn0Yyj3" target="_blank">Google Colab notebook</a>. Start by creating a folder in your Google Drive and then making your own copy of the notebook.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-02-python_introModels-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="activity-04-interpret-3"><h2 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="introduction" id="activity-04-interpret-3-1">
+<div class="para logical" id="activity-04-interpret-3-1-1">
+<div class="para">The population of Zika mosquitoes can be modeled with the function</div>
+<div class="displaymath process-math" id="activity-04-interpret-3-1-1-1">
+\begin{equation*}
+P(t) = 8000\left(\frac{1}{6} + e^{-\frac{(t-c)^2}{6}} + e^{-\frac{(t-9)^2}{6}}\right)
+\end{equation*}
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1"><a tabindex="-1" href="#activity-02-python_introModels-3" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="activity-02-python_introModels-4"><h2 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
-<div class="introduction" id="activity-02-python_introModels-4-1">
-<div class="para" id="activity-02-python_introModels-4-1-1">Let’s now consider a scenario...<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-02-python_introModels-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">where <span class="process-math">\(t\)</span> is given in months.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-04-interpret-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="activity-02-python_introModels-4-1-2">A printed magazine with 80,000 subscribers is considering to raise it’s subscription price. The current price is $1.50 a week. The magazine estimates it will lose 5,000 subscribers per 10 cent increase in its weekly rate.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-02-python_introModels-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/images/04-zika.png" class="contained" alt="Graph of the population of Zika mosquitoes over time for differing c values."></div>
 </div>
-</div>
-<article class="task exercise-like" id="activity-02-python_introModels-4-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
-<div class="para" id="activity-02-python_introModels-4-2-1-1">Write down any variables and parameters needed to describe this scenario mathematically.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-02-python_introModels-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="workspace" data-space="1in"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 2.a"><a tabindex="-1" href="#activity-02-python_introModels-4-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
-</article>
-<article class="task exercise-like" id="activity-02-python_introModels-4-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
-<div class="para" id="activity-02-python_introModels-4-3-1-1">What assumptions are being made? What are some of the considerations it may be simplifying?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-02-python_introModels-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="activity-04-interpret-3-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="activity-04-interpret-3-2-1-1">State two ways in which <span class="process-math">\(c\)</span> seems to affect the model. What do your observations mean for the mosquito population and the risk of infection?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-04-interpret-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 2.b"><a tabindex="-1" href="#activity-02-python_introModels-4-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.a"><a tabindex="-1" href="#activity-04-interpret-3-2" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div>
 </article>
-<article class="task exercise-like" id="activity-02-python_introModels-4-4"><h3 class="heading"><span class="codenumber">(c)</span></h3>
-<div class="para" id="activity-02-python_introModels-4-4-1-1">What questions could you ask? What might the company want to learn?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-02-python_introModels-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="activity-04-interpret-3-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="activity-04-interpret-3-3-1-1">Identify the first inflection point for each curve and describe how it changes for the different values of <span class="process-math">\(c\text{.}\)</span> What is their significance in the context of the model?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-04-interpret-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 2.c"><a tabindex="-1" href="#activity-02-python_introModels-4-4" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.b"><a tabindex="-1" href="#activity-04-interpret-3-3" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div>
 </article>
-<article class="task exercise-like" id="activity-02-python_introModels-4-5"><h3 class="heading"><span class="codenumber">(d)</span></h3>
-<div class="para" id="activity-02-python_introModels-4-5-1-1">For the question you’d like to answer, write a mathematical model for the scenario. You don’t need to go big here! A function can be a model.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-02-python_introModels-4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="activity-04-interpret-3-4"><h3 class="heading"><span class="codenumber">(c)</span></h3>
+<div class="para" id="activity-04-interpret-3-4-1-1">Generate two more questions for this scenario.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-04-interpret-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 2.d"><a tabindex="-1" href="#activity-02-python_introModels-4-5" title="Copy heading and permalink for Task 2.d" aria-label="Copy heading and permalink for Task 2.d">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.c"><a tabindex="-1" href="#activity-04-interpret-3-4" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1"><a tabindex="-1" href="#activity-04-interpret-3" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
 </article>
-<article class="task exercise-like" id="activity-02-python_introModels-4-6"><h3 class="heading"><span class="codenumber">(e)</span></h3>
-<div class="para" id="activity-02-python_introModels-4-6-1-1">What mathematical knowledge would you need in order to solve this problem? What might be useful?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-02-python_introModels-4-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="activity-04-interpret-4"><h2 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="introduction" id="activity-04-interpret-4-1">
+<div class="para" id="activity-04-interpret-4-1-1">Consider being asking the question "How can we determine how a particular enzyme is metabolized?"<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-04-interpret-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="activity-04-interpret-4-1-2">
+<div class="para">The following variables are defined:</div>
+<ul class="disc" id="activity-04-interpret-4-1-2-1">
+<li id="activity-04-interpret-4-1-2-1-1">
+<div class="para" id="p-derived-activity-04-interpret-4-1-2-1-1">
+<span class="process-math">\(x
+\text{:}\)</span> concentration of a particular chemical being metabolized in mg/L</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#activity-04-interpret-4-1-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="activity-04-interpret-4-1-2-1-2">
+<div class="para" id="p-derived-activity-04-interpret-4-1-2-1-2">
+<span class="process-math">\(R(x)
+\text{:}\)</span> rate of metabolism of a particular enzyme in mg/h</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#activity-04-interpret-4-1-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">That then forms the following model: <span class="process-math">\(R(x) = \frac{25x}{x+7}\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-04-interpret-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="activity-04-interpret-4-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="activity-04-interpret-4-2-1-1">What must the units of the parameters 25 and 7 be?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-04-interpret-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 2.e"><a tabindex="-1" href="#activity-02-python_introModels-4-6" title="Copy heading and permalink for Task 2.e" aria-label="Copy heading and permalink for Task 2.e">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.a"><a tabindex="-1" href="#activity-04-interpret-4-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
 </article>
-<article class="task exercise-like" id="activity-02-python_introModels-4-7"><h3 class="heading"><span class="codenumber">(f)</span></h3>
-<div class="para" id="activity-02-python_introModels-4-7-1-1">What additional information might the company consider in order to make the model more accurate?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-02-python_introModels-4-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="activity-04-interpret-4-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="activity-04-interpret-4-3-1-1">What is the maximum rate of metabolism of the enzyme? Justify analytically!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-04-interpret-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 2.f"><a tabindex="-1" href="#activity-02-python_introModels-4-7" title="Copy heading and permalink for Task 2.f" aria-label="Copy heading and permalink for Task 2.f">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.b"><a tabindex="-1" href="#activity-04-interpret-4-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
 </article>
-<article class="task exercise-like" id="activity-02-python_introModels-4-8"><h3 class="heading"><span class="codenumber">(g)</span></h3>
-<div class="para" id="activity-02-python_introModels-4-8-1-1">With that new information, what are additional questions that you could ask?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-02-python_introModels-4-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="activity-04-interpret-4-4"><h3 class="heading"><span class="codenumber">(c)</span></h3>
+<div class="para" id="activity-04-interpret-4-4-1-1">What concentration of the chemical results in half of the maximum metabolic rate? Justify analytically!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-04-interpret-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 2.g"><a tabindex="-1" href="#activity-02-python_introModels-4-8" title="Copy heading and permalink for Task 2.g" aria-label="Copy heading and permalink for Task 2.g">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 2"><a tabindex="-1" href="#activity-02-python_introModels-4" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet: 02 - Introduction to Python and Models"><a tabindex="-1" href="#activity-02-python_introModels" title="Copy heading and permalink for Worksheet: 02 - Introduction to Python and Models" aria-label="Copy heading and permalink for Worksheet: 02 - Introduction to Python and Models">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.c"><a tabindex="-1" href="#activity-04-interpret-4-4" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activity-04-interpret-4-5"><h3 class="heading"><span class="codenumber">(d)</span></h3>
+<div class="para" id="activity-04-interpret-4-5-1-1">Can you use Python code to confirm any of the answers above?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-04-interpret-4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.d"><a tabindex="-1" href="#activity-04-interpret-4-5" title="Copy heading and permalink for Task 2.d" aria-label="Copy heading and permalink for Task 2.d">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activity-04-interpret-4-6"><h3 class="heading"><span class="codenumber">(e)</span></h3>
+<div class="para" id="activity-04-interpret-4-6-1-1">Write Python code to reduce the metabolic rate by 30%.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-04-interpret-4-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.e"><a tabindex="-1" href="#activity-04-interpret-4-6" title="Copy heading and permalink for Task 2.e" aria-label="Copy heading and permalink for Task 2.e">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 2"><a tabindex="-1" href="#activity-04-interpret-4" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activity-04-interpret-5"><h2 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="introduction" id="activity-04-interpret-5-1">
+<div class="para logical" id="activity-04-interpret-5-1-1">
+<div class="para">Tigers in North America have poor reproductive rates, mainly caused by the limited number of male tigers in captivity. Suppose a zoo hires you to determine the best male tigers to bring into their zoo in order to have the best change of breeding baby tigers (known as cubs or whelps). With a little research, you find that the probability of a new tiger whelp depends on the age of the male tiger and can be modeling by the function</div>
+<div class="displaymath process-math" id="activity-04-interpret-5-1-1-1">
+\begin{equation*}
+p(t) = \frac{6000}{t^{3/2}}e^{-(\frac{30}{t}+t - 2)}.
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(t\)</span> is the age of the male tiger in years.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-04-interpret-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="activity-04-interpret-5-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="activity-04-interpret-5-2-1-1">Would it be better to bring in tigers between ages 3 and 4, or ages 4 and 5?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-04-interpret-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.a"><a tabindex="-1" href="#activity-04-interpret-5-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activity-04-interpret-5-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="activity-04-interpret-5-3-1-1">When is the probability decreasing?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-04-interpret-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.b"><a tabindex="-1" href="#activity-04-interpret-5-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activity-04-interpret-5-4"><h3 class="heading"><span class="codenumber">(c)</span></h3>
+<div class="para" id="activity-04-interpret-5-4-1-1">Does this model seem valid for long term?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-04-interpret-5-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.c"><a tabindex="-1" href="#activity-04-interpret-5-4" title="Copy heading and permalink for Task 3.c" aria-label="Copy heading and permalink for Task 3.c">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3"><a tabindex="-1" href="#activity-04-interpret-5" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet: 04 - Solving and Interpreting Models"><a tabindex="-1" href="#activity-04-interpret" title="Copy heading and permalink for Worksheet: 04 - Solving and Interpreting Models" aria-label="Copy heading and permalink for Worksheet: 04 - Solving and Interpreting Models">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="activity-01-intro-activity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="activity-03-formulate.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="activity-03-formulate.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="homework.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
