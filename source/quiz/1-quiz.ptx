@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<worksheet component="quiz">
+<worksheet>
     <title>Quiz 1 - MTH 305</title>
 
     <p>
@@ -19,7 +19,7 @@
             </p>
         </introduction>
 
-        <task workspace="1in">
+        <task>
             <statement>
                 <p>
                     Circle the answer below that has the 4 stages of the
@@ -67,7 +67,7 @@
         </task>
     </exercise>
 
-    <exercise>
+    <exercise workspace="1in">
         <statement>
             <p>
                 Suppose you are told that after warming a cup of coffee is cold

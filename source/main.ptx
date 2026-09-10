@@ -47,11 +47,11 @@
             <!--<xi:include href="./homework/homework01.ptx"/>-->
         </chapter>
 
-        <chapter xml:id="quizzes">
+        <chapter xml:id="quiz_documents">
             <title>Quizzes</title>
 
             <!-- Include lab files -->
-            <xi:include href="./quizzes/1-quiz.ptx"/>
+            <xi:include href="./quiz/1-quiz.ptx"/>
         </chapter>
     </book>
 </pretext>
