@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet component="quiz">
+    <title>Quiz 1 - MTH 305</title>
+
+    <p>
+        This quiz covers the topics of asking questions and the life-cycle of
+        mathematical modeling.
+        You are allowed to use a calculator which does NOT have graphing or
+        symbolic capabilities.
+        Read all <term>DIRECTIONS</term> carefully.
+        Good luck!
+    </p>
+    <!-- Q1 Section 1.1 -->
+    <exercise>
+        <introduction>
+            <p>
+                Modeling life-cycle:
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Circle the answer below that has the 4 stages of the
+                    mathematical modeling life-cycle:
+                </p>
+
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                assess, question, solve, report
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                identify, formulate, solve, interpret
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                assess, adjust, change, interpret
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                identify, building, testing, making it better
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    After interpreting the output of a mathematical model, is
+                    the modeling process done?
+                    Explain why or why not.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Suppose you are told that after warming a cup of coffee is cold
+                7 minutes after heating it in a microwave for 1 minute, but it
+                takes a cup of soup 35 minutes to get cold after heating for the
+                same amount of time.
+                What are some modeling questions you could ask related to this
+                scenario?
+                What assumptions might you make?
+            </p>
+        </statement>
+    </exercise>
+</worksheet>

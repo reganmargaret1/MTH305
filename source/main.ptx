@@ -2,57 +2,56 @@
 
 <!-- This is the main course file for ... . It is used to generate all the public facing course materials so those can be hosted online.  -->
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude">
-  <!-- Include common macros etc: -->
-  <xi:include href="./docinfo.ptx" />
-  <!-- By creating a PreTeXt "book" for the course, we can split components into "chapters" -->
-  <book>
-    <title>Mathematical Modeling</title>
+    <!-- Include common macros etc: -->
+    <xi:include href="./docinfo.ptx"/>
+    <!-- By creating a PreTeXt "book" for the course, we can split components into "chapters" -->
+    <book>
+        <title>Mathematical Modeling</title>
 
-    <subtitle>MATH 305 Fall 2026</subtitle>
+        <subtitle>MATH 305 Fall 2026</subtitle>
+        <!-- Optional: include frontmatter with author info and date -->
+        <xi:include href="./frontmatter.ptx"/>
+        <chapter xml:id="course-documents">
+            <title>Course Documents</title>
 
-    <!-- Optional: include frontmatter with author info and date -->
-    <xi:include href="./frontmatter.ptx" />
+            <!-- Course syllabus -->
+            <xi:include href="./syllabus/syllabus.ptx"/>
+            <!-- Other documents could go here, like a schedule, project description, etc. -->
+            <xi:include href="./syllabus/ClassPreparationPolicies.ptx"/>
+            <xi:include href="./syllabus/HWPolicies.ptx"/>
+            <xi:include href="./syllabus/LabPolicies.ptx"/>
+            <xi:include href="./syllabus/Quizzes.ptx"/>
+        </chapter>
 
-    <chapter xml:id="course-documents">
-      <title>Course Documents</title>
+        <chapter xml:id="activities">
+            <title>In-Class Activities</title>
 
-      <!-- Course syllabus -->
-      <xi:include href="./syllabus/syllabus.ptx" />
-      <!-- Other documents could go here, like a schedule, project description, etc. -->
-      <xi:include href="./syllabus/ClassPreparationPolicies.ptx" />
-      <xi:include href="./syllabus/HWPolicies.ptx" />
-      <xi:include href="./syllabus/LabPolicies.ptx" />
-      <xi:include href="./syllabus/Quizzes.ptx" />
-    </chapter>
+            <!-- Remove the example and replace with your own activities -->
+            <xi:include href="./activities/01-intro-activity.ptx"/>
+            <xi:include href="./activities/02-python_introModels.ptx"/>
+            <xi:include href="./activities/03-formulate.ptx"/>
+            <!-- Add more xi:include files here to include them in the main course -->
+        </chapter>
 
-    <chapter xml:id="activities">
-      <title>In-Class Activities</title>
+        <chapter xml:id="homework">
+            <title>Homework</title>
 
-      <!-- Remove the example and replace with your own activities -->
-      <xi:include href="./activities/01-intro-activity.ptx"/>
-      <xi:include href="./activities/02-python_introModels.ptx"/>
-      <xi:include href="./activities/03-formulate.ptx"/>
+            <!-- Include homework files -->
+            <xi:include href="./homework/homework-01.ptx"/>
+        </chapter>
+        <!-- Include additional chapters for other categories -->
+        <chapter xml:id="labdocuments">
+            <title>Labs</title>
 
-      <!-- Add more xi:include files here to include them in the main course -->
-    </chapter>
+            <!-- Include lab files -->
+            <!--<xi:include href="./homework/homework01.ptx"/>-->
+        </chapter>
 
-    <chapter xml:id="homework">
-      <title>Homework</title>
+        <chapter xml:id="quizzes">
+            <title>Quizzes</title>
 
-      <!-- Include homework files -->
-      <xi:include href="./homework/homework-01.ptx"/>
-
-    </chapter>
-
-    <!-- Include additional chapters for other categories -->
-
-    <chapter xml:id="labdocuments">
-      <title>Labs</title>
-
-      <!-- Include lab files -->
-      <!--<xi:include href="./homework/homework01.ptx"/>-->
-
-    </chapter>
-
+            <!-- Include lab files -->
+            <xi:include href="./quizzes/1-quiz.ptx"/>
+        </chapter>
     </book>
-  </pretext>
+</pretext>
