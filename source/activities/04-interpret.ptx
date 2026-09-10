@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="activity-04-interpret">
+    <title>04 - Solving and Interpreting Models</title>
+
+    <!-- Optional introduction -->
+    <introduction>
+        <p>
+            In this activity we are going to practice the third and forth stages
+            of the life cycle of modeling: solve and interpret.
+        </p>
+    </introduction>
+    <!-- Exercises start here. -->
+    <exercise>
+        <introduction>
+            <p>
+                The population of Zika mosquitoes can be modeled with the
+                function
+                <md>
+                    P(t) = 8000\left(\frac{1}{6} + e^{-\frac{(t-c)^2}{6}} + e^{-\frac{(t-9)^2}{6}}\right)
+                </md>
+                where <m>t</m> is given in months.
+            </p>
+
+            <image source="images/04-zika.png" width="75%">
+                <shortdescription>
+                    Graph of the population of Zika mosquitoes over time for
+                    differing c values.
+                </shortdescription>
+            </image>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    State two ways in which <m>c</m> seems to affect the model.
+                    What do your observations mean for the mosquito population
+                    and the risk of infection?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Identify the first inflection point for each curve and
+                    describe how it changes for the different values of
+                    <m>c</m>.
+                    What is their significance in the context of the model?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Generate two more questions for this scenario.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Consider being asking the question "How can we determine how a
+                particular enzyme is metabolized?"
+            </p>
+
+            <p>
+                The following variables are defined:
+                <ul>
+                    <li>
+                        <m>
+                            x
+                        </m>:
+                        concentration of a particular chemical being metabolized
+                        in mg/L
+                    </li>
+
+                    <li>
+                        <m>
+                            R(x)
+                        </m>:
+                        rate of metabolism of a particular enzyme in mg/h
+                    </li>
+                </ul>
+                That then forms the following model:
+                <m>R(x) = \frac{25x}{x+7}</m>.
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What must the units of the parameters 25 and 7 be?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What is the maximum rate of metabolism of the enzyme?
+                    Justify analytically!
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What concentration of the chemical results in half of the
+                    maximum metabolic rate?
+                    Justify analytically!
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Can you use Python code to confirm any of the answers above?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Write Python code to reduce the metabolic rate by 30%.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Tigers in North America have poor reproductive rates, mainly
+                caused by the limited number of male tigers in captivity.
+                Suppose a zoo hires you to determine the best male tigers to
+                bring into their zoo in order to have the best change of
+                breeding baby tigers (known as cubs or whelps).
+                With a little research, you find that the probability of a new
+                tiger whelp depends on the age of the male tiger and can be
+                modeling by the function
+                <md>
+                    p(t) = \frac{6000}{t^{3/2}}e^{-(\frac{30}{t}+t - 2)}.
+                </md>
+                where <m>t</m> is the age of the male tiger in years.
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Would it be better to bring in tigers between ages 3 and 4,
+                    or ages 4 and 5?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    When is the probability decreasing?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Does this model seem valid for long term?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</worksheet>

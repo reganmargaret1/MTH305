@@ -30,6 +30,7 @@
             <xi:include href="./activities/01-intro-activity.ptx"/>
             <xi:include href="./activities/02-python_introModels.ptx"/>
             <xi:include href="./activities/03-formulate.ptx"/>
+            <xi:include href="./activities/04-interpret.ptx"/>
             <!-- Add more xi:include files here to include them in the main course -->
         </chapter>
 
