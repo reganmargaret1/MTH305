@@ -39,6 +39,7 @@
 
             <!-- Include homework files -->
             <xi:include href="./homework/homework-01.ptx"/>
+            <xi:include href="./homework/homework-02.ptx"/>
         </chapter>
         <!-- Include additional chapters for other categories -->
         <chapter xml:id="labdocuments">
