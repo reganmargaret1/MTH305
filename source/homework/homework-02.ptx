@@ -21,18 +21,19 @@
     <exercise>
         <introduction>
             <p>
-                Atmospheric pressure, that is the pressure of the air around you,
-                decreases as you go higher in altitude such that the pressure changes
-                at a rate proportional to the current pressure. Assume the pressure is 
-                measured in hPA (hectopascals), and the altitude is measured in 
-                meters.
+                Atmospheric pressure, that is the pressure of the air around
+                you, decreases as you go higher in altitude such that the
+                pressure changes at a rate proportional to the current pressure.
+                Assume the pressure is measured in hPA (hectopascals), and the
+                altitude is measured in meters.
             </p>
         </introduction>
 
         <task>
             <statement>
                 <p>
-                    State the variables. Which variable is the independent variable?
+                    State the variables.
+                    Which variable is the independent variable?
                     Which is the dependent variable?
                 </p>
             </statement>
@@ -41,7 +42,8 @@
         <task>
             <statement>
                 <p>
-                    Write an equation that models the decay. Do you have any parameters?
+                    Write an equation that models the decay.
+                    Do you have any parameters?
                     If so, are they positive or negative?
                 </p>
             </statement>
@@ -50,12 +52,16 @@
         <task>
             <statement>
                 <p>
-                    The atmospheric pressure at sea level (altitude of 0 meters) is on average
-                    1013.25 hPA. At an altitude of 112 m, the pressure is 1000 hPA. Using that 
-                    information, find any other parameters you might need, then plot the 
-                    pressure as a function of altitude. Use Python for this plot. You'll need
-                    to definite a function for your model and plot it. Let altitude range from 
-                    0 to 8848 meters (the height of Mount Everest).
+                    The atmospheric pressure at sea level (altitude of 0 meters)
+                    is on average 1013.25 hPA.
+                    At an altitude of 112 m, the pressure is 1000 hPA.
+                    Using that information, find any other parameters you might
+                    need, then plot the pressure as a function of altitude.
+                    Use Python for this plot.
+                    You'll need to definite a function for your model and plot
+                    it.
+                    Let altitude range from 0 to 8848 meters (the height of
+                    Mount Everest).
                 </p>
             </statement>
         </task>
@@ -63,8 +69,10 @@
         <task>
             <statement>
                 <p>
-                    At the top of Mount Everest (8848 meters altitude), the actual atmospheric
-                    pressure is 314.6 hPA. Do you think this is a reasonable model? Why or why not?
+                    At the top of Mount Everest (8848 meters altitude), the
+                    actual atmospheric pressure is 314.6 hPA.
+                    Do you think this is a reasonable model?
+                    Why or why not?
                 </p>
             </statement>
         </task>

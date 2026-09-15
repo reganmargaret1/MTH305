@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 3 - Homework MTH 305</title>
+
+    <p>
+        You should present solutions neatly to all problems, making sure to show
+        all your work and follow the homework policies (see Blackboard document
+        for details).
+        You will turn in the assignment on Blackboard by 11:59 pm ET on Friday.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        and/or classmates.
+        No AI resources.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+
+    <exercise>
+        <introduction>
+            <p>
+                Aoshima Island, also known as Cat Island, is the home of a tiny
+                fishing village in Japan.
+                It is most famous for the stray cats that roam wild and free and
+                outnumber the villagers at least 8 to 1 (perhaps closer to 36 to
+                1 as the residents get older).
+                The cats were originally introduced on ships to deal with the
+                rodent population, started growing exponentially, and then never
+                left.
+                Assume you are modeling the population of cats on Cat Island.
+                Let <m>P(t)</m> be the population of cats at time <m>t</m> in
+                years, where <m>t = 0 </m> corresponds to 1945.
+                Assume the island can only support a maximum of 140 stray cats,
+                which is the approximate number of stray cats present today.
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    Why is exponential growth not a great model for this
+                    scenario?
+                    What model describes this type of scenario?
+                    Write the equation, including any parameters you know, and
+                    specify any parameters you do not know.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Now assume that in 1945 there were initially 4 cats
+                    introduced to the island.
+                    What does this mean in context?
+                    Are there any parameters you can determine knowing this
+                    information?
+                    If so, determine the parameter(s), and if not, explain why
+                    not.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    If a tsunami hit the island tomorrow and only a quarter of
+                    the cats present survived, how would you alter your model
+                    (in words)?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</worksheet>

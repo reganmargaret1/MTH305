@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="activity-05-reformulate">
+    <title>05 - Reformulating Models</title>
+
+    <!-- Optional introduction -->
+    <introduction>
+        <p>
+            In this activity we are going to practice reformulating the 
+            model after interpretation.
+        </p>
+    </introduction>
+    <!-- Exercises start here. -->
+    <exercise>
+        <introduction>
+            <p>
+                The population of Zika mosquitoes can be modeled with the
+                function
+                <md>
+                    P(t) = 8000\left(\frac{1}{6} + e^{-\frac{(t-c)^2}{6}} + e^{-\frac{(t-9)^2}{6}}\right)
+                </md>
+                where <m>t</m> is given in months.
+            </p>
+
+            <image source="images/04-zika.png" width="75%">
+                <shortdescription>
+                    Graph of the population of Zika mosquitoes over time for
+                    differing c values.
+                </shortdescription>
+            </image>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Recreate the above graph using Python.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    You are given the context that 
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                   How would you reformulate the model to meet the above context and
+                   fix the "issue(s)" you have identified?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</worksheet>
