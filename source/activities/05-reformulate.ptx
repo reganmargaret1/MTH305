@@ -44,8 +44,8 @@
                 <p>
                     You are given the context that the initial number of
                     mosquitoes is 5000 and there are multiple maxima.
-                    Additionally, the birth rate of the mosquitoes never exceeds
-                    0.2.
+                    Additionally, the rate of change of the mosquitoes never
+                    exceeds 0.2.
                 </p>
             </statement>
         </task>
