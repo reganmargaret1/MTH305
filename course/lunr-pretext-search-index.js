@@ -286,7 +286,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "05 - Reformulating Models",
-  "body": " 05 - Reformulating Models    In this activity we are going to practice reformulating the model after interpretation.      The population of Zika mosquitoes can be modeled with the function where is given in months.   Graph of the population of Zika mosquitoes over time for differing c values.      Recreate the above graph using Python.      You are given the context that      How would you reformulate the model to meet the above context and fix the \"issue(s)\" you have identified?     "
+  "body": " 05 - Reformulating Models    In this activity we are going to practice reformulating the model after interpretation.      The population of Zika mosquitoes can be modeled with the function where is given in months.   Graph of the population of Zika mosquitoes over time for differing c values.      Recreate the above graph using Python.      You are given the context that the initial number of mosquitoes is 5000 and there are multiple maxima. Additionally, the birth rate of the mosquitoes never exceeds 0.2.      How would you reformulate the model to meet the above context and fix the \"issue(s)\" you have identified?      Are you able to change the parameter to get there to be 3 maxima?      What is the behavior long term? Consider both graphical and algebraic justification. Does this model make sense in the long term? Why or why not?     "
 },
 {
   "id": "activity-05-reformulate-3",
@@ -295,7 +295,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  The population of Zika mosquitoes can be modeled with the function where is given in months.   Graph of the population of Zika mosquitoes over time for differing c values.      Recreate the above graph using Python.      You are given the context that      How would you reformulate the model to meet the above context and fix the \"issue(s)\" you have identified?    "
+  "body": "  The population of Zika mosquitoes can be modeled with the function where is given in months.   Graph of the population of Zika mosquitoes over time for differing c values.      Recreate the above graph using Python.      You are given the context that the initial number of mosquitoes is 5000 and there are multiple maxima. Additionally, the birth rate of the mosquitoes never exceeds 0.2.      How would you reformulate the model to meet the above context and fix the \"issue(s)\" you have identified?      Are you able to change the parameter to get there to be 3 maxima?      What is the behavior long term? Consider both graphical and algebraic justification. Does this model make sense in the long term? Why or why not?    "
 },
 {
   "id": "homework-2",
