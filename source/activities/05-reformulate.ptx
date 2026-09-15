@@ -7,8 +7,8 @@
     <!-- Optional introduction -->
     <introduction>
         <p>
-            In this activity we are going to practice reformulating the 
-            model after interpretation.
+            In this activity we are going to practice reformulating the model
+            after interpretation.
         </p>
     </introduction>
     <!-- Exercises start here. -->
@@ -42,7 +42,10 @@
         <task workspace="1in">
             <statement>
                 <p>
-                    You are given the context that 
+                    You are given the context that the initial number
+                    of mosquitoes is 5000 and there are multiple maxima.
+                    Additionally, the birth rate of the mosquitoes never
+                    exceeds 0.2.
                 </p>
             </statement>
         </task>
@@ -50,8 +53,27 @@
         <task workspace="1in">
             <statement>
                 <p>
-                   How would you reformulate the model to meet the above context and
-                   fix the "issue(s)" you have identified?
+                    How would you reformulate the model to meet the above
+                    context and fix the "issue(s)" you have identified?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Are you able to change the parameter <m>c</m> to get
+                    there to be 3 maxima?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What is the behavior long term? Consider both 
+                    graphical and algebraic justification. Does this
+                    model make sense in the long term? Why or why not?
                 </p>
             </statement>
         </task>
