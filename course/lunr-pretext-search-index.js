@@ -280,6 +280,24 @@ var ptx_lunr_docs = [
   "body": "  Tigers in North America have poor reproductive rates, mainly caused by the limited number of male tigers in captivity. Suppose a zoo hires you to determine the best male tigers to bring into their zoo in order to have the best change of breeding baby tigers (known as cubs or whelps). With a little research, you find that the probability of a new tiger whelp depends on the age of the male tiger and can be modeling by the function where is the age of the male tiger in years.     Would it be better to bring in tigers between ages 3 and 4, or ages 4 and 5?      When is the probability decreasing?      Does this model seem valid for long term?    "
 },
 {
+  "id": "activity-05-reformulate",
+  "level": "1",
+  "url": "activity-05-reformulate.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "05 - Reformulating Models",
+  "body": " 05 - Reformulating Models    In this activity we are going to practice reformulating the model after interpretation.      The population of Zika mosquitoes can be modeled with the function where is given in months.   Graph of the population of Zika mosquitoes over time for differing c values.      Recreate the above graph using Python.      You are given the context that      How would you reformulate the model to meet the above context and fix the \"issue(s)\" you have identified?     "
+},
+{
+  "id": "activity-05-reformulate-3",
+  "level": "2",
+  "url": "activity-05-reformulate.html#activity-05-reformulate-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  The population of Zika mosquitoes can be modeled with the function where is given in months.   Graph of the population of Zika mosquitoes over time for differing c values.      Recreate the above graph using Python.      You are given the context that      How would you reformulate the model to meet the above context and fix the \"issue(s)\" you have identified?    "
+},
+{
   "id": "homework-2",
   "level": "1",
   "url": "homework-2.html",
@@ -298,13 +316,49 @@ var ptx_lunr_docs = [
   "body": "  Let's consider the same problem we looked at in class:  A printed magazine with 80,000 subscribers is considering to raise it's subscription price. The current price is $1.50 a week. The magazine estimates it will lose 5,000 subscribers per 10 cent increase in its weekly rate.     Write a mathematical model for the scenario if the magazine company is to maximize its profit.      Use concepts within Calculus to find the solution to this mathematical model.      In class we discussed the assumptions being made and additional information that might make the model more accurate. Choose one of the ones discussed and incorporate it into your model. How did the solution change?      Give at least two additional questions that come up. This could be related to the original model and its accuracy, about the solution, or to continue the modeling into a new realm for the company.    "
 },
 {
+  "id": "homework-3",
+  "level": "1",
+  "url": "homework-3.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Problem 2 - Homework MTH 305",
+  "body": " Problem 2 - Homework MTH 305  You should present solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the assignment on Blackboard by 11:59 pm ET on Friday. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor and\/or classmates. No AI resources. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!    Atmospheric pressure, that is the pressure of the air around you, decreases as you go higher in altitude such that the pressure changes at a rate proportional to the current pressure. Assume the pressure is measured in hPA (hectopascals), and the altitude is measured in meters.     State the variables. Which variable is the independent variable? Which is the dependent variable?      Write an equation that models the decay. Do you have any parameters? If so, are they positive or negative?      The atmospheric pressure at sea level (altitude of 0 meters) is on average 1013.25 hPA. At an altitude of 112 m, the pressure is 1000 hPA. Using that information, find any other parameters you might need, then plot the pressure as a function of altitude. Use Python for this plot. You'll need to definite a function for your model and plot it. Let altitude range from 0 to 8848 meters (the height of Mount Everest).      At the top of Mount Everest (8848 meters altitude), the actual atmospheric pressure is 314.6 hPA. Do you think this is a reasonable model? Why or why not?     "
+},
+{
+  "id": "homework-3-3",
+  "level": "2",
+  "url": "homework-3.html#homework-3-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Atmospheric pressure, that is the pressure of the air around you, decreases as you go higher in altitude such that the pressure changes at a rate proportional to the current pressure. Assume the pressure is measured in hPA (hectopascals), and the altitude is measured in meters.     State the variables. Which variable is the independent variable? Which is the dependent variable?      Write an equation that models the decay. Do you have any parameters? If so, are they positive or negative?      The atmospheric pressure at sea level (altitude of 0 meters) is on average 1013.25 hPA. At an altitude of 112 m, the pressure is 1000 hPA. Using that information, find any other parameters you might need, then plot the pressure as a function of altitude. Use Python for this plot. You'll need to definite a function for your model and plot it. Let altitude range from 0 to 8848 meters (the height of Mount Everest).      At the top of Mount Everest (8848 meters altitude), the actual atmospheric pressure is 314.6 hPA. Do you think this is a reasonable model? Why or why not?    "
+},
+{
+  "id": "homework-4",
+  "level": "1",
+  "url": "homework-4.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Problem 3 - Homework MTH 305",
+  "body": " Problem 3 - Homework MTH 305  You should present solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the assignment on Blackboard by 11:59 pm ET on Friday. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor and\/or classmates. No AI resources. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!    Aoshima Island, also known as Cat Island, is the home of a tiny fishing village in Japan. It is most famous for the stray cats that roam wild and free and outnumber the villagers at least 8 to 1 (perhaps closer to 36 to 1 as the residents get older). The cats were originally introduced on ships to deal with the rodent population, started growing exponentially, and then never left. Assume you are modeling the population of cats on Cat Island. Let be the population of cats at time in years, where corresponds to 1945. Assume the island can only support a maximum of 140 stray cats, which is the approximate number of stray cats present today.     Why is exponential growth not a great model for this scenario? What model describes this type of scenario? Write the equation, including any parameters you know, and specify any parameters you do not know.      Now assume that in 1945 there were initially 4 cats introduced to the island. What does this mean in context? Are there any parameters you can determine knowing this information? If so, determine the parameter(s), and if not, explain why not.      If a tsunami hit the island tomorrow and only a quarter of the cats present survived, how would you alter your model (in words)?     "
+},
+{
+  "id": "homework-4-3",
+  "level": "2",
+  "url": "homework-4.html#homework-4-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Aoshima Island, also known as Cat Island, is the home of a tiny fishing village in Japan. It is most famous for the stray cats that roam wild and free and outnumber the villagers at least 8 to 1 (perhaps closer to 36 to 1 as the residents get older). The cats were originally introduced on ships to deal with the rodent population, started growing exponentially, and then never left. Assume you are modeling the population of cats on Cat Island. Let be the population of cats at time in years, where corresponds to 1945. Assume the island can only support a maximum of 140 stray cats, which is the approximate number of stray cats present today.     Why is exponential growth not a great model for this scenario? What model describes this type of scenario? Write the equation, including any parameters you know, and specify any parameters you do not know.      Now assume that in 1945 there were initially 4 cats introduced to the island. What does this mean in context? Are there any parameters you can determine knowing this information? If so, determine the parameter(s), and if not, explain why not.      If a tsunami hit the island tomorrow and only a quarter of the cats present survived, how would you alter your model (in words)?    "
+},
+{
   "id": "labdocuments",
   "level": "1",
   "url": "labdocuments.html",
   "type": "Chapter",
   "number": "",
   "title": "Labs",
-  "body": " Labs    "
+  "body": " Labs   "
 },
 {
   "id": "quiz_documents-2",
