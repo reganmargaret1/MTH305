@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="activity-06-sensitivity1">
+    <title>06 - Sensitivity Analysis Part 1</title>
+
+    <!-- Optional introduction -->
+    <introduction>
+        <p>
+            In this activity we want to analyze how sensitive a model is to its
+            parameters.
+        </p>
+    </introduction>
+    <!-- Exercises start here. -->
+    <exercise>
+        <introduction>
+            <p>
+                The population of Zika mosquitoes can be modeled with the
+                function
+                <md>
+                    P(t) = 8000\left(\frac{1}{6} + e^{-\frac{(t-c)^2}{d}} + e^{-\frac{(t-9)^2}{6}}\right)
+                </md>
+                where <m>t</m> is given in months.
+                We will investigate the effect of the parameters <m>c</m> and
+                <m>d</m> on the model.
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    Create a Google Colab document that plots the model for
+                    <m>{c = 3}</m> and <m>{d = 6}</m>.
+                    Let <m>t</m> range from 0 to 12.
+                    Define the function for your model to take <m>c</m> and
+                    <m>d</m> as inputs, along with the variable <m>t</m>.
+                    You might have this from the last worksheet!
+                    Make sure to import the following packages:
+                    <ul>
+                        <li><c>import math</c></li>
+                        <li><c>import numpy as np</c></li>
+                        <li><c>import matplotlib.pyplot as plt</c></li>
+                    </ul>
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Let's start by seeing what happens when we change the
+                    parameter <m>c</m> drastically.
+                    Let <m>d = 6</m> as before.
+                    Plot the population of mosquitos for
+                    <m>{c = 1, 2, 3, 4, 5, 6}</m>.
+                    Let's do this using a for loop.
+                </p>
+
+                <p>
+                    Begin by creating a list of the <m>c</m> values using the
+                    following command: <c>clist = np.arange(1,7,1)</c>.
+                    This creates "clist" from 1 (inclusive) to 7 (exclusive)
+                    with steps of size 1.
+                </p>
+
+                <p>
+                    To create a legend for your plot that differentiates between
+                    the <m>c</m> values, add a label to your plot line of code:
+                    <c>plt.plot(t,y, label='c='+str(c))</c>.
+                </p>
+
+                <p>
+                    What do you notice?
+                    How does the model of the population change?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Let's look at what happens if rather than drastic changes in
+                    <m>c</m>, we only change <m>c</m> by about <m>2\%</m>.
+                    To do this, let's look at the outputs for
+                    <m>{c = 2.88, 2.94,
+                    3, 3.06, 3.12}</m>.
+                    Let's keep track of the relative minimum in between the two
+                    "humps" of the curve and compare how the output changes
+                    based on how the input changed.
+                    If the parameter <m>c</m> changes by 0.06 (about <m>2\%</m>
+                    ), how much does the relative minimum of the population
+                    change?
+                </p>
+
+                <p>
+                    Some helpful things to consider:
+                    <ul>
+                        <li>numpy has the function <c>np.min()</c></li>
+                        <li>
+                            to find the percent change in the output at the
+                            relative min, we take the difference in the current
+                            output and the previous output values, divide by the
+                            previous output, and turn it into a percentage
+                        </li>
+                    </ul>
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Based on this analysis, do you think the model is sensitive
+                    to changes in the parameter <m>c</m>?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Now let's look at the affect of changing the parameter
+                    <m>d</m>.
+                    Let's begin by changing the parameter <m>d</m> drastically.
+                    Let <m>c = 3</m> as we did at the beginning.
+                    Plot the population of mosquitos for
+                    <m>{c = 4, 5, 6, 7, 8, 9}</m>.
+                </p>
+
+                <p>
+                    What do you notice?
+                    How does the model of the population change?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Let's look at what happens if rather than drastic changes in
+                    <m>d</m>, we only change <m>d</m> by about <m>2\%</m>.
+                    To do this, let's look at the outputs for
+                    <m>{d = 5.76, 5.88, 6, 6.12, 6.24}</m>.
+                    Let's again keep track of the relative minimum in between
+                    the two "humps" of the curve and compare how the output
+                    changes based on how the input changed.
+                    If the parameter <m>d</m> changes by 0.12 (about <m>2\%</m>
+                    ), how much does the relative minimum of the population
+                    change?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Based on this analysis, do you think the model is sensitive
+                    to changes in the parameter <m>d</m>?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Is the model more sensitive to changes in the parameter
+                    <m>c</m> or <m>d</m>?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+    <introduction>
+    <p>
+        Assume we introduce a new species to an area and monitor
+        the population over 24 years. Let <m>t</m> be the number of 
+        years after the introduction of the new species, and <m>f(t)</m>
+        be the number of animals in the area at time <m>t</m>. Assume
+        also that <m>f(t)</m> is modeled fairly well by
+        <md> f(t) = -\frac{1}{4}(at)^3 + 6t^2 + 10t</md>
+        where <m>a</m> is an unknown parameter. However, when we fit the
+        model to data we find that <m>a</m> is about 1. We want to 
+        determine if our model is sensitive to the parameter <m>a</m>.
+        </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                   Plot the model with <m>a = 1</m> and show the first
+                   24 years. Then plot the model for <m>{a = 0.99}</m>
+                   and <m>{a = 1.01}</m>. Put all three plots on the 
+                   same graph. Notice that there is a <m>1\%</m> change in
+                   the parameter <m>a</m>.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                   Determine the percent change in the output of the 
+                   model at the end of the time period, 24 years. 
+                   That is, when <m>a</m> is changed by <m>1\%</m>, 
+                   how much does the population change by at the end 
+                   of 24 years?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                   In your opinion, is this model sensitive to the parameter
+                   <m>a</m>? Why or why not?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</worksheet>
