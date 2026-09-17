@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Quiz 2 - MTH 305</title>
+
+    <p>
+        This quiz covers interpreting a
+        mathematical model.
+        Read all <term>DIRECTIONS</term> carefully.
+        Good luck!
+    </p>
+
+    <exercise>
+        <introduction>
+        <p>
+           The following graph shows the function <md>P(t) = 30t^2 - \frac{16}{3}t^3 + \frac{1}{4}t^4</md>
+           where <m>P</m> is the yearly profit in thousands of dollars of a toy producer after the 
+           product is available for sale.
+           </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    When is the yearly profit the highest in the first 10 years? 
+                    Provide justification.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    When is the profit decreasing? Include mathematical reasoning.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    When is the profit decreasing most rapidly? Explain.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Does this model seem valid in the long term? If not,
+                    for how long does it seem viable?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</worksheet>
