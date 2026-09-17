@@ -4,34 +4,53 @@
     <title>Quiz 2 - MTH 305</title>
 
     <p>
-        This quiz covers interpreting a
-        mathematical model.
+        This quiz covers interpreting a mathematical model.
         Read all <term>DIRECTIONS</term> carefully.
         Good luck!
     </p>
 
     <exercise>
         <introduction>
-        <p>
-           The following graph shows the function <md>P(t) = 30t^2 - \frac{16}{3}t^3 + \frac{1}{4}t^4</md>
-           where <m>P</m> is the yearly profit in thousands of dollars of a toy producer after the 
-           product is available for sale.
-           </p>
+            <p>
+                The following graph shows the function
+                <md>
+                    P(t) = 30t^2 - \frac{16}{3}t^3 + \frac{1}{4}t^4
+                </md>
+                where <m>P</m> is the yearly profit in thousands of dollars of a
+                toy producer after the product is available for sale.
+            </p>
+
+            <image source="images/quiz2_1.png" width="40%">
+                <shortdescription>
+                    Graph of the yearly profit in thousands of dollars of a toy
+                    producer after the product is available for sale.
+                </shortdescription>
+            </image>
         </introduction>
 
-        <task workspace="1in">
+        <task workspace="0.5in">
             <statement>
                 <p>
-                    When is the yearly profit the highest in the first 10 years? 
+                    When is the yearly profit the highest in the first 10 years?
                     Provide justification.
                 </p>
             </statement>
         </task>
 
-        <task workspace="1in">
+        <task workspace="0.5in">
             <statement>
                 <p>
-                    When is the profit decreasing? Include mathematical reasoning.
+                    When is the profit decreasing?
+                    Include mathematical reasoning.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="0.5in">
+            <statement>
+                <p>
+                    When is the profit decreasing most rapidly?
+                    Explain.
                 </p>
             </statement>
         </task>
@@ -39,18 +58,84 @@
         <task workspace="1in">
             <statement>
                 <p>
-                    When is the profit decreasing most rapidly? Explain.
+                    Does this model seem valid in the long term?
+                    If not, for how long does it seem viable?
                 </p>
             </statement>
         </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                After they were protected from hunting, the elephants in Kruger
+                National Park (South Africa) experienced birth rates exceeding
+                death rates for 60 years.
+                The researchers at Kruger National Park determined that the
+                growth rate (birth rate-death rate) is at its maximum in 1983
+                where <m>t=0</m> in 1903.
+                A model of the elephant population from 1903 to 2013 is given by
+                the logistic function
+                <md>
+                    f(t) = \frac{C}{1+e^{\frac{k-t}{8}}},
+                </md>
+                where <m>t</m> is years, <m>f(t)</m> is in thousands per year,
+                and <m>C</m> and <m>k</m> are positive parameters.
+            </p>
+
+            <image source="images/quiz2_2.png" width="40%">
+                <shortdescription>
+                    Graph of the elephant population in Kruger National Park
+                    from 1903 to 2013.
+                </shortdescription>
+            </image>
+        </introduction>
 
         <task workspace="1in">
             <statement>
                 <p>
-                    Does this model seem valid in the long term? If not,
-                    for how long does it seem viable?
+                    Describe what this model shows is happening to the elephant
+                    population in the long term.
+                    Identify any connection to the parameter <m>C</m> and what
+                    you think its value is.
                 </p>
             </statement>
         </task>
+
+        <task workspace="1.5in">
+            <statement>
+                <p>
+                    Identify an inflection point by circling it directly on the
+                    graph above.
+                    Describe its significance in the context of the model.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <p>
+        <term> Retake of Quiz 1:</term>
+    </p>
+
+    <exercise workspace="1in">
+        <statement>
+            <p>
+                What are the components of the life-cycle of mathematical
+                modeling?
+                Is this process always linear?
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise workspace="1in">
+        <statement>
+            <p>
+                Suppose you are given the task of determining whether it would
+                be best to create a roundabout or traffic light at a particular
+                intersection of roads.
+                What modeling question might you ask?
+                What assumptions would you need to make?
+            </p>
+        </statement>
     </exercise>
 </worksheet>
