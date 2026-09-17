@@ -298,6 +298,33 @@ var ptx_lunr_docs = [
   "body": "  The population of Zika mosquitoes can be modeled with the function where is given in months.   Graph of the population of Zika mosquitoes over time for differing c values.      Recreate the above graph using Python.      You are given the context that the initial number of mosquitoes is 5000 and there are multiple maxima. Additionally, the rate of change of the mosquitoes never exceeds 1600. Do any of the given graphs match? If not, what \"issues\"\/discrepancies do you see?      How would you reformulate the model to meet the above context and fix the \"issue(s)\" you have identified?      Are you able to change the parameter to get there to be 3 maxima?      What is the behavior long term? Consider both graphical and algebraic justification. Does this model make sense in the long term? Why or why not?    "
 },
 {
+  "id": "activity-06-sensitivity1",
+  "level": "1",
+  "url": "activity-06-sensitivity1.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "06 - Sensitivity Analysis Part 1",
+  "body": " 06 - Sensitivity Analysis Part 1    In this activity we want to analyze how sensitive a model is to its parameters.      The population of Zika mosquitoes can be modeled with the function where is given in months. We will investigate the effect of the parameters and on the model.     Create a Google Colab document that plots the model for and . Let range from 0 to 12. Define the function for your model to take and as inputs, along with the variable . You might have this from the last worksheet! Make sure to import the following packages:  import math  import numpy as np  import matplotlib.pyplot as plt        Let's start by seeing what happens when we change the parameter drastically. Let as before. Plot the population of mosquitos for . Let's do this using a for loop.  Begin by creating a list of the values using the following command: clist = np.arange(1,7,1) . This creates \"clist\" from 1 (inclusive) to 7 (exclusive) with steps of size 1.  To create a legend for your plot that differentiates between the values, add a label to your plot line of code: plt.plot(t,y, label='c='+str(c)) .  What do you notice? How does the model of the population change?      Let's look at what happens if rather than drastic changes in , we only change by about . To do this, let's look at the outputs for . Let's keep track of the relative minimum in between the two \"humps\" of the curve and compare how the output changes based on how the input changed. If the parameter changes by 0.06 (about ), how much does the relative minimum of the population change?  Some helpful things to consider:  numpy has the function np.min()  to find the percent change in the output at the relative min, we take the difference in the current output and the previous output values, divide by the previous output, and turn it into a percentage        Based on this analysis, do you think the model is sensitive to changes in the parameter ?      Now let's look at the affect of changing the parameter . Let's begin by changing the parameter drastically. Let as we did at the beginning. Plot the population of mosquitos for .  What do you notice? How does the model of the population change?      Let's look at what happens if rather than drastic changes in , we only change by about . To do this, let's look at the outputs for . Let's again keep track of the relative minimum in between the two \"humps\" of the curve and compare how the output changes based on how the input changed. If the parameter changes by 0.12 (about ), how much does the relative minimum of the population change?      Based on this analysis, do you think the model is sensitive to changes in the parameter ?      Is the model more sensitive to changes in the parameter or ?       Assume we introduce a new species to an area and monitor the population over 24 years. Let be the number of years after the introduction of the new species, and be the number of animals in the area at time . Assume also that is modeled fairly well by where is an unknown parameter. However, when we fit the model to data we find that is about 1. We want to determine if our model is sensitive to the parameter .     Plot the model with and show the first 24 years. Then plot the model for and . Put all three plots on the same graph. Notice that there is a change in the parameter .      Determine the percent change in the output of the model at the end of the time period, 24 years. That is, when is changed by , how much does the population change by at the end of 24 years?      In your opinion, is this model sensitive to the parameter ? Why or why not?     "
+},
+{
+  "id": "activity-06-sensitivity1-3",
+  "level": "2",
+  "url": "activity-06-sensitivity1.html#activity-06-sensitivity1-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  The population of Zika mosquitoes can be modeled with the function where is given in months. We will investigate the effect of the parameters and on the model.     Create a Google Colab document that plots the model for and . Let range from 0 to 12. Define the function for your model to take and as inputs, along with the variable . You might have this from the last worksheet! Make sure to import the following packages:  import math  import numpy as np  import matplotlib.pyplot as plt        Let's start by seeing what happens when we change the parameter drastically. Let as before. Plot the population of mosquitos for . Let's do this using a for loop.  Begin by creating a list of the values using the following command: clist = np.arange(1,7,1) . This creates \"clist\" from 1 (inclusive) to 7 (exclusive) with steps of size 1.  To create a legend for your plot that differentiates between the values, add a label to your plot line of code: plt.plot(t,y, label='c='+str(c)) .  What do you notice? How does the model of the population change?      Let's look at what happens if rather than drastic changes in , we only change by about . To do this, let's look at the outputs for . Let's keep track of the relative minimum in between the two \"humps\" of the curve and compare how the output changes based on how the input changed. If the parameter changes by 0.06 (about ), how much does the relative minimum of the population change?  Some helpful things to consider:  numpy has the function np.min()  to find the percent change in the output at the relative min, we take the difference in the current output and the previous output values, divide by the previous output, and turn it into a percentage        Based on this analysis, do you think the model is sensitive to changes in the parameter ?      Now let's look at the affect of changing the parameter . Let's begin by changing the parameter drastically. Let as we did at the beginning. Plot the population of mosquitos for .  What do you notice? How does the model of the population change?      Let's look at what happens if rather than drastic changes in , we only change by about . To do this, let's look at the outputs for . Let's again keep track of the relative minimum in between the two \"humps\" of the curve and compare how the output changes based on how the input changed. If the parameter changes by 0.12 (about ), how much does the relative minimum of the population change?      Based on this analysis, do you think the model is sensitive to changes in the parameter ?      Is the model more sensitive to changes in the parameter or ?    "
+},
+{
+  "id": "activity-06-sensitivity1-4",
+  "level": "2",
+  "url": "activity-06-sensitivity1.html#activity-06-sensitivity1-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Assume we introduce a new species to an area and monitor the population over 24 years. Let be the number of years after the introduction of the new species, and be the number of animals in the area at time . Assume also that is modeled fairly well by where is an unknown parameter. However, when we fit the model to data we find that is about 1. We want to determine if our model is sensitive to the parameter .     Plot the model with and show the first 24 years. Then plot the model for and . Put all three plots on the same graph. Notice that there is a change in the parameter .      Determine the percent change in the output of the model at the end of the time period, 24 years. That is, when is changed by , how much does the population change by at the end of 24 years?      In your opinion, is this model sensitive to the parameter ? Why or why not?    "
+},
+{
   "id": "homework-2",
   "level": "1",
   "url": "homework-2.html",
@@ -395,6 +422,69 @@ var ptx_lunr_docs = [
   "number": "2",
   "title": "",
   "body": "  Suppose you are told that after warming a cup of coffee is cold 7 minutes after heating it in a microwave for 1 minute, but it takes a cup of soup 35 minutes to get cold after heating for the same amount of time. What are some modeling questions you could ask related to this scenario? What assumptions might you make?   "
+},
+{
+  "id": "quiz_documents-3",
+  "level": "1",
+  "url": "quiz_documents-3.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Quiz 2 - MTH 305",
+  "body": " Quiz 2 - MTH 305  This quiz covers interpreting a mathematical model. Read all DIRECTIONS carefully. Good luck!    The following graph shows the function where is the yearly profit in thousands of dollars of a toy producer after the product is available for sale.   Graph of the yearly profit in thousands of dollars of a toy producer after the product is available for sale.      When is the yearly profit the highest in the first 10 years? Provide justification.      When is the profit decreasing? Include mathematical reasoning.      When is the profit decreasing most rapidly? Explain.      Does this model seem valid in the long term? If not, for how long does it seem viable?       After they were protected from hunting, the elephants in Kruger National Park (South Africa) experienced birth rates exceeding death rates for 60 years. The researchers at Kruger National Park determined that the growth rate (birth rate-death rate) is at its maximum in 1983 where in 1903. A model of the elephant population from 1903 to 2013 is given by the logistic function where is years, is in thousands per year, and and are positive parameters.   Graph of the elephant population in Kruger National Park from 1903 to 2013.      Describe what this model shows is happening to the elephant population in the long term. Identify any connection to the parameter and what you think its value is.      Identify an inflection point by circling it directly on the graph above. Describe its significance in the context of the model.      Retake of Quiz 1:     What are the components of the life-cycle of mathematical modeling? Is this process always linear?      Suppose you are given the task of determining whether it would be best to create a roundabout or traffic light at a particular intersection of roads. What modeling question might you ask? What assumptions would you need to make?    "
+},
+{
+  "id": "quiz_documents-3-2",
+  "level": "2",
+  "url": "quiz_documents-3.html#quiz_documents-3-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "DIRECTIONS "
+},
+{
+  "id": "quiz_documents-3-3",
+  "level": "2",
+  "url": "quiz_documents-3.html#quiz_documents-3-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  The following graph shows the function where is the yearly profit in thousands of dollars of a toy producer after the product is available for sale.   Graph of the yearly profit in thousands of dollars of a toy producer after the product is available for sale.      When is the yearly profit the highest in the first 10 years? Provide justification.      When is the profit decreasing? Include mathematical reasoning.      When is the profit decreasing most rapidly? Explain.      Does this model seem valid in the long term? If not, for how long does it seem viable?    "
+},
+{
+  "id": "quiz_documents-3-4",
+  "level": "2",
+  "url": "quiz_documents-3.html#quiz_documents-3-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  After they were protected from hunting, the elephants in Kruger National Park (South Africa) experienced birth rates exceeding death rates for 60 years. The researchers at Kruger National Park determined that the growth rate (birth rate-death rate) is at its maximum in 1983 where in 1903. A model of the elephant population from 1903 to 2013 is given by the logistic function where is years, is in thousands per year, and and are positive parameters.   Graph of the elephant population in Kruger National Park from 1903 to 2013.      Describe what this model shows is happening to the elephant population in the long term. Identify any connection to the parameter and what you think its value is.      Identify an inflection point by circling it directly on the graph above. Describe its significance in the context of the model.    "
+},
+{
+  "id": "quiz_documents-3-5",
+  "level": "2",
+  "url": "quiz_documents-3.html#quiz_documents-3-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Retake of Quiz 1: "
+},
+{
+  "id": "quiz_documents-3-6",
+  "level": "2",
+  "url": "quiz_documents-3.html#quiz_documents-3-6",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  What are the components of the life-cycle of mathematical modeling? Is this process always linear?   "
+},
+{
+  "id": "quiz_documents-3-7",
+  "level": "2",
+  "url": "quiz_documents-3.html#quiz_documents-3-7",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Suppose you are given the task of determining whether it would be best to create a roundabout or traffic light at a particular intersection of roads. What modeling question might you ask? What assumptions would you need to make?   "
 }
 ]
 
