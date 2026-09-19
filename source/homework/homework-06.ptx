@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 6 - Homework MTH 305</title>
+
+    <p>
+        You should present solutions neatly to all problems, making sure to show
+        all your work and follow the homework policies (see Blackboard document
+        for details).
+        You will turn in the assignment on Blackboard by 11:59 pm ET on Friday.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        and/or classmates.
+        No AI resources.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+
+    <exercise>
+        <introduction>
+            <p>
+                Pressure from a distending carotid artery has been shown to
+                affect nerve activity.
+                Data taken from [1] and [2] referenced below (after reduction,
+                rounding, and normalization), is plotted in a scatter plot below
+                <c>{(plt.scatter(xdata,ydata))}</c>.
+                Assume we have already found the following model
+                <md>
+                    y(x) = \frac{1}{1+(x/a)^b},
+                </md>
+                where <m>x</m> is the carotid distending pressure in mm Hg, and
+                <m>y</m> is the percentage of nerve activity.
+                Assume we've also already fit the data to the parameters
+                <m>a</m> and <m>b</m>.
+                The fitted values are <m>aa=115.143</m> and <m>bb=5.361</m>, and
+                the fitted curve is plotted along with the real data below.
+                Let's investigate the sensitivity of this model to the
+                parameters, <m>a</m> and <m>b</m>.
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    In the code below, the function <m>y(x)</m> is defined and
+                    there are three figures shown.
+                    Leaving <m>aa = 115.143</m>, let <m>b</m> take on three
+                    separate values: <m>2\%</m> less than the fitted <m>bb</m>,
+                    the fitted <m>bb</m>, and <m>2\%</m> more than the fitted
+                    <m>bb</m>.
+                    In Figure 2, plot all three curves along with the data
+                    already plotted in Figure 2.
+                    (Anything you want to include in Figure 2 should be plotted
+                    underneath the command <c>plt.figure(2)</c> and above
+                    <c>plt.show()</c>.)
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Now leave <m>bb = 5.361</m>, and let <m>a</m> take on three
+                    separate values: <m>2\%</m> less than the fitted <m>aa</m>,
+                    the fitted <m>aa</m>, and <m>2\%</m> more than the fitted
+                    <m>aa</m>.
+                    In Figure 3, plot all three curves along with the data
+                    already plotted in Figure 3.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Which parameter do you think the model is more sensitive to,
+                    <m>a</m> or <m>b</m>?
+                    Why?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Choose the parameter from Part (c) that you thought the
+                    model was more sensitive to, and let the other parameter be
+                    the true fitted value.
+                    We want to see how the fitted curve compares to the more
+                    sensitive curve to see how sensitive it actually is.
+                    If you think the model is more sensitive to <m>a</m>, copy
+                    and paste the following code into a new code cell, which
+                    will tell you the biggest difference between the fitted
+                    curve and the curve with $aa$ decreased by <m>2\%</m>:
+                </p>
+
+                <p>
+                    <c>np.max( np.abs( y(xspace,aa,bb) - y(xspace, aa*.98, bb) ) )</c>
+                </p>
+
+                <p>
+                    (Working inside to out - the code takes the difference
+                    between the two curves at each point, then takes the
+                    absolute value of that difference, and then finds the
+                    maximum of that absolute value.)
+                </p>
+
+                <p>
+                    If you think the model is more sensitive to <m>b</m>, then
+                    copy this code instead:
+                </p>
+
+                <p>
+                    <c>np.max( np.abs( y(xspace,aa,bb) - y(xspace, aa, bb*.98) ) )</c>
+                </p>
+
+                <p>
+                    Note that if you changed the definitions or variable names,
+                    you may have to adjust this line of code.
+                    How much did the <m>2\%</m> change in this parameter affect
+                    the change in output?
+                    Do you think the model is very sensitive to this parameter?
+                    Make sure you explain (use numbers, the graph, the context,
+                    any logic behind your reasoning).
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <program language="python">
+        <code>
+## Real x and y data taken from references
+xdata = np.array([60,70,80,91,101,112,122,132,143,153,163,174,184,194])
+ydata = np.array([.97,.77,.78,.81,.93,.46,.23,.53,.08,.23,.14,.04,.12,.08])
+
+## Figure 1
+## Scatter plot of the data
+plt.figure(1) ## Labeling it as figure 1 allows us to include multiple figures
+plt.scatter(xdata,ydata,label='Data')
+
+## Label everything
+plt.title('Figure 1: Experimental Data and Fitted Curve')
+plt.xlabel('carotid distending pressure (mm Hg)')
+plt.ylabel('percentage nerve activity')
+
+## Define function y(x) with parameters written as inputs a, b
+def y(x,a,b):
+  return 1/(1+(x/a)**b)
+
+xspace = np.linspace(50,200,500) # This creates an equally spaced vector between 50 and 200 consisting of 500 points.
+aa=115.143  # fitted values
+bb=5.361    # fitted values
+
+## Find the curve with the fitted parameters and plot
+ymodel = y(xspace, aa,bb)
+plt.plot(xspace,ymodel,label='fitted curve, a='+str(aa)+', b='+str(bb))
+      # NOTE: label is what the legend uses, str(aa) turns the number into a string so it can be shown with the words
+plt.legend()
+plt.show()
+
+## Figure 2
+plt.figure(2)
+plt.scatter(xdata,ydata,label='Data')
+plt.title('Figure 2: Fix a='+str(aa)+', vary b')
+plt.xlabel('carotid distending pressure (mm Hg)')
+plt.ylabel('percentage nerve activity')
+plt.legend()
+plt.show()
+
+## Figure 3
+plt.figure(3)
+plt.scatter(xdata,ydata,label='Data')
+plt.title('Figure 3: Fix b='+str(bb)+', vary a')
+plt.xlabel('carotid distending pressure (mm Hg)')
+plt.ylabel('percentage nerve activity')
+plt.legend()
+plt.show()
+        </code>
+    </program>
+
+    <p>
+        [1] K.D.
+        Monahan (2007).
+        Effect of aging on baroreflex function in humans.
+        <em>American Journal of Physiology: Regulatory, Integrative and Comparative Physiology, 293(1)</em>,
+        pp.
+        R3-R12, doi:10.1152/ajpregu.00031.2007.
+    </p>
+
+    <p>
+        [2] R.F.
+        Rea and D.L.
+        Eckberg (1987).
+        Carotid baroreceptor-mucle sympathetic relation in humans.
+        <em>American Journal of Physiology: Regulatory, Integrative and Comparative Physiology, 253(6)</em>,
+        pp.
+        R929-R934.
+    </p>
+</worksheet>

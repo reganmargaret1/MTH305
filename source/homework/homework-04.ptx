@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 4 - Homework MTH 305</title>
+
+    <p>
+        You should present solutions neatly to all problems, making sure to show
+        all your work and follow the homework policies (see Blackboard document
+        for details).
+        You will turn in the assignment on Blackboard by 11:59 pm ET on Friday.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        and/or classmates.
+        No AI resources.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+
+    <exercise>
+        <introduction>
+            <p>
+                Consider the model
+                <md>
+                    B(t)=\frac{10}{50e^{-t}+1}.
+                </md>
+                Here <m>B(t)</m> gives the population of bunnies (in hundreds)
+                at year <m>t</m> (in months).
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    Write code to plot the function and comment on what you can
+                    extrapolate from the graph.
+                    What is the end behavior?
+                    What does that represent for this problem?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Vary the carrying capacity (the 10 in the above function) by
+                    making it a parameter, say <m>k</m>.
+                    Let the carrying capacity be <m>k = 5, 10, 20, 25</m>.
+                    What is the effect of changing the carrying capacity?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Write code (you can copy and modify your code from above) in
+                    order to see what happens when you change the 50 in the
+                    denominator.
+                    Let's call this a new parameter <m>z</m>.
+                    Let's leave the carrying capacity at <m>k = 10</m> and now
+                    vary the value of <m>z</m>.
+                    Plot <m>B(t)</m> with four different values of <m>z</m>.
+                    What is the effect of changing this parameter?
+                    Based on your observation, what might this parameter be
+                    measuring?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Now, let's test the sensitivity of these parameters.
+                    First, let <m>k</m> vary by <m>2\%</m>
+                    <m>{(k = 9.6, 9.8, 10, 10.2, 10.4)}</m> with <m>z=50</m> and
+                    measure the change in <m>B(4)</m>. 
+                    Based on your results, do you think the model is sensitive
+                    to the parameter <m>k</m>?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Now, let <m>k=10</m> and vary <m>z</m> by <m>2\%</m>
+                    <m>{(z = 48, 49, 50, 51, 52)}</m>.
+                    Measure the change in <m>B(4)</m>.
+                    Based on your results, do you think the model is sensitive
+                    to the parameter <m>k</m>?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</worksheet>

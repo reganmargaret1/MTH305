@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 5 - Homework MTH 305</title>
+
+    <p>
+        You should present solutions neatly to all problems, making sure to show
+        all your work and follow the homework policies (see Blackboard document
+        for details).
+        You will turn in the assignment on Blackboard by 11:59 pm ET on Friday.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        and/or classmates.
+        No AI resources.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+
+    <exercise>
+        <introduction>
+            <p>
+                Weeds tend to follow exponential growth.
+                Assume that the number of weeds in a field at time <m>t</m>
+                given in days is
+                <md>
+                    N(t) = 4^{0.2t}.
+                </md>
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    How many weeds are there in the field initially?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    How many weeds would we expect on day 18?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    If the parameter 0.2 was changed to 0.205, how many weeds
+                    should we expect on day 18?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Notice we increased the parameter 0.2 by <m>0.25\%</m>.
+                    By how much percent did the output change?
+                    Would you consider this model sensitive to that parameter?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    What if we go back to our original model, but instead change
+                    the parameter 4 to 4.05.
+                    This is a <m>1.25\%</m> increase of that parameter.
+                    By how much percent did the output change?
+                    Would you consider this model sensitive to that parameter?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    If a storm at time 18 blew more seed into the field so that
+                    the number of weeds went up by 100 instantaneously at that
+                    time, and independently of the exponential growth model, how
+                    would we adapt our model?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</worksheet>
