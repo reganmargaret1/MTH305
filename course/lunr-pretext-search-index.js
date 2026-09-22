@@ -325,6 +325,24 @@ var ptx_lunr_docs = [
   "body": "  Assume we introduce a new species to an area and monitor the population over 24 years. Let be the number of years after the introduction of the new species, and be the number of animals in the area at time . Assume also that is modeled fairly well by where is an unknown parameter. However, when we fit the model to data we find that is about 1. We want to determine if our model is sensitive to the parameter .     Plot the model with and show the first 24 years. Then plot the model for and . Put all three plots on the same graph. Notice that there is a change in the parameter .      Determine the percent change in the output of the model at the end of the time period, 24 years. That is, when is changed by , how much does the population change by at the end of 24 years?      In your opinion, is this model sensitive to the parameter ? Why or why not?    "
 },
 {
+  "id": "activity-07-sensitivity2",
+  "level": "1",
+  "url": "activity-07-sensitivity2.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "07 - Sensitivity Analysis Part 2",
+  "body": " 07 - Sensitivity Analysis Part 2    In this activity we will continue to explore the sensitivity of models.      Consider the model below related to the minimal time problem involving the fetching dog: where is the jumping point of the dog, is the speed of the dog on land, and is its swim speed. Both of the speeds are in feet per second. Additionally, is the horizontal distance to the ball, along the shoreline, and is the shortest (perpendicular) distance from the ball to the shoreline. captures the total time it takes the dog to reach the ball when jumping into the lake after running feet.  The minimum of the total time function, , is      Choose values for and . You have freedom here, but do a little research to ensure the speeds you choose are reasonable. Create a Python function for the time function as defined above and plot the function. Include in your plot a dot corresponding to the optimum at . Looking at your graph, does the minimum make sense?      What do you expect would happen to the optimum if the dog's swim speed was better than you selected? Worse?      Adapt your code to test the sensitivity in run speed for four minor changes in the parameter. For example, if you initially used , add the plots for . Make sure to plot the minimum points on each graph. Comment on the changes you observe - does it seem that there is high sensitivity to the speed parameter? Explain.      What other parameters' sensitivity might be good to study? Why?      Determine the sensitivity functions and .      What is the sensitivity when and ? Explain what this means.      How does the sensitivity to changes in compare to the sensitivity to changes in ? What conclusions can you make about the model based on that? Explain.     "
+},
+{
+  "id": "activity-07-sensitivity2-3",
+  "level": "2",
+  "url": "activity-07-sensitivity2.html#activity-07-sensitivity2-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Consider the model below related to the minimal time problem involving the fetching dog: where is the jumping point of the dog, is the speed of the dog on land, and is its swim speed. Both of the speeds are in feet per second. Additionally, is the horizontal distance to the ball, along the shoreline, and is the shortest (perpendicular) distance from the ball to the shoreline. captures the total time it takes the dog to reach the ball when jumping into the lake after running feet.  The minimum of the total time function, , is      Choose values for and . You have freedom here, but do a little research to ensure the speeds you choose are reasonable. Create a Python function for the time function as defined above and plot the function. Include in your plot a dot corresponding to the optimum at . Looking at your graph, does the minimum make sense?      What do you expect would happen to the optimum if the dog's swim speed was better than you selected? Worse?      Adapt your code to test the sensitivity in run speed for four minor changes in the parameter. For example, if you initially used , add the plots for . Make sure to plot the minimum points on each graph. Comment on the changes you observe - does it seem that there is high sensitivity to the speed parameter? Explain.      What other parameters' sensitivity might be good to study? Why?      Determine the sensitivity functions and .      What is the sensitivity when and ? Explain what this means.      How does the sensitivity to changes in compare to the sensitivity to changes in ? What conclusions can you make about the model based on that? Explain.    "
+},
+{
   "id": "homework-2",
   "level": "1",
   "url": "homework-2.html",
