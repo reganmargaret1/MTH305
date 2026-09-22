@@ -39,7 +39,7 @@
             </p>
         </introduction>
 
-        <task>
+        <task workspace="1in">
             <statement>
                 <p>
                     Choose values for <m>v_R</m> and <m>v_S</m>.
