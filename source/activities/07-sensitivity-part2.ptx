@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="activity-07-sensitivity2">
+    <title>07 - Sensitivity Analysis Part 2</title>
+
+    <!-- Optional introduction -->
+    <introduction>
+        <p>
+            In this activity we will continue to explore the sensitivity of
+            models.
+        </p>
+    </introduction>
+    <!-- Exercises start here. -->
+    <exercise>
+        <introduction>
+            <p>
+                Consider the model below related to the minimal time problem
+                involving the fetching dog:
+                <md>
+                    T(x) = \frac{20-x}{v_R} + \frac{\sqrt{x^2+5^2}}{v_S}
+                </md>
+                where <m>x</m> is the jumping point of the dog, <m>v_R</m> is
+                the speed of the dog on land, and <m>v_S</m> is its swim speed.
+                Both of the speeds are in feet per second.
+                Additionally, <m>20</m> is the horizontal distance to the ball,
+                along the shoreline, and <m>5</m> is the shortest
+                (perpendicular) distance from the ball to the shoreline.
+                <m>T(x)</m> captures the total time it takes the dog to reach
+                the ball when jumping into the lake after running <m>{20-x}</m>
+                feet.
+            </p>
+
+            <p>
+                The minimum of the total time function, <m>T(x)</m>, is
+                <md>
+                    x_{min} = \frac{5v_s}{\sqrt{v_R^2 - v_S^2}}.
+                </md>
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    Choose values for <m>v_R</m> and <m>v_S</m>.
+                    You have freedom here, but do a little research to ensure
+                    the speeds you choose are reasonable.
+                    Create a Python function for the time function as defined
+                    above and plot the function.
+                    Include in your plot a dot corresponding to the optimum at
+                    <m>{(x_{min},T(x_{min}))}</m>.
+                    Looking at your graph, does the minimum make sense?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What do you expect would happen to the optimum if the dog's
+                    swim speed was better than you selected?
+                    Worse?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Adapt your code to test the sensitivity in run speed for
+                    four minor changes in the parameter.
+                    For example, if you initially used <m>{v_R = 2.3}</m>, add
+                    the plots for <m>{v_R = 2.28, 2.29, 2.31, 2.32}</m>.
+                    Make sure to plot the minimum points on each graph.
+                    Comment on the changes you observe - does it seem that
+                    there is high sensitivity to the speed parameter?
+                    Explain.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What other parameters' sensitivity might be good to study?
+                    Why?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Determine the sensitivity functions <m>{S(x,v_R)}</m> and
+                    <m>{S(x,v_S)}</m>.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What is the sensitivity when <m>{v_R = 5}</m> and
+                    <m>{v_S = 2.5}</m>?
+                    Explain what this means.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    How does the sensitivity to changes in <m>{v_S}</m> compare
+                    to the sensitivity to changes in <m>{v_R}</m>?
+                    What conclusions can you make about the model based on that?
+                    Explain.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</worksheet>

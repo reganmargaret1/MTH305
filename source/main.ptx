@@ -33,6 +33,7 @@
             <xi:include href="./activities/04-interpret.ptx"/>
             <xi:include href="./activities/05-reformulate.ptx"/>
             <xi:include href="./activities/06-sensitivity-part1.ptx"/>
+            <xi:include href="./activities/07-sensitivity-part2.ptx"/>
             <!-- Add more xi:include files here to include them in the main course -->
         </chapter>
 
