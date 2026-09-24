@@ -43,6 +43,42 @@
                     </ul>
                 </p>
             </statement>
+
+            <solution component="06-solutions">
+                <program language="python">
+                    <input>
+#import python libraries that will help us
+import math
+import numpy as np
+import matplotlib.pyplot as plt
+
+#Function definition  The key elements in it are the function name and parameters as well as the return variable.
+def P(t,c,d):       # Creates definition of P(t) that later you can call for some defined 't', 'c' and 'd'. This is the function name.
+    out = 8000*(1/6+np.exp(-(t-c)**2/d)+np.exp(-(t-9)**2/6))
+    return out
+
+# You've only defined your function, you haven't called it yet. You need to create an input.
+t = np.linspace(0,12,2000)
+
+# Choose your parameters
+c=3
+d=6
+
+y = P(t,c,d)    # Run the model
+plt.plot(t,y)   # Plot the model
+plt.xlabel('time (months)')
+plt.ylabel('population')
+plt.title('Parameters c='+str(c) +' and d='+str(d))
+plt.show()
+                    </input>
+                </program>
+
+                <image source="images/06-1a.png" width="75%">
+                    <shortdescription>
+                        Graph of the population of Zika mosquitoes over time.
+                    </shortdescription>
+                </image>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -74,6 +110,51 @@
                     How does the model of the population change?
                 </p>
             </statement>
+
+            <solution component="06-solutions">
+                <p>
+                    This builds on the previous code from Part (a).
+                </p>
+
+                <program language="python">
+                    <input>
+# Define parameters, and c as an array of the desired parameters
+clist = np.arange(1,7,1)       # create clist from 1 (inclusive) to 7 (exclusive) with steps of size 1
+d=6
+
+# For each number in clist, we want to run the model and plot it
+for i in range(0,len(clist)):  # i is the index of the value in clist, 0 through 5
+  c = clist[i]                 # define c as the correct element from clist
+  y = P(t,c,d)
+  plt.plot(t,y, label='c='+str(c))
+
+plt.xlabel('time (months)')
+plt.ylabel('population')
+plt.title('Fix d='+str(d)+' and vary the parameter c')
+plt.legend()                   # show the label of each plot in a legend
+plt.show()
+                    </input>
+                </program>
+
+                <image source="images/06-1b.png" width="75%">
+                    <shortdescription>
+                        Graph of the population of Zika mosquitoes over time
+                        with varying the parameter c.
+                    </shortdescription>
+                </image>
+
+                <p>
+                    The graph changes drastically, where a higher value of
+                    <m>c</m> actually merges the two "humps" of the graph and
+                    creates one larger "hump." The maximum increases during this
+                    merge.
+                    The relative minimum also continues to move later in time
+                    and at a higher population as the parameter <m>c</m> gets
+                    larger.
+                    However, the end behavior at the end of the year is
+                    consistent across all values of <m>c</m>.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -105,6 +186,48 @@
                     </ul>
                 </p>
             </statement>
+
+            <solution component="06-solutions">
+                <p>
+                    This builds on the previous code from Parts (a) and (b).
+                </p>
+
+                <program language="python">
+                    <input>
+clist=np.arange(2.88,3.13,.06)       # the parameters for c (start at 2.88 inclusive, stop at 3.13 exclusive, step size .06)
+d = 6
+
+cmin=np.zeros(5)                     # create zero vector that will later be filled with the relative minimum value for each 'c'
+
+# Run the model for each c value, and find the relative minimum
+for i in range(0,len(clist)):
+    c=clist[i]
+    y = P(t,c,d)
+    plt.plot(t,y,label='c='+str(c))
+    m= np.min(y[500:1500])           # Find the minimum of the output between the two humps
+    cmin[i]=m                        # Fill the correct index entry of cmin with the min
+    print('when c=',c,' the relative min is: ',m)
+plt.xlabel('time')
+plt.ylabel('population')
+plt.legend()
+plt.show()
+
+## To find the percent change in the output at the relative min,
+##   we take the difference in the output values, divide by the input and turn it into a %
+for i in range(0,len(cmin)-1):       # For each index, but now we need to stop at 1 less than the total
+    change = cmin[i+1]-cmin[i]       # Calculate the difference between i+1 and i index
+    percent = change/cmin[i]*100     # Calculate the percent change
+    print('The population output changed by: ',change,'which is ',percent,'%')
+                    </input>
+                </program>
+
+                <image source="images/06-1c.png" width="75%">
+                    <shortdescription>
+                        Graph of the population of Zika mosquitoes over time
+                        with varying the parameter c by 2 percent.
+                    </shortdescription>
+                </image>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -114,6 +237,14 @@
                     to changes in the parameter <m>c</m>?
                 </p>
             </statement>
+
+            <solution component="06-solutions">
+                <p>
+                    Since the percent change in the output is about the same as
+                    the percent change in the input, this model is not sensitive
+                    to the change in the parameter <m>c</m>.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -132,6 +263,47 @@
                     How does the model of the population change?
                 </p>
             </statement>
+
+            <solution component="06-solutions">
+                <p>
+                    This builds on the previous code from Part (a).
+                </p>
+
+                <program language="python">
+                    <input>
+# Define parameters, and d as an array of the desired parameters
+c = 3
+dlist = np.arange(4,10,1)       # create dlist from 4 (inclusive) to 10 (exclusive) with steps of size 1
+
+# For each number in dlist, we want to run the model and plot it
+for i in range(0,len(dlist)):  # i is the index of the value in dlist, 0 through 5
+  d = dlist[i]                 # define d as the correct element from dlist
+  y = P(t,c,d)
+  plt.plot(t,y, label='d='+str(d))
+
+plt.xlabel('time (months)')
+plt.ylabel('population')
+plt.title('Fix c='+str(c)+' and vary the parameter d')
+plt.legend()                   # show the label of each plot in a legend
+plt.show()
+                    </input>
+                </program>
+
+                <image source="images/06-1e.png" width="75%">
+                    <shortdescription>
+                        Graph of the population of Zika mosquitoes over time
+                        with varying the parameter d.
+                    </shortdescription>
+                </image>
+
+                <p>
+                    The graph has about the same shape, but the starting values
+                    are different, as well as the relative minimum at around 6
+                    months.
+                    There is also a slight shift earlier for the relative
+                    minimum in time.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -149,6 +321,47 @@
                     change?
                 </p>
             </statement>
+
+            <solution component="06-solutions">
+                <p>
+                    This builds on the previous code from Parts (a) and (e).
+                </p>
+
+                <program language="python">
+                    <input>
+c=3
+dlist=np.arange(5.76,6.25,.12)       # the parameters for d
+
+dmin=np.zeros(5)                     # create zero vector that will later be filled with the relative minimum value for each 'd'
+
+# Run the model for each d value, and find the relative minimum
+for i in range(len(dlist)):
+    d=dlist[i]
+    y = P(t,c,d)
+    plt.plot(t,y,label='d='+str(d))
+    m= np.min(y[500:1500])           # Find the minimum of the output between the two humps
+    dmin[i]=m                        # Fill the correct index entry of cmin with the min
+    print('when d=',d,' the relative min is: ',m)
+plt.xlabel('time')
+plt.ylabel('population')
+plt.legend()
+plt.show()
+
+## Find the percent change in the output at the relative min
+for i in range(len(dmin)-1):         # For each index, but now we need to stop at 1 less than the total
+    change = dmin[i+1]-dmin[i]       # Calculate the difference between i+1 and i index
+    percent = change/dmin[i]*100     # Calculate the percent change
+    print('The population output changed by: ',change,'which is ',percent,'%')
+                    </input>
+                </program>
+
+                <image source="images/06-1f.png" width="75%">
+                    <shortdescription>
+                        Graph of the population of Zika mosquitoes over time
+                        with varying the parameter d by 2 percent.
+                    </shortdescription>
+                </image>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -158,6 +371,14 @@
                     to changes in the parameter <m>d</m>?
                 </p>
             </statement>
+
+            <solution component="06-solutions">
+                <p>
+                    No, the model is not sensitive to changes in the parameter
+                    <m>d</m> since the percent change in the output is smaller
+                    than the percent change in the input.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -167,55 +388,145 @@
                     <m>c</m> or <m>d</m>?
                 </p>
             </statement>
+
+            <solution component="06-solutions">
+                <p>
+                    The percent change in the output when changing the parameter
+                    <m>c</m> by <m>2\%</m> is about 2 times larger than the
+                    percent change in the output when changing the parameter
+                    <m>d</m> by <m>2\%</m>.
+                    Therefore, the model is more sensitive to the parameter
+                    <m>c</m>.
+                    Although, again, it is not particularly sensitive to either
+                    of the parameters.
+                </p>
+            </solution>
         </task>
     </exercise>
 
     <exercise>
-    <introduction>
-    <p>
-        Assume we introduce a new species to an area and monitor
-        the population over 24 years. Let <m>t</m> be the number of 
-        years after the introduction of the new species, and <m>f(t)</m>
-        be the number of animals in the area at time <m>t</m>. Assume
-        also that <m>f(t)</m> is modeled fairly well by
-        <md> f(t) = -\frac{1}{4}(at)^3 + 6t^2 + 10t</md>
-        where <m>a</m> is an unknown parameter. However, when we fit the
-        model to data we find that <m>a</m> is about 1. We want to 
-        determine if our model is sensitive to the parameter <m>a</m>.
-        </p>
+        <introduction>
+            <p>
+                Assume we introduce a new species to an area and monitor the
+                population over 24 years.
+                Let <m>t</m> be the number of years after the introduction of
+                the new species, and <m>f(t)</m> be the number of animals in the
+                area at time <m>t</m>.
+                Assume also that <m>f(t)</m> is modeled fairly well by
+                <md>
+                    f(t) = -\frac{1}{4}(at)^3 + 6t^2 + 10t
+                </md>
+                where <m>a</m> is an unknown parameter.
+                However, when we fit the model to data we find that <m>a</m> is
+                about 1.
+                We want to determine if our model is sensitive to the parameter
+                <m>a</m>.
+            </p>
         </introduction>
 
         <task>
             <statement>
                 <p>
-                   Plot the model with <m>a = 1</m> and show the first
-                   24 years. Then plot the model for <m>{a = 0.99}</m>
-                   and <m>{a = 1.01}</m>. Put all three plots on the 
-                   same graph. Notice that there is a <m>1\%</m> change in
-                   the parameter <m>a</m>.
+                    Plot the model with <m>a = 1</m> and show the first 24
+                    years.
+                    Then plot the model for <m>{a = 0.99}</m> and
+                    <m>{a = 1.01}</m>.
+                    Put all three plots on the same graph.
+                    Notice that there is a <m>1\%</m> change in the parameter
+                    <m>a</m>.
                 </p>
             </statement>
+
+            <solution component="06-solutions">
+                <program language="python">
+                    <input>
+#import python libraries that will help us
+import math
+import numpy as np
+import matplotlib.pyplot as plt
+
+def f(t,a):      # the function defined with inputs both t and a
+  out = -1/4*(a*t)**3+6*t**2+10*t
+  return out
+
+# You've only defined your function, you haven't called it yet. You need to create an input.
+t = np.linspace(0,24,2000)
+
+# Choose your parameter
+alist=np.arange(0.99,1.01,0.01)
+
+fend=np.zeros(3)
+
+for i in range(len(alist)):
+  a=alist[i]
+  y = f(t,a)
+  m= y[-1]         # Find the value of f after t = 24 years
+  fend[i]=m
+  print('when a=',a,' the value of f after 24 years is: ',m)
+  plt.plot(t,y,label='a='+str(a))
+
+plt.xlabel('time (years)')
+plt.ylabel('population')
+plt.legend()
+plt.show()
+
+## Find the percent change in the output at 24 years
+for i in range(len(fend)-1):         # For each index, but now we need to stop at 1 less than the total
+    change = fend[i+1]-fend[i]       # Calculate the difference
+    percent = change/fend[i]*100     # Calculate the percent change
+    print('The population output changed by: ',change,'which is ',percent,'%')
+                    </input>
+                </program>
+
+                <image source="images/06-2a.png" width="75%">
+                    <shortdescription>
+                        Graph of the population of a new species over 24 years.
+                    </shortdescription>
+                </image>
+            </solution>
         </task>
 
         <task workspace="1in">
             <statement>
                 <p>
-                   Determine the percent change in the output of the 
-                   model at the end of the time period, 24 years. 
-                   That is, when <m>a</m> is changed by <m>1\%</m>, 
-                   how much does the population change by at the end 
-                   of 24 years?
+                    Determine the percent change in the output of the model at
+                    the end of the time period, 24 years.
+                    That is, when <m>a</m> is changed by <m>1\%</m>, how much
+                    does the population change by at the end of 24 years?
                 </p>
             </statement>
+
+            <solution component="06-solutions">
+                <image source="images/06-2a.png" width="75%">
+                    <shortdescription>
+                        Graph of the population of a new species over 24 years.
+                    </shortdescription>
+                </image>
+            </solution>
         </task>
 
         <task workspace="1in">
             <statement>
                 <p>
-                   In your opinion, is this model sensitive to the parameter
-                   <m>a</m>? Why or why not?
+                    In your opinion, is this model sensitive to the parameter
+                    <m>a</m>?
+                    Why or why not?
                 </p>
             </statement>
+
+            <solution component="06-solutions">
+                <p>
+                    Yes!
+                    The model is very sensitive to the parameter <m>a</m>!
+                    There is a huge percent change in the ending value with only
+                    a small percent change in the input parameter value.
+                    Note: the percent change is negative, which means that there
+                    is a decrease in the output.
+                    However, when we are thinking about the impact of the
+                    parameter change, the negative sign isn't important compared
+                    to the size of the percent change.
+                </p>
+            </solution>
         </task>
     </exercise>
 </worksheet>
