@@ -64,5 +64,12 @@
             <xi:include href="./quiz/2-quiz.ptx"/>
             <xi:include href="./quiz/3-quiz.ptx"/>
         </chapter>
+
+    <chapter xml:id="final_project">
+            <title>Final Project</title>
+
+            <!-- Include lab files -->
+            <xi:include href="./final_project/final_project_guidelines.ptx"/>
+        </chapter>
     </book>
 </pretext>
