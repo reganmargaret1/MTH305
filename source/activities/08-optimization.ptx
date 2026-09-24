@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="activity-08-optimization">
+    <title>08 - Optimization of Models</title>
+
+    <!-- Optional introduction -->
+    <introduction>
+        <p>
+            In this activity we will explore the optimization of models.
+        </p>
+    </introduction>
+    <!-- Exercises start here. -->
+    <exercise>
+        <introduction>
+            <p>
+                You invent a new pop (or soda, or sodapop) and are looking to
+                make and sell your new product at the best price.
+                Luckily for you, you understand mathematics.
+                The optimal can design needs to hold 355 cubic centimeters of
+                your drink.
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Assume pop cans are perfect cylinders.
+                    What is the optimal radius of the can?
+                    Hints of how to proceed: Draw a picture.
+                    Create variables for the dimensions involved (label your
+                    picture).
+                    What equation (constraint) must be true given the design?
+                    You want to minimize the surface area so what is the
+                    equation for the surface area?
+                    Two independent variables is one too many - how can you
+                    replace one of the variables?
+                    In order to MINIMIZE the surface area - where does the
+                    minimum occur?
+                </p>
+            </statement>
+
+            <solution component="08-solutions">
+                <p/>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    The typical radius of a pop can is 3.25 cm.
+                    Does your result match?
+                    What are some assumptions that could contribute to whether
+                    or not your result matches?
+                    In words only (not equations), explain some typical soda can
+                    construction practices that would change your optimized
+                    function (i.e.
+                    what are some short comings of your model that could be
+                    altered to make your model better?).
+                </p>
+            </statement>
+
+            <solution component="08-solutions">
+                <p/>
+            </solution>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Let <m>N(t)</m> represent the number of people in the GVSU Mary
+                Idema Pew Library at time <m>t</m> in hours, where <m>t = 0</m>
+                is midnight.
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    How would we find when there were 100 people in the library?
+                    Explain.
+                    (Note, we don't yet know the form of the function, so we
+                    can't actually do it yet.)
+                </p>
+            </statement>
+
+            <solution component="08-solutions">
+                <p/>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Suppose <m>N(t)</m> was given by
+                    <m>{N(t) = -\frac{1}{4}t^3 + 6t^2}</m>.
+                    Plot the model and its first and second derivatives.
+                    What time period makes sense for this problem?
+                    Explain.
+                </p>
+            </statement>
+
+            <solution component="08-solutions">
+                <p/>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    When is the number of people in the library increasing?
+                    Connect to the graphs you've plotted.
+                </p>
+            </statement>
+
+            <solution component="08-solutions">
+                <p/>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    When is the number of people in the library increasing most
+                    rapidly?
+                    Connect to the graphs you've plotted.
+                </p>
+            </statement>
+
+            <solution component="08-solutions">
+                <p/>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What time(s) of day correspond to the most number of people
+                    in the library?
+                    What time(s) of day correspond to the least number of people
+                    in the library?
+                    Interpret your results in context and prove it, do not just
+                    guess from a graph.
+                </p>
+            </statement>
+
+            <solution component="08-solutions">
+                <p/>
+            </solution>
+        </task>
+    </exercise>
+</worksheet>
