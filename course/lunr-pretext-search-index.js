@@ -343,6 +343,33 @@ var ptx_lunr_docs = [
   "body": "  Consider the model below related to the minimal time problem involving the fetching dog: where is the jumping point of the dog, is the speed of the dog on land, and is its swim speed. Both of the speeds are in feet per second. Additionally, is the horizontal distance to the ball, along the shoreline, and is the shortest (perpendicular) distance from the ball to the shoreline. captures the total time it takes the dog to reach the ball when jumping into the lake after running feet.  The minimum of the total time function, , is      Choose values for and . You have freedom here, but do a little research to ensure the speeds you choose are reasonable. Create a Python function for the time function as defined above and plot the function. Include in your plot a dot corresponding to the optimum at . Looking at your graph, does the minimum make sense?      What do you expect would happen to the optimum if the dog's swim speed was better than you selected? Worse?      Adapt your code to test the sensitivity in run speed for four minor changes in the parameter. For example, if you initially used , add the plots for . Make sure to plot the minimum points on each graph. Comment on the changes you observe - does it seem that there is high sensitivity to the speed parameter? Explain.      What other parameters' sensitivity might be good to study? Why?      Determine the sensitivity functions and .      What is the sensitivity when and ? Explain what this means.      How does the sensitivity to changes in compare to the sensitivity to changes in ? What conclusions can you make about the model based on that? Explain.    "
 },
 {
+  "id": "activity-08-optimization",
+  "level": "1",
+  "url": "activity-08-optimization.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "08 - Optimization of Models",
+  "body": " 08 - Optimization of Models    In this activity we will explore the optimization of models.      You invent a new pop (or soda, or sodapop) and are looking to make and sell your new product at the best price. Luckily for you, you understand mathematics. The optimal can design needs to hold 355 cubic centimeters of your drink.     Assume pop cans are perfect cylinders. What is the optimal radius of the can? Hints of how to proceed: Draw a picture. Create variables for the dimensions involved (label your picture). What equation (constraint) must be true given the design? You want to minimize the surface area so what is the equation for the surface area? Two independent variables is one too many - how can you replace one of the variables? In order to MINIMIZE the surface area - where does the minimum occur?      The typical radius of a pop can is 3.25 cm. Does your result match? What are some assumptions that could contribute to whether or not your result matches? In words only (not equations), explain some typical soda can construction practices that would change your optimized function (i.e. what are some short comings of your model that could be altered to make your model better?).       Let represent the number of people in the GVSU Mary Idema Pew Library at time in hours, where is midnight.     How would we find when there were 100 people in the library? Explain. (Note, we don't yet know the form of the function, so we can't actually do it yet.)      Suppose was given by . Plot the model and its first and second derivatives. What time period makes sense for this problem? Explain.      When is the number of people in the library increasing? Connect to the graphs you've plotted.      When is the number of people in the library increasing most rapidly? Connect to the graphs you've plotted.      What time(s) of day correspond to the most number of people in the library? What time(s) of day correspond to the least number of people in the library? Interpret your results in context and prove it, do not just guess from a graph.     "
+},
+{
+  "id": "activity-08-optimization-3",
+  "level": "2",
+  "url": "activity-08-optimization.html#activity-08-optimization-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  You invent a new pop (or soda, or sodapop) and are looking to make and sell your new product at the best price. Luckily for you, you understand mathematics. The optimal can design needs to hold 355 cubic centimeters of your drink.     Assume pop cans are perfect cylinders. What is the optimal radius of the can? Hints of how to proceed: Draw a picture. Create variables for the dimensions involved (label your picture). What equation (constraint) must be true given the design? You want to minimize the surface area so what is the equation for the surface area? Two independent variables is one too many - how can you replace one of the variables? In order to MINIMIZE the surface area - where does the minimum occur?      The typical radius of a pop can is 3.25 cm. Does your result match? What are some assumptions that could contribute to whether or not your result matches? In words only (not equations), explain some typical soda can construction practices that would change your optimized function (i.e. what are some short comings of your model that could be altered to make your model better?).    "
+},
+{
+  "id": "activity-08-optimization-4",
+  "level": "2",
+  "url": "activity-08-optimization.html#activity-08-optimization-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Let represent the number of people in the GVSU Mary Idema Pew Library at time in hours, where is midnight.     How would we find when there were 100 people in the library? Explain. (Note, we don't yet know the form of the function, so we can't actually do it yet.)      Suppose was given by . Plot the model and its first and second derivatives. What time period makes sense for this problem? Explain.      When is the number of people in the library increasing? Connect to the graphs you've plotted.      When is the number of people in the library increasing most rapidly? Connect to the graphs you've plotted.      What time(s) of day correspond to the most number of people in the library? What time(s) of day correspond to the least number of people in the library? Interpret your results in context and prove it, do not just guess from a graph.    "
+},
+{
   "id": "homework-2",
   "level": "1",
   "url": "homework-2.html",
