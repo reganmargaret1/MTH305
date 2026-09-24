@@ -584,6 +584,42 @@ var ptx_lunr_docs = [
   "number": "4",
   "title": "",
   "body": "  Suppose you are given the task of determining whether it would be best to create a roundabout or traffic light at a particular intersection of roads. What modeling question might you ask? What assumptions would you need to make?   "
+},
+{
+  "id": "quiz_documents-4",
+  "level": "1",
+  "url": "quiz_documents-4.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Quiz 3 - MTH 305",
+  "body": " Quiz 3 - MTH 305  This quiz covers sensitivity of mathematical models. Read all DIRECTIONS carefully. Good luck!    Suppose you have a model that depends on a parameter . The following data gives the relative minima for each choice of parameter . The parameter is changing by approximately each time.   Data of relative minima for differing c parameter values for the Zika mosquito model.      Find the percent change in the relative minima.      Based on your results, do you believe the model to be sensitive to the parameter ? Why or why not?       Suppose is a constant that captures the intrinsic strength of a square wooden beam relative to its width ( ). Given a circular log of 14 inches in diameter, the maximum strength for a beam with width is given by:      Determine the sensitivity function that captures the sensitivity of to changes in the constant .      What is the sensitivity when and ? Interpret the meaning of your calculation in the context of the scenario.      What conclusions can you make about how confident we can be in the output of this model?     "
+},
+{
+  "id": "quiz_documents-4-2",
+  "level": "2",
+  "url": "quiz_documents-4.html#quiz_documents-4-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "DIRECTIONS "
+},
+{
+  "id": "quiz_documents-4-3",
+  "level": "2",
+  "url": "quiz_documents-4.html#quiz_documents-4-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Suppose you have a model that depends on a parameter . The following data gives the relative minima for each choice of parameter . The parameter is changing by approximately each time.   Data of relative minima for differing c parameter values for the Zika mosquito model.      Find the percent change in the relative minima.      Based on your results, do you believe the model to be sensitive to the parameter ? Why or why not?    "
+},
+{
+  "id": "quiz_documents-4-4",
+  "level": "2",
+  "url": "quiz_documents-4.html#quiz_documents-4-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Suppose is a constant that captures the intrinsic strength of a square wooden beam relative to its width ( ). Given a circular log of 14 inches in diameter, the maximum strength for a beam with width is given by:      Determine the sensitivity function that captures the sensitivity of to changes in the constant .      What is the sensitivity when and ? Interpret the meaning of your calculation in the context of the scenario.      What conclusions can you make about how confident we can be in the output of this model?    "
 }
 ]
 
