@@ -62,6 +62,7 @@
             <!-- Include lab files -->
             <xi:include href="./quiz/1-quiz.ptx"/>
             <xi:include href="./quiz/2-quiz.ptx"/>
+            <xi:include href="./quiz/3-quiz.ptx"/>
         </chapter>
     </book>
 </pretext>

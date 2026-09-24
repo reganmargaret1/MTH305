@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Quiz 3 - MTH 305</title>
+
+    <p>
+        This quiz covers sensitivity of mathematical models.
+        Read all <term>DIRECTIONS</term> carefully.
+        Good luck!
+    </p>
+
+    <exercise>
+        <introduction>
+            <p>
+                Suppose you have a model that depends on a parameter <m>c</m>.
+                The following data gives the relative minima for each choice of
+                parameter <m>c</m>.
+                The <m>c</m> parameter is changing by approximately <m>2\%</m>
+                each time.
+            </p>
+
+            <image source="images/quiz3_1.png" width="80%">
+                <shortdescription>
+                    Data of relative minima for differing c parameter values for
+                    the Zika mosquito model.
+                </shortdescription>
+            </image>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Find the percent change in the relative minima.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1.5in">
+            <statement>
+                <p>
+                    Based on your results, do you believe the model to be
+                    sensitive to the parameter <m>c</m>?
+                    Why or why not?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Suppose <m>k</m> is a constant that captures the intrinsic
+                strength of a square wooden beam relative to its width (
+                <m>w</m> ).
+                Given a circular log of 14 inches in diameter, the maximum
+                strength for a beam with width <m>w</m> is given by:
+                <md>
+                    k = \frac{196}{3w^2}
+                </md>
+            </p>
+        </introduction>
+
+        <task workspace="0.5in">
+            <statement>
+                <p>
+                    Determine the sensitivity function <m>S(k,w)</m> that
+                    captures the sensitivity of <m>k</m> to changes in the
+                    constant <m>w</m>.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="0.5in">
+            <statement>
+                <p>
+                    What is the sensitivity when <m>w = 13</m> and
+                    <m>k = 0.39</m>?
+                    Interpret the meaning of your calculation in the context of
+                    the scenario.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="0.5in">
+            <statement>
+                <p>
+                    What conclusions can you make about how confident we can be
+                    in the output of this model?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</worksheet>
