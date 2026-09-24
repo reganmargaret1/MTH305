@@ -620,6 +620,87 @@ var ptx_lunr_docs = [
   "number": "2",
   "title": "",
   "body": "  Suppose is a constant that captures the intrinsic strength of a square wooden beam relative to its width ( ). Given a circular log of 14 inches in diameter, the maximum strength for a beam with width is given by:      Determine the sensitivity function that captures the sensitivity of to changes in the constant .      What is the sensitivity when and ? Interpret the meaning of your calculation in the context of the scenario.      What conclusions can you make about how confident we can be in the output of this model?    "
+},
+{
+  "id": "final_project-2",
+  "level": "1",
+  "url": "final_project-2.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Final Project Guidelines",
+  "body": " Final Project Guidelines    Big Idea: The final project of the course is to complete a research project modeling some real world problem of your choice. You should identify an interesting problem of study, come up with a set of questions you would like to answer, formulate a mathematical model appropriate to the physical context, analyze and refine your model, and use your model to try and answer some of your initial questions.  Ideally, you will utilize the mathematics learned in this course, and potentially others, to make an in-depth investigation of your topic. You should emphasize depth over breadth when conducting your investigation.  You can work in a group of at most three people, you can also work by yourself. You and your group (if you work with a group) will come up with a project topic (vetted by your professor), determine the mathematical model you wish to study, do the work, write up a paper, and present your results to the class. It is expected that each member of the group will contribute equally.  At the end of this project you will produce a final paper as well as a presentation to present your work to the class. The final project, paper, and presentation combined will total of your final grade.   I am not looking for earth-shattering results. If you have them, great. If you answer your question, great. If you didn't answer your question but threw different ideas at it and your determined why it was really hard to answer your question, great. Tell us about it.    Timeline and due dates: Throughout, you are essentially turning in incomplete drafts of the final paper. The final paper should include all corrections made throughout the process. Drafts will be submitted under \"Final Project Draft\" every time in Blackboard.  Tuesday, September 29: By class time, tell Dr. Maggie your group.  Thursday, October 1: Group or individual contract signed in class.  Tuesday, October 13: By 11:59pm, submit a brief explanation of the topic and question you and your group will work on. We will discuss your proposal during class the next week.  Thursday, October 29: By 11:59pm, submit a proposal for your project. We will discuss your proposal during class the next week.  Thursday, November 12: By 11:59pm, submit a draft (which at this point is really a progress report) detailing the status of your project, including any results and further lines of inquiry. Should include what you've done so far, and any questions.  Tuesday, November 24: Lightening presentations on your groups progress so far.  Thursday, December 3: By 11:59pm, submit a (mostly) complete draft of your paper for feedback.  Thursday, December 10 (if needed) : Begin final presentations. Class feedback to be taken during the presentations and submitted by midnight. Submit your final presentation slides before the presentations (11:30 am) if you are presenting that day.  Tuesday, December 15: Final presentations. Class feedback to be taken during the presentations and submitted by midnight. Submit your final presentation slides before the presentations (10am-12pm).  Wednesday, December 16: By 11:59pm, final draft of paper due. Peer evaluation form also due.     Groups:   Each individual project will complete a contract, either a group contract for groups of size greater than one, or an individual expectations contract for those working alone, about the expectations for this final project.  Each group with the number of members greater than one will also complete a peer evaluation due at the completion of the project.  It is expected that each member of the group will contribute equally.     Writing your paper: The paper should be a typed report and written using Overleaf. (I'm going to give you an example template for this!)  Your paper should be well written, clear, organized, and in your own words. You should include a brief abstract at the start of your paper (one paragraph) stating the particular problem you are modeling, the questions you are trying to answer, and your major results (the abstract should be one of the last things written). Be sure to include both an introduction and conclusion to your paper.  All figures should have captions and be appropriately referenced. It is fine to write mathematical equations by hand in the narrative of your paper, or they may be included in an appendix. Take care to proofread your paper and make sure all equations and calculations are included.  Here are 6 things you should make sure to pay attention to when writing up your project:  Clearly state and motivate what you are going to do.  Explain assumptions and rationale\/justifications. Emphasize the key assumptions that bear on the problem. Clearly list all variables used in your model.  Describe your model design and its justification (why you are using this particular type of model).  Perform sensitivity analysis in some manner.  Discuss the strengths and weaknesses of your model or approach.  Reference and cite any sources, including sources of data.    The paper should show the life cycle of math modeling applied to your project. Begin with recognition (question\/problem, why important), then formulation (assumptions, set up, identify variables\/parameters\/equations), solution, validation (connect to real world in context, does it make sense, how can we improve it or what other questions do we have). Repeat.  Unless it is essential to the understanding, python code should be left out, or added at the very end. Results of your code (graphs, values, solutions, interesting things) should be included in the main section of your paper.   Data: Data can be found in many different places. Online you can usually search for data using Google, and some places that have open (freely available) data are:  Grand Rapids Data:   NYC Open Data:   World Bank Open Data:   Federal Data:    You may also find a scientific paper or article that references or uses data, which is usually available. It can be hard to find however, so if you are struggling please ask.   Presentations: The final presentation at the end of the semester can use Powerpoint, Google Slides, Beamer (LaTeX's presentation mode), or Padlet, or pretty much any presentation tool (check with Dr. Maggie if you want to use something else). The length of this presentation will be determined by the number of groups. Every member of your group will need to speak.  You will need to organize a presentation highlighting your work for this final project. You should make full use of your time to present. In order to do so, you should practice giving your presentation out loud at least twice before your presentation day. You will need to summarize the content and results from your paper in a way that conveys the information well to your classmates.  Presentations should highlight the work you did on your project, and take the class through how life cycle of math modeling as it applies to your topic, as in the final paper. A good strategy would be to begin by talking about the recognition stage including what you are trying to find out and why it is important. Then briefly include your simplifying assumptions and how you formulated your model. (You don't always have to say the complicated math out-loud, sometimes it can be enough just to show your formula\/math, and walk us through the meaning\/why.) The solution\/results of your work\/validation are the really interesting parts. What did you find? Does it answer your question? Did you find something new? If you cycled through the process again, repeat (if time, but if not enough time to talk about all your loops through the cycle, quickly mention starting efforts and then jump to the meat of the project - early ideas that didn't work can be included, or briefly skimmed, or shortly mentioned but majority of talk left to other ideas). Leave your audience with context, any results found which can include did your answer your question or find out something different, and future questions\/directions\/ideas related to this project.   Project Topic Ideas: The topic should be something that interests you, and can be your own idea. You can pull inspiration from your major, your sports team, a scene in a movie, a situation in a favorite comic, an event or situation in the news, hobbies, .... You can also choose an assigned problem and go deeper and further to expand on that. There really is no limit. Start simple, and go from there. If you are struggling to come up with a question you want to answer, here are some topics that have some interesting questions. Examples of topics:  Population models (what is an interesting ecosystem or dynamic)  Social interactions  Optimal results (can be applied to almost anything - the best\/worst way or the max\/min value...)  Data and predictions (find an interesting dataset, and go from there)  Epidemic models (disease, SIR, SIR + more letters - what compartments\/'populations' are there?)  Chemical oscillations (chemical reactions anyone?)  Pharmacological studies (how could one drug or one treatment affect the situation)  Effects of activity on climate change  Arms race (weapons, what kind of model(s) would be good here?)  Political leanings or predictions (if politics interest you, you will always have something to talk about...)  Shooting a bullet in water (see movies, how come the good guys never get hit?)  Olympics\/sports (what sport interests you? what questions do you have?)  Helicopter issues (water landings, safety, ...)  A situation from your favorite comic (what happens if you model it mathematically?)  Go further on an application of a model talked about in class or in an assigned problem  Your major has many questions within it, do they interest you?     Advice from past 305 students about the final project: (They modeled everything from COVID to teacher retention to skydiving to memes to art to ...):  Pick a topic that interests you  Make sure you stay on top of things and don't ever be afraid to ask questions  Do it with a group! It makes it much funner and if it is online, helps with creating connections that we wouldn't normally have the opportunity to.  Pick something you're interested in, it makes it enjoyable.  Do your research ahead of time, look for what's already been done, and try to solve something realistic and practical  Meet with your group outside of class to work on the project and do not wait to do it.  Get more done earlier, you'll have more time to do more for the project  Get started early. Be ok with running into problems.  Changing topics and modifying questions\/approaches is okay!  Asking questions in the beginning can make it much easier and will make sure you do not struggle for as long.  Start small then expand\/explore. Have a good foundation to build on.  Pick something you actually want to research, and keep pace. It's a great learning opportunity to take advantage of.  Make sure to pick something that interests you and being able to spend a lot of time on the project will come very easily.  Get at least a preliminary model made as soon as you can and consistently put some time into the project each week.     "
+},
+{
+  "id": "final_project-2-2-1",
+  "level": "2",
+  "url": "final_project-2.html#final_project-2-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Big Idea: "
+},
+{
+  "id": "final_project-2-2-6",
+  "level": "2",
+  "url": "final_project-2.html#final_project-2-2-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Timeline and due dates: (if needed) "
+},
+{
+  "id": "final_project-2-2-7",
+  "level": "2",
+  "url": "final_project-2.html#final_project-2-2-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Groups: "
+},
+{
+  "id": "final_project-2-2-8",
+  "level": "2",
+  "url": "final_project-2.html#final_project-2-2-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Writing your paper: "
+},
+{
+  "id": "final_project-2-2-14",
+  "level": "2",
+  "url": "final_project-2.html#final_project-2-2-14",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Data: "
+},
+{
+  "id": "final_project-2-2-16",
+  "level": "2",
+  "url": "final_project-2.html#final_project-2-2-16",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Presentations: "
+},
+{
+  "id": "final_project-2-2-19",
+  "level": "2",
+  "url": "final_project-2.html#final_project-2-2-19",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Project Topic Ideas: "
+},
+{
+  "id": "final_project-2-2-20",
+  "level": "2",
+  "url": "final_project-2.html#final_project-2-2-20",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Advice from past 305 students about the final project: "
 }
 ]
 
