@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 7 - Homework MTH 305 - Regan</title>
+
+    <p>
+        You should present solutions neatly to all problems, making sure to show
+        all your work and follow the homework policies (see Blackboard document
+        for details).
+        You will turn in the assignment on Blackboard by 11:59 pm ET on Friday.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        and/or classmates.
+        No AI resources.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+
+    <exercise>
+        <introduction>
+            <p>
+                League of Legends is a multiplayer online battle arena video
+                game.
+                In the game, a player measures their Effective Health <m>E</m>
+                against physical damage by
+                <md>
+                    E = \frac{H(100+A)}{100},
+                </md>
+                where <m>H</m> is health, <m>A</m> is armor, both of which you
+                can buy with gold in the game.
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    Health costs 2.5 gold per unit in the game and armor costs
+                    18 gold per unit.
+                    Suppose you have 3600 gold.
+                    How much health and armor should you buy to optimize your
+                    Effective Health and survive as long as possible against
+                    enemy attacks.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    You are now ten minutes into the game, and you only have 720
+                    gold available to you.
+                    Your health is at 1080 units, and your armor is at 10 units.
+                    The price of health and armor is the same as in Part (a).
+                    How much of each should you buy now?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    You are now thirty minutes into the game, and you have 1800
+                    gold to spend.
+                    Your health is at 2000 units, your armor at 50.
+                    Health and armor cost the same as in Part (a).
+                    How much of each should you buy?
+                    <term>Hint:</term> this is a slightly different question and
+                    requires you to adjust your model, aka your equation for
+                    <m>E</m>.
+                    Since you cannot sell health and armor, the question becomes
+                    how can you maximize your Effective Health based on the
+                    resulting health and armor you can buy, rather than the
+                    current health and armor you have?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    The game is actually more complicated.
+                    You do not just defend against physical damages, you also
+                    defend against magical damage by buying armor and magic
+                    resistance, which adds another variable.
+                    When you have multiple variables (multivariable calculus),
+                    you need Lagrange multipliers.
+                    Nothing to answer, just an interesting thing to think
+                    about...
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</worksheet>

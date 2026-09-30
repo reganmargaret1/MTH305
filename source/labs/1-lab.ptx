@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="lab1">
+    <title>Lab 1 - MTH 305 - Regan</title>
+
+    <!-- Optional introduction -->
+    <introduction>
+        <p>
+            This project will be completed in groups of approximately 3-4
+            people.
+            You are expected to work together, and to give equal and valiant
+            effort throughout this project.
+            You will have about a week to work on this, and may need to meet
+            outside of class to work on this project as a group.
+            At the end of the project, your group will submit a project report
+            answering the questions below.
+            You can either complete the project in Google Colabs, or some other
+            online document such as Google Docs or Overleaf (all of these can be
+            shared with your group members as well as with Professor Regan).
+            Whatever you use, a copy (or the original) should be saved in your
+            Google Drive Portfolio.
+            Note that a numeric answer on it's own with no context or
+            explanation is not a solution, and your responses should be sure to
+            explain what you did, and why you did it.
+            This project will be due Sunday, October 11th at 11:59pm.
+            Each group member will then fill out a project evaluation form
+            describing how you and each of your team members contributed to this
+            project, due the following Monday, October 12th.
+        </p>
+
+        <p>
+            An oil slick spreads at sea.
+            From time to time, but irregularly, a helicopter is dispatched to
+            photograph the oil slick.
+            On each trip, the helicopter arrives over the slick, the pilot takes
+            a picture, waits 10 minutes, takes another, and heads home.
+            On each of seven trips the size (in area) of the slick is measured
+            from both photographs.
+            The data is given in the table below for the size of the oil slick
+            in square miles:
+        </p>
+
+        <tabular top="minor" bottom="minor" left="minor" right="minor">
+            <col width="30%" halign="center"/>
+            <col width="70%"/>
+            <row header="yes">
+                <cell>Initial Observation</cell>
+                <cell>10 min. later</cell>
+            </row>
+
+            <row>
+                <cell>1.047</cell>
+                <cell>1.139</cell>
+            </row>
+
+            <row>
+                <cell>2.005</cell>
+                <cell>2.087</cell>
+            </row>
+
+            <row>
+                <cell>3.348</cell>
+                <cell>3.413</cell>
+            </row>
+
+            <row>
+                <cell>5.719</cell>
+                <cell>5.765</cell>
+            </row>
+
+            <row>
+                <cell>7.273</cell>
+                <cell>7.304</cell>
+            </row>
+
+            <row>
+                <cell>8.410</cell>
+                <cell>8.426</cell>
+            </row>
+
+            <row>
+                <cell>9.117</cell>
+                <cell>9.127</cell>
+            </row>
+        </tabular>
+
+        <p>
+            The data is coded in the cell below for you to use for the following
+            questions.
+        </p>
+
+        <program language="python">
+            <code>
+data = np.array([[1.047,1.139],[2.005,2.087],[3.348,3.413],[5.719,5.765],[7.273,7.304],[8.410,8.426],[9.117,9.127]])
+            </code>
+        </program>
+    </introduction>
+    <!-- Exercises start here. -->
+    <exercise>
+        <statement>
+            <p>
+                Build a model for the size of the oil slick at time <m>t</m>.
+                Let <m>s(t)</m> be the size of the oil slick in square miles,
+                and <m>t</m> the time in minutes.
+                Explain how you built your model and what steps you used.
+                Use Python to build the model.
+                You can also involve Wolfram Alpha as needed to help.
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Use your model <m>s(t)</m> to plot the size of the oil slick
+                over time.
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Use your model to find the exact times at which the photographs
+                were taken.
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Plot the data over your plot of <m>s(t)</m> to affirm or
+                validate your model.
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Find how much time had passed before the initial observation of
+                1.047 square miles.
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Predict the long term behavior of the oil slick.
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Think about your model.
+                What are some real-life factors of an oil spill that may affect
+                your model?
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Look at the following map of the Deep Horizon Oil Spill on April
+                20th, 2010 [1].
+                The map shows the extent of the oil spill on April 22 through
+                April 26.
+                Approximate the area of the oil spill on each day, and plot the
+                area vs time.
+                Does it look similar to the model you found?
+                Why or why not?
+            </p>
+
+            <image source="images/Lab1-OilSpill.png" width="40%">
+                <shortdescription>
+                    Map of the Deep Horizon Oil Spill on April 20th, 2010.
+                </shortdescription>
+            </image>
+        </statement>
+    </exercise>
+
+    <p>
+        [1]
+        <url href="https://response.restoration.noaa.gov/sites/default/files/Cumulative_2010-04-26.pdf">https://response.restoration.noaa.gov/sites/default/files/Cumulative_2010-04-26.pdf</url>
+    </p>
+</worksheet>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 9 - Homework MTH 305 - Regan</title>
+
+    <p>
+        You should present solutions neatly to all problems, making sure to show
+        all your work and follow the homework policies (see Blackboard document
+        for details).
+        You will turn in the assignment on Blackboard by 11:59 pm ET on Friday.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        and/or classmates.
+        No AI resources.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+
+    <exercise>
+        <introduction>
+            <p>
+                When someone swallows a dose of a drug, it isn't immediately
+                absorbed into your bloodstream all at once.
+                Neither does it stay in your body forever.
+                Caffeine and alcohol for example are both absorbed and
+                eliminated by first-order kinetics (chemistry), and we are able
+                to come up with a mathematical model for the concentration of
+                the drug that is present in the blood stream at time <m>t</m>.
+            </p>
+
+            <p>
+                Let's take a closer look at blood-alcohol levels, and let
+                <m>B(t)</m> be the concentration of alcohol in the blood at time
+                <m>t</m>, measured in mg/L.
+                We find that
+                <md>
+                    B(t) = A_0\left(\frac{k_1}{k_2-k_1}\right)(e^{-k_1t} - e^{-k_2t}),
+                </md>
+                where <m>A_0</m> is the initial concentration of alcohol
+                consumer, <m>k_1</m> and <m>k_2</m> are constants.
+                This model is developed in the academic paper:
+                <url href="https://pdfs.semanticscholar.org/dab3/630272efe1e28a4e7e0326a2113cc243f76e.pdf">
+                https://pdfs.semanticscholar.org/dab3/630272efe1e28a4e7e0326a2113cc243f76e.pdf</url>
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    Find the maximum blood alcohol level and at what time it
+                    occurs for arbitrary <m>A_0, k_1,</m> and <m>k_2</m>.
+                    Show your work.
+                    Information to remember that may or may not be useful:
+                    <ul>
+                        <li>
+                            To get rid of exponential functions with base
+                            <m>e</m>, take the natural log of both sides.
+                            If you have <m>ae^b</m>, you can take the natural
+                            log, but make sure you take the natural log of the
+                            whole thing - <m>\ln(ae^b)</m>.
+                        </li>
+
+                        <li><m>\ln(a * b) = \ln(a) + \ln(b)</m></li>
+                        <li><m>\ln(e^c) = c</m></li>
+                        <li><m>\ln(a) - \ln(b) = \ln(a/b)</m></li>
+                        <li>
+                            Your answer should include unspecified parameters.
+                            For example, it should have a <m>k_1</m> in it.
+                        </li>
+                    </ul>
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    An experiment was done, and a person's blood alcohol level
+                    was tracked over time, with the following values:
+                </p>
+
+
+                    <tabular top="minor" bottom="minor"
+         left="minor" right="minor">
+  <col width="30%" halign="center"/>
+  <col width="70%" halign="center"/>
+                        <row>
+                            <cell>Time</cell>
+                            <cell>0</cell>
+                            <cell>10</cell>
+                            <cell>20</cell>
+                            <cell>30</cell>
+                            <cell>45</cell>
+                            <cell>80</cell>
+                            <cell>90</cell>
+                            <cell>110</cell>
+                            <cell>170</cell>
+                        </row>
+
+                        <row>
+                            <cell>Experiment</cell>
+                            <cell>0</cell>
+                            <cell>150</cell>
+                            <cell>200</cell>
+                            <cell>160</cell>
+                            <cell>130</cell>
+                            <cell>70</cell>
+                            <cell>60</cell>
+                            <cell>40</cell>
+                            <cell>20</cell>
+                        </row>
+
+                        <row>
+                            <cell>Model</cell>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                        </row>
+                    </tabular>
+
+                <p>
+                    If we fit our model to the data, we find the parameters:
+                    <md>
+                    \begin{alignedat}{4}
+    A_0 \amp {=} \amp 245.8769 \\
+    k_1 \amp {=} \amp 0.109456 \\
+    k_2 \amp {=} \amp 0.017727 \\
+    \end{alignedat}{4}
+                    </md>
+                    Use the model <m>B(t)</m> with the above parameters to fill
+                    in the missing predicted values into the data table.
+                    (You can do this on paper, if you prefer, or just list them
+                    below, you do not have to fill in the table on Colab.) Note:
+                    You will be asked to plot your model in Part (d), so you
+                    could code in your model as a new definition, and input the
+                    <c>time</c> as already defined in Part (d) as well to get
+                    the outputs.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    What does your model predict to be the maximum blood alcohol
+                    level, and at what time does it predict that it occurred?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    The experimental data is plotted below in red.
+                    Edit the code below to also plot your model with the
+                    parameters determined in Part (b).
+                    (Add your model definition, and add a line to plot it using
+                    another line of <c>plt.plot(...))</c>.
+                    How does your predicted max compare with the data?
+                </p>
+
+                <program language="python">
+                    <code>
+import math
+import numpy as np
+import matplotlib.pyplot as plt
+
+## Real data
+time = np.array([0,10,20,30,45,80,90,110,170])
+experiment = np.array([0,150,200,160,130,70,60,40,20])
+
+plt.plot(time,experiment,'ro')
+plt.show()
+                    </code>
+                </program>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Does the max blood alcohol level always occur at the same
+                    time no matter the initial concentration of alcohol
+                    consumed?
+                    Why or why not?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</worksheet>
