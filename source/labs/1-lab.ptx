@@ -43,7 +43,7 @@
 
         <tabular top="minor" bottom="minor" left="minor" right="minor">
             <col width="30%" halign="center"/>
-            <col width="70%"/>
+            <col width="70%" halign="center"/>
             <row header="yes">
                 <cell>Initial Observation</cell>
                 <cell>10 min. later</cell>
@@ -105,7 +105,7 @@ data = np.array([[1.047,1.139],[2.005,2.087],[3.348,3.413],[5.719,5.765],[7.273,
                 and <m>t</m> the time in minutes.
                 Explain how you built your model and what steps you used.
                 Use Python to build the model.
-                You can also involve Wolfram Alpha as needed to help.
+                You can also involve Wolfram Alpha as needed.
             </p>
         </statement>
     </exercise>
@@ -132,7 +132,8 @@ data = np.array([[1.047,1.139],[2.005,2.087],[3.348,3.413],[5.719,5.765],[7.273,
         <statement>
             <p>
                 Plot the data over your plot of <m>s(t)</m> to affirm or
-                validate your model.
+                validate your model. Comment on what you find. Modify
+                your model as needed.
             </p>
         </statement>
     </exercise>
@@ -177,7 +178,7 @@ data = np.array([[1.047,1.139],[2.005,2.087],[3.348,3.413],[5.719,5.765],[7.273,
                 Why or why not?
             </p>
 
-            <image source="images/Lab1-OilSpill.png" width="40%">
+            <image source="images/Lab1-OilSpill.png" width="100%">
                 <shortdescription>
                     Map of the Deep Horizon Oil Spill on April 20th, 2010.
                 </shortdescription>
