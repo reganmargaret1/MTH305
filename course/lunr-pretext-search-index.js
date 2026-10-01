@@ -484,7 +484,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Problem 7 - Homework MTH 305 - Regan",
-  "body": " Problem 7 - Homework MTH 305 - Regan  You should present solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the assignment on Blackboard by 11:59 pm ET on Friday. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor and\/or classmates. No AI resources. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!    League of Legends is a multiplayer online battle arena video game. In the game, a player measures their Effective Health against physical damage by where is health, is armor, both of which you can buy with gold in the game.     Health costs 2.5 gold per unit in the game and armor costs 18 gold per unit. Suppose you have 3600 gold. How much health and armor should you buy to optimize your Effective Health and survive as long as possible against enemy attacks.      You are now ten minutes into the game, and you only have 720 gold available to you. Your health is at 1080 units, and your armor is at 10 units. The price of health and armor is the same as in Part (a). How much of each should you buy now?      You are now thirty minutes into the game, and you have 1800 gold to spend. Your health is at 2000 units, your armor at 50. Health and armor cost the same as in Part (a). How much of each should you buy? Hint: this is a slightly different question and requires you to adjust your model, aka your equation for . Since you cannot sell health and armor, the question becomes how can you maximize your Effective Health based on the resulting health and armor you can buy, rather than the current health and armor you have?      The game is actually more complicated. You do not just defend against physical damages, you also defend against magical damage by buying armor and magic resistance, which adds another variable. When you have multiple variables (multivariable calculus), you need Lagrange multipliers. Nothing to answer, just an interesting thing to think about...     "
+  "body": " Problem 7 - Homework MTH 305 - Regan  You should present solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the assignment on Blackboard by 11:59 pm ET on Friday. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor and\/or classmates. No AI resources. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!    The model for the growth of a population is given by where is the positive growth rate of the population.     Find the sensitivity function in the population size dependent on changing the parameter , i.e., .      Interpret the meaning of your calculation in the context of the scenario.      What conclusions can you make about how confident we can be in the output of this model?     "
 },
 {
   "id": "homework-8-3",
@@ -493,7 +493,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  League of Legends is a multiplayer online battle arena video game. In the game, a player measures their Effective Health against physical damage by where is health, is armor, both of which you can buy with gold in the game.     Health costs 2.5 gold per unit in the game and armor costs 18 gold per unit. Suppose you have 3600 gold. How much health and armor should you buy to optimize your Effective Health and survive as long as possible against enemy attacks.      You are now ten minutes into the game, and you only have 720 gold available to you. Your health is at 1080 units, and your armor is at 10 units. The price of health and armor is the same as in Part (a). How much of each should you buy now?      You are now thirty minutes into the game, and you have 1800 gold to spend. Your health is at 2000 units, your armor at 50. Health and armor cost the same as in Part (a). How much of each should you buy? Hint: this is a slightly different question and requires you to adjust your model, aka your equation for . Since you cannot sell health and armor, the question becomes how can you maximize your Effective Health based on the resulting health and armor you can buy, rather than the current health and armor you have?      The game is actually more complicated. You do not just defend against physical damages, you also defend against magical damage by buying armor and magic resistance, which adds another variable. When you have multiple variables (multivariable calculus), you need Lagrange multipliers. Nothing to answer, just an interesting thing to think about...    "
+  "body": "  The model for the growth of a population is given by where is the positive growth rate of the population.     Find the sensitivity function in the population size dependent on changing the parameter , i.e., .      Interpret the meaning of your calculation in the context of the scenario.      What conclusions can you make about how confident we can be in the output of this model?    "
 },
 {
   "id": "homework-9",
@@ -754,7 +754,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Quiz 4 - MTH 305 - Regan",
-  "body": " Quiz 4 - MTH 305 - Regan  This quiz covers retakes of Quiz #1, 2, and 3. Read all DIRECTIONS carefully. Good luck!   Retake of Quiz 3:     Suppose you have a model that depends on a parameter . The following data gives the relative minima for each choice of parameter . The parameter is changing by approximately each time.   Data of relative minima for differing c parameter values for the Zika mosquito model.      Find the percent change in the relative minima.      Based on your results, do you believe the model to be sensitive to the parameter ? Why or why not?       Suppose is a constant that captures the intrinsic strength of a square wooden beam relative to its width ( ). Given a circular log of 14 inches in diameter, the maximum strength for a beam with width is given by:      Determine the sensitivity function that captures the sensitivity of to changes in the constant .      What is the sensitivity when and ? Interpret the meaning of your calculation in the context of the scenario.      What conclusions can you make about how confident we can be in the output of this model?      Retake of Quiz 2:     The following graph shows the function where is the yearly profit in thousands of dollars of a toy producer after the product is available for sale.   Graph of the yearly profit in thousands of dollars of a toy producer after the product is available for sale.      When is the yearly profit the highest in the first 10 years? Provide justification.      When is the profit decreasing? Include mathematical reasoning.      When is the profit decreasing most rapidly? Explain.      Does this model seem valid in the long term? If not, for how long does it seem viable?       After they were protected from hunting, the elephants in Kruger National Park (South Africa) experienced birth rates exceeding death rates for 60 years. The researchers at Kruger National Park determined that the growth rate (birth rate-death rate) is at its maximum in 1983 where in 1903. A model of the elephant population from 1903 to 2013 is given by the logistic function where is years, is in thousands per year, and and are positive parameters.   Graph of the elephant population in Kruger National Park from 1903 to 2013.      Describe what this model shows is happening to the elephant population in the long term. Identify any connection to the parameter and what you think its value is.      Identify an inflection point by circling it directly on the graph above. Describe its significance in the context of the model.      Retake of Quiz 1:     What are the components of the life-cycle of mathematical modeling? Is this process always linear?      Suppose you are given the task of determining whether it would be best to create a roundabout or traffic light at a particular intersection of roads. What modeling question might you ask? What assumptions would you need to make?    "
+  "body": " Quiz 4 - MTH 305 - Regan  This quiz covers retakes of Quiz #1, 2, and 3. Read all DIRECTIONS carefully. Good luck!   Retake of Quiz 3:     Suppose is the time that gives the maximum current for a critically damped RLC circuit. The relationship of to the resistance of the circuit, is given by:      Determine the sensitivity function that captures the sensitivity of to changes in the constant .      What is the sensitivity when and ? Interpret the meaning of your calculation in the context of the scenario.      What conclusions can you make about how confident we can be in the output of this model?      Retake of Quiz 2:     The population of Zika mosquitoes can be modeled with the function where is given in months.   Graph of the population of Zika mosquitoes over time for differing c values.      State two ways in which seems to affect the model. What do your observations mean for the mosquito population and the risk of infection?      Identify the first inflection point for each curve and describe how it changes for the different values of . What is their significance in the context of the model?      Generate two more questions for this scenario.      Retake of Quiz 1:     Name the stages of the life-cycle of mathematical modeling.      Suppose you are given the task of determining whether you should go out of the way to get cheaper gas. Or get the gas that is more expensive, but next to your work. What modeling question might you ask? What assumptions would you need to make?    "
 },
 {
   "id": "quiz_documents-5-2",
@@ -781,70 +781,52 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Suppose you have a model that depends on a parameter . The following data gives the relative minima for each choice of parameter . The parameter is changing by approximately each time.   Data of relative minima for differing c parameter values for the Zika mosquito model.      Find the percent change in the relative minima.      Based on your results, do you believe the model to be sensitive to the parameter ? Why or why not?    "
+  "body": "  Suppose is the time that gives the maximum current for a critically damped RLC circuit. The relationship of to the resistance of the circuit, is given by:      Determine the sensitivity function that captures the sensitivity of to changes in the constant .      What is the sensitivity when and ? Interpret the meaning of your calculation in the context of the scenario.      What conclusions can you make about how confident we can be in the output of this model?    "
 },
 {
   "id": "quiz_documents-5-5",
   "level": "2",
   "url": "quiz_documents-5.html#quiz_documents-5-5",
-  "type": "Worksheet Exercise",
-  "number": "2",
-  "title": "",
-  "body": "  Suppose is a constant that captures the intrinsic strength of a square wooden beam relative to its width ( ). Given a circular log of 14 inches in diameter, the maximum strength for a beam with width is given by:      Determine the sensitivity function that captures the sensitivity of to changes in the constant .      What is the sensitivity when and ? Interpret the meaning of your calculation in the context of the scenario.      What conclusions can you make about how confident we can be in the output of this model?    "
-},
-{
-  "id": "quiz_documents-5-6",
-  "level": "2",
-  "url": "quiz_documents-5.html#quiz_documents-5-6",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Retake of Quiz 2: "
 },
 {
+  "id": "quiz_documents-5-6",
+  "level": "2",
+  "url": "quiz_documents-5.html#quiz_documents-5-6",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  The population of Zika mosquitoes can be modeled with the function where is given in months.   Graph of the population of Zika mosquitoes over time for differing c values.      State two ways in which seems to affect the model. What do your observations mean for the mosquito population and the risk of infection?      Identify the first inflection point for each curve and describe how it changes for the different values of . What is their significance in the context of the model?      Generate two more questions for this scenario.    "
+},
+{
   "id": "quiz_documents-5-7",
   "level": "2",
   "url": "quiz_documents-5.html#quiz_documents-5-7",
-  "type": "Worksheet Exercise",
-  "number": "3",
-  "title": "",
-  "body": "  The following graph shows the function where is the yearly profit in thousands of dollars of a toy producer after the product is available for sale.   Graph of the yearly profit in thousands of dollars of a toy producer after the product is available for sale.      When is the yearly profit the highest in the first 10 years? Provide justification.      When is the profit decreasing? Include mathematical reasoning.      When is the profit decreasing most rapidly? Explain.      Does this model seem valid in the long term? If not, for how long does it seem viable?    "
-},
-{
-  "id": "quiz_documents-5-8",
-  "level": "2",
-  "url": "quiz_documents-5.html#quiz_documents-5-8",
-  "type": "Worksheet Exercise",
-  "number": "4",
-  "title": "",
-  "body": "  After they were protected from hunting, the elephants in Kruger National Park (South Africa) experienced birth rates exceeding death rates for 60 years. The researchers at Kruger National Park determined that the growth rate (birth rate-death rate) is at its maximum in 1983 where in 1903. A model of the elephant population from 1903 to 2013 is given by the logistic function where is years, is in thousands per year, and and are positive parameters.   Graph of the elephant population in Kruger National Park from 1903 to 2013.      Describe what this model shows is happening to the elephant population in the long term. Identify any connection to the parameter and what you think its value is.      Identify an inflection point by circling it directly on the graph above. Describe its significance in the context of the model.    "
-},
-{
-  "id": "quiz_documents-5-9",
-  "level": "2",
-  "url": "quiz_documents-5.html#quiz_documents-5-9",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Retake of Quiz 1: "
 },
 {
-  "id": "quiz_documents-5-10",
+  "id": "quiz_documents-5-8",
   "level": "2",
-  "url": "quiz_documents-5.html#quiz_documents-5-10",
+  "url": "quiz_documents-5.html#quiz_documents-5-8",
   "type": "Worksheet Exercise",
-  "number": "5",
+  "number": "3",
   "title": "",
-  "body": "  What are the components of the life-cycle of mathematical modeling? Is this process always linear?   "
+  "body": "  Name the stages of the life-cycle of mathematical modeling.   "
 },
 {
-  "id": "quiz_documents-5-11",
+  "id": "quiz_documents-5-9",
   "level": "2",
-  "url": "quiz_documents-5.html#quiz_documents-5-11",
+  "url": "quiz_documents-5.html#quiz_documents-5-9",
   "type": "Worksheet Exercise",
-  "number": "6",
+  "number": "4",
   "title": "",
-  "body": "  Suppose you are given the task of determining whether it would be best to create a roundabout or traffic light at a particular intersection of roads. What modeling question might you ask? What assumptions would you need to make?   "
+  "body": "  Suppose you are given the task of determining whether you should go out of the way to get cheaper gas. Or get the gas that is more expensive, but next to your work. What modeling question might you ask? What assumptions would you need to make?   "
 },
 {
   "id": "final_project-2",
