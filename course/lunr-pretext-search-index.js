@@ -478,13 +478,139 @@ var ptx_lunr_docs = [
   "body": "  Pressure from a distending carotid artery has been shown to affect nerve activity. Data taken from [1] and [2] referenced below (after reduction, rounding, and normalization), is plotted in a scatter plot below {(plt.scatter(xdata,ydata))} . Assume we have already found the following model where is the carotid distending pressure in mm Hg, and is the percentage of nerve activity. Assume we've also already fit the data to the parameters and . The fitted values are and , and the fitted curve is plotted along with the real data below. Let's investigate the sensitivity of this model to the parameters, and .     In the code below, the function is defined and there are three figures shown. Leaving , let take on three separate values: less than the fitted , the fitted , and more than the fitted . In Figure 2, plot all three curves along with the data already plotted in Figure 2. (Anything you want to include in Figure 2 should be plotted underneath the command plt.figure(2) and above plt.show() .)      Now leave , and let take on three separate values: less than the fitted , the fitted , and more than the fitted . In Figure 3, plot all three curves along with the data already plotted in Figure 3.      Which parameter do you think the model is more sensitive to, or ? Why?      Choose the parameter from Part (c) that you thought the model was more sensitive to, and let the other parameter be the true fitted value. We want to see how the fitted curve compares to the more sensitive curve to see how sensitive it actually is. If you think the model is more sensitive to , copy and paste the following code into a new code cell, which will tell you the biggest difference between the fitted curve and the curve with $aa$ decreased by :   np.max( np.abs( y(xspace,aa,bb) - y(xspace, aa*.98, bb) ) )   (Working inside to out - the code takes the difference between the two curves at each point, then takes the absolute value of that difference, and then finds the maximum of that absolute value.)  If you think the model is more sensitive to , then copy this code instead:   np.max( np.abs( y(xspace,aa,bb) - y(xspace, aa, bb*.98) ) )   Note that if you changed the definitions or variable names, you may have to adjust this line of code. How much did the change in this parameter affect the change in output? Do you think the model is very sensitive to this parameter? Make sure you explain (use numbers, the graph, the context, any logic behind your reasoning).    "
 },
 {
-  "id": "labdocuments",
+  "id": "homework-8",
   "level": "1",
-  "url": "labdocuments.html",
-  "type": "Chapter",
+  "url": "homework-8.html",
+  "type": "Worksheet",
   "number": "",
-  "title": "Labs",
-  "body": " Labs   "
+  "title": "Problem 7 - Homework MTH 305 - Regan",
+  "body": " Problem 7 - Homework MTH 305 - Regan  You should present solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the assignment on Blackboard by 11:59 pm ET on Friday. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor and\/or classmates. No AI resources. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!    League of Legends is a multiplayer online battle arena video game. In the game, a player measures their Effective Health against physical damage by where is health, is armor, both of which you can buy with gold in the game.     Health costs 2.5 gold per unit in the game and armor costs 18 gold per unit. Suppose you have 3600 gold. How much health and armor should you buy to optimize your Effective Health and survive as long as possible against enemy attacks.      You are now ten minutes into the game, and you only have 720 gold available to you. Your health is at 1080 units, and your armor is at 10 units. The price of health and armor is the same as in Part (a). How much of each should you buy now?      You are now thirty minutes into the game, and you have 1800 gold to spend. Your health is at 2000 units, your armor at 50. Health and armor cost the same as in Part (a). How much of each should you buy? Hint: this is a slightly different question and requires you to adjust your model, aka your equation for . Since you cannot sell health and armor, the question becomes how can you maximize your Effective Health based on the resulting health and armor you can buy, rather than the current health and armor you have?      The game is actually more complicated. You do not just defend against physical damages, you also defend against magical damage by buying armor and magic resistance, which adds another variable. When you have multiple variables (multivariable calculus), you need Lagrange multipliers. Nothing to answer, just an interesting thing to think about...     "
+},
+{
+  "id": "homework-8-3",
+  "level": "2",
+  "url": "homework-8.html#homework-8-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  League of Legends is a multiplayer online battle arena video game. In the game, a player measures their Effective Health against physical damage by where is health, is armor, both of which you can buy with gold in the game.     Health costs 2.5 gold per unit in the game and armor costs 18 gold per unit. Suppose you have 3600 gold. How much health and armor should you buy to optimize your Effective Health and survive as long as possible against enemy attacks.      You are now ten minutes into the game, and you only have 720 gold available to you. Your health is at 1080 units, and your armor is at 10 units. The price of health and armor is the same as in Part (a). How much of each should you buy now?      You are now thirty minutes into the game, and you have 1800 gold to spend. Your health is at 2000 units, your armor at 50. Health and armor cost the same as in Part (a). How much of each should you buy? Hint: this is a slightly different question and requires you to adjust your model, aka your equation for . Since you cannot sell health and armor, the question becomes how can you maximize your Effective Health based on the resulting health and armor you can buy, rather than the current health and armor you have?      The game is actually more complicated. You do not just defend against physical damages, you also defend against magical damage by buying armor and magic resistance, which adds another variable. When you have multiple variables (multivariable calculus), you need Lagrange multipliers. Nothing to answer, just an interesting thing to think about...    "
+},
+{
+  "id": "homework-9",
+  "level": "1",
+  "url": "homework-9.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Problem 8 - Homework MTH 305 - Regan",
+  "body": " Problem 8 - Homework MTH 305 - Regan  You should present solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the assignment on Blackboard by 11:59 pm ET on Friday. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor and\/or classmates. No AI resources. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!    League of Legends is a multiplayer online battle arena video game. In the game, a player measures their Effective Health against physical damage by where is health, is armor, both of which you can buy with gold in the game.     Health costs 2.5 gold per unit in the game and armor costs 18 gold per unit. Suppose you have 3600 gold. How much health and armor should you buy to optimize your Effective Health and survive as long as possible against enemy attacks.      You are now ten minutes into the game, and you only have 720 gold available to you. Your health is at 1080 units, and your armor is at 10 units. The price of health and armor is the same as in Part (a). How much of each should you buy now?      You are now thirty minutes into the game, and you have 1800 gold to spend. Your health is at 2000 units, your armor at 50. Health and armor cost the same as in Part (a). How much of each should you buy? Hint: this is a slightly different question and requires you to adjust your model, aka your equation for . Since you cannot sell health and armor, the question becomes how can you maximize your Effective Health based on the resulting health and armor you can buy, rather than the current health and armor you have?      The game is actually more complicated. You do not just defend against physical damages, you also defend against magical damage by buying armor and magic resistance, which adds another variable. When you have multiple variables (multivariable calculus), you need Lagrange multipliers. Nothing to answer, just an interesting thing to think about...     "
+},
+{
+  "id": "homework-9-3",
+  "level": "2",
+  "url": "homework-9.html#homework-9-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  League of Legends is a multiplayer online battle arena video game. In the game, a player measures their Effective Health against physical damage by where is health, is armor, both of which you can buy with gold in the game.     Health costs 2.5 gold per unit in the game and armor costs 18 gold per unit. Suppose you have 3600 gold. How much health and armor should you buy to optimize your Effective Health and survive as long as possible against enemy attacks.      You are now ten minutes into the game, and you only have 720 gold available to you. Your health is at 1080 units, and your armor is at 10 units. The price of health and armor is the same as in Part (a). How much of each should you buy now?      You are now thirty minutes into the game, and you have 1800 gold to spend. Your health is at 2000 units, your armor at 50. Health and armor cost the same as in Part (a). How much of each should you buy? Hint: this is a slightly different question and requires you to adjust your model, aka your equation for . Since you cannot sell health and armor, the question becomes how can you maximize your Effective Health based on the resulting health and armor you can buy, rather than the current health and armor you have?      The game is actually more complicated. You do not just defend against physical damages, you also defend against magical damage by buying armor and magic resistance, which adds another variable. When you have multiple variables (multivariable calculus), you need Lagrange multipliers. Nothing to answer, just an interesting thing to think about...    "
+},
+{
+  "id": "homework-10",
+  "level": "1",
+  "url": "homework-10.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Problem 9 - Homework MTH 305 - Regan",
+  "body": " Problem 9 - Homework MTH 305 - Regan  You should present solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the assignment on Blackboard by 11:59 pm ET on Friday. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor and\/or classmates. No AI resources. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!    When someone swallows a dose of a drug, it isn't immediately absorbed into your bloodstream all at once. Neither does it stay in your body forever. Caffeine and alcohol for example are both absorbed and eliminated by first-order kinetics (chemistry), and we are able to come up with a mathematical model for the concentration of the drug that is present in the blood stream at time .  Let's take a closer look at blood-alcohol levels, and let be the concentration of alcohol in the blood at time , measured in mg\/L. We find that where is the initial concentration of alcohol consumer, and are constants. This model is developed in the academic paper: https:\/\/pdfs.semanticscholar.org\/dab3\/630272efe1e28a4e7e0326a2113cc243f76e.pdf      Find the maximum blood alcohol level and at what time it occurs for arbitrary and . Show your work. Information to remember that may or may not be useful:  To get rid of exponential functions with base , take the natural log of both sides. If you have , you can take the natural log, but make sure you take the natural log of the whole thing - .     Your answer should include unspecified parameters. For example, it should have a in it.        An experiment was done, and a person's blood alcohol level was tracked over time, with the following values:      Time  0  10  20  30  45  80  90  110  170    Experiment  0  150  200  160  130  70  60  40  20    Model             If we fit our model to the data, we find the parameters: Use the model with the above parameters to fill in the missing predicted values into the data table. (You can do this on paper, if you prefer, or just list them below, you do not have to fill in the table on Colab.) Note: You will be asked to plot your model in Part (d), so you could code in your model as a new definition, and input the time as already defined in Part (d) as well to get the outputs.      What does your model predict to be the maximum blood alcohol level, and at what time does it predict that it occurred?      The experimental data is plotted below in red. Edit the code below to also plot your model with the parameters determined in Part (b). (Add your model definition, and add a line to plot it using another line of plt.plot(...)) . How does your predicted max compare with the data?   import math import numpy as np import matplotlib.pyplot as plt ## Real data time = np.array([0,10,20,30,45,80,90,110,170]) experiment = np.array([0,150,200,160,130,70,60,40,20]) plt.plot(time,experiment,'ro') plt.show()       Does the max blood alcohol level always occur at the same time no matter the initial concentration of alcohol consumed? Why or why not?     "
+},
+{
+  "id": "homework-10-3",
+  "level": "2",
+  "url": "homework-10.html#homework-10-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  When someone swallows a dose of a drug, it isn't immediately absorbed into your bloodstream all at once. Neither does it stay in your body forever. Caffeine and alcohol for example are both absorbed and eliminated by first-order kinetics (chemistry), and we are able to come up with a mathematical model for the concentration of the drug that is present in the blood stream at time .  Let's take a closer look at blood-alcohol levels, and let be the concentration of alcohol in the blood at time , measured in mg\/L. We find that where is the initial concentration of alcohol consumer, and are constants. This model is developed in the academic paper: https:\/\/pdfs.semanticscholar.org\/dab3\/630272efe1e28a4e7e0326a2113cc243f76e.pdf      Find the maximum blood alcohol level and at what time it occurs for arbitrary and . Show your work. Information to remember that may or may not be useful:  To get rid of exponential functions with base , take the natural log of both sides. If you have , you can take the natural log, but make sure you take the natural log of the whole thing - .     Your answer should include unspecified parameters. For example, it should have a in it.        An experiment was done, and a person's blood alcohol level was tracked over time, with the following values:      Time  0  10  20  30  45  80  90  110  170    Experiment  0  150  200  160  130  70  60  40  20    Model             If we fit our model to the data, we find the parameters: Use the model with the above parameters to fill in the missing predicted values into the data table. (You can do this on paper, if you prefer, or just list them below, you do not have to fill in the table on Colab.) Note: You will be asked to plot your model in Part (d), so you could code in your model as a new definition, and input the time as already defined in Part (d) as well to get the outputs.      What does your model predict to be the maximum blood alcohol level, and at what time does it predict that it occurred?      The experimental data is plotted below in red. Edit the code below to also plot your model with the parameters determined in Part (b). (Add your model definition, and add a line to plot it using another line of plt.plot(...)) . How does your predicted max compare with the data?   import math import numpy as np import matplotlib.pyplot as plt ## Real data time = np.array([0,10,20,30,45,80,90,110,170]) experiment = np.array([0,150,200,160,130,70,60,40,20]) plt.plot(time,experiment,'ro') plt.show()       Does the max blood alcohol level always occur at the same time no matter the initial concentration of alcohol consumed? Why or why not?    "
+},
+{
+  "id": "lab1",
+  "level": "1",
+  "url": "lab1.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Lab 1 - MTH 305 - Regan",
+  "body": " Lab 1 - MTH 305 - Regan    This project will be completed in groups of approximately 3-4 people. You are expected to work together, and to give equal and valiant effort throughout this project. You will have about a week to work on this, and may need to meet outside of class to work on this project as a group. At the end of the project, your group will submit a project report answering the questions below. You can either complete the project in Google Colabs, or some other online document such as Google Docs or Overleaf (all of these can be shared with your group members as well as with Professor Regan). Whatever you use, a copy (or the original) should be saved in your Google Drive Portfolio. Note that a numeric answer on it's own with no context or explanation is not a solution, and your responses should be sure to explain what you did, and why you did it. This project will be due Sunday, October 11th at 11:59pm. Each group member will then fill out a project evaluation form describing how you and each of your team members contributed to this project, due the following Monday, October 12th.  An oil slick spreads at sea. From time to time, but irregularly, a helicopter is dispatched to photograph the oil slick. On each trip, the helicopter arrives over the slick, the pilot takes a picture, waits 10 minutes, takes another, and heads home. On each of seven trips the size (in area) of the slick is measured from both photographs. The data is given in the table below for the size of the oil slick in square miles:      Initial Observation  10 min. later    1.047  1.139    2.005  2.087    3.348  3.413    5.719  5.765    7.273  7.304    8.410  8.426    9.117  9.127    The data is coded in the cell below for you to use for the following questions.   data = np.array([[1.047,1.139],[2.005,2.087],[3.348,3.413],[5.719,5.765],[7.273,7.304],[8.410,8.426],[9.117,9.127]])       Build a model for the size of the oil slick at time . Let be the size of the oil slick in square miles, and the time in minutes. Explain how you built your model and what steps you used. Use Python to build the model. You can also involve Wolfram Alpha as needed.      Use your model to plot the size of the oil slick over time.      Use your model to find the exact times at which the photographs were taken.      Plot the data over your plot of to affirm or validate your model. Comment on what you find. Modify your model as needed.      Find how much time had passed before the initial observation of 1.047 square miles.      Predict the long term behavior of the oil slick.      Think about your model. What are some real-life factors of an oil spill that may affect your model?      Look at the following map of the Deep Horizon Oil Spill on April 20th, 2010 [1]. The map shows the extent of the oil spill on April 22 through April 26. Approximate the area of the oil spill on each day, and plot the area vs time. Does it look similar to the model you found? Why or why not?   Map of the Deep Horizon Oil Spill on April 20th, 2010.     [1] https:\/\/response.restoration.noaa.gov\/sites\/default\/files\/Cumulative_2010-04-26.pdf   "
+},
+{
+  "id": "lab1-3",
+  "level": "2",
+  "url": "lab1.html#lab1-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Build a model for the size of the oil slick at time . Let be the size of the oil slick in square miles, and the time in minutes. Explain how you built your model and what steps you used. Use Python to build the model. You can also involve Wolfram Alpha as needed.   "
+},
+{
+  "id": "lab1-4",
+  "level": "2",
+  "url": "lab1.html#lab1-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Use your model to plot the size of the oil slick over time.   "
+},
+{
+  "id": "lab1-5",
+  "level": "2",
+  "url": "lab1.html#lab1-5",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Use your model to find the exact times at which the photographs were taken.   "
+},
+{
+  "id": "lab1-6",
+  "level": "2",
+  "url": "lab1.html#lab1-6",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Plot the data over your plot of to affirm or validate your model. Comment on what you find. Modify your model as needed.   "
+},
+{
+  "id": "lab1-7",
+  "level": "2",
+  "url": "lab1.html#lab1-7",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Find how much time had passed before the initial observation of 1.047 square miles.   "
+},
+{
+  "id": "lab1-8",
+  "level": "2",
+  "url": "lab1.html#lab1-8",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  Predict the long term behavior of the oil slick.   "
+},
+{
+  "id": "lab1-9",
+  "level": "2",
+  "url": "lab1.html#lab1-9",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "",
+  "body": "  Think about your model. What are some real-life factors of an oil spill that may affect your model?   "
+},
+{
+  "id": "lab1-10",
+  "level": "2",
+  "url": "lab1.html#lab1-10",
+  "type": "Worksheet Exercise",
+  "number": "8",
+  "title": "",
+  "body": "  Look at the following map of the Deep Horizon Oil Spill on April 20th, 2010 [1]. The map shows the extent of the oil spill on April 22 through April 26. Approximate the area of the oil spill on each day, and plot the area vs time. Does it look similar to the model you found? Why or why not?   Map of the Deep Horizon Oil Spill on April 20th, 2010.    "
 },
 {
   "id": "quiz_documents-2",
