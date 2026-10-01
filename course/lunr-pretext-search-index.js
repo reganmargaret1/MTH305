@@ -748,6 +748,105 @@ var ptx_lunr_docs = [
   "body": "  Suppose is a constant that captures the intrinsic strength of a square wooden beam relative to its width ( ). Given a circular log of 14 inches in diameter, the maximum strength for a beam with width is given by:      Determine the sensitivity function that captures the sensitivity of to changes in the constant .      What is the sensitivity when and ? Interpret the meaning of your calculation in the context of the scenario.      What conclusions can you make about how confident we can be in the output of this model?    "
 },
 {
+  "id": "quiz_documents-5",
+  "level": "1",
+  "url": "quiz_documents-5.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Quiz 4 - MTH 305 - Regan",
+  "body": " Quiz 4 - MTH 305 - Regan  This quiz covers retakes of Quiz #1, 2, and 3. Read all DIRECTIONS carefully. Good luck!   Retake of Quiz 3:     Suppose you have a model that depends on a parameter . The following data gives the relative minima for each choice of parameter . The parameter is changing by approximately each time.   Data of relative minima for differing c parameter values for the Zika mosquito model.      Find the percent change in the relative minima.      Based on your results, do you believe the model to be sensitive to the parameter ? Why or why not?       Suppose is a constant that captures the intrinsic strength of a square wooden beam relative to its width ( ). Given a circular log of 14 inches in diameter, the maximum strength for a beam with width is given by:      Determine the sensitivity function that captures the sensitivity of to changes in the constant .      What is the sensitivity when and ? Interpret the meaning of your calculation in the context of the scenario.      What conclusions can you make about how confident we can be in the output of this model?      Retake of Quiz 2:     The following graph shows the function where is the yearly profit in thousands of dollars of a toy producer after the product is available for sale.   Graph of the yearly profit in thousands of dollars of a toy producer after the product is available for sale.      When is the yearly profit the highest in the first 10 years? Provide justification.      When is the profit decreasing? Include mathematical reasoning.      When is the profit decreasing most rapidly? Explain.      Does this model seem valid in the long term? If not, for how long does it seem viable?       After they were protected from hunting, the elephants in Kruger National Park (South Africa) experienced birth rates exceeding death rates for 60 years. The researchers at Kruger National Park determined that the growth rate (birth rate-death rate) is at its maximum in 1983 where in 1903. A model of the elephant population from 1903 to 2013 is given by the logistic function where is years, is in thousands per year, and and are positive parameters.   Graph of the elephant population in Kruger National Park from 1903 to 2013.      Describe what this model shows is happening to the elephant population in the long term. Identify any connection to the parameter and what you think its value is.      Identify an inflection point by circling it directly on the graph above. Describe its significance in the context of the model.      Retake of Quiz 1:     What are the components of the life-cycle of mathematical modeling? Is this process always linear?      Suppose you are given the task of determining whether it would be best to create a roundabout or traffic light at a particular intersection of roads. What modeling question might you ask? What assumptions would you need to make?    "
+},
+{
+  "id": "quiz_documents-5-2",
+  "level": "2",
+  "url": "quiz_documents-5.html#quiz_documents-5-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "DIRECTIONS "
+},
+{
+  "id": "quiz_documents-5-3",
+  "level": "2",
+  "url": "quiz_documents-5.html#quiz_documents-5-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Retake of Quiz 3: "
+},
+{
+  "id": "quiz_documents-5-4",
+  "level": "2",
+  "url": "quiz_documents-5.html#quiz_documents-5-4",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Suppose you have a model that depends on a parameter . The following data gives the relative minima for each choice of parameter . The parameter is changing by approximately each time.   Data of relative minima for differing c parameter values for the Zika mosquito model.      Find the percent change in the relative minima.      Based on your results, do you believe the model to be sensitive to the parameter ? Why or why not?    "
+},
+{
+  "id": "quiz_documents-5-5",
+  "level": "2",
+  "url": "quiz_documents-5.html#quiz_documents-5-5",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Suppose is a constant that captures the intrinsic strength of a square wooden beam relative to its width ( ). Given a circular log of 14 inches in diameter, the maximum strength for a beam with width is given by:      Determine the sensitivity function that captures the sensitivity of to changes in the constant .      What is the sensitivity when and ? Interpret the meaning of your calculation in the context of the scenario.      What conclusions can you make about how confident we can be in the output of this model?    "
+},
+{
+  "id": "quiz_documents-5-6",
+  "level": "2",
+  "url": "quiz_documents-5.html#quiz_documents-5-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Retake of Quiz 2: "
+},
+{
+  "id": "quiz_documents-5-7",
+  "level": "2",
+  "url": "quiz_documents-5.html#quiz_documents-5-7",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  The following graph shows the function where is the yearly profit in thousands of dollars of a toy producer after the product is available for sale.   Graph of the yearly profit in thousands of dollars of a toy producer after the product is available for sale.      When is the yearly profit the highest in the first 10 years? Provide justification.      When is the profit decreasing? Include mathematical reasoning.      When is the profit decreasing most rapidly? Explain.      Does this model seem valid in the long term? If not, for how long does it seem viable?    "
+},
+{
+  "id": "quiz_documents-5-8",
+  "level": "2",
+  "url": "quiz_documents-5.html#quiz_documents-5-8",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  After they were protected from hunting, the elephants in Kruger National Park (South Africa) experienced birth rates exceeding death rates for 60 years. The researchers at Kruger National Park determined that the growth rate (birth rate-death rate) is at its maximum in 1983 where in 1903. A model of the elephant population from 1903 to 2013 is given by the logistic function where is years, is in thousands per year, and and are positive parameters.   Graph of the elephant population in Kruger National Park from 1903 to 2013.      Describe what this model shows is happening to the elephant population in the long term. Identify any connection to the parameter and what you think its value is.      Identify an inflection point by circling it directly on the graph above. Describe its significance in the context of the model.    "
+},
+{
+  "id": "quiz_documents-5-9",
+  "level": "2",
+  "url": "quiz_documents-5.html#quiz_documents-5-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Retake of Quiz 1: "
+},
+{
+  "id": "quiz_documents-5-10",
+  "level": "2",
+  "url": "quiz_documents-5.html#quiz_documents-5-10",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  What are the components of the life-cycle of mathematical modeling? Is this process always linear?   "
+},
+{
+  "id": "quiz_documents-5-11",
+  "level": "2",
+  "url": "quiz_documents-5.html#quiz_documents-5-11",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  Suppose you are given the task of determining whether it would be best to create a roundabout or traffic light at a particular intersection of roads. What modeling question might you ask? What assumptions would you need to make?   "
+},
+{
   "id": "final_project-2",
   "level": "1",
   "url": "final_project-2.html",
