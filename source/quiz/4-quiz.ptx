@@ -16,76 +16,38 @@
     <exercise>
         <introduction>
             <p>
-                Suppose you have a model that depends on a parameter <m>c</m>.
-                The following data gives the relative minima for each choice of
-                parameter <m>c</m>.
-                The <m>c</m> parameter is changing by approximately <m>2\%</m>
-                each time.
+                Suppose <m>t</m> is the time that gives the maximum current for
+                a critically damped RLC circuit.
+                The relationship of <m>t</m> to the resistance of the circuit,
+                <m>R</m> is given by:
+                <md>
+                    t = \frac{2}{R}
+                </md>
             </p>
-
-            <image source="images/quiz3_1.png" width="80%">
-                <shortdescription>
-                    Data of relative minima for differing c parameter values for
-                    the Zika mosquito model.
-                </shortdescription>
-            </image>
         </introduction>
 
         <task workspace="1in">
             <statement>
                 <p>
-                    Find the percent change in the relative minima.
+                    Determine the sensitivity function <m>S(t,R)</m> that
+                    captures the sensitivity of <m>t</m> to changes in the
+                    constant <m>R</m>.
                 </p>
             </statement>
         </task>
 
-        <task workspace="1.5in">
+        <task workspace="1in">
             <statement>
                 <p>
-                    Based on your results, do you believe the model to be
-                    sensitive to the parameter <m>c</m>?
-                    Why or why not?
-                </p>
-            </statement>
-        </task>
-    </exercise>
-
-    <exercise>
-        <introduction>
-            <p>
-                Suppose <m>k</m> is a constant that captures the intrinsic
-                strength of a square wooden beam relative to its width (
-                <m>w</m> ).
-                Given a circular log of 14 inches in diameter, the maximum
-                strength for a beam with width <m>w</m> is given by:
-                <md>
-                    k = \frac{196}{3w^2}
-                </md>
-            </p>
-        </introduction>
-
-        <task workspace="0.5in">
-            <statement>
-                <p>
-                    Determine the sensitivity function <m>S(k,w)</m> that
-                    captures the sensitivity of <m>k</m> to changes in the
-                    constant <m>w</m>.
-                </p>
-            </statement>
-        </task>
-
-        <task workspace="0.5in">
-            <statement>
-                <p>
-                    What is the sensitivity when <m>w = 13</m> and
-                    <m>k = 0.39</m>?
+                    What is the sensitivity when <m>t = 0.5</m> and
+                    <m>R = 10</m>?
                     Interpret the meaning of your calculation in the context of
                     the scenario.
                 </p>
             </statement>
         </task>
 
-        <task workspace="0.5in">
+        <task workspace="1.5in">
             <statement>
                 <p>
                     What conclusions can you make about how confident we can be
@@ -102,25 +64,18 @@
     <exercise>
         <introduction>
             <p>
-                After they were protected from hunting, the elephants in Kruger
-                National Park (South Africa) experienced birth rates exceeding
-                death rates for 60 years.
-                The researchers at Kruger National Park determined that the
-                growth rate (birth rate-death rate) is at its maximum in 1983
-                where <m>t=0</m> in 1903.
-                A model of the elephant population from 1903 to 2013 is given by
-                the logistic function
+                The population of Zika mosquitoes can be modeled with the
+                function
                 <md>
-                    f(t) = \frac{C}{1+e^{\frac{k-t}{8}}},
+                    P(t) = 8000\left(\frac{1}{6} + e^{-\frac{(t-c)^2}{6}} + e^{-\frac{(t-9)^2}{6}}\right)
                 </md>
-                where <m>t</m> is years, <m>f(t)</m> is in thousands per year,
-                and <m>C</m> and <m>k</m> are positive parameters.
+                where <m>t</m> is given in months.
             </p>
 
-            <image source="images/quiz2_2.png" width="40%">
+            <image source="images/04-zika.png" width="75%">
                 <shortdescription>
-                    Graph of the elephant population in Kruger National Park
-                    from 1903 to 2013.
+                    Graph of the population of Zika mosquitoes over time for
+                    differing c values.
                 </shortdescription>
             </image>
         </introduction>
@@ -128,20 +83,28 @@
         <task workspace="1in">
             <statement>
                 <p>
-                    Describe what this model shows is happening to the elephant
-                    population in the long term.
-                    Identify any connection to the parameter <m>C</m> and what
-                    you think its value is.
+                    State two ways in which <m>c</m> seems to affect the model.
+                    What do your observations mean for the mosquito population
+                    and the risk of infection?
                 </p>
             </statement>
         </task>
 
-        <task workspace="1.5in">
+        <task workspace="1in">
             <statement>
                 <p>
-                    Identify an inflection point by circling it directly on the
-                    graph above.
-                    Describe its significance in the context of the model.
+                    Identify the first inflection point for each curve and
+                    describe how it changes for the different values of
+                    <m>c</m>.
+                    What is their significance in the context of the model?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Generate two more questions for this scenario.
                 </p>
             </statement>
         </task>
@@ -154,8 +117,7 @@
     <exercise workspace="1in">
         <statement>
             <p>
-                Name the stages of the life-cycle of mathematical
-                modeling.
+                Name the stages of the life-cycle of mathematical modeling.
             </p>
         </statement>
     </exercise>
@@ -163,9 +125,9 @@
     <exercise workspace="1in">
         <statement>
             <p>
-                Suppose you are given the task of determining whether you should go
-                out of the way to get cheaper gas. Or get the gas that is more
-                expensive, but next to your work.
+                Suppose you are given the task of determining whether you should
+                go out of the way to get cheaper gas.
+                Or get the gas that is more expensive, but next to your work.
                 What modeling question might you ask?
                 What assumptions would you need to make?
             </p>
