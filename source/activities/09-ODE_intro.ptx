@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="activity-09-ODE_intro">
+    <title>09 - Introduction to Differential Equation Models</title>
+
+    <!-- Optional introduction -->
+    <introduction>
+        <p>
+            For ordinary differential equation models, schematics can help us to
+            visualize the scenario and develop the rate of change equations.
+            A schematic is a diagram that shows our dependent or state
+            variable(s) and what increases or decreases those variables.
+            In other words, it shows how the dependent variable(s) change.
+            Here are the steps we consider:
+            <ol>
+                <li>Put the dependent variable(s) in a box.</li>
+                <li>
+                    For any factor that increases the dependent variable, draw a
+                    corresponding arrow INTO the box and label it.
+                </li>
+
+                <li>
+                    For any factor that decreases the dependent variable, draw a
+                    corresponding arrow OUT of the box and label it.
+                </li>
+            </ol>
+        </p>
+    </introduction>
+    <!-- Exercises start here. -->
+    <exercise>
+        <introduction>
+            <p>
+                Let's return to NewTownia, where <m>P(t)</m> is the population.
+                Let <m>t</m> be the time in years instead of days.
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Draw a schematic for <m>P(t)</m> based on the following
+                    information:
+                    <ul>
+                        <li>
+                            People are born at a rate proportional to the
+                            population.
+                            Assume about <m>\frac{1}{10}</m> of the population
+                            gives birth every year.
+                        </li>
+
+                        <li>
+                            People are born at a rate proportional to the
+                            population.
+                            Assume <m>\frac{1}{12}</m> of the population dies
+                            every year.
+                        </li>
+
+                        <li>
+                            People immigrate and emigrate.
+                            Assume that on average each year 7 more people leave
+                            NewTownia than arrive (this is a net rate).
+                        </li>
+                    </ul>
+                </p>
+            </statement>
+
+            <solution component="09-solutions">
+                <p/>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    From this schematic, what is the differential equation
+                    that describes the population of NewTownia?
+                </p>
+            </statement>
+
+            <solution component="08-solutions">
+                <p/>
+            </solution>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Let <m>N(t)</m> represent the number of people in the GVSU Mary
+                Idema Pew Library at time <m>t</m> in hours, where <m>t = 0</m>
+                is midnight.
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    How would we find when there were 100 people in the library?
+                    Explain.
+                    (Note, we don't yet know the form of the function, so we
+                    can't actually do it yet.)
+                </p>
+            </statement>
+
+            <solution component="08-solutions">
+                <p/>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Suppose <m>N(t)</m> was given by
+                    <m>{N(t) = -\frac{1}{4}t^3 + 6t^2}</m>.
+                    Plot the model and its first and second derivatives.
+                    What time period makes sense for this problem?
+                    Explain.
+                </p>
+            </statement>
+
+            <solution component="08-solutions">
+                <p/>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    When is the number of people in the library increasing?
+                    Connect to the graphs you've plotted.
+                </p>
+            </statement>
+
+            <solution component="08-solutions">
+                <p/>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    When is the number of people in the library increasing most
+                    rapidly?
+                    Connect to the graphs you've plotted.
+                </p>
+            </statement>
+
+            <solution component="08-solutions">
+                <p/>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What time(s) of day correspond to the most number of people
+                    in the library?
+                    What time(s) of day correspond to the least number of people
+                    in the library?
+                    Interpret your results in context and prove it, do not just
+                    guess from a graph.
+                </p>
+            </statement>
+
+            <solution component="08-solutions">
+                <p/>
+            </solution>
+        </task>
+    </exercise>
+</worksheet>

@@ -26,7 +26,6 @@
         <chapter xml:id="activities">
             <title>In-Class Activities</title>
 
-            <!-- Remove the example and replace with your own activities -->
             <xi:include href="./activities/01-intro-activity.ptx"/>
             <xi:include href="./activities/02-python_introModels.ptx"/>
             <xi:include href="./activities/03-formulate.ptx"/>
@@ -35,7 +34,8 @@
             <xi:include href="./activities/06-sensitivity-part1.ptx"/>
             <xi:include href="./activities/07-sensitivity-part2.ptx"/>
             <xi:include href="./activities/08-optimization.ptx"/>
-            <!-- Add more xi:include files here to include them in the main course -->
+            <xi:include href="./activities/09-ODE_intro.ptx"/>
+
         </chapter>
 
         <chapter xml:id="homework">
