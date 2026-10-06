@@ -370,6 +370,33 @@ var ptx_lunr_docs = [
   "body": "  Let represent the number of people in the GVSU Mary Idema Pew Library at time in hours, where is midnight.     How would we find when there were 100 people in the library? Explain. (Note, we don't yet know the form of the function, so we can't actually do it yet.)      Suppose was given by . Plot the model and its first and second derivatives. What time period makes sense for this problem? Explain.      When is the number of people in the library increasing? Connect to the graphs you've plotted.      When is the number of people in the library increasing most rapidly? Connect to the graphs you've plotted.      What time(s) of day correspond to the most number of people in the library? What time(s) of day correspond to the least number of people in the library? Interpret your results in context and prove it, do not just guess from a graph.    "
 },
 {
+  "id": "activity-09-ODE_intro",
+  "level": "1",
+  "url": "activity-09-ODE_intro.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "09 - Introduction to Differential Equation Models",
+  "body": " 09 - Introduction to Differential Equation Models    For ordinary differential equation models, schematics can help us to visualize the scenario and develop the rate of change equations. A schematic is a diagram that shows our dependent or state variable(s) and what increases or decreases those variables. In other words, it shows how the dependent variable(s) change. Here are the steps we consider:  Put the dependent variable(s) in a box. Note: it is one box per dependent variable.  For any factor that increases the dependent variable, draw a corresponding arrow INTO the box and label it.  For any factor that decreases the dependent variable, draw a corresponding arrow OUT of the box and label it.        Let's return to NewTownia, where is the population. Let be the time in years instead of days.     Draw a schematic for based on the following information:  People are born at a rate proportional to the population. Assume about of the population gives birth every year.  People are born at a rate proportional to the population. Assume of the population dies every year.  People immigrate and emigrate. Assume that on average each year 7 more people leave NewTownia than arrive (this is a net rate).        From this schematic, what is the differential equation that describes the population of NewTownia?      Find the fixed point(s) for the differential equation. What does this mean in the context of the application?      Draw a phase portrait for this differential equation and fixed point. Plot sample trajectories.       Consider a generic, \"simple\" predator-prey model, where is the population of the prey and is the population of predators, at time . Consider the following assumptions:  Left alone, prey will increase at a constant rate .  Prey die at a rate that is proportional to the number of predators in the ecosystem.  Predators have evolved and reproduce when food is plentiful, but don't reproduce when food is scarce, i.e., predators grow proportionally to the number of prey.  Predators die off at a rate proportional to the number of predators (e.g., territorial).       Draw a schematic for this system of differential equations.      From this schematic, what are the differential equations that describe the simple predator-prey model?      Find the fixed point(s) for the differential equation. What does this mean in the context of the application?     "
+},
+{
+  "id": "activity-09-ODE_intro-3",
+  "level": "2",
+  "url": "activity-09-ODE_intro.html#activity-09-ODE_intro-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Let's return to NewTownia, where is the population. Let be the time in years instead of days.     Draw a schematic for based on the following information:  People are born at a rate proportional to the population. Assume about of the population gives birth every year.  People are born at a rate proportional to the population. Assume of the population dies every year.  People immigrate and emigrate. Assume that on average each year 7 more people leave NewTownia than arrive (this is a net rate).        From this schematic, what is the differential equation that describes the population of NewTownia?      Find the fixed point(s) for the differential equation. What does this mean in the context of the application?      Draw a phase portrait for this differential equation and fixed point. Plot sample trajectories.    "
+},
+{
+  "id": "activity-09-ODE_intro-4",
+  "level": "2",
+  "url": "activity-09-ODE_intro.html#activity-09-ODE_intro-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Consider a generic, \"simple\" predator-prey model, where is the population of the prey and is the population of predators, at time . Consider the following assumptions:  Left alone, prey will increase at a constant rate .  Prey die at a rate that is proportional to the number of predators in the ecosystem.  Predators have evolved and reproduce when food is plentiful, but don't reproduce when food is scarce, i.e., predators grow proportionally to the number of prey.  Predators die off at a rate proportional to the number of predators (e.g., territorial).       Draw a schematic for this system of differential equations.      From this schematic, what are the differential equations that describe the simple predator-prey model?      Find the fixed point(s) for the differential equation. What does this mean in the context of the application?    "
+},
+{
   "id": "homework-2",
   "level": "1",
   "url": "homework-2.html",
