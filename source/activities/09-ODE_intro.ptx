@@ -14,7 +14,11 @@
             In other words, it shows how the dependent variable(s) change.
             Here are the steps we consider:
             <ol>
-                <li>Put the dependent variable(s) in a box.</li>
+                <li>
+                    Put the dependent variable(s) in a box.
+                    Note: it is one box per dependent variable.
+                </li>
+
                 <li>
                     For any factor that increases the dependent variable, draw a
                     corresponding arrow INTO the box and label it.
@@ -36,7 +40,7 @@
             </p>
         </introduction>
 
-        <task workspace="1in">
+        <task workspace="0.5in">
             <statement>
                 <p>
                     Draw a schematic for <m>P(t)</m> based on the following
@@ -70,15 +74,42 @@
             </solution>
         </task>
 
-        <task workspace="1in">
+        <task workspace="0.5in">
             <statement>
                 <p>
-                    From this schematic, what is the differential equation
-                    that describes the population of NewTownia?
+                    From this schematic, what is the differential equation that
+                    describes the population of NewTownia?
                 </p>
             </statement>
 
-            <solution component="08-solutions">
+            <solution component="09-solutions">
+                <p/>
+            </solution>
+        </task>
+
+        <task workspace="0.5in">
+            <statement>
+                <p>
+                    Find the fixed point(s) for the differential equation.
+                    What does this mean in the context of the application?
+                </p>
+            </statement>
+
+            <solution component="09-solutions">
+                <p/>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Draw a phase portrait for this differential equation and
+                    fixed point.
+                    Plot sample trajectories.
+                </p>
+            </statement>
+
+            <solution component="09-solutions">
                 <p/>
             </solution>
         </task>
@@ -87,23 +118,44 @@
     <exercise>
         <introduction>
             <p>
-                Let <m>N(t)</m> represent the number of people in the GVSU Mary
-                Idema Pew Library at time <m>t</m> in hours, where <m>t = 0</m>
-                is midnight.
+                Consider a generic, "simple" predator-prey model, where
+                <m>x(t)</m> is the population of the prey and <m>y(t)</m> is the
+                population of predators, at time <m>t</m>.
+                Consider the following assumptions:
+                <ul>
+                    <li>
+                        Left alone, prey will increase at a constant rate
+                        <m>a</m>.
+                    </li>
+
+                    <li>
+                        Prey die at a rate that is proportional to the number of
+                        predators in the ecosystem.
+                    </li>
+
+                    <li>
+                        Predators have evolved and reproduce when food is
+                        plentiful, but don't reproduce when food is scarce,
+                        i.e., predators grow proportionally to the number of
+                        prey.
+                    </li>
+
+                    <li>
+                        Predators die off at a rate proportional to the number
+                        of predators (e.g., territorial).
+                    </li>
+                </ul>
             </p>
         </introduction>
 
         <task workspace="1in">
             <statement>
                 <p>
-                    How would we find when there were 100 people in the library?
-                    Explain.
-                    (Note, we don't yet know the form of the function, so we
-                    can't actually do it yet.)
+                    Draw a schematic for this system of differential equations.
                 </p>
             </statement>
 
-            <solution component="08-solutions">
+            <solution component="09-solutions">
                 <p/>
             </solution>
         </task>
@@ -111,15 +163,12 @@
         <task workspace="1in">
             <statement>
                 <p>
-                    Suppose <m>N(t)</m> was given by
-                    <m>{N(t) = -\frac{1}{4}t^3 + 6t^2}</m>.
-                    Plot the model and its first and second derivatives.
-                    What time period makes sense for this problem?
-                    Explain.
+                    From this schematic, what are the differential equations
+                    that describe the simple predator-prey model?
                 </p>
             </statement>
 
-            <solution component="08-solutions">
+            <solution component="09-solutions">
                 <p/>
             </solution>
         </task>
@@ -127,43 +176,12 @@
         <task workspace="1in">
             <statement>
                 <p>
-                    When is the number of people in the library increasing?
-                    Connect to the graphs you've plotted.
+                    Find the fixed point(s) for the differential equation.
+                    What does this mean in the context of the application?
                 </p>
             </statement>
 
-            <solution component="08-solutions">
-                <p/>
-            </solution>
-        </task>
-
-        <task workspace="1in">
-            <statement>
-                <p>
-                    When is the number of people in the library increasing most
-                    rapidly?
-                    Connect to the graphs you've plotted.
-                </p>
-            </statement>
-
-            <solution component="08-solutions">
-                <p/>
-            </solution>
-        </task>
-
-        <task workspace="1in">
-            <statement>
-                <p>
-                    What time(s) of day correspond to the most number of people
-                    in the library?
-                    What time(s) of day correspond to the least number of people
-                    in the library?
-                    Interpret your results in context and prove it, do not just
-                    guess from a graph.
-                </p>
-            </statement>
-
-            <solution component="08-solutions">
+            <solution component="09-solutions">
                 <p/>
             </solution>
         </task>
