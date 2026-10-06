@@ -68,6 +68,7 @@
             <xi:include href="./quiz/2-quiz.ptx"/>
             <xi:include href="./quiz/3-quiz.ptx"/>
             <xi:include href="./quiz/4-quiz.ptx"/>
+            <xi:include href="./quiz/5-quiz.ptx"/>
         </chapter>
 
     <chapter xml:id="final_project">

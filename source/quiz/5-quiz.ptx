@@ -16,24 +16,28 @@
                 A gardener wants to construct 4 garden areas by first building a
                 fence around a rectangular region, then subdividing the region
                 into 4 smaller rectangles by placing 3 fences parallel to 1 side
-                of the rectangle. What dimensions of the region minimizes the amount of fencing if
+                of the rectangle.
+                What dimensions of the region minimizes the amount of fencing if
                 the total area of the region is 300 square feet?
                 Make sure to show all work and verify that your solution is, in
                 fact, a minimum.
             </p>
         </statement>
     </exercise>
+    
+    <p>
+        <term>Retake of Quiz #3: </term>
+        </p>
 
     <exercise>
         <introduction>
             <p>
-                Suppose <m>k</m> is a constant that captures the intrinsic
-                strength of a square wooden beam relative to its width (
-                <m>w</m> ).
-                Given a circular log of 14 inches in diameter, the maximum
-                strength for a beam with width <m>w</m> is given by:
+                Suppose <m>p</m> captures the maximum profit for a business
+                selling an item, which depends on the production cost per unit,
+                <m>c</m>.
+                This relationship is given by:
                 <md>
-                    k = \frac{196}{3w^2}
+                    p = 25 + \frac{1}{2}c
                 </md>
             </p>
         </introduction>
@@ -41,9 +45,9 @@
         <task workspace="0.5in">
             <statement>
                 <p>
-                    Determine the sensitivity function <m>S(k,w)</m> that
-                    captures the sensitivity of <m>k</m> to changes in the
-                    constant <m>w</m>.
+                    Determine the sensitivity function <m>S(p,c)</m> that
+                    captures the sensitivity of <m>p</m> to changes in the
+                    constant <m>c</m>.
                 </p>
             </statement>
         </task>
@@ -51,8 +55,8 @@
         <task workspace="0.5in">
             <statement>
                 <p>
-                    What is the sensitivity when <m>w = 13</m> and
-                    <m>k = 0.39</m>?
+                    What is the sensitivity when <m>c = 10</m> and
+                    <m>p = 30</m>?
                     Interpret the meaning of your calculation in the context of
                     the scenario.
                 </p>
