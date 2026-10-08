@@ -35,6 +35,7 @@
             <xi:include href="./activities/07-sensitivity-part2.ptx"/>
             <xi:include href="./activities/08-optimization.ptx"/>
             <xi:include href="./activities/09-ODE_intro.ptx"/>
+            <xi:include href="./activities/10-ODE_models1.ptx"/>
 
         </chapter>
 

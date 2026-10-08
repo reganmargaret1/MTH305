@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="activity-10-ODE_models1">
+    <title>10 - Introduction to Coding ODE Models</title>
+
+    <!-- Exercises start here. -->
+    <page>
+        <exercise>
+            <statement>
+                <p>
+                    Consider the code below.
+                    Identify and comment on each line of the code and its
+                    purpose.
+                    If you'd like, create a Colab and run the code to help!
+                </p>
+            </statement>
+        </exercise>
+
+        <program language="python">
+            <code>
+import math
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import odeint
+
+def model(y,t):
+    dydt = np.sin(y)
+    return dydt
+
+y0=np.pi/4
+endpt=17
+t=np.linspace(0,endpt,endpt*20)
+
+y = odeint(model,y0,t)
+
+t_asym = np.linspace(0,endpt,endpt)
+y_asym = np.pi*np.ones(endpt)
+
+plt.plot(t,y)
+plt.plot(t_asym,y_asym, 'r:') 
+plt.ylim(bottom=0)
+plt.xlabel('time')
+plt.ylabel('x(t)')
+plt.title('Time solution based on initial condition of pi/4')
+plt.legend()
+plt.show()
+            </code>
+        </program>
+    </page>
+
+    <page>
+        <exercise>
+            <statement>
+                <p>
+                    Consider the code below.
+                    How does it build on the previous code?
+                    What is its purpose and how do you know?
+                    If you'd like, create a Colab and run the code to help!
+                </p>
+            </statement>
+        </exercise>
+
+        <program language="python">
+            <code>
+y0list=[-7*np.pi/4,-np.pi/4,np.pi/4, 3*np.pi/4, 7*np.pi/4, 9*np.pi/4]
+
+endpt = 4
+t=np.linspace(0,endpt,endpt*20)
+
+for y0 in y0list:
+    y=odeint(model, y0,t)
+    plt.plot(t,y, label='y0 = '+ str(y0))
+
+t_asym = np.linspace(0,endpt,endpt)
+for i in np.arange(-2,4):
+    y_asym = i*np.pi*np.ones(endpt)
+    plt.plot(t_asym,y_asym, 'r:')
+
+plt.xlabel('time')
+plt.ylabel('y(t)')
+plt.title('Time solutions based on initial condition')
+plt.show()
+            </code>
+        </program>
+    </page>
+
+    <page>
+        <exercise>
+            <introduction>
+                <p>
+                    Consider the differential equation
+                    <md>
+                        \frac{dP}{dt} = -0.1P, \,\,\,\,\, P(0) = 12.
+                    </md>
+                    Our goal is to compare the analytical solution to the
+                    numerical solution in Python.
+                </p>
+            </introduction>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Find the analytic solution.
+                    </p>
+                </statement>
+
+                <solution component="10-solutions">
+                    <p/>
+                </solution>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Create a Python Colab and define the analytic function.
+                        Additionally, set up the differential equation to use
+                        <c>odeint</c>.
+                        Plot both solutions on the same graph.
+                        Then, create a second graph that plots the error between
+                        the analytic and numerical solutions.
+                    </p>
+                </statement>
+
+                <solution component="10-solutions">
+                    <p/>
+                </solution>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <exercise>
+            <introduction>
+                <p>
+                    During a winter snowstorm, the town of Autumndale deploys
+                    its fleet of snowplows after 4 inches of snow have
+                    accumulated on the streets.
+                    Assume that the snow continues to fall at a rate of
+                    <m>\frac{3}{5}</m> inches per hour, and that the snowplows
+                    can remove the snow at a rate that is equal to 0.45 times
+                    the amount of snow on the ground per hour.
+                    Using this information, complete the following.
+                </p>
+            </introduction>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Formulate an initial value problem that can be used to
+                        model the depth of the snow on the ground in Autumndale.
+                    </p>
+                </statement>
+
+                <solution component="10-solutions">
+                    <p/>
+                </solution>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Find an analytic solution to the initial value problem.
+                    </p>
+                </statement>
+
+                <solution component="10-solutions">
+                    <p/>
+                </solution>
+            </task>
+
+            <task workspace="1.5in">
+                <statement>
+                    <p>
+                        Find any fixed points and determine their stability.
+                    </p>
+                </statement>
+
+                <solution component="10-solutions">
+                    <p/>
+                </solution>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Plot the solution that represents the depth of the snow
+                        on the ground for an appropriate amount of time.
+                        In addition, plot the solution using Python's internal
+                        ODE solver.
+                    </p>
+                </statement>
+
+                <solution component="10-solutions">
+                    <p/>
+                </solution>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        How do the different graphs above compare?
+                        How <q>bad</q> is the error?
+                    </p>
+                </statement>
+
+                <solution component="10-solutions">
+                    <p/>
+                </solution>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Is it possible under these assumptions for the fleet of
+                        snowplows to clear the snow from the road while it is
+                        still snowing?
+                        If so, when will the streets be clear of snow?
+                    </p>
+                </statement>
+
+                <solution component="10-solutions">
+                    <p/>
+                </solution>
+            </task>
+        </exercise>
+    </page>
+</worksheet>
