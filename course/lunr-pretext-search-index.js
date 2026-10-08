@@ -376,7 +376,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "09 - Introduction to Differential Equation Models",
-  "body": " 09 - Introduction to Differential Equation Models    For ordinary differential equation models, schematics can help us to visualize the scenario and develop the rate of change equations. A schematic is a diagram that shows our dependent or state variable(s) and what increases or decreases those variables. In other words, it shows how the dependent variable(s) change. Here are the steps we consider:  Put the dependent variable(s) in a box. Note: it is one box per dependent variable.  For any factor that increases the dependent variable, draw a corresponding arrow INTO the box and label it.  For any factor that decreases the dependent variable, draw a corresponding arrow OUT of the box and label it.        Let's return to NewTownia, where is the population. Let be the time in years instead of days.     Draw a schematic for based on the following information:  People are born at a rate proportional to the population. Assume about of the population gives birth every year.  People are born at a rate proportional to the population. Assume of the population dies every year.  People immigrate and emigrate. Assume that on average each year 7 more people leave NewTownia than arrive (this is a net rate).        From this schematic, what is the differential equation that describes the population of NewTownia?      Find the fixed point(s) for the differential equation. What does this mean in the context of the application?      Draw a phase portrait for this differential equation and fixed point. Plot sample trajectories.       Consider a generic, \"simple\" predator-prey model, where is the population of the prey and is the population of predators, at time . Consider the following assumptions:  Left alone, prey will increase at a constant rate .  Prey die at a rate that is proportional to the number of predators in the ecosystem.  Predators have evolved and reproduce when food is plentiful, but don't reproduce when food is scarce, i.e., predators grow proportionally to the number of prey.  Predators die off at a rate proportional to the number of predators (e.g., territorial).       Draw a schematic for this system of differential equations.      From this schematic, what are the differential equations that describe the simple predator-prey model?      Find the fixed point(s) for the differential equation. What does this mean in the context of the application?     "
+  "body": " 09 - Introduction to Differential Equation Models    For ordinary differential equation models, schematics can help us to visualize the scenario and develop the rate of change equations. A schematic is a diagram that shows our dependent or state variable(s) and what increases or decreases those variables. In other words, it shows how the dependent variable(s) change. Here are the steps we consider:  Put the dependent variable(s) in a box. Note: it is one box per dependent variable.  For any factor that increases the dependent variable, draw a corresponding arrow INTO the box and label it.  For any factor that decreases the dependent variable, draw a corresponding arrow OUT of the box and label it.        Let's return to NewTownia, where is the population. Let be the time in years instead of days.     Draw a schematic for based on the following information:  People are born at a rate proportional to the population. Assume about of the population gives birth every year.  People die at a rate proportional to the population. Assume of the population dies every year.  People immigrate and emigrate. Assume that on average each year 7 more people leave NewTownia than arrive (this is a net rate).        From this schematic, what is the differential equation that describes the population of NewTownia?      Find the fixed point(s) for the differential equation. What does this mean in the context of the application?      Draw a phase portrait for this differential equation and fixed point. Plot sample trajectories.       Consider a generic, \"simple\" predator-prey model, where is the population of the prey and is the population of predators, at time . Consider the following assumptions:  Left alone, prey will increase at a constant rate .  Prey die at a rate that is proportional to the number of predators in the ecosystem.  Predators have evolved and reproduce when food is plentiful, but don't reproduce when food is scarce, i.e., predators grow proportionally to the number of prey.  Predators die off at a rate proportional to the number of predators (e.g., territorial).       Draw a schematic for this system of differential equations.      From this schematic, what are the differential equations that describe the simple predator-prey model?      Find the fixed point(s) for the differential equation. What does this mean in the context of the application?     "
 },
 {
   "id": "activity-09-ODE_intro-3",
@@ -385,7 +385,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Let's return to NewTownia, where is the population. Let be the time in years instead of days.     Draw a schematic for based on the following information:  People are born at a rate proportional to the population. Assume about of the population gives birth every year.  People are born at a rate proportional to the population. Assume of the population dies every year.  People immigrate and emigrate. Assume that on average each year 7 more people leave NewTownia than arrive (this is a net rate).        From this schematic, what is the differential equation that describes the population of NewTownia?      Find the fixed point(s) for the differential equation. What does this mean in the context of the application?      Draw a phase portrait for this differential equation and fixed point. Plot sample trajectories.    "
+  "body": "  Let's return to NewTownia, where is the population. Let be the time in years instead of days.     Draw a schematic for based on the following information:  People are born at a rate proportional to the population. Assume about of the population gives birth every year.  People die at a rate proportional to the population. Assume of the population dies every year.  People immigrate and emigrate. Assume that on average each year 7 more people leave NewTownia than arrive (this is a net rate).        From this schematic, what is the differential equation that describes the population of NewTownia?      Find the fixed point(s) for the differential equation. What does this mean in the context of the application?      Draw a phase portrait for this differential equation and fixed point. Plot sample trajectories.    "
 },
 {
   "id": "activity-09-ODE_intro-4",
@@ -395,6 +395,51 @@ var ptx_lunr_docs = [
   "number": "2",
   "title": "",
   "body": "  Consider a generic, \"simple\" predator-prey model, where is the population of the prey and is the population of predators, at time . Consider the following assumptions:  Left alone, prey will increase at a constant rate .  Prey die at a rate that is proportional to the number of predators in the ecosystem.  Predators have evolved and reproduce when food is plentiful, but don't reproduce when food is scarce, i.e., predators grow proportionally to the number of prey.  Predators die off at a rate proportional to the number of predators (e.g., territorial).       Draw a schematic for this system of differential equations.      From this schematic, what are the differential equations that describe the simple predator-prey model?      Find the fixed point(s) for the differential equation. What does this mean in the context of the application?    "
+},
+{
+  "id": "activity-10-ODE_models1",
+  "level": "1",
+  "url": "activity-10-ODE_models1.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "10 - Introduction to Coding ODE Models",
+  "body": " 10 - Introduction to Coding ODE Models      Consider the code below. Identify and comment on each line of the code and its purpose. If you'd like, create a Colab and run the code to help!     import math import numpy as np import matplotlib.pyplot as plt from scipy.integrate import odeint def model(y,t): dydt = np.sin(y) return dydt y0=np.pi\/4 endpt=17 t=np.linspace(0,endpt,endpt*20) y = odeint(model,y0,t) t_asym = np.linspace(0,endpt,endpt) y_asym = np.pi*np.ones(endpt) plt.plot(t,y) plt.plot(t_asym,y_asym, 'r:') plt.ylim(bottom=0) plt.xlabel('time') plt.ylabel('x(t)') plt.title('Time solution based on initial condition of pi\/4') plt.legend() plt.show()       Consider the code below. How does it build on the previous code? What is its purpose and how do you know? If you'd like, create a Colab and run the code to help!     y0list=[-7*np.pi\/4,-np.pi\/4,np.pi\/4, 3*np.pi\/4, 7*np.pi\/4, 9*np.pi\/4] endpt = 4 t=np.linspace(0,endpt,endpt*20) for y0 in y0list: y=odeint(model, y0,t) plt.plot(t,y, label='y0 = '+ str(y0)) t_asym = np.linspace(0,endpt,endpt) for i in np.arange(-2,4): y_asym = i*np.pi*np.ones(endpt) plt.plot(t_asym,y_asym, 'r:') plt.xlabel('time') plt.ylabel('y(t)') plt.title('Time solutions based on initial condition') plt.show()       Consider the differential equation Our goal is to compare the analytical solution to the numerical solution in Python.     Find the analytic solution.      Create a Python Colab and define the analytic function. Additionally, set up the differential equation to use odeint . Plot both solutions on the same graph. Then, create a second graph that plots the error between the analytic and numerical solutions.         During a winter snowstorm, the town of Autumndale deploys its fleet of snowplows after 4 inches of snow have accumulated on the streets. Assume that the snow continues to fall at a rate of inches per hour, and that the snowplows can remove the snow at a rate that is equal to 0.45 times the amount of snow on the ground per hour. Using this information, complete the following.     Formulate an initial value problem that can be used to model the depth of the snow on the ground in Autumndale.      Find an analytic solution to the initial value problem.      Find any fixed points and determine their stability.      Plot the solution that represents the depth of the snow on the ground for an appropriate amount of time. In addition, plot the solution using Python's internal ODE solver.      How do the different graphs above compare? How bad is the error?      Is it possible under these assumptions for the fleet of snowplows to clear the snow from the road while it is still snowing? If so, when will the streets be clear of snow?      "
+},
+{
+  "id": "activity-10-ODE_models1-2-1",
+  "level": "2",
+  "url": "activity-10-ODE_models1.html#activity-10-ODE_models1-2-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Consider the code below. Identify and comment on each line of the code and its purpose. If you'd like, create a Colab and run the code to help!   "
+},
+{
+  "id": "activity-10-ODE_models1-3-1",
+  "level": "2",
+  "url": "activity-10-ODE_models1.html#activity-10-ODE_models1-3-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Consider the code below. How does it build on the previous code? What is its purpose and how do you know? If you'd like, create a Colab and run the code to help!   "
+},
+{
+  "id": "activity-10-ODE_models1-4-1",
+  "level": "2",
+  "url": "activity-10-ODE_models1.html#activity-10-ODE_models1-4-1",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Consider the differential equation Our goal is to compare the analytical solution to the numerical solution in Python.     Find the analytic solution.      Create a Python Colab and define the analytic function. Additionally, set up the differential equation to use odeint . Plot both solutions on the same graph. Then, create a second graph that plots the error between the analytic and numerical solutions.    "
+},
+{
+  "id": "activity-10-ODE_models1-5-1",
+  "level": "2",
+  "url": "activity-10-ODE_models1.html#activity-10-ODE_models1-5-1",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  During a winter snowstorm, the town of Autumndale deploys its fleet of snowplows after 4 inches of snow have accumulated on the streets. Assume that the snow continues to fall at a rate of inches per hour, and that the snowplows can remove the snow at a rate that is equal to 0.45 times the amount of snow on the ground per hour. Using this information, complete the following.     Formulate an initial value problem that can be used to model the depth of the snow on the ground in Autumndale.      Find an analytic solution to the initial value problem.      Find any fixed points and determine their stability.      Plot the solution that represents the depth of the snow on the ground for an appropriate amount of time. In addition, plot the solution using Python's internal ODE solver.      How do the different graphs above compare? How bad is the error?      Is it possible under these assumptions for the fleet of snowplows to clear the snow from the road while it is still snowing? If so, when will the streets be clear of snow?    "
 },
 {
   "id": "homework-2",
@@ -854,6 +899,51 @@ var ptx_lunr_docs = [
   "number": "4",
   "title": "",
   "body": "  Suppose you are given the task of determining whether you should go out of the way to get cheaper gas. Or get the gas that is more expensive, but next to your work. What modeling question might you ask? What assumptions would you need to make?   "
+},
+{
+  "id": "quiz_documents-6",
+  "level": "1",
+  "url": "quiz_documents-6.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Quiz 5 - MTH 305 - Regan",
+  "body": " Quiz 5 - MTH 305 - Regan  This quiz covers optimization of mathematical models and a retake on sensitivity of mathematical models. Read all DIRECTIONS carefully. Good luck!    A gardener wants to construct 4 garden areas by first building a fence around a rectangular region, then subdividing the region into 4 smaller rectangles by placing 3 fences parallel to 1 side of the rectangle. What dimensions of the region minimizes the amount of fencing if the total area of the region is 300 square feet? Make sure to show all work and verify that your solution is, in fact, a minimum.     Retake of Quiz #3:     Suppose captures the maximum profit for a business selling an item, which depends on the production cost per unit, . This relationship is given by:      Determine the sensitivity function that captures the sensitivity of to changes in the constant .      What is the sensitivity when and ? Interpret the meaning of your calculation in the context of the scenario.      What conclusions can you make about how confident we can be in the output of this model?     "
+},
+{
+  "id": "quiz_documents-6-2",
+  "level": "2",
+  "url": "quiz_documents-6.html#quiz_documents-6-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "DIRECTIONS "
+},
+{
+  "id": "quiz_documents-6-3",
+  "level": "2",
+  "url": "quiz_documents-6.html#quiz_documents-6-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  A gardener wants to construct 4 garden areas by first building a fence around a rectangular region, then subdividing the region into 4 smaller rectangles by placing 3 fences parallel to 1 side of the rectangle. What dimensions of the region minimizes the amount of fencing if the total area of the region is 300 square feet? Make sure to show all work and verify that your solution is, in fact, a minimum.   "
+},
+{
+  "id": "quiz_documents-6-4",
+  "level": "2",
+  "url": "quiz_documents-6.html#quiz_documents-6-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Retake of Quiz #3: "
+},
+{
+  "id": "quiz_documents-6-5",
+  "level": "2",
+  "url": "quiz_documents-6.html#quiz_documents-6-5",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Suppose captures the maximum profit for a business selling an item, which depends on the production cost per unit, . This relationship is given by:      Determine the sensitivity function that captures the sensitivity of to changes in the constant .      What is the sensitivity when and ? Interpret the meaning of your calculation in the context of the scenario.      What conclusions can you make about how confident we can be in the output of this model?    "
 },
 {
   "id": "final_project-2",
