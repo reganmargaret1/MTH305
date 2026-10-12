@@ -89,7 +89,7 @@
                     <m>{(z = 48, 49, 50, 51, 52)}</m>.
                     Measure the change in <m>B(4)</m>.
                     Based on your results, do you think the model is sensitive
-                    to the parameter <m>k</m>?
+                    to the parameter <m>z</m>?
                 </p>
             </statement>
         </task>
