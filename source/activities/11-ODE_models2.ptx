@@ -54,6 +54,8 @@
                     Let the parameters be the following:
                     <m>{a = 5, b = 1,
                     c = 1, d = 0.2.}</m>
+                    Additionally, the initial conditions are
+                    <m>x_0 = 10, y_0 = 10</m>.
                 </p>
             </statement>
 
@@ -101,9 +103,10 @@
                     Consider the following code.
                     Will any initial conditions end at this fixed point?
                     Manipulate the phase portrait as needed to help justify your
-                    answer. Note: the code below relies on you defining
-                    your ODE as <c>model</c>, and the output to the model
-                    being the solution <c>z = [x(t), y(t)]</c>.
+                    answer.
+                    Note: the code below relies on you defining your ODE as
+                    <c>model</c>, and the output to the model being the solution
+                    <c>z = [x(t), y(t)]</c>.
                 </p>
 
                 <program language="python">
