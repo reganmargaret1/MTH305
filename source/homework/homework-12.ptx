@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 12 - Homework MTH 305 - Regan</title>
+
+    <p>
+        You should present solutions neatly to all problems, making sure to show
+        all your work and follow the homework policies (see Blackboard document
+        for details).
+        You will turn in the assignment on Blackboard by 11:59 pm ET on Friday.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        and/or classmates.
+        No AI resources.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+
+    <exercise>
+        <introduction>
+            <p>
+                The velocity <m>v(t)</m> of a skydiver falling to the ground is
+                governed by
+                <md>
+                    m\frac{dv}{dt} = mg - kv^2,
+                </md>
+                where <m>m</m> is the mass of the skydiver, <m>g</m> is the
+                acceleration due to gravity, and <m>{k \gt 0}</m> is a constant
+                related to the amount of air resistance.
+                Note that we can rewrite this equation as
+                <md>
+                    \frac{dv}{dt} = -\frac{k}{m}\left(v^2 - \frac{mg}{k}\right).
+                </md>
+                Assume <m>v(0) = 0</m> and that the downwards direction is
+                positive.
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    Find the positive fixed point of the differential equation.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    The terminal velocity is also called the limiting velocity,
+                    as it is the limit of the velocity in free fall as time goes
+                    to infinity.
+                    Take <m>m=180</m> kg, <m>g = 32</m> ft/<m>s^2</m>, and
+                    <m>k = 0.2</m> kg/ft.
+                    Find the numerical solution to the ODE.
+                    Plot the numerical solution, along with the line
+                    <m>y = v^*</m>, where <m>v^*</m> is the fixed point you
+                    bound in Part (a).
+                    How does the terminal velocity compare to the fixed point?
+                    What does this mean?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</worksheet>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 10 - Homework MTH 305 - Regan</title>
+
+    <p>
+        You should present solutions neatly to all problems, making sure to show
+        all your work and follow the homework policies (see Blackboard document
+        for details).
+        You will turn in the assignment on Blackboard by 11:59 pm ET on Sunday.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        and/or classmates.
+        No AI resources.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+
+    <exercise>
+        <introduction>
+            <p>
+                In the theory of learning, the rate at which a subject is
+                memorized is assumed to be proportional to the amount of
+                material that is left to be memorized.
+                Let <m>M</m> be the total amount of material that needs to be
+                memorized, and note that <m>M</m> is a constant.
+                Let <m>A(t)</m> be the amount of material that is memorized at
+                time <m>t \geq 0</m>.
+                Assume that no material is memorized at time 0.
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    Identify the independent and dependent variable(s), and any
+                    parameters.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Write a differential equation for this scenario and involve
+                    a schematic in your answer.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Assume that material is forgotten at a rate that is
+                    proportional to the amount memorized at time
+                    <m>t \geq 0</m>.
+                    Expand on the model in Part (b) to include forgetfulness.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    What does it mean about your differential equation if you
+                    are forgetting material quicker than you are memorizing
+                    material?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</worksheet>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 11 - Homework MTH 305 - Regan</title>
+
+    <p>
+        You should present solutions neatly to all problems, making sure to show
+        all your work and follow the homework policies (see Blackboard document
+        for details).
+        You will turn in the assignment on Blackboard by 11:59 pm ET on Friday.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        and/or classmates.
+        No AI resources.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+
+    <exercise>
+        <introduction>
+            <p>
+                The circuit pictured below consists of a resistor with
+                resistance <m>R</m>, a capacitor with capacitance <m>C</m>, and
+                a battery with a constant voltage of <m>V_0</m>.
+                Assume there is no initial charge on the capacitor and the
+                switch is closed at time 0 so that the current starts flowing
+                through the circuit ( <m>I</m> in the picture).
+                Let <m>Q(t)</m> be the charge on the capacitor at time
+                <m>t \geq 0</m>.
+                Physics tells us that <m>{-V_0 + RI + \frac{Q}{C} = 0,}</m>
+                where <m>I</m> is actually <m>Q'(t) = \frac{dQ}{dt}</m>.
+                Since <m>Q(0)=0</m>, this simplifies to the initial value
+                problem:
+                <md>
+                    \frac{dQ}{dt} = \frac{V_0}{R} - \frac{Q}{RC}, \,\,\,\,\, Q(0) = 0.
+                </md>
+            </p>
+
+            <image source="images/HW11.png" width="50%">
+                <shortdescription>Unlabeled sample graph.</shortdescription>
+            </image>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    Identify the dependent variable, the independent variable,
+                    and the parameters (constants).
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Find the fixed point(s) of the differential equation and
+                    label it/them <m>Q^*</m>.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Determine if your fixed point(s) are stable or unstable.
+                    How do you know?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    This is a linear differential equation that we can solve
+                    analytically.
+                    Solve this differential equation analytically, either by
+                    hand or using any differential equation solver.
+                    I'd recommend Mathematica if you've used it before, or
+                    wolframalpha.com.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Now, only after you have found a general solution for any
+                    <m>V_0, R, C</m>, take <m>V_0 = 2.0, R = 100,</m> and
+                    <m>C = 0.00001</m>.
+                    Adapt the code below to plot the numerical solution to your
+                    model <c>y_numerical</c>, as well as the analytical solution
+                    to your model found in Part (d), called <c>y_analytic</c>.
+                    The first graph will show both your analytical solution and
+                    your numerical solution.
+                    The second graph will show the difference between them, that
+                    is the error of your numerical solution.
+                    What do you notice?
+                </p>
+
+                <program language="python">
+                    <code>
+import math
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import odeint
+
+## Parameters 
+V0=  ##### FILL IN HERE
+R=
+C=
+
+## ODE function definition
+def NumericalModel(Q,t,V0,R,C): # defining the ode as a function of your dependent variable, independent variable
+  dQdt = ##### FILL IN HERE (the differential equation, not the analytical solution you found)
+  return dQdt
+
+t = np.linspace(0,.01)  # Capacitors charge very quickly, so we can look at small time intervals
+
+Q0 = 0     # Initial Condition
+
+y_numerical=odeint(NumericalModel,Q0,t,args=(V0,R,C))  # This will be your numerical solution,
+          ## odeint(modelName, initial condition, independentVariableSpace, parameters)
+
+## Analytic function defition
+def AnalyticModel(t):
+  soln = #######  FILL IN HERE (NOT the diff eq, but the analytical solution you found), Q(t) =...
+  return soln
+
+y_analytical = AnalyticModel(t)
+
+## Plot things
+plt.figure(0)  # creates one plot
+plt.plot(t,y_numerical, 'b-',label='numerical') # blue line, ODE solution
+plt.plot(t,y_analytical,'r:',label='analytical')  # red dots, analytic solution
+plt.show
+
+# On a separate plot, this will show the error
+plt.figure(1)   # creates a separate plot
+error = y_analytical - y_numerical[:,0]  # need to call only the first column of the numerical soln
+plt.plot(t,error)
+                    </code>
+                </program>
+            </statement>
+        </task>
+    </exercise>
+</worksheet>
