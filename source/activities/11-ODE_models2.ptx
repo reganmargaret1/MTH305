@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="activity-11-ODE_models2">
+    <title>11 - Coding ODE Models Part 2</title>
+
+    <!-- Exercises start here. -->
+    <exercise>
+        <introduction>
+            <p>
+                Let's return to our "simple" predator-prey model, where
+                <m>x(t)</m> is the population of the prey and <m>y(t)</m> is the
+                population of predators, at time <m>t</m>.
+                Consider the following assumptions:
+                <ul>
+                    <li>
+                        Left alone, prey will increase at a constant rate
+                        <m>a</m>.
+                    </li>
+
+                    <li>
+                        Prey die at a rate that is proportional to the number of
+                        predators in the ecosystem.
+                    </li>
+
+                    <li>
+                        Predators have evolved and reproduce when food is
+                        plentiful, but don't reproduce when food is scarce,
+                        i.e., predators grow proportionally to the number of
+                        prey.
+                    </li>
+
+                    <li>
+                        Predators die off at a rate proportional to the number
+                        of predators (e.g., territorial).
+                    </li>
+                </ul>
+            </p>
+
+            <p>
+                The corresponding model is given by two differential equations:
+                <md>
+                    \frac{dx}{dt} = a - by \\
+                \frac{dy}{dt} = cx - dy \\
+                </md>
+                with initial conditions <m>x(0) = x_0</m> and <m>y(0) = y_0</m>.
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Solve the model numerically using Python.
+                    Let the parameters be the following:
+                    <m>{a = 5, b = 1,
+                    c = 1, d = 0.2.}</m>
+                </p>
+            </statement>
+
+            <solution component="11-solutions">
+                <p/>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Find the fixed point of the model.
+                    Plot <m>y</m> vs.
+                    <m>x</m> along with the fixed point.
+                    What do you notice?
+                    Comment on whether you think the fixed point is stable or
+                    unstable.
+                    Explain.
+                </p>
+            </statement>
+
+            <solution component="11-solutions">
+                <p/>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What assumptions could you change to make this model
+                    <q>better</q> or more realistic?
+                </p>
+            </statement>
+
+            <solution component="11-solutions">
+                <p/>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Let's plot the 2D phase portrait and see if it aligns with
+                    our conclusions in Part (b).
+                    Consider the following code.
+                    Will any initial conditions end at this fixed point?
+                    Manipulate the phase portrait as needed to help justify your
+                    answer. Note: the code below relies on you defining
+                    your ODE as <c>model</c>, and the output to the model
+                    being the solution <c>z = [x(t), y(t)]</c>.
+                </p>
+
+                <program language="python">
+                    <code>
+import math
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import odeint
+
+### PHASE PORTRAIT
+xdomain = np.linspace(-7.5,10,10)     # set up points for x-axis (prey)
+ydomain = np.linspace(-10,15,10)       # set up points for y-axis (predators)
+
+X,Y = np.meshgrid(xdomain,ydomain)    # creates 2D grid of all points to find the derivative vector
+
+### We want [dxdt, dydt] at each point in our grid so:
+# U = a-b*Y = dx/dt
+# V = c*X - d*Y = dy/dt
+[U, V] = model([X,Y],0,a,b,c,d)       # runs each point in the grid through the ODE to find the derivative vector at that point
+
+plt.quiver(xdomain,ydomain,U,V,label='Phase portrait')      # plot phase portrait (arrows)
+plt.plot(z[:,0],z[:,1],'r-', label='[10,10] initial soln')  # Plot the one time solution in red.
+plt.plot(a*d/(c*b), a/b, 'o', label='fixed point')          # Plot the fixed point
+plt.xlabel('prey')
+plt.ylabel('predators')
+plt.title('Phase Portrait')
+plt.legend()
+plt.show()
+                    </code>
+                </program>
+            </statement>
+
+            <solution component="11-solutions">
+                <p/>
+            </solution>
+        </task>
+    </exercise>
+</worksheet>
