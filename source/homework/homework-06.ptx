@@ -93,7 +93,7 @@
                     If you think the model is more sensitive to <m>a</m>, copy
                     and paste the following code into a new code cell, which
                     will tell you the biggest difference between the fitted
-                    curve and the curve with $aa$ decreased by <m>2\%</m>:
+                    curve and the curve with <m>aa</m> decreased by <m>2\%</m>:
                 </p>
 
                 <p>
