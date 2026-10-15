@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Quiz 6 - MTH 305 - Regan</title>
+
+    <p>
+        This quiz covers single equation ODE models, their fixed point(s), and
+        stability and a retake on optimization of mathematical models.
+        Read all <term>DIRECTIONS</term> carefully.
+        Good luck!
+    </p>
+
+    <exercise workspace="2in">
+        <statement>
+            <p>
+                Find the fixed point(s) for the following differential equation
+                and determine the corresponding stability.
+                <md>
+                    \frac{dx}{dt}= x - ax^{2}
+                </md>
+            </p>
+
+            <p>
+                Here, <m>a \gt 0</m> is a parameter.
+                Show all work and state in a sentence whether you think the
+                stability of the fixed point(s) depends on the value of the
+                parameter <m>a</m>.
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise workspace="1in">
+        <statement>
+            <p>
+                Consider the following graph.
+            </p>
+
+            <image source="images/06quiz-1.png" width="40%">
+                <shortdescription>
+                    Graph of multiple solution trajectories for the differential
+                    equation dy/dt = sin(y) given different initial conditions.
+                </shortdescription>
+            </image>
+
+            <p>
+                Identify the fixed points and whether they are stable or
+                unstable.
+                Explain your reasoning.
+            </p>
+        </statement>
+    </exercise>
+
+    <p>
+        <term>Retake of Optimization: </term>
+    </p>
+
+    <exercise workspace="5in">
+        <statement>
+            <p>
+                We want to construct a cylindrical can with a bottom, but no top
+                that will have a volume of <m>30 \,\, cm^3</m>.
+                Determine the dimensions of the can that will minimize the
+                amount of material needed to construct the can.
+            </p>
+
+            <p>
+                Remember the volume of a cylinder is given by
+                <m>{V = \pi r^2h.}</m> Additionally, the surface area of a
+                cylinder with a top and a bottom is given by
+                <m>{A = 2\pi rh + 2\pi r^2.}</m>
+            </p>
+        </statement>
+    </exercise>
+</worksheet>
