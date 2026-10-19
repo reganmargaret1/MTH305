@@ -58,7 +58,7 @@
         <task>
             <statement>
                 <p>
-                    Notice we increased the parameter 0.2 by <m>0.25\%</m>.
+                    Notice we increased the parameter 0.2 by <m>2.5\%</m>.
                     By how much percent did the output change?
                     Would you consider this model sensitive to that parameter?
                 </p>
