@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 15 - Homework MTH 305 - Regan</title>
+
+    <p>
+        You should present solutions neatly to all problems, making sure to show
+        all your work and follow the homework policies (see Blackboard document
+        for details).
+        You will turn in the assignment on Blackboard by 11:59 pm ET on Sunday.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        and/or classmates.
+        No AI resources.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+
+    <exercise>
+        <introduction>
+            <p>
+                Let's look at something called a bifurcation.
+                Suppose we have a system of two differential equations:
+                <md>
+                \begin{array}{l}
+                    \frac{dx}{dt} \amp = \amp -2x + ay \\
+                \frac{dy}{dt} \amp = \amp -2x \\
+                \end{array}
+                </md>
+                for some unknown value <m>a</m>.
+                Note that <m>a</m> could be positive or negative.
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    Find the equilibrium point assuming that <m>a \neq 0</m>.
+                    Evaluate the Jacobian at the equilibrium point.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Find the eigenvalues for this Jacobian.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Depending on the value of <m>a</m>, the eigenvalues could be
+                    real, or they could be complex.
+                    For what values of <m>a</m> are the eigenvalues real?
+                    For what values of <m>a</m> are the eigenvalues complex?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    If the eigenvalues are real, what type(s) of equilibrium
+                    point do you have?
+                    (Sink, source, saddle, ....) And will the solutions to the
+                    system, <m>x(t)</m> and <m>y(t)</m>, oscillate over time?
+                    Explain.
+                    (Note: Be careful with values of <m>a</m>...
+                    remember <m>a</m> could be positive or negative...
+                    do the eigenvalue(s) change signs for different values of
+                    <m>a</m>?)
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    If the eigenvalues are complex, what type of equilibrium
+                    point do you have?
+                    (Sink, source, saddle, ....) And will the solutions to the
+                    system, <m>x(t)</m> and <m>y(t)</m>, oscillate over time?
+                    Explain.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <p>
+        So our solution is divided into different parts, or "branches", based on
+        the value of <m>a</m>.
+        Up until a certain value of <m>a</m>, solutions will behave one way, and
+        past that certain value of <m>a</m> solutions will behave a different
+        way.
+        This is called a "bifurcation."
+    </p>
+</worksheet>

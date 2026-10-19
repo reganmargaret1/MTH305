@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 14 - Homework MTH 305 - Regan</title>
+
+    <p>
+        You should present solutions neatly to all problems, making sure to show
+        all your work and follow the homework policies (see Blackboard document
+        for details).
+        You will turn in the assignment on Blackboard by 11:59 pm ET on Sunday.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        and/or classmates.
+        No AI resources.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+
+    <exercise>
+        <introduction>
+            <p>
+                A cooperative system is one in which there are multiple species
+                which benefit from interactions with each other.
+                Let us consider bees and flowers, for example.
+            </p>
+
+            <p>
+                Let <m>x(t)</m> be the population of species 1 (bees) at time
+                <m>t</m>, and <m>y(t)</m> be the population of species 2
+                (flowers) at time <m>t</m>.
+            </p>
+
+            <p>
+                Assume bees decrease proportionally to the current population of
+                bees with rate <m>a</m>.
+                And assume an encounter between a bee and a flower changes the
+                population of bees by rate <m>b</m>.
+                Assume flowers also decrease proportionally to the current
+                population of flowers with rate <m>c</m>.
+                Assume an encounter between a bee and a flower changes the
+                population of flowers by rate <m>d</m>.
+                (We can assume <m>a, b, c, d</m> are all positive for this
+                question, otherwise we may change the nature of the cooperative
+                system.)
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    In a cooperative system, does an encounter between a bee and
+                    a flower increase the populations, decrease the populations,
+                    or increase one, but decrease the other?
+                    Why?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    What is your system of differential equations?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    What are the equilibrium points (hint there should be two)?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Find the Jacobian in general, and then evaluate it at the
+                    two equilibrium points.
+                    Additionally, determine what types of equilibrium points
+                    they are (sink, source, saddle, ...).
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    For the parameters <m>{a = 5, b = 3, c = 3, d = 2}</m>, plot
+                    both solutions versus time.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Using the same parameters as above, create a phase portrait
+                    with <m>y</m> vs.
+                    <m>x</m>.
+                    From your phase portrait identify an initial condition where
+                    the solution will have both populations blow up to infinity.
+                    Identify a second initial condition where both populations
+                    go to zero. Explain/justify your choices.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</worksheet>

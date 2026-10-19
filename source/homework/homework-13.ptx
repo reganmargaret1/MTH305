@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 13 - Homework MTH 305 - Regan</title>
+
+    <p>
+        You should present solutions neatly to all problems, making sure to show
+        all your work and follow the homework policies (see Blackboard document
+        for details).
+        You will turn in the assignment on Blackboard by 11:59 pm ET on Sunday.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        and/or classmates.
+        No AI resources.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+
+    <exercise>
+        <introduction>
+            <p>
+                Let's improve on the simple Predator-Prey model.
+                There is a famous model called the Lotka-Volterra Predator-Prey
+                model that we will build here.
+            </p>
+
+            <p>
+                First, note that when the change of a state depends on two
+                different states interacting with each other, we can model this
+                by saying the derivative is jointly proportional to both states,
+                i.e., the derivative is proportional to the product of the two
+                states.
+                This type of interaction might be considered an "encounter."
+            </p>
+
+            <p>
+                If we take <m>x(t)</m> as the number of prey at time <m>t</m>
+                and <m>y(t)</m> as the number of predators at time <m>t</m>,
+                then we have the following assumptions on prey:
+                <ul>
+                    <li>
+                        Left alone, the birth rate of the prey is proportional
+                        to the population size of the prey.
+                    </li>
+
+                    <li>
+                        The prey are more easily killed if there are many prey
+                        and/or many predators, so the number of prey killed is
+                        jointly proportional to the two populations (since we
+                        are assuming the prey changes proportional to the number
+                        of encounters between prey and predator).
+                    </li>
+                </ul>
+                We have the following assumptions on predators:
+                <ul>
+                    <li>
+                        The predator population grows proportionally to the
+                        number of encounters between predator and prey (that is,
+                        jointly proportional since predators have evolved to
+                        reproduce when food is plentiful, but not as much when
+                        food is scarce).
+                    </li>
+
+                    <li>
+                        Predators can be very territorial, so the death/exit
+                        rate is proportional to the number of predators.
+                        (That is, the predators are more likely to be killed or
+                        driven off as the predator population increases.)
+                    </li>
+                </ul>
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    What is the system of differential equations (aka your
+                    model)?
+                    If it helps, first draw a schematic.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Assume you start with the following:
+                    <ul>
+                        <li>Initial prey is 1 (assume a scaled amount)</li>
+                        <li>
+                            Initial predators is 0.5 (assume a scaled amount
+                            because you can't have half of a predator)
+                        </li>
+
+                        <li>The birth rate constant of prey is 0.7</li>
+                        <li>
+                            The constant defining the death rate of prey is 0.4
+                        </li>
+
+                        <li>
+                            The constant defining the growth rate of predators
+                            is 0.1
+                        </li>
+
+                        <li>
+                            The constant defining the death rate of predators is
+                            0.7
+                        </li>
+                    </ul>
+                    Create code in Python and plot the solution.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    What are some observations you can make from the plots of
+                    the solution?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Change the growth rate of the predators to 0.08 and plot the
+                    predators with the previous parameter values and the
+                    predators with this new parameter value on the same graph.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    What do you notice happened to the predators when you
+                    decreased the parameter in part d from 0.1 to 0.08?
+                    Anything interesting?
+                    Why might it be interesting in context?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</worksheet>
