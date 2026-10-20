@@ -60,7 +60,66 @@
             </statement>
 
             <solution component="11-solutions">
-                <p/>
+                <program language="python">
+                    <code>
+import math
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import odeint
+
+### Parameters
+a = 5
+b = 1
+c = 1
+d = .2
+
+x0 = 10    # Initial Prey (in hundreds)
+y0 = 10    # Initial Predators (in hundreds)
+
+#Define ODE
+def model(z,t,a,b,c,d):          # (depend, independ, param), z = [x,y]
+    x = z[0]             # First entry of z is x (prey)
+    y = z[1]             # Second entry of z is y (predator)
+    dxdt = a-b*y
+    dydt = c*x - d*y
+    return [dxdt, dydt]  # VECTOR [prey, predator]
+
+endtime = 100             # define end time - easier to change later
+t=np.linspace(0,endtime,endtime*20)
+
+z0 = [x0, y0]            # initial values, in vector form [prey, predator]
+
+## Find the solution, which is a vector z(t) = [x(t), y(t)]
+
+z = odeint(model,z0,t,args=(a,b,c,d))   # Solution
+
+# Plot both solutions
+fig0 = plt.figure(0)
+plt.plot(t,z[:,0], label='prey')        # x(t) = z[all rows, 1st column (prey)]
+plt.plot(t,z[:,1], label='predators')   # y(t) = z[all rows, 2nd column (predators)]
+plt.xlabel('time')
+plt.ylabel('Population in hundreds')
+plt.title('Super Simple Predator-Prey Model')
+plt.legend()
+plt.show()
+
+# Plot y vs. x along with the fixed point
+plt.figure(1)
+plt.plot(z[:,0],z[:,1], 'r-', label='solution')   # x(t) = z[all rows, 1st column], y(t) = z[all rows, 2nd column]
+plt.plot(a*d/(c*b), a/b, 'o', label='fixed point')  # fixed point
+plt.xlabel('prey')
+plt.ylabel('predators')
+plt.legend()
+plt.show()
+                    </code>
+                </program>
+
+                <image source="images/11-PredPrey.png" width="75%">
+                    <shortdescription>
+                        Graph of both predator and prey solution curves for the
+                        simple Predator-Prey model.
+                    </shortdescription>
+                </image>
             </solution>
         </task>
 
@@ -78,7 +137,38 @@
             </statement>
 
             <solution component="11-solutions">
-                <p/>
+                <p>
+                    The following is a continuation of the code for Part (a).
+                    Note that the fixed point is represented generically - this
+                    can help if you end up changing parameters.
+                </p>
+
+                <program language="python">
+                    <code>
+# Plot y vs. x along with the fixed point
+plt.figure(1)
+plt.plot(z[:,0],z[:,1], 'r-', label='solution')   # x(t) = z[all rows, 1st column], y(t) = z[all rows, 2nd column]
+plt.plot(a*d/(c*b), a/b, 'o', label='fixed point')  # fixed point
+plt.xlabel('prey')
+plt.ylabel('predators')
+plt.legend()
+plt.show()
+                    </code>
+                </program>
+
+                <image source="images/11-FixedPoint_PredPrey.png" width="75%">
+                    <shortdescription>
+                        Fixed point and predator versus prey solution curves for
+                        the simple Predator-Prey model.
+                    </shortdescription>
+                </image>
+
+                <p>
+                    The fixed point sits at the center of a spiral curve for the
+                    predators plotted versus the prey.
+                    The solution spirals into this point, suggesting that it is
+                    a stable fixed point.
+                </p>
             </solution>
         </task>
 
@@ -91,7 +181,14 @@
             </statement>
 
             <solution component="11-solutions">
-                <p/>
+                <p>
+                    This isn't quite realistic because of the negative
+                    populations that occur.
+                    One option is to change the initial conditions - should both
+                    predator and prey start at the same population size?
+                    Is that realistic?
+                    Another option is to change certain parameters.
+                </p>
             </solution>
         </task>
 
@@ -140,7 +237,16 @@ plt.show()
             </statement>
 
             <solution component="11-solutions">
-                <p/>
+                <image source="images/11-PhasePortrait_PredPrey.png" width="75%">
+                    <shortdescription>
+                        Phase portrait for the simple Predator-Prey model.
+                    </shortdescription>
+                </image>
+
+                <p>
+                    This is a spiral sink, which is a stable fixed point.
+                    Any initial condition will end at this fixed point.
+                </p>
             </solution>
         </task>
     </exercise>
