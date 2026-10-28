@@ -184,6 +184,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-14.html" class="internal"><span class="title">Problem 13 - Homework MTH 305 - Regan</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-15.html" class="internal"><span class="title">Problem 14 - Homework MTH 305 - Regan</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-16.html" class="internal"><span class="title">Problem 15 - Homework MTH 305 - Regan</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-17.html" class="internal"><span class="title">Problem 16 - Homework MTH 305 - Regan</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -216,7 +217,10 @@ eBookConfig.enable_chatcodes =  false;
         </label><label><input type="radio" name="papersize" value="letter">Letter
         </label>
 </form>
-<details class="print-options"><summary>Additional printing options</summary><div class="header-footer-options">
+<details class="print-options"><summary>Additional printing options</summary><div class="hide-solutions-options"><div class="hide-option">
+<label for="hide-solution-checkbox">Hide solutions</label><input type="checkbox" id="hide-solution-checkbox">
+</div></div>
+<div class="header-footer-options">
 <div class="header-option">
 <span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
 </div>
@@ -306,11 +310,25 @@ plt.show()
 <article class="task exercise-like" id="activity-10-ODE_models1-4-1-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
 <div class="para" id="activity-10-ODE_models1-4-1-2-1-1">Find the analytic solution.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-10-ODE_models1-4-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activity-10-ODE_models1-4-1-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activity-10-ODE_models1-4-1-2-2-1"><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-10-ODE_models1-4-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.a.1"><a tabindex="-1" href="#activity-10-ODE_models1-4-1-2-2" title="Copy heading and permalink for Solution 3.a.1" aria-label="Copy heading and permalink for Solution 3.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 3.a"><a tabindex="-1" href="#activity-10-ODE_models1-4-1-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activity-10-ODE_models1-4-1-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
 <div class="para" id="activity-10-ODE_models1-4-1-3-1-1">Create a Python Colab and define the analytic function. Additionally, set up the differential equation to use <code class="code-inline tex2jax_ignore">odeint</code>. Plot both solutions on the same graph. Then, create a second graph that plots the error between the analytic and numerical solutions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-10-ODE_models1-4-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activity-10-ODE_models1-4-1-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activity-10-ODE_models1-4-1-3-2-1"><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-10-ODE_models1-4-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.b.1"><a tabindex="-1" href="#activity-10-ODE_models1-4-1-3-2" title="Copy heading and permalink for Solution 3.b.1" aria-label="Copy heading and permalink for Solution 3.b.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 3.b"><a tabindex="-1" href="#activity-10-ODE_models1-4-1-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div>
@@ -324,11 +342,54 @@ plt.show()
 <article class="task exercise-like" id="activity-10-ODE_models1-5-1-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
 <div class="para" id="activity-10-ODE_models1-5-1-2-1-1">Formulate an initial value problem that can be used to model the depth of the snow on the ground in Autumndale.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-10-ODE_models1-5-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activity-10-ODE_models1-5-1-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activity-10-ODE_models1-5-1-2-2-1">
+<span class="process-math">\(\frac{dS}{dt}=\frac{3}{5}−0.45s\)</span> Here, <span class="process-math">\(S\)</span> is the amount of snow at time <span class="process-math">\(t\text{,}\)</span> where <span class="process-math">\(S\)</span> is the dependent variable and <span class="process-math">\(t\)</span> is the independent variable.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-10-ODE_models1-5-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.a.1"><a tabindex="-1" href="#activity-10-ODE_models1-5-1-2-2" title="Copy heading and permalink for Solution 4.a.1" aria-label="Copy heading and permalink for Solution 4.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 4.a"><a tabindex="-1" href="#activity-10-ODE_models1-5-1-2" title="Copy heading and permalink for Task 4.a" aria-label="Copy heading and permalink for Task 4.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activity-10-ODE_models1-5-1-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
 <div class="para" id="activity-10-ODE_models1-5-1-3-1-1">Find an analytic solution to the initial value problem.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-10-ODE_models1-5-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activity-10-ODE_models1-5-1-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activity-10-ODE_models1-5-1-3-2-1">
+<div class="para">We can find the analytic solution by using the method of separation of variables.</div>
+<div class="displaymath process-math" id="activity-10-ODE_models1-5-1-3-2-1-1">
+\begin{equation*}
+\begin{array}{c}
+\frac{dS}{dt} \amp = \amp \frac{3}{5} - 0.45S \\
+\frac{dS}{dt} \amp = -0.45\left(-\frac{4}{3} + S\right) \\
+\int \frac{1}{-\frac{4}{3} + S}dS \amp = \amp \int -0.45dt \\
+\ln(-\frac{4}{3} + S) \amp = \amp -0.45t + C \\
+S(t) \amp = \amp \frac{4}{3} + Ce^{-0.45t}.
+\end{array}
+\end{equation*}
+</div>
+<div class="para">Then, use the initial condition that at time <span class="process-math">\(t=0\)</span> the plows start with <span class="process-math">\(S = 4\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="activity-10-ODE_models1-5-1-3-2-1-4">
+\begin{equation*}
+\begin{array}{c}
+S(0) \amp = \amp 4 = \frac{4}{3} + Ce^{0} \\
+C \amp = \amp 4 - \frac{4}{3} \\
+C \amp = \amp \frac{8}{3} \\
+\end{array}
+\end{equation*}
+</div>
+<div class="para">This yields an analytic solution of <span class="process-math">\({S(t) = \frac{4}{3} + \frac{8}{3}e^{-0.45t}}\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-10-ODE_models1-5-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.b.1"><a tabindex="-1" href="#activity-10-ODE_models1-5-1-3-2" title="Copy heading and permalink for Solution 4.b.1" aria-label="Copy heading and permalink for Solution 4.b.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 4.b"><a tabindex="-1" href="#activity-10-ODE_models1-5-1-3" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div>
@@ -336,22 +397,96 @@ plt.show()
 <article class="task exercise-like" id="activity-10-ODE_models1-5-1-4"><h3 class="heading"><span class="codenumber">(c)</span></h3>
 <div class="para" id="activity-10-ODE_models1-5-1-4-1-1">Find any fixed points and determine their stability.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-10-ODE_models1-5-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activity-10-ODE_models1-5-1-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activity-10-ODE_models1-5-1-4-2-1">
+<div class="para">Fixed points occur when the first derivative is equal to zero. Therefore,</div>
+<div class="displaymath process-math" id="activity-10-ODE_models1-5-1-4-2-1-1">
+\begin{equation*}
+\frac{dSt}{dt} = 0 \Rightarrow \frac{3}{5} - 0.45S = 0 \Rightarrow S = \frac{4}{3}.
+\end{equation*}
+</div>
+<div class="para">To test the stability, we can consider the derivative of the differential equation with respect to the dependent variable. The derivative of <span class="process-math">\(\frac{dS}{dt}\)</span> is <span class="process-math">\(-0.45\text{.}\)</span> This is less than zero, and thus the fixed point is stable.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-10-ODE_models1-5-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="activity-10-ODE_models1-5-1-4-2-2">
+<em class="emphasis">Note that in general, to test stability, a phase portrait works.  However, you can also look at the derivative of the differential equation with respect to the dependent variable.  If this derivative evaluated at the fixed point is negative, then the fixed point is stable. If it is positive, this means that the fixed point is unstable.</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-10-ODE_models1-5-1-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.c.1"><a tabindex="-1" href="#activity-10-ODE_models1-5-1-4-2" title="Copy heading and permalink for Solution 4.c.1" aria-label="Copy heading and permalink for Solution 4.c.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="1.5in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 4.c"><a tabindex="-1" href="#activity-10-ODE_models1-5-1-4" title="Copy heading and permalink for Task 4.c" aria-label="Copy heading and permalink for Task 4.c">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activity-10-ODE_models1-5-1-5"><h3 class="heading"><span class="codenumber">(d)</span></h3>
 <div class="para" id="activity-10-ODE_models1-5-1-5-1-1">Plot the solution that represents the depth of the snow on the ground for an appropriate amount of time. In addition, plot the solution using Python’s internal ODE solver.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-10-ODE_models1-5-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activity-10-ODE_models1-5-1-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="code-box"><pre class="program clipboardable"><code class="language-py">import math
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import odeint
+
+S0 = 4
+
+def analytic_model(t):
+  S = 1.33 + 2.67*np.exp(-0.45*t)
+  return S
+
+def num_model(S,t):
+  dSdt = 3/5 - 0.45*S
+  return dSdt
+
+t =np.linspace(0,50,5000)
+
+y1 = odeint(num_model,S0,t)
+y2 = analytic_model(t)
+plt.plot(t,y1,label = 'Numerical Snow Depth')
+plt.plot(t,y2,label = 'Analytic Snow Depth')
+plt.xlabel('time')
+plt.ylabel('')
+plt.legend()
+plt.show()
+</code></pre></div>
+<div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/images/10-SnowDepth.png" class="contained" alt="Graph of the snow depth for the differential equation model representing plowing the snow. This graphs the analytic and numerical solutions."></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.d.1"><a tabindex="-1" href="#activity-10-ODE_models1-5-1-5-2" title="Copy heading and permalink for Solution 4.d.1" aria-label="Copy heading and permalink for Solution 4.d.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 4.d"><a tabindex="-1" href="#activity-10-ODE_models1-5-1-5" title="Copy heading and permalink for Task 4.d" aria-label="Copy heading and permalink for Task 4.d">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activity-10-ODE_models1-5-1-6"><h3 class="heading"><span class="codenumber">(e)</span></h3>
 <div class="para" id="activity-10-ODE_models1-5-1-6-1-1">How do the different graphs above compare? How “bad” is the error?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-10-ODE_models1-5-1-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activity-10-ODE_models1-5-1-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activity-10-ODE_models1-5-1-6-2-1">The graphs are nearly identical. We can look at the error numerically. The error is very small. Note that if you truncate the coefficients and constants when solving the differential equation, the error will be larger.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-10-ODE_models1-5-1-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="code-box"><pre class="program clipboardable"><code class="language-py">error = np.abs(y2 - y1[:,0])
+plt.plot(t,error)
+plt.xlabel('time')
+plt.ylabel('Error')
+plt.show()
+</code></pre></div>
+<div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/images/10-SnowPlowError.png" class="contained" alt="Error between the analytic and numerical solutions for the Snow Depth."></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.e.1"><a tabindex="-1" href="#activity-10-ODE_models1-5-1-6-2" title="Copy heading and permalink for Solution 4.e.1" aria-label="Copy heading and permalink for Solution 4.e.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 4.e"><a tabindex="-1" href="#activity-10-ODE_models1-5-1-6" title="Copy heading and permalink for Task 4.e" aria-label="Copy heading and permalink for Task 4.e">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activity-10-ODE_models1-5-1-7"><h3 class="heading"><span class="codenumber">(f)</span></h3>
 <div class="para" id="activity-10-ODE_models1-5-1-7-1-1">Is it possible under these assumptions for the fleet of snowplows to clear the snow from the road while it is still snowing? If so, when will the streets be clear of snow?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-10-ODE_models1-5-1-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activity-10-ODE_models1-5-1-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activity-10-ODE_models1-5-1-7-2-1"><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-10-ODE_models1-5-1-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.f.1"><a tabindex="-1" href="#activity-10-ODE_models1-5-1-7-2" title="Copy heading and permalink for Solution 4.f.1" aria-label="Copy heading and permalink for Solution 4.f.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 4.f"><a tabindex="-1" href="#activity-10-ODE_models1-5-1-7" title="Copy heading and permalink for Task 4.f" aria-label="Copy heading and permalink for Task 4.f">🔗</a></div>
