@@ -1,0 +1,1020 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="lab2">
+    <title>Lab 2 - MTH 305 - Regan</title>
+
+    <!-- Optional introduction -->
+    <introduction>
+        <p>
+            This project will be completed in groups of approximately 3-4
+            people.
+            You are expected to work together, and to give equal and valiant
+            effort throughout this project.
+            You will have about a week to work on this, and may need to meet
+            outside of class to work on this project as a group.
+            At the end of the project, your group will submit a project report
+            answering the questions below.
+            You can either complete the project in Google Colabs, or some other
+            online document such as Google Docs or Overleaf (all of these can be
+            shared with your group members as well as with Professor Regan).
+            Whatever you use, a copy (or the original) should be saved in your
+            Google Drive Portfolio.
+            Note that a numeric answer on it's own with no context or
+            explanation is not a solution, and your responses should be sure to
+            explain what you did, and why you did it.
+            This project will be due Sunday, November 8th at 11:59pm.
+        </p>
+
+        <p>
+            <term>Purpose</term>
+        </p>
+
+        <p>
+            Some of the main purposes of this assignment are: to look at
+            different models and get a sense of why we might use different
+            models, to compare models and how they do with different data sets,
+            to help you better understand parameters and differential equations,
+            to get you used to cleaning, handling, and working with data, to
+            help you improve your ability to interpret data and model outputs,
+            ...
+        </p>
+
+        <p>
+            <term>Background</term>
+        </p>
+
+        <p>
+            Cancer is approaching heart disease as the leading cause of death in
+            the United States [1].
+            Knowledge of tumor growth is important in cancer screening planning
+            and treatment.
+            Effective models of tumor growth not only help researchers
+            understand the dynamics of cancer growth and evaluate screening
+            strategies, but they also enable clinicians to predict the efficacy
+            of cancer therapies and optimize treatment protocols.
+        </p>
+
+        <p>
+            In this project, you will investigate several classical models for
+            cancer growth and examine the behaviors of these equations and their
+            solutions through qualitative techniques.
+            Furthermore, you will evaluate how the predictions of tumor growth
+            change when chemotherapy or other treatments are introduced, such
+            as, how does the maximum tumor size change?
+            What is the minimum effective concentration of the drug needed?
+            Analysis and data fitting may be carried out to assess the models’
+            ability to predict future growth of tumors and shed some light on
+            the development of resistance to cancer treatment.
+        </p>
+
+        <p>
+            <term>Part 1: Modeling Scenarios</term>
+        </p>
+
+        <p>
+            The growth of cancer can be modeled through first-order ordinary
+            differential equations by examining the change of tumor volume
+            <m>V</m> over time <m>t</m>, given an initial volume
+            <m>{V(0) = V_{0}}</m>.
+            In this first section, we will go through some models historically
+            used to model tumor growth.
+            The initial condition <m>{V(0)=V_{0}}</m> is used in the following
+            models, and the parameters in the models are assumed to be positive.
+            Make sure you answer each of the questions for each of the 5 model
+            types.
+        </p>
+    </introduction>
+    <!-- Exercises start here. -->
+    <exercise>
+        <introduction>
+            <p>
+                A simple exponential model describes the early stages of tumor
+                growth, where the growth is proportional to the tumor
+                population.
+                Cells divide and create two daughter cells at a constant rate
+                that is independent of tumor size.
+                The model is given by
+                <md>
+                    \frac{dV}{dt}= aV
+                </md>
+                This model was first applied to cancer growth in 1956 [2].
+                The tumor doubling time, that is the time it takes for the tumor
+                to double in size, was additionally introduced to measure how
+                fast a tumor grows and quantify the growth rate,
+                <md>
+                    DT = \frac{\ln 2}{a}
+                </md>
+                The exponential model predicts early growth well.
+                However, exponential growth is not valid for the long-term
+                growth of solid tumors.
+                Thus we investigate several alternative models below.
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    Why would exponential growth not be a good model for the
+                    long-term growth of solid tumors?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Solve the differential equation for tumor volume
+                    <m>V(t)</m>.
+                    Note, <m>a</m> is an unknown parameter, so leave it as such
+                    in your solution.
+                    (You can solve this using technology, or previous
+                    knowledge.)
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Determine the maximum tumor size.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    If <m>a = 1.6</m>, what does that parameter mean in context?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                A generalization of the exponential model is described by the
+                power-law equation below, introduced by Mendelsohn in 1963 [9]:
+                <md>
+                    \frac{dV}{dt}= aV^{b}.
+                </md>
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    Solve the differential equation for tumor volume
+                    <m>V(t)</m>.
+                    Do not assume specific values for <m>a</m> or <m>b</m>.
+                    (You can solve this using technology, or previous
+                    knowledge.)
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Determine the maximum tumor size.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                The Bertalanffy model (after C.
+                Von Bertalanffy) balances synthesis and destruction [3].
+                It assume that tumor growth is proportional to surface area,
+                since nutrient enters through the surface, and that death is
+                proportional the tumor size.
+                Thus we arrive at the model given below, also known as the
+                surface rule model:
+                <md>
+                    \frac{dV}{dt}= aV^{2/3}- bV
+                </md>
+                This model has been successfully applied to describe human tumor
+                growth.
+                The exact solution of the Von Bertalanffy differential equation
+                model is given below.
+                <md>
+                    V(t) = \left[\frac{a}{b}+\left(V_{0}^{1/3}- \frac{a}{b}\right)e^{-bt/3}\right]^{3}.
+                </md>
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    Determine the maximum tumor size.
+                    Do not assume specific values for <m>a</m> or <m>b</m>.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Which grows faster as <m>V</m> gets bigger, <m>V^{2/3}</m>
+                    or <m>V</m>?
+                    (Hint: plot them both on the same graph.)
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Given your answer above, if the tumor gets to a big enough
+                    volume, is the tumor going to start shrinking, or will the
+                    tumor always continue to grow no matter what?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Find any fixed points in terms of the parameters <m>a</m>
+                    and <m>b</m>.
+                    (Hint: there are technically two).
+                    Determine their stability (stable or unstable?).
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                The logistic model of population growth was first published by
+                Pierre Verhulst in 1845 [11].
+                The model assumes a linear decrease of the relative growth rate
+                with population size.
+                The maximum size is limited by a carrying capacity
+                <m>\frac{a}{b}</m>.
+                <md>
+                    \frac{dV}{dt}= aV\left(1-\frac{V}{a/b}\right) = aV\left(1-\frac{b}{a}V\right).
+                </md>
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    Solve the differential equation for tumor volume
+                    <m>V(t)</m>.
+                    Do not assume specific values for <m>a</m> or <m>b</m>.
+                    (You can solve this using technology, or previous
+                    knowledge.)
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Determine the maximum tumor size.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                The Gompertz model was created by Benjamin Gompertz in 1825 to
+                explain human mortality curves and determine the value of life
+                insurances [5].
+                It was applied to organism growth a hundred years later.
+                The Gompertz model exhibits an exponential decay of the growth
+                rate.
+                It has been successfully used to model breast and lung cancer
+                growth.
+                If we let <m>r(t)</m> be the growth rate that exhibits
+                exponential decay, then we have a system of differential
+                equations given by:
+                <md>
+                    \frac{dV}{dt}= r(t)V(t), \quad \quad \frac{dr}{dt}= -br(t).
+                </md>
+            </p>
+
+            <p>
+                However, from the above equations we can rearrange and find
+                that:
+                <md>
+                    \frac{d}{dt}\left(\ln V\right) = \frac{1}{V}\frac{dV}{dt}= r(t) = -\frac{1}{b}\frac{dr}{dt}.
+                </md>
+            </p>
+
+            <p>
+                Thus,
+                <md>
+                    \ln(V) = \frac{-r(t)+a}{b}
+                </md>
+                for some constant <m>a</m>.
+                Solving for <m>r(t)</m> leads to <m>r(t) = a-b\ln V</m>.
+                Substituting this into the system of two differential equations
+                above, we obtain an alternative and more popular form of the
+                Gompertz model:
+                <md>
+                    \frac{dV}{dt}= V(a-b\ln V).
+                </md>
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    Solve the differential equation for tumor volume
+                    <m>V(t)</m>.
+                    Do not assume specific values for <m>a</m> or <m>b</m>.
+                    (You can solve this using technology, or previous
+                    knowledge.)
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Determine the maximum tumor size.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    If the tumor volume was 4 cubic units at some time, and the
+                    tumor was shrinking at that time, what would we be able to
+                    say about the parameters <m>a</m> and <m>b</m>?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <p>
+        In the case of multicellular tumor spheroids, cancer growth follows a
+        sigmoid curve (S-shaped curve) with three phases: initial exponential
+        growth, linear growth, and plateau.
+        The Bertalanffy, logistic, and Gompertz models reflect the sigmoid
+        nature of growth, while the exponential growth and power law models do
+        not.
+        We will be using Bertalanffy, logistic, and Gompertz models going
+        forward.
+        The three models are summarized in the figure below, originating from
+        the generalized two-parameter model of growth for biological systems
+        [7].
+    </p>
+
+    <image source="images/lab2_modelSummary.png" width="75%">
+        <shortdescription>
+            Nesting scheme for empirical models of growth.
+        </shortdescription>
+    </image>
+
+    <p>
+        <term>Part 2: Model Fitting and Analysis</term>
+    </p>
+
+    <p>
+        In the second part of this project, you will fit models to real cancer
+        data to predict the best fit model for tumor growth, Gompertz, Logistic,
+        or Bertalanffy.
+        The fitting is performed in python by minimizing the residuals, that is
+        the difference between the real data value and what the model predicts
+        the data value should be.
+    </p>
+
+    <p>
+        To measure the <q>goodness or fit</q>, we will want to use the
+        normalized mean square error (NMSE):
+        <md>
+            NMSE = \frac{\sum\limits_{i} (y_{i} - \hat y_{i})^{2}}{\sum\limits_{i} y_{i}^{2}}.
+        </md>
+        The values <m>y_{i}</m> represent the real data values, the values
+        <m>\hat y_{i}</m> represent what your model thinks (predicts) the data
+        values should be.
+        The NMSE is independent of measurement units and scale.
+        A value of NMSE close to zero indicates a good fit of the model.
+        You will need to download and clean the data carefully, before you can
+        use it in your analysis.
+    </p>
+
+    <p>
+        <em>
+    Tumor Data 1 - Mouse Skin Carcinogenesis
+    </em>
+    </p>
+
+    <p>
+        Carcinogenesis means the formation of cancer.
+        The data file named "TransgenicMouseData.xlsx" provided is taken from
+        mice tumors that arise in situ (in the original place) from normal skin
+        as a result of a chemical mutation, and the tumor develops naturally in
+        vivo (in the live mouse).
+        The complex dynamics of the formation of the tumor closely resemble that
+        found in [6].
+    </p>
+
+    <p>
+        The excel file consists of several tabs and several experiments
+        involving different treatments.
+        We want to look at the control data.
+        The tab "Main experiment summary" shows the summary of the experiments.
+        In particular, the mouse named <q>CM.37</q> has DMSO under the drug
+        column, which denotes that the drug delivery device was administrated
+        but there was no drug contained in the device.
+        Therefore <q>CM.37</q> is a control, and what we want to look at (normal
+        tumor growth).
+        Under the Experiment column, our mouse friend had the label <q>CM3</q>,
+        so go to the tab named <q>Tumor sizes_CM3</q> and locate mouse
+        <q>CM.37</q>.
+        There were three tumors measured on our mouse friend, we will focus on
+        tumor number 1.
+        Measurement began when the tumor reached about 1-2 mm in diameter, and
+        at each time point the length and width in millimeters (horizontal and
+        vertical directions, <m>H^{*}</m> and <m>V^{*}</m> ) were measured three
+        times for a more accurate value.
+    </p>
+
+    <exercise>
+        <introduction>
+            <p>
+                Let's clean the data!
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    Let <m>t=0</m> be 7/8/12, the date the first measurements
+                    were taken.
+                    (Note that the dates are given by day/month/year).
+                    Then 10/8/12 would be <m>t=3</m> since it is three days
+                    later, and 14/8/12 would be <m>t=7</m>, so on.
+                    Create a new excel file with a column called <m>t</m>, and
+                    the values of <m>0, 3, 7, \ldots</m> where you turn all the
+                    dates into the appropriate time <m>t</m> (or you can put the
+                    values directly into a python array).
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    For Tumor 1 on our mouse friend, take the three measurements
+                    of the length of the tumor and find the median at each time
+                    point.
+                    Do the same with the three measurements of the width at each
+                    time point.
+                    Keep track of these values at each time point somehow (in
+                    excel for example).
+                    The tumors were assumed to be in the shape of an ellipsoid,
+                    and the formula for the volume of an ellipsoid and thus the
+                    tumor is:
+                    <md>
+                        V = \frac{\pi}{6}(xy)^{\frac{3}{2}}
+                    </md>
+                    where <m>x</m> and <m>y</m> are the length and width values.
+                    Find the volume of the tumor (in <m>mm^{3}</m> ) at each
+                    time step.
+                    On your excel file next to the column called <m>t</m>,
+                    create a new column called <m>V</m>, and put the values
+                    there.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Load this data into python - this is the tumor volume data
+                    you will be analyzing.
+                    (That is you should have clean data with the time <m>t</m>
+                    and the volume <m>V</m>.) You can either type in <m>t</m>
+                    and <m>V</m> by hand, or Google importing an excel file into
+                    Colab Notebooks.
+                    Print <m>t</m> and <m>V</m> to make sure they are what
+                    they're supposed to be (and so Dr.
+                    Maggie can see them).
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Evaluate the models.
+            </p>
+
+            <p>
+                The Colab Notebook code included and linked here:
+                <url href="https://colab.research.google.com/drive/15P_HPpb0iEovAPj1aT60afyDRUSOeTfb?usp=sharing">COLAB CODE LINK</url>
+                fits a differential equation model to data.
+                In particular, it starts with the differential equation:
+                <md alignment="align">
+                    <mrow>\frac{dx_1}{dt} \amp = -k_0 x_1,</mrow>
+                    <mrow>\frac{dx_2}{dt} \amp = k_0 x_1 - k_1x_2,</mrow>
+                    <mrow>\frac{dx_3}{dt} \amp = k_1 x_2.</mrow>
+                </md>
+                where the parameters are <m>k_0</m> and <m>k_1</m>.
+                If we know our real data values of <m>x</m> for the first 10
+                time points (0 to 9):
+            </p>
+
+            <p>
+                <md>
+                    \begin{array}{c|cccccccccc}t&amp;0&amp;1&amp;2&amp;3&amp;4&amp;5&amp;6&amp;7&amp;8&amp;9\\ \hline x &amp; 0.972&amp; 0.898&amp; 0.745&amp; 0.723&amp; 0.552&amp; 0.530&amp; 0.427&amp; 0.416&amp; 0.339&amp; 0.273\end{array},
+                </md>
+            </p>
+
+            <p>
+                then the linked code minimizes the residuals (the difference
+                between the data and the differential equation model) and
+                returns the best fit value for <m>k</m>.
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    By adapting the python code above and using the model
+                    equations, find the optimal parameters <m>a</m> and <m>b</m>
+                    for the three different models: Gompertz, Logistic, and
+                    Bertalanffy.
+                    Additionally, find the NMSE, for the three models: Gompertz,
+                    Logistic, and Bertalanffy.
+                    Note that if you are getting plots that don't seem quite
+                    right, you may need to make an initial guess for the
+                    parameter values.
+                    In that case, find the line of code where you preform
+                    <q>curve_fit(...)</q>.
+                    Within <q>curve_fit()</q>, you need to include the following
+                    code: <q>p0=[ <m>a_{0},b_{0}</m> ]</q>, where <m>a_{0}</m>
+                    is your initial guess for the parameter <m>a</m> and
+                    <m>b_{0}</m> is the initial guess for the parameter
+                    <m>b</m>.
+                    Based on the other graphs, what do you think these initial
+                    guesses should be?
+                    (Usually it is very large or very small...) Make sure you
+                    print the values <m>a</m> and <m>b</m> and the NMSE for each
+                    model.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Anything interesting about the parameters <m>a</m> and
+                    <m>b</m>?
+                    Do they give you any insights into the tumor?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Plot the fitted curve for each of the three models
+                    (Gompertz, Logistic, and Bertalanffy) on the same graph, and
+                    include the data points on the same graph as well.
+                    Don't forget to label the graph (including units), and
+                    include a legend.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    What is the "best" model for our mouse friend's tumor 1?
+                    Why?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Describe the behavior of the solutions.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    For a differential equation given by
+                    <m>\frac{dV}{dt}= f(V)</m>, the function <m>f(V)</m> is the
+                    growth rate function.
+                    Using the best fit values for <m>a</m> and <m>b</m> that you
+                    found for each of the three models, plot the three growth
+                    rate functions on one graph.
+                    Include labels with units, and a legend.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Which model has the fastest growing tumor initially, and how
+                    do you know?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    What are the predicted maximum tumor sizes for each model
+                    (Gompertz, Logistic, and Bertalanffy)?
+                    Recall your work from Part 1: Modeling Scenarios.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Predict cancer growth.
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    Using only the first half of the data, find the optimal
+                    values of <m>a</m> and <m>b</m> for each of the three models
+                    (Gompertz, Logistic, Bertalanffy).
+                    How well do the models predict cancer growth?
+                    Which model best predicts cancer growth?
+                    Assess the difference in model predictions.
+                    (You may compute the NMSE and plot the solution graphs to
+                    help you do this, but there are other ways to explain.)
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Can the model prediction be improved with more data (such as
+                    two-thirds of the data)?
+                    How much improvement can we see?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Cancer treatment.
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    When cancer treatment is included in the model, the
+                    predicted models will be affected.
+                    It is important to examine this effect because the cancer
+                    growth model is often used as a basis for assessing the
+                    efficacy of cancer treatments.
+                    Cancer treatment may include chemotherapy, immunotherapy, or
+                    drug treatment, though we will assume a simple drug
+                    treatment.
+                    Adapt each of the three models (Gompertz, Logistic,
+                    Bertalanffy) the following way: subtract <m>cV</m> from each
+                    model equation for some constant drug supply <m>c</m> (as
+                    seen in [10]).
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    What is the maximum tumor volume for all five models with
+                    cancer treatment?
+                    Do not plug in the parameter values.
+                    Express your answers in terms of <m>a, b, c</m>.
+                    (Hint: What is the fixed point?)
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Can the tumor be eradicated?
+                    That is, can the growth rate be negative initially?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <p>
+        <em>
+    Tumor Data 2 - Mouse Cervical Carcinogenesis
+    </em>
+    </p>
+
+    <p>
+        The second dataset called <q>CervicalCancer</q> is taken from [8].
+        The data describes the growth of cervical cancer in inoculated mice.
+        The measurements began when the tumor was about 2-3mm in diameter, and
+        just as before some mice were treated while others were left as a
+        control.
+        The figure below shows the averages and standard deviation lines of each
+        treatment group, where the dark purple group AXL-107 4 mg/kg group is
+        the control group.
+    </p>
+
+    <image source="images/lab2-C.png" width="75%">
+        <shortdescription>
+            Tumor growth of cervical cancer under drug treatment.
+        </shortdescription>
+    </image>
+
+    <p>
+        The excel file consists of several tabs and several experiments
+        involving different types of cancer.
+        We want to look at the control data for cervical cancer, found in tab
+        "Figure 1C".
+        The control group is called "Gr 3; IgG1-1021-107 4mg/kg".
+        As we can see, there are 6 mice in this control group.
+        The blue starred data denotes that not all of the mice have measurements
+        at those time steps, so let's take the mouse within the control group
+        with the least amount of data available (the third mouse in the category
+        of Gr 3).
+        This will be our mouse friend for this dataset.
+    </p>
+
+    <p>
+        Note that here the volume is given to you directly, and was calculated
+        in the same way as the other dataset.
+        The day the measurement was taken is in the leftmost column of the Excel
+        tab.
+    </p>
+
+    <exercise>
+        <introduction>
+            <p>
+                Clean the data.
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    Let <m>t=0</m> be day 0, the date the first measurements
+                    were taken.
+                    Create a new excel file with a column called <m>t</m>, and
+                    the values of <m>0, 1, 4, \ldots</m> where the times are
+                    given in the complete data file.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    On your excel file next to the column called <m>t</m>,
+                    create a new column called <m>V</m>, and put the volume data
+                    for our new mouse friend there.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Load this data into python - this is the tumor volume data
+                    for a different type of cancer: cervical cancer.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Evaluate the models by repeating steps 2 (a) - (d) given with
+                the previous dataset.
+                There is no need to answer the rest of the questions for this
+                dataset.
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Write a paragraph summarizing your analysis for the two
+                different mouse tumors you investigated: the skin cancer from
+                dataset 1 and the cervical cancer from dataset 2.
+                Specifically, compare the two mice.
+                Include limitations of the models in context of tumor growth.
+                Additionally, include what you think would happen if you did the
+                same things for multiple mice within each dataset, and how we
+                may be able to potentially improve our model.
+            </p>
+        </statement>
+    </exercise>
+
+    <references>
+        <biblio xml:id="1" type="article-journal">
+            <author>
+                <name><family>ASCO</family></name>
+                <name>
+                    <given>The state of cancer care in</given>
+                    <family>America</family>
+                </name>
+                <name>
+                    <given>2017: A report by the American Society of Clinical Oncology.</given>
+                    <family>2017</family>
+                </name>
+            </author>
+            <title>J. Oncol. Pract</title>
+
+            <container-title>
+                13 : e353--e394
+            </container-title>
+            <number>4</number>
+        </biblio>
+
+        <biblio xml:id="2" type="article-journal">
+            <author>
+                <name><family>Collins</family></name>
+                <name><family>V.P.</family></name>
+                <name><given>R.K.</given> <family>Loeffler</family></name>
+                <name>
+                    <given>H. Tivey. 1956. Observations on growth rates of human</given>
+                    <family>tumors</family>
+                </name>
+            </author>
+            <title>Am. J. Roentgeol. Radium Ther. Nucl. Med</title>
+
+            <container-title>
+                76 : 988--1000
+            </container-title>
+            <number>5</number>
+        </biblio>
+
+        <biblio xml:id="3" type="book">
+            <author>
+                <name><family>Bertalanffy</family></name>
+                <name>
+                    <given>L. von. 1957. Quantitative laws in</given>
+                    <family>metabolism</family>
+                </name>
+                <name><family>growth</family></name>
+            </author>
+            <title>Q. Rev. Bioi</title>
+
+            <publisher>32: 217-- 231</publisher>
+        </biblio>
+
+        <biblio xml:id="4" type="raw">
+            Nonlinear model fitting using Excel. https://youtu.be/3Fd4ukzkxps. Accessed 29 July 2018.
+        </biblio>
+
+        <biblio xml:id="5" type="article-journal">
+            <author>
+                <name><family>Gompertz</family></name>
+                <name>
+                    <given>B. 1825. On the nature of the function expressive of the law of human</given>
+                    <family>mortality</family>
+                </name>
+                <name>
+                    <given>on a new method of determining the value of life</given>
+                    <family>contingencies</family>
+                </name>
+            </author>
+            <title>Phil. Trans. Roy. Soc.</title>
+
+            <container-title>
+                27 : 13--85
+            </container-title>
+            <number>5</number>
+        </biblio>
+
+        <biblio xml:id="6" type="article-journal">
+            <author>
+                <name><family>Loizides</family></name>
+                <name><family>C.</family></name>
+                <name><given>D.</given> <family>Iacovides</family></name>
+                <name><given>M.M.</given> <family>Hadjiandreou</family></name>
+                <name><given>G.</given> <family>Rizki</family></name>
+                <name><given>A.</given> <family>Achilleos</family></name>
+                <name><given>K.</given> <family>Strati</family></name>
+                <name>
+                    <given>G.D. Mitsis. 2015. Model-based tumor growth</given>
+                    <family>dynamics</family>
+                </name>
+                <name>
+                    <given>therapy response in a mouse model of</given>
+                    <non-dropping-particle>de novo</non-dropping-particle>
+                    <family>carcinogenesis</family>
+                </name>
+            </author>
+            <title>PLOS ONE</title>
+
+            <container-title>
+                10 : 1--18
+            </container-title>
+            <number>12</number>
+        </biblio>
+
+        <biblio xml:id="7" type="book">
+            <author>
+                <name><family>Marušíc</family></name>
+                <name>
+                    <given>M. 1996. Mathematical models of tumor</given>
+                    <family>growth</family>
+                </name>
+            </author>
+            <title>Lect. Math. Colloquium Croatian Math. Soc., Osijek</title>
+
+            <publisher>175--192</publisher>
+            <publisher-place>June 7</publisher-place>
+        </biblio>
+
+        <biblio xml:id="8" type="document">
+            <author>
+                <name><family>Zavrakidis</family></name>
+                <name><family>I.</family></name>
+                <name><given>K.</given> <family>Jóźwiak</family></name>
+                <name>
+                    <given>M. Hauptmann. 2020 Statistical analysis of longitudinal data on tumour growth in</given>
+                    <family>experiments</family>
+                </name>
+            </author>
+            <title>Sci Rep</title>
+
+            <issued><date year="9143"/></issued>
+        </biblio>
+
+        <biblio xml:id="9" type="book">
+            <author>
+                <name><family>Mendelsohn</family></name>
+                <name>
+                    <given>M. L. 1963. Cell</given>
+                    <family>proliferation</family>
+                </name>
+                <name><given>tumor</given> <family>growth</family></name>
+            </author>
+            <title>Cell Proliferation</title>
+
+            <publisher>
+                Oxford: Blackwell Scientific Publications.
+                190--210
+            </publisher>
+        </biblio>
+
+        <biblio xml:id="10" type="book">
+            <author>
+                <name><family>Murphy</family></name>
+                <name><family>H.</family></name>
+                <name><given>H.</given> <family>Jaafari</family></name>
+                <name><given>H.</given> <family>Dobrovolny</family></name>
+                <name>
+                    <given>2016. Differences in predictions of ODE models of tumor growth: a cautionary</given>
+                    <family>example</family>
+                </name>
+            </author>
+            <title>BMC Cancer</title>
+
+            <publisher>16: 163--172</publisher>
+        </biblio>
+
+        <biblio xml:id="11" type="book">
+            <author>
+                <name><family>Verhulst</family></name>
+                <name>
+                    <given>P.F. 1845. Recherches mathématiques sur</given>
+                    <non-dropping-particle>la loi d'accroissement de la</non-dropping-particle>
+                    <family>population</family>
+                </name>
+            </author>
+            <title>
+                Nouv.
+                mém.
+                de l'Academie Royale des Sci.
+                et Belles-Lettres de Bruxelles
+            </title>
+            <publisher>18: 1--41</publisher>
+        </biblio>
+    </references>
+</worksheet>
