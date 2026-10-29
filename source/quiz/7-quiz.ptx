@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Quiz 7 - MTH 305 - Regan</title>
+
+    <p>
+        This quiz covers multiple equation ODE models, their fixed point(s), and
+        stability and retakes on optimization of mathematical models and single
+        equation ODE models, their fixed point(s), and stability.
+        Read all <term>DIRECTIONS</term> carefully.
+        Good luck!
+    </p>
+
+    <exercise workspace="2in">
+        <statement>
+            <p>
+                Find the fixed point(s) for the following system of differential
+                equations.
+                <md>
+                    <mrow>
+                    \frac{dx}{dt} \amp = x(y+1) - x^{2} \\
+                    </mrow>
+                    <mrow>
+                    \frac{dy}{dt} \amp = y - 2xy \\
+                     </mrow>
+                </md>
+            </p>
+
+            <p>
+                Determine the stability of one of the fixed points.
+                Note: just need to state whether it is stable/unstable if you
+                don't know specifics (e.g., spiral sink).
+                Show all work.
+            </p>
+
+            <p>
+                Remember, the stability is based on the eigenvalues of the
+                Jacobian matrix
+                <md>
+                    \textrm{Jacobian,}\,\, J = \begin{bmatrix}\frac{\partial f}{\partial{x}} &amp; \frac{\partial f}{\partial{y}} \\  \\ \frac{\partial g}{\partial{x}} &amp; \frac{\partial g}{\partial{y}}\end{bmatrix},
+                </md>
+                where the trace, <m>T</m>, and determinant, <m>D</m>, give the
+                eigenvalues of
+                <md>
+                    \lambda_{1}, \lambda_{2} = \frac{T \pm \sqrt{T^{2} - 4D}}{2}.
+                </md>
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise workspace="1in">
+        <statement>
+            <p>
+                Consider the following phase portrait with 4 plotted fixed
+                points.
+            </p>
+
+            <image source="images/07quiz-1.png" width="40%">
+                <shortdescription>
+                    Graph of 4 fixed points and the phase portrait for a
+                    competing species model.
+                </shortdescription>
+            </image>
+
+            <p>
+                Determine the stability of each of the four fixed points.
+                Choose an initial condition that will end at a stable fixed
+                point.
+            </p>
+        </statement>
+    </exercise>
+
+    <p>
+        <term>Retake of 1D ODE Models: </term>
+    </p>
+
+    <exercise workspace="2in">
+        <statement>
+            <p>
+                Determine fixed point(s) and corresponding stability for the
+                following differential equation.
+                Show all work.
+                <md>
+                    \frac{dx}{dt} = 3x - x^{2}
+                </md>
+            </p>
+        </statement>
+    </exercise>
+
+    <p>
+        <term>Last Retake of Optimization: </term>
+    </p>
+
+    <exercise workspace="5in">
+        <statement>
+            <p>
+                We have 45 meters squared of material to build a box with a
+                square base and no top.
+                Determine the dimensions of the box that will maximize the
+                enclosed volume.
+            </p>
+        </statement>
+    </exercise>
+</worksheet>
