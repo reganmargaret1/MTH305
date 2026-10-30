@@ -21,22 +21,22 @@
     <exercise>
         <introduction>
             <p>
-                Let's expand on the SIR model example posted on 
-                Blackboard and discussed in class.  We now have a 
-                cure for the Zombies!
+                Let's expand on the SIR model example posted on Blackboard and
+                discussed in class.
+                We now have a cure for the Zombies!
             </p>
         </introduction>
 
         <task>
             <statement>
                 <p>
-                    Let's add the additional assumption that Zombies
-                    can be cured and turn back into humans with 
-                    parameter <m>c</m>. For now, let us assume this cure
-                    happens such that the number of Zombies cured is
-                    proportional to the population of Zombies.
-                    What are your new differential equations (aka your
-                    model)? Hint: add to your schematic!
+                    Let's add the additional assumption that Zombies can be
+                    cured and turn back into humans with parameter <m>c</m>.
+                    For now, let us assume this cure happens such that the
+                    number of Zombies cured is proportional to the population of
+                    Zombies.
+                    What are your new differential equations (aka your model)?
+                    Hint: add to your schematic!
                 </p>
             </statement>
         </task>
@@ -44,15 +44,15 @@
         <task>
             <statement>
                 <p>
-                    Adapt the provided SIR code (or write your own) so 
-                    that it solves the new model you have in Part (a).
+                    Adapt the provided SIR code (or write your own) so that it
+                    solves the new model you have in Part (a).
                     Use the same initial conditions as in the example:
-                    <m>{S(0) = 999/1000}</m>, <m>{I(0) = 1/1000}</m>,
-                    and <m>{R(0) = 0}</m>.  Use the following parameters 
-                    <m>a = 0.003, c = 0.001, d = 0.002,</m> and
-                    <m>r = 0.001</m>. Note: these are different 
-                    from the model example from class. What happens to 
-                    your three populations long term?
+                    <m>{S(0) = 999/1000}</m>, <m>{I(0) = 1/1000}</m>, and
+                    <m>{R(0) = 0}</m>.
+                    Use the following parameters
+                    <m>\beta = 0.003, c = 0.001,</m> and <m>r = 0.001</m>.
+                    Note: these are different from the model example from class.
+                    What happens to your three populations long term?
                 </p>
             </statement>
         </task>
@@ -60,10 +60,12 @@
         <task>
             <statement>
                 <p>
-                    What changes in the long term behavior from Part (b)
-                    do you see if you change the parameter <m>c</m> to be
-                    <m>c = 0.003</m>? Why? That is, what does increasing
-                    <m>c</m> do in the context of Zombies?
+                    What changes in the long term behavior from Part (b) do you
+                    see if you change the parameter <m>c</m> to be
+                    <m>c = 0.003</m>?
+                    Why?
+                    That is, what does increasing <m>c</m> do in the context of
+                    Zombies?
                 </p>
             </statement>
         </task>
@@ -72,12 +74,13 @@
             <statement>
                 <p>
                     Let's go back to the cure and assume that Zombies can only
-                    turn back to humans through an encounter between a human
-                    and Zombie, where a human administers the cure.  So, instead
-                    of the number being proportional to the population of Zombies,
-                    the number of Zombies cured is jointly proportional. If we still
-                    use the parameter <m>c</m> for this case, what are your new
-                    differential equations?
+                    turn back to humans through an encounter between a human and
+                    Zombie, where a human administers the cure.
+                    So, instead of the number being proportional to the
+                    population of Zombies, the number of Zombies cured is
+                    jointly proportional.
+                    If we still use the parameter <m>c</m> for this case, what
+                    are your new differential equations?
                 </p>
             </statement>
         </task>
@@ -85,8 +88,8 @@
         <task>
             <statement>
                 <p>
-                    If we use the same parameters as in Part (b), what 
-                    happens to the populations in the long term?
+                    If we use the same parameters as in Part (b), what happens
+                    to the populations in the long term?
                 </p>
             </statement>
         </task>
@@ -94,10 +97,11 @@
         <task>
             <statement>
                 <p>
-                    What happens if we keep <m>a, d, r</m> the same,
+                    What happens if we keep <m>\beta</m> and <m>r</m> the same,
                     but change <m>c</m> to again be <m>c = 0.003</m>.
                     Without graphing the solution, what happens to the
-                    susceptible population? How do you know?
+                    susceptible population?
+                    How do you know?
                 </p>
             </statement>
         </task>
