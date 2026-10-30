@@ -48,14 +48,14 @@
         </statement>
     </exercise>
 
-    <exercise workspace="1in">
+    <exercise workspace="2in">
         <statement>
             <p>
                 Consider the following phase portrait with 4 plotted fixed
                 points.
             </p>
 
-            <image source="images/07quiz-1.png" width="40%">
+            <image source="images/07quiz-1.png" width="60%">
                 <shortdescription>
                     Graph of 4 fixed points and the phase portrait for a
                     competing species model.
@@ -65,7 +65,7 @@
             <p>
                 Determine the stability of each of the four fixed points.
                 Choose an initial condition that will end at a stable fixed
-                point.
+                point. Justify your responses.
             </p>
         </statement>
     </exercise>
@@ -74,7 +74,7 @@
         <term>Retake of 1D ODE Models: </term>
     </p>
 
-    <exercise workspace="2in">
+    <exercise workspace="1.5in">
         <statement>
             <p>
                 Determine fixed point(s) and corresponding stability for the
@@ -91,7 +91,7 @@
         <term>Last Retake of Optimization: </term>
     </p>
 
-    <exercise workspace="5in">
+    <exercise workspace="1.5in">
         <statement>
             <p>
                 We have 45 meters squared of material to build a box with a
