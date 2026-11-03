@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="activity-12-markov">
+    <title>12 - Markov Chain Models</title>
+
+    <!-- Optional introduction -->
+    <introduction>
+        <p>
+            In this activity we are going to practice modeling with Markov
+            chains.
+        </p>
+    </introduction>
+    <!-- Exercises start here. -->
+    <exercise>
+        <introduction>
+            <p>
+                Consider the Xerox copier in the math department office.
+                There are two possible states: working and broken.
+                You are given the following assumptions: If currently working,
+                there is a 98% chance the copier is working the next day.
+                If currently broken, there is a 30% probability that it is
+                working the next day.
+            </p>
+
+            <p>
+                Make sure to import the necessary libraries!
+            </p>
+
+            <program language="python">
+                <code>
+import math
+import numpy as np
+import matplotlib.pyplot as plt
+from numpy import linalg as LA # NEW!
+                </code>
+            </program>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Take the probability transition matrix you created for this
+                    scenario in the class preparation assignment and code it
+                    into Python.
+                </p>
+
+                <p>
+                    <em>Remember, we can create a matrix using <c>np.array([[1,0],[0,1]])</c>
+                    (the identity matrix as an example). </em>
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Code a vector for the initial state of being working.
+                    This vector should be
+                    <m>{\vec{x} = \left[\begin{array}{c} 1 \\ 0 \\ \end{array}\right].}</m>
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Find the condition after 1 day, 10 days, and 100 days by
+                    using matrix-vector multiplication.
+                    Hint: consider raising the matrix to the corresponding
+                    power.
+                </p>
+
+                <p>
+                    In Python, we can do matrix-vector multiplication by doing
+                    <c>A@x0</c> and raising a matrix to a power by
+                    <c>LA.matrix_power(A,100)</c>.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Plot iterations from 0 to 200 days.
+                    Do this as a scatter plot with two curves.
+                    The y-component will be either working or broken with the
+                    x-component corresponding to the iteration/day.
+                    What do you notice for the long term behavior?
+                    How does this compare to the value you found at Day 100?
+                </p>
+
+                <p>
+                    Remember, in Python a scatter plot is made using
+                    <c>plt.scatter()</c>.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Now, find the eigenvalues and eigenvectors.
+                    Do the eigenvalues follow the Perron-Frobenius Theorem?
+                    If yes, find the corresponding steady-state vector.
+                    <em>
+                    Note: an eigenvector might not have entries that sum
+                    to 1, but the steady-state vector must. Make sure to
+                    modify the vector as needed to take care of this!</em>
+                    How does this steady-state vector compare to the long term
+                    behavior you found previously?
+                </p>
+
+                <p>
+                    Some helpful coding commands to consider:
+                    <ul>
+                        <li>
+                            <c>u, v = LA.eig(A)</c> to find the eigenvalues u,
+                            and corresponding eigenvectors v
+                        </li>
+
+                        <li>
+                            If your vector is called vec, you can find the sum
+                            of the elements by <c>vec.sum()</c>
+                        </li>
+                    </ul>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Consider a random walk on the following graph of four vertices.
+                Here, the edge weights give the probability of going from one
+                vertex to another.
+            </p>
+
+            <image source="images/MarkovChainDiagram.png" width="50%">
+                <shortdescription>
+                    Random walk Markov chain graph.
+                </shortdescription>
+            </image>
+        </introduction>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Make the probability transition matrix.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Does this model have a steady-state that represents long
+                    term behavior?
+                    Explain.
+                    If yes, find it!
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Consider a random walk on the following graph of five vertices.
+                Here, the edge weights give the probability of going from one
+                vertex to another.
+            </p>
+
+            <image source="images/Markov2.png" width="45%">
+                <shortdescription>
+                    Random walk Markov chain graph.
+                </shortdescription>
+            </image>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Make the probability transition matrix if the probability of
+                    going from vertex <m>u</m> to vertex <m>v</m> is given by
+                    <m>\frac{1}{d_u}</m> if the edge from <m>u</m> to <m>v</m>
+                    exists and 0 otherwise.
+                    Here <m>d_u</m> is the degree of <m>u</m>, i.e., how many
+                    edges stem from that vertex.
+                    For example, <m>d_2 = 3.</m>
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Does this model have a steady-state that represents long
+                    term behavior?
+                    Explain.
+                    If yes, find it!
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                If you'd like to explore more, Markov established Markov chains
+                while analyzing the vowel and consonant patterns with a text
+                called <em>Eugene Onegin</em>.
+                See the link on Blackboard to read more!
+            </p>
+        </statement>
+    </exercise>
+</worksheet>

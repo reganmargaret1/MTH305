@@ -37,6 +37,7 @@
             <xi:include href="./activities/09-ODE_intro.ptx"/>
             <xi:include href="./activities/10-ODE_models1.ptx"/>
             <xi:include href="./activities/11-ODE_models2.ptx"/>
+            <xi:include href="./activities/12-Markov.ptx"/>
 
         </chapter>
 
