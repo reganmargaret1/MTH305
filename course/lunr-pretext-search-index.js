@@ -460,6 +460,51 @@ var ptx_lunr_docs = [
   "body": "  Let's return to our \"simple\" predator-prey model, where is the population of the prey and is the population of predators, at time . Consider the following assumptions:  Left alone, prey will increase at a constant rate .  Prey die at a rate that is proportional to the number of predators in the ecosystem.  Predators have evolved and reproduce when food is plentiful, but don't reproduce when food is scarce, i.e., predators grow proportionally to the number of prey.  Predators die off at a rate proportional to the number of predators (e.g., territorial).    The corresponding model is given by two differential equations: with initial conditions and .     Solve the model numerically using Python. Let the parameters be the following: Additionally, the initial conditions are .     import math import numpy as np import matplotlib.pyplot as plt from scipy.integrate import odeint ### Parameters a = 5 b = 1 c = 1 d = .2 x0 = 10 # Initial Prey (in hundreds) y0 = 10 # Initial Predators (in hundreds) #Define ODE def model(z,t,a,b,c,d): # (depend, independ, param), z = [x,y] x = z[0] # First entry of z is x (prey) y = z[1] # Second entry of z is y (predator) dxdt = a-b*y dydt = c*x - d*y return [dxdt, dydt] # VECTOR [prey, predator] endtime = 100 # define end time - easier to change later t=np.linspace(0,endtime,endtime*20) z0 = [x0, y0] # initial values, in vector form [prey, predator] ## Find the solution, which is a vector z(t) = [x(t), y(t)] z = odeint(model,z0,t,args=(a,b,c,d)) # Solution # Plot both solutions fig0 = plt.figure(0) plt.plot(t,z[:,0], label='prey') # x(t) = z[all rows, 1st column (prey)] plt.plot(t,z[:,1], label='predators') # y(t) = z[all rows, 2nd column (predators)] plt.xlabel('time') plt.ylabel('Population in hundreds') plt.title('Super Simple Predator-Prey Model') plt.legend() plt.show() # Plot y vs. x along with the fixed point plt.figure(1) plt.plot(z[:,0],z[:,1], 'r-', label='solution') # x(t) = z[all rows, 1st column], y(t) = z[all rows, 2nd column] plt.plot(a*d\/(c*b), a\/b, 'o', label='fixed point') # fixed point plt.xlabel('prey') plt.ylabel('predators') plt.legend() plt.show()    Graph of both predator and prey solution curves for the simple Predator-Prey model.       Find the fixed point of the model. Plot vs. along with the fixed point. What do you notice? Comment on whether you think the fixed point is stable or unstable. Explain.    The following is a continuation of the code for Part (a). Note that the fixed point is represented generically - this can help if you end up changing parameters.   # Plot y vs. x along with the fixed point plt.figure(1) plt.plot(z[:,0],z[:,1], 'r-', label='solution') # x(t) = z[all rows, 1st column], y(t) = z[all rows, 2nd column] plt.plot(a*d\/(c*b), a\/b, 'o', label='fixed point') # fixed point plt.xlabel('prey') plt.ylabel('predators') plt.legend() plt.show()    Fixed point and predator versus prey solution curves for the simple Predator-Prey model.   The fixed point sits at the center of a spiral curve for the predators plotted versus the prey. The solution spirals into this point, suggesting that it is a stable fixed point.      What assumptions could you change to make this model better or more realistic?    This isn't quite realistic because of the negative populations that occur. One option is to change the initial conditions - should both predator and prey start at the same population size? Is that realistic? Another option is to change certain parameters.      Let's plot the 2D phase portrait and see if it aligns with our conclusions in Part (b). Consider the following code. Will any initial conditions end at this fixed point? Manipulate the phase portrait as needed to help justify your answer. Note: the code below relies on you defining your ODE as model , and the output to the model being the solution z = [x(t), y(t)] .   import math import numpy as np import matplotlib.pyplot as plt from scipy.integrate import odeint ### PHASE PORTRAIT xdomain = np.linspace(-7.5,10,10) # set up points for x-axis (prey) ydomain = np.linspace(-10,15,10) # set up points for y-axis (predators) X,Y = np.meshgrid(xdomain,ydomain) # creates 2D grid of all points to find the derivative vector ### We want [dxdt, dydt] at each point in our grid so: # U = a-b*Y = dx\/dt # V = c*X - d*Y = dy\/dt [U, V] = model([X,Y],0,a,b,c,d) # runs each point in the grid through the ODE to find the derivative vector at that point plt.quiver(xdomain,ydomain,U,V,label='Phase portrait') # plot phase portrait (arrows) plt.plot(z[:,0],z[:,1],'r-', label='[10,10] initial soln') # Plot the one time solution in red. plt.plot(a*d\/(c*b), a\/b, 'o', label='fixed point') # Plot the fixed point plt.xlabel('prey') plt.ylabel('predators') plt.title('Phase Portrait') plt.legend() plt.show()      Phase portrait for the simple Predator-Prey model.   This is a spiral sink, which is a stable fixed point. Any initial condition will end at this fixed point.    "
 },
 {
+  "id": "activity-12-markov",
+  "level": "1",
+  "url": "activity-12-markov.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "12 - Markov Chain Models",
+  "body": " 12 - Markov Chain Models    In this activity we are going to practice modeling with Markov chains.      Consider the Xerox copier in the math department office. There are two possible states: working and broken. You are given the following assumptions: If currently working, there is a 98% chance the copier is working the next day. If currently broken, there is a 30% probability that it is working the next day.  Make sure to import the necessary libraries!   import math import numpy as np import matplotlib.pyplot as plt from numpy import linalg as LA # NEW!      Take the probability transition matrix you created for this scenario in the class preparation assignment and code it into Python.   Remember, we can create a matrix using np.array([[1,0],[0,1]]) (the identity matrix as an example).       Code a vector for the initial state of being working. This vector should be       Find the condition after 1 day, 10 days, and 100 days by using matrix-vector multiplication. Hint: consider raising the matrix to the corresponding power.  In Python, we can do matrix-vector multiplication by doing A@x0 and raising a matrix to a power by LA.matrix_power(A,100) .      Plot iterations from 0 to 200 days. Do this as a scatter plot with two curves. The y-component will be either working or broken with the x-component corresponding to the iteration\/day. What do you notice for the long term behavior? How does this compare to the value you found at Day 100?  Remember, in Python a scatter plot is made using plt.scatter() .      Now, find the eigenvalues and eigenvectors. Do the eigenvalues follow the Perron-Frobenius Theorem? If yes, find the corresponding steady-state vector. Note: an eigenvector might not have entries that sum to 1, but the steady-state vector must. Make sure to modify the vector as needed to take care of this! How does this steady-state vector compare to the long term behavior you found previously?  Some helpful coding commands to consider:   u, v = LA.eig(A) to find the eigenvalues u, and corresponding eigenvectors v  If your vector is called vec, you can find the sum of the elements by vec.sum()          Consider a random walk on the following graph of four vertices. Here, the edge weights give the probability of going from one vertex to another.   Random walk Markov chain graph.      Make the probability transition matrix.      Does this model have a steady-state that represents long term behavior? Explain. If yes, find it!       Consider a random walk on the following graph of five vertices. Here, the edge weights give the probability of going from one vertex to another.   Random walk Markov chain graph.      Make the probability transition matrix if the probability of going from vertex to vertex is given by if the edge from to exists and 0 otherwise. Here is the degree of , i.e., how many edges stem from that vertex. For example,       Does this model have a steady-state that represents long term behavior? Explain. If yes, find it!       If you'd like to explore more, Markov established Markov chains while analyzing the vowel and consonant patterns with a text called Eugene Onegin . See the link on Blackboard to read more!    "
+},
+{
+  "id": "activity-12-markov-3",
+  "level": "2",
+  "url": "activity-12-markov.html#activity-12-markov-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Consider the Xerox copier in the math department office. There are two possible states: working and broken. You are given the following assumptions: If currently working, there is a 98% chance the copier is working the next day. If currently broken, there is a 30% probability that it is working the next day.  Make sure to import the necessary libraries!   import math import numpy as np import matplotlib.pyplot as plt from numpy import linalg as LA # NEW!      Take the probability transition matrix you created for this scenario in the class preparation assignment and code it into Python.   Remember, we can create a matrix using np.array([[1,0],[0,1]]) (the identity matrix as an example).       Code a vector for the initial state of being working. This vector should be       Find the condition after 1 day, 10 days, and 100 days by using matrix-vector multiplication. Hint: consider raising the matrix to the corresponding power.  In Python, we can do matrix-vector multiplication by doing A@x0 and raising a matrix to a power by LA.matrix_power(A,100) .      Plot iterations from 0 to 200 days. Do this as a scatter plot with two curves. The y-component will be either working or broken with the x-component corresponding to the iteration\/day. What do you notice for the long term behavior? How does this compare to the value you found at Day 100?  Remember, in Python a scatter plot is made using plt.scatter() .      Now, find the eigenvalues and eigenvectors. Do the eigenvalues follow the Perron-Frobenius Theorem? If yes, find the corresponding steady-state vector. Note: an eigenvector might not have entries that sum to 1, but the steady-state vector must. Make sure to modify the vector as needed to take care of this! How does this steady-state vector compare to the long term behavior you found previously?  Some helpful coding commands to consider:   u, v = LA.eig(A) to find the eigenvalues u, and corresponding eigenvectors v  If your vector is called vec, you can find the sum of the elements by vec.sum()       "
+},
+{
+  "id": "activity-12-markov-4",
+  "level": "2",
+  "url": "activity-12-markov.html#activity-12-markov-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Consider a random walk on the following graph of four vertices. Here, the edge weights give the probability of going from one vertex to another.   Random walk Markov chain graph.      Make the probability transition matrix.      Does this model have a steady-state that represents long term behavior? Explain. If yes, find it!    "
+},
+{
+  "id": "activity-12-markov-5",
+  "level": "2",
+  "url": "activity-12-markov.html#activity-12-markov-5",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Consider a random walk on the following graph of five vertices. Here, the edge weights give the probability of going from one vertex to another.   Random walk Markov chain graph.      Make the probability transition matrix if the probability of going from vertex to vertex is given by if the edge from to exists and 0 otherwise. Here is the degree of , i.e., how many edges stem from that vertex. For example,       Does this model have a steady-state that represents long term behavior? Explain. If yes, find it!    "
+},
+{
+  "id": "activity-12-markov-6",
+  "level": "2",
+  "url": "activity-12-markov.html#activity-12-markov-6",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  If you'd like to explore more, Markov established Markov chains while analyzing the vowel and consonant patterns with a text called Eugene Onegin . See the link on Blackboard to read more!   "
+},
+{
   "id": "homework-2",
   "level": "1",
   "url": "homework-2.html",
@@ -736,7 +781,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Problem 16 - Homework MTH 305 - Regan",
-  "body": " Problem 16 - Homework MTH 305 - Regan  You should present solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the assignment on Blackboard by 11:59 pm ET on Sunday. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor and\/or classmates. No AI resources. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!    Let's expand on the SIR model example posted on Blackboard and discussed in class. We now have a cure for the Zombies!     Let's add the additional assumption that Zombies can be cured and turn back into humans with parameter . For now, let us assume this cure happens such that the number of Zombies cured is proportional to the population of Zombies. What are your new differential equations (aka your model)? Hint: add to your schematic!      Adapt the provided SIR code (or write your own) so that it solves the new model you have in Part (a). Use the same initial conditions as in the example: , , and . Use the following parameters and . Note: these are different from the model example from class. What happens to your three populations long term?      What changes in the long term behavior from Part (b) do you see if you change the parameter to be ? Why? That is, what does increasing do in the context of Zombies?      Let's go back to the cure and assume that Zombies can only turn back to humans through an encounter between a human and Zombie, where a human administers the cure. So, instead of the number being proportional to the population of Zombies, the number of Zombies cured is jointly proportional. If we still use the parameter for this case, what are your new differential equations?      If we use the same parameters as in Part (b), what happens to the populations in the long term?      What happens if we keep the same, but change to again be . Without graphing the solution, what happens to the susceptible population? How do you know?     "
+  "body": " Problem 16 - Homework MTH 305 - Regan  You should present solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the assignment on Blackboard by 11:59 pm ET on Sunday. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor and\/or classmates. No AI resources. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!    Let's expand on the SIR model example posted on Blackboard and discussed in class. We now have a cure for the Zombies!     Let's add the additional assumption that Zombies can be cured and turn back into humans with parameter . For now, let us assume this cure happens such that the number of Zombies cured is proportional to the population of Zombies. What are your new differential equations (aka your model)? Hint: add to your schematic!      Adapt the provided SIR code (or write your own) so that it solves the new model you have in Part (a). Use the same initial conditions as in the example: , , and . Use the following parameters and . Note: these are different from the model example from class. What happens to your three populations long term?      What changes in the long term behavior from Part (b) do you see if you change the parameter to be ? Why? That is, what does increasing do in the context of Zombies?      Let's go back to the cure and assume that Zombies can only turn back to humans through an encounter between a human and Zombie, where a human administers the cure. So, instead of the number being proportional to the population of Zombies, the number of Zombies cured is jointly proportional. If we still use the parameter for this case, what are your new differential equations?      If we use the same parameters as in Part (b), what happens to the populations in the long term?      What happens if we keep and the same, but change to again be . Without graphing the solution, what happens to the susceptible population? How do you know?     "
 },
 {
   "id": "homework-17-3",
@@ -745,7 +790,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Let's expand on the SIR model example posted on Blackboard and discussed in class. We now have a cure for the Zombies!     Let's add the additional assumption that Zombies can be cured and turn back into humans with parameter . For now, let us assume this cure happens such that the number of Zombies cured is proportional to the population of Zombies. What are your new differential equations (aka your model)? Hint: add to your schematic!      Adapt the provided SIR code (or write your own) so that it solves the new model you have in Part (a). Use the same initial conditions as in the example: , , and . Use the following parameters and . Note: these are different from the model example from class. What happens to your three populations long term?      What changes in the long term behavior from Part (b) do you see if you change the parameter to be ? Why? That is, what does increasing do in the context of Zombies?      Let's go back to the cure and assume that Zombies can only turn back to humans through an encounter between a human and Zombie, where a human administers the cure. So, instead of the number being proportional to the population of Zombies, the number of Zombies cured is jointly proportional. If we still use the parameter for this case, what are your new differential equations?      If we use the same parameters as in Part (b), what happens to the populations in the long term?      What happens if we keep the same, but change to again be . Without graphing the solution, what happens to the susceptible population? How do you know?    "
+  "body": "  Let's expand on the SIR model example posted on Blackboard and discussed in class. We now have a cure for the Zombies!     Let's add the additional assumption that Zombies can be cured and turn back into humans with parameter . For now, let us assume this cure happens such that the number of Zombies cured is proportional to the population of Zombies. What are your new differential equations (aka your model)? Hint: add to your schematic!      Adapt the provided SIR code (or write your own) so that it solves the new model you have in Part (a). Use the same initial conditions as in the example: , , and . Use the following parameters and . Note: these are different from the model example from class. What happens to your three populations long term?      What changes in the long term behavior from Part (b) do you see if you change the parameter to be ? Why? That is, what does increasing do in the context of Zombies?      Let's go back to the cure and assume that Zombies can only turn back to humans through an encounter between a human and Zombie, where a human administers the cure. So, instead of the number being proportional to the population of Zombies, the number of Zombies cured is jointly proportional. If we still use the parameter for this case, what are your new differential equations?      If we use the same parameters as in Part (b), what happens to the populations in the long term?      What happens if we keep and the same, but change to again be . Without graphing the solution, what happens to the susceptible population? How do you know?    "
 },
 {
   "id": "lab1",
@@ -1142,6 +1187,78 @@ var ptx_lunr_docs = [
   "number": "3",
   "title": "",
   "body": "  We want to construct a cylindrical can with a bottom, but no top that will have a volume of . Determine the dimensions of the can that will minimize the amount of material needed to construct the can.  Remember the volume of a cylinder is given by Additionally, the surface area of a cylinder with a top and a bottom is given by    "
+},
+{
+  "id": "quiz_documents-8",
+  "level": "1",
+  "url": "quiz_documents-8.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Quiz 7 - MTH 305 - Regan",
+  "body": " Quiz 7 - MTH 305 - Regan  This quiz covers multiple equation ODE models, their fixed point(s), and stability and retakes on optimization of mathematical models and single equation ODE models, their fixed point(s), and stability. Read all DIRECTIONS carefully. Good luck!    Find the fixed point(s) for the following system of differential equations.   Determine the stability of one of the fixed points. Note: just need to state whether it is stable\/unstable if you don't know specifics (e.g., spiral sink). Show all work.  Remember, the stability is based on the eigenvalues of the Jacobian matrix where the trace, , and determinant, , give the eigenvalues of       Consider the following phase portrait with 4 plotted fixed points.   Graph of 4 fixed points and the phase portrait for a competing species model.   Determine the stability of each of the four fixed points. Choose an initial condition that will end at a stable fixed point. Justify your responses.     Retake of 1D ODE Models:     Determine fixed point(s) and corresponding stability for the following differential equation. Show all work.      Last Retake of Optimization:     We have 45 meters squared of material to build a box with a square base and no top. Determine the dimensions of the box that will maximize the enclosed volume.    "
+},
+{
+  "id": "quiz_documents-8-2",
+  "level": "2",
+  "url": "quiz_documents-8.html#quiz_documents-8-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "DIRECTIONS "
+},
+{
+  "id": "quiz_documents-8-3",
+  "level": "2",
+  "url": "quiz_documents-8.html#quiz_documents-8-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Find the fixed point(s) for the following system of differential equations.   Determine the stability of one of the fixed points. Note: just need to state whether it is stable\/unstable if you don't know specifics (e.g., spiral sink). Show all work.  Remember, the stability is based on the eigenvalues of the Jacobian matrix where the trace, , and determinant, , give the eigenvalues of    "
+},
+{
+  "id": "quiz_documents-8-4",
+  "level": "2",
+  "url": "quiz_documents-8.html#quiz_documents-8-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Consider the following phase portrait with 4 plotted fixed points.   Graph of 4 fixed points and the phase portrait for a competing species model.   Determine the stability of each of the four fixed points. Choose an initial condition that will end at a stable fixed point. Justify your responses.   "
+},
+{
+  "id": "quiz_documents-8-5",
+  "level": "2",
+  "url": "quiz_documents-8.html#quiz_documents-8-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Retake of 1D ODE Models: "
+},
+{
+  "id": "quiz_documents-8-6",
+  "level": "2",
+  "url": "quiz_documents-8.html#quiz_documents-8-6",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Determine fixed point(s) and corresponding stability for the following differential equation. Show all work.    "
+},
+{
+  "id": "quiz_documents-8-7",
+  "level": "2",
+  "url": "quiz_documents-8.html#quiz_documents-8-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Last Retake of Optimization: "
+},
+{
+  "id": "quiz_documents-8-8",
+  "level": "2",
+  "url": "quiz_documents-8.html#quiz_documents-8-8",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  We have 45 meters squared of material to build a box with a square base and no top. Determine the dimensions of the box that will maximize the enclosed volume.   "
 },
 {
   "id": "final_project-2",
