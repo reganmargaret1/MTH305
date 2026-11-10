@@ -61,6 +61,9 @@
             <xi:include href="./homework/homework-14.ptx"/>
             <xi:include href="./homework/homework-15.ptx"/>
             <xi:include href="./homework/homework-16.ptx"/>
+            <xi:include href="./homework/homework-17.ptx"/>
+            <xi:include href="./homework/homework-18.ptx"/>
+            <xi:include href="./homework/homework-19.ptx"/>
         </chapter>
         <!-- Include additional chapters for other categories -->
         <chapter xml:id="labdocuments">

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 18 - Homework MTH 305 - Regan</title>
+
+    <p>
+        You should present solutions neatly to all problems, making sure to show
+        all your work and follow the homework policies (see Blackboard document
+        for details).
+        You will turn in the assignment on Blackboard by 11:59 pm ET on Sunday.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        and/or classmates.
+        No AI resources.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+
+    <exercise>
+        <introduction>
+            <p>
+                Math Ninjas is a local community program that offers Saturday
+                martial arts classes for children ages 8 to 12 over the course
+                of 6 months.
+                They recruit from the community and estimate that 10% of the
+                "not-enrolled," eligible new students enroll at the beginning of
+                each month.
+                Children begin in "white belt" status, and as each month passes,
+                the top 35% of the white belt class moves to the "yellow belt"
+                status, but 25% of the class drops out (and is considered to
+                return to a general, "not-enrolled" population).
+                After the end of 1 month in yellow belt status, 40% of the
+                students remain in the program (in the same status) but the rest
+                drop out of the program.
+                Students who drop out of the classes and decide to re-enroll can
+                only begin again as white belt students.
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    Set up a transition matrix for enrollment in the Math Ninjas
+                    program.
+                    You can use Python here.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    The community has 500 children who are 8 to 12 years old.
+                    How many white belt students are in the class at the
+                    beginning of the program (time 0)?
+                    Approximately how many white belt and yellow belt students
+                    are in the class at the beginning of the second month of the
+                    program?
+                    You can use python here as well.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Use python to find the steady-state vector for your
+                    Transition Probability Matrix.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    The classes last 6 months.
+                    Show the 6th month trajectory in a plot.
+                    Recall that the 0th probability vector is before the program
+                    starts, and make sure you include enough time steps to show
+                    the value at the END of 6 months of the program.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    How does your end value compare to your steady-state vector?
+                    (Recall, you may need to turn something into probabilities.)
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    How can you improve this model?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</worksheet>

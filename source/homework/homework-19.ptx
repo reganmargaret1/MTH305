@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 19 - Homework MTH 305 - Regan</title>
+
+    <p>
+        You should present solutions neatly to all problems, making sure to show
+        all your work and follow the homework policies (see Blackboard document
+        for details).
+        You will turn in the assignment on Blackboard by 11:59 pm ET on Sunday.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        and/or classmates.
+        No AI resources.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+
+    <exercise>
+        <introduction>
+            <p>
+                Let's say you are playing a simple board game where the only
+                rules are to start at the beginning, spot 1, and increase to the
+                next spot on the board based on the number that you get on a
+                fair spinner.
+                The spinner has the numbers 0, 1, and 2, on it, all of which are
+                equally likely outcomes, indicating the number of spaces to move
+                forward.
+                There are 5 spots on the board, 1 through 5, and the winner is
+                the one who lands exactly on spot 5 first, and does not go over.
+            </p>
+
+            <image source="images/markovgame_hw19.png" width="50%">
+                <shortdescription>
+                    Markov chain visual for a game.
+                </shortdescription>
+            </image>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    How many turns does each player have to take in order to be
+                    confident that there will be a winner?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    If we don't stop playing the game when the winner gets to
+                    spot 5, but instead keep playing, will all the players
+                    eventually get to this last spot?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</worksheet>

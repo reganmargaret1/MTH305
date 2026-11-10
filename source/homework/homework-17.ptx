@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 17 - Homework MTH 305 - Regan</title>
+
+    <p>
+        You should present solutions neatly to all problems, making sure to show
+        all your work and follow the homework policies (see Blackboard document
+        for details).
+        You will turn in the assignment on Blackboard by 11:59 pm ET on Sunday.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        and/or classmates.
+        No AI resources.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+
+    <exercise>
+        <statement>
+            <p>
+                Let's create a random walk in one direction (you move forward or
+                backward 1) with 100 steps.
+                Let <m>Y_i</m> be independent random variables
+                <md>
+                    Y_t = \begin{cases}1 &amp;\text{with probability } \frac{1}{2}, \\ -1 &amp;\text{with probability } \frac{1}{2}.\end{cases}
+                </md>
+            </p>
+
+            <p>
+                Let <m>X_0 = 0</m> and for all time
+                <m>t = 1, 2, \ldots, 100,</m> let
+                <m>X_t = \sum\limits_{i=1}^t Y_i</m>.
+                That is, <m>X_t</m> is the sum of all of the <m>Y_i</m> 's up to
+                that point, which is the same as saying
+                <m>{X_t = X_{t-1} + Y_t = X_{t-1} \pm 1.}</m>
+            </p>
+
+            <p>
+                Graph the state variables <m>X_0, \ldots, X_{100}</m> with
+                respect to time <m>0, \ldots, 100.</m>
+            </p>
+
+            <p>
+                <em>Note: every time you rerun this code, the graph will 
+                    look different since you are using random numbers. 
+                    </em>
+            </p>
+
+            <p>
+                Some hints:
+                <ul>
+                    <li>
+                        Since you are finding a random variable for each time
+                        <m>t</m>, it may be useful to use a for loop, or a while
+                        loop, that loops through steps (that is the range, or
+                        the arange) 1, 2, ..., 100.
+                        So, 'for t in 1,2,...,100:'...
+                    </li>
+
+                    <li>
+                        It is a good idea to store the values of <m>X_t</m>.
+                        So before the loop, you should create a vector called
+                        <m>X</m> that is the size you need it to be.
+                        What size do you need it to be if we take 100 steps and
+                        also include step 0?
+                        Note below there is a vector <m>X</m> created already
+                        that defines an array of 5 zeros, how do you adjust it?
+                        (Since you will be replacing values, it doesn't matter
+                        what that vector is - perhaps all zeros, all ones, so
+                        on.)
+                    </li>
+
+                    <li>
+                        You can create an array of zeros using the following
+                        command <c>X = np.zeros(5)</c>.
+                    </li>
+
+                    <li>
+                        Since <m>X_0 = 0</m>, and <m>X_0</m> needs to be the
+                        first entry in the array <m>X</m>, make sure 0 is in the
+                        first entry of the array <m>X</m>.
+                    </li>
+
+                    <li>
+                        Then you need your loop.
+                        Within that loop you need to pick -1 or 1 randomly for
+                        <m>Y_t</m>, that is <m>Y</m> at that time step.
+                        There is a built-in function in the numpy package (and
+                        in the cell below) that finds a random integer between
+                        <m>a</m> and <m>b</m>, <c>np.random.randint(a,b)</c>.
+                        Can you use that to define a <m>Y_t</m>?
+                        Note that <m>a</m> is included, <m>b</m> is excluded in
+                        the built in function.
+                        Note also that you want <m>Y_t</m> to be either 1 or -1,
+                        but not zero.
+                        So if you have <c>Y = np.random.randint(0,2)</c> for
+                        instance, it will choose randomly between 0 and 1.
+                        Can you use simple algebra (addition, subtraction,
+                        multiplication, division), to change that to between -1
+                        and 1?
+                    </li>
+
+                    <li>
+                        Once you choose a random <m>Y</m> as 1 or -1, you can
+                        find <m>X_t</m> from <m>X_{t-1} + Y_t</m>, that is the
+                        previous term in <m>X</m> added to the <m>Y</m> at that
+                        step.
+                        So you need to change the correct entry of <m>X</m> to
+                        replace with the desired value, how do you specify a
+                        specific entry in an array?
+                        (Note: <m>X_0</m> is 0 already, so your first run
+                        through the loop has to put <m>Y_t</m> which is 1 or -1
+                        in the second entry of the array, and python starts
+                        counting at 0).
+                    </li>
+
+                    <li>
+                        One you're done with your for loop, that is outside your
+                        for loop, you want to plot the final array <m>X</m>.
+                        If you use the code <c>plt.plot(X)</c> where <m>X</m> is
+                        an array, it will automatically plot the x-axis as 0, 1,
+                        ...
+                        through the length of <m>X</m>.
+                    </li>
+                </ul>
+            </p>
+        </statement>
+    </exercise>
+</worksheet>
