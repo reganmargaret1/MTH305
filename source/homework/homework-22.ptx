@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 22 - Homework MTH 305 - Regan</title>
+
+    <p>
+        You should present solutions neatly to all problems, making sure to show
+        all your work and follow the homework policies (see Blackboard document
+        for details).
+        You will turn in the assignment on Blackboard by 11:59 pm ET on Sunday.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        and/or classmates.
+        No AI resources.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+
+    <exercise>
+        <introduction>
+            <p>
+                We can fit just about any function to our data using python.
+                We just have to define the type of function we want to fit.
+                For example, let's get python to fit our 'data' that has the
+                shape of an exponential curve of the form <m>y=ae^{bx} + c</m>.
+                Below, the code defines <m>a=2</m>, <m>b=3</m>, <m>c=0.7</m>, as
+                well as <m>x</m> values between 0 and 1, and <m>y</m> values
+                that have some random noise to simulate our data.
+                Then we need to define the function we are trying to fit our
+                data to for some unknown <m>a</m>, <m>b</m>, <m>c</m>, and then we run the code
+                <c>curve_fit(function we are fitting to, xdata, ydata)</c>.
+                Adapt this code to do the following.
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    Change x-data to go from 1 to 10, and change the y-data to
+                    be of the form <m>y=0.5\log(0.6x)+0.3+ \textrm{noise}</m>
+                    where the factor in front of the noise is 0.2 instead of
+                    1.8.
+                    Then adapt the function you are trying to fit, and run the
+                    code to find the best fit.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Find the absolute error,
+                    <m>\sqrt{\sum (y - y_{pred})^2}</m>, and the relative error,
+                    <m>\frac{\sqrt{\sum (y - y_{pred})^2}}{\sqrt{\sum y^2}}</m>.
+                    Do you think this is a good fit?
+                    <em>Note: <c>np.sum(vector)</c>
+                    will add all the entries in 'vector' together.</em>
+                </p>
+
+                <program language="python">
+            <code>
+import math
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import odeint
+
+## We may need new things...
+from numpy import linalg as LA       # Linear algebra library
+import seaborn as sns                # Data visualization library used for plotting
+import pandas as pd                  # Data analysis library
+from scipy.optimize import curve_fit # fit data
+
+## Generate the data
+a = 2
+b = 3
+c = 0.7
+np.random.seed(3)            # this sets the random generator so it starts at the same spot
+xdata = np.linspace(0,1,20)
+y = a*np.exp(b*xdata)+c      # y-data before noise
+ydata = y + 1.8*np.random.random(size=len(xdata)) # y-data + noise
+
+## Define the function we want to fit to
+def f(x,a,b,c):
+  return a*np.exp(b*x) + c
+
+## Fit the data
+popt, pcov = curve_fit(f, xdata, ydata)  # popt gives the optimal parameter values, pcov is the covariance of popt
+print('the fitted a, b, c are:', popt)
+
+## Plot
+plt.plot(xdata, f(xdata, *popt), 'r-',
+         label='fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt)) # Plots the fit
+plt.scatter(xdata,ydata, label='Real data')                    # original data
+plt.plot(xdata, y,'g:', label='Curve without noise') # what the curve would have been without noise
+plt.xlabel('x axis')
+plt.ylabel('y axis')
+plt.title('Fitting data')
+plt.legend()
+plt.show()
+            </code>
+        </program>
+            </statement>
+        </task>
+    </exercise>
+</worksheet>

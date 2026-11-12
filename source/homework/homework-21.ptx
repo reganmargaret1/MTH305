@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 21 - Homework MTH 305 - Regan</title>
+
+    <p>
+        You should present solutions neatly to all problems, making sure to show
+        all your work and follow the homework policies (see Blackboard document
+        for details).
+        You will turn in the assignment on Blackboard by 11:59 pm ET on Sunday.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        and/or classmates.
+        No AI resources.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+
+    <exercise>
+        <introduction>
+            <p>
+                Let's take a look at Life Expectancy in different countries, and
+                how factors contribute to Life Expectancy.
+                Download the "Life Expectancy Data.csv" file on your computer,
+                and upload the data file into Colab as a dataframe, following
+                the procedure we used for the Penguins Data.
+                Then complete the following steps.
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    If you notice, the data has multiple years for most
+                    countries.
+                    We'll want to just focus on the latest year, 2015.
+                    Create a new dataframe where the <c>Year</c> is only the
+                    year 2015.
+                    Show the new dataframe below - make sure you give it a new
+                    name.
+                    (It will not show all the rows as there are too many, that's
+                    fine.)
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Notice the data has a lot of NaN values, meaning we're
+                    missing data.
+                    But if we drop all the NaN's now, we might lose more data
+                    than we want.
+                    Let's only keep a few of the columns that we'll want to
+                    look at before we worry about that.
+                    Make a new dataframe from the dataframe with the only year
+                    2015, and only keep the columns <c>Country</c>,
+                    <c>LifeExpectancy</c>, <c>BMI</c>, <c>GDP</c>, and
+                    <c>Schooling</c>.
+                    Show the new dataframe below.
+                    (Make sure you give it a new name.)
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Drop all the NaN values.
+                    How many data points do you have in your new dataset?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    The following code is a really cool interactive graph that
+                    helps us click on data points and read off the information
+                    for that data point.
+                    Since we have so many countries, it will help us isolate a
+                    country and its data.
+                    You can hover over a data point to see the information, or
+                    you can double click on the country in the legend to isolate
+                    that country first, then hover over the data point to see
+                    the data values.
+                    (Double clicking on the legend again gets back to the
+                    original graph.)
+                </p>
+
+                <p>
+                    Adapt the code below to use your new dataframe (below it's
+                    called df), to plot BMI vs Life Expectancy.
+                    Create two additional plots - one to plot GDP vs Life
+                    Expectancy, and one to plot Schooling vs Life Expectancy.
+                    Which looks like it will be the best predictor of Life
+                    Expectancy?
+                    Explain your reasoning.
+                </p>
+
+                <program language="python">
+                    <code>
+import math
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import odeint
+
+## We may need new things...
+from numpy import linalg as LA       # Linear algebra library
+import seaborn as sns                # Data visualization library used for plotting
+import pandas as pd                  # Data analysis library
+from scipy.optimize import curve_fit # fit data
+
+import plotly
+import plotly.express as px
+
+fig=px.scatter(df,x="BMI", y="LifeExpectancy", color="Country")
+fig.show()
+print('Hover over the data points to show the coordinates')
+                    </code>
+                </program>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Use multi-linear regression to fit a model that predicts
+                    Life Expectancy from the 3 inputs ("features") BMI, GDP, and
+                    Schooling.
+                    Print the <m>R^2</m> value.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Use your multi-linear regression model from the previous
+                    part to predict the Life Expectancy for two countries:
+                    Sierra Leone and Australia.
+                    How do the predictions compare to the Life Expectancy given
+                    in the data?
+                    Hint: To isolate the data from Sierra Leone, you could go
+                    back to the three graphs in part d, isolate Sierra Leone,
+                    and get the data from there.
+                    Or you can take it from your dataframe by adjusting the
+                    following code to isolate when the Country name is "Sierra
+                    Leone".
+                </p>
+
+                <program language="python">
+                    <code>
+df[df.Country.isin(['Sierra Leone'])]
+                    </code>
+                </program>
+            </statement>
+        </task>
+    </exercise>
+</worksheet>

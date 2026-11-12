@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 20 - Homework MTH 305 - Regan</title>
+
+    <p>
+        You should present solutions neatly to all problems, making sure to show
+        all your work and follow the homework policies (see Blackboard document
+        for details).
+        You will turn in the assignment on Blackboard by 11:59 pm ET on Sunday.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        and/or classmates.
+        No AI resources.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+
+    <exercise>
+        <introduction>
+            <p>
+                We are going to continue regression analysis for other penguins
+                in the <q>palmer_penguins.csv</q> file.
+                You can take and adapt the code from class as you see fit.
+                Make sure to import the <q>palmer_penguins.csv</q> file.
+                Isolate the Gentoo species and create a new data frame with this
+                data.
+                This is the data we will be working with for this problem - we
+                will only consider the Gentoo penguins.
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    What islands have Gentoo penguins?
+                    Do we need a color_dictionary anymore?
+                    Why or why not?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Use Python to find the linear regression that inputs the
+                    bill length and outputs the body mass.
+                    Plot the bill length on the x-axis and the body mass on the
+                    y-axis, along with the predicted model.
+                    Print the <m>R^2</m> value for this linear regression.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Do the same linear regression, but this time input the bill
+                    depth, and output the body mass.
+                    Plot the model and the data below.
+                    Print the <m>R^2</m> value for this linear regression.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Do the same linear regression, but this time input the
+                    flipper length, and output the body mass.
+                    Plot the model and the data below.
+                    Print the <m>R^2</m> value for this linear regression.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Which input was a better predictor for the body mass?
+                    Explain.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Adapt the linear regression to a multi-linear regression,
+                    inputting the features bill length, bill depth, and flipper
+                    length, and outputting the body mass.
+                    Print the coefficients ( <c>.coef_</c> and
+                    <c>.intercept_</c> ).
+                    Which feature/input is the most important predictor of body
+                    mass?
+                    Does this match Part (e)?
+                    Explain your reasoning.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Use the multi-linear regression model found in Part (f) to
+                    predict the body mass of a penguin with a bill length of
+                    57.5 mm, a bill depth of 16.5 mm, and a flipper length of
+                    226 mm.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</worksheet>
