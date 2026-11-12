@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Quiz 8 - MTH 305 - Regan</title>
+
+    <p>
+        This quiz covers Markov chains, and retakes on single and multiple
+        equation ODE models, their fixed point(s), and stability.
+        Read all <term>DIRECTIONS</term> carefully.
+        Good luck!
+    </p>
+
+    <exercise>
+        <introduction>
+            <p>
+                In the Coimbatore forest, Tamil Nadu, India, elephants migrate
+                between three areas, Anaikatti (A), Periya Thadagam (PT), and
+                Nanjundapuram (N).
+                The probability that an elephant will migrate from one region to
+                another on any given day can be summarized as follows:
+                <ul>
+                    <li>10% chance of moving from PT to A</li>
+                    <li>15% chance of moving from PT to N</li>
+                    <li>9% chance of moving from A to PT</li>
+                    <li>22% chance of moving from A to N</li>
+                    <li>8% chance of moving from N to A</li>
+                    <li>26% chance of moving from N to PT</li>
+                </ul>
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Create the appropriate probability transition matrix M.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Is there a steady-state vector?
+                    Explain your reasoning.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Let's say you are given the following output from Python:
+                </p>
+
+                <image source="images/8quiz_markov.png" width="60%">
+                    <shortdescription>
+                        Eigenvalue and eigenvector output for a probability
+                        transition matrix.
+                    </shortdescription>
+                </image>
+
+                <p>
+                    What is the steady-state vector?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    What percentage of the elephants will be in each area in the
+                    long run?
+                    Does this depend on how many elephants start in each region?
+                    Explain.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <p>
+        <term>Retake of 2D ODE Models: </term>
+    </p>
+
+    <exercise workspace="2in">
+        <statement>
+            <p>
+                Find the fixed point(s) for the following system of differential
+                equations.
+                <md>
+                    <mrow>
+                    \frac{dx}{dt} \amp = x - x^2 - xy \\
+                    </mrow>
+                    <mrow>
+                    \frac{dy}{dt} \amp = 3y - xy - 2y^2 \\
+                     </mrow>
+                </md>
+            </p>
+
+            <p>
+                Determine the stability of one of the fixed points.
+                Note: just need to state whether it is stable/unstable if you
+                don't know specifics (e.g., spiral sink).
+                Show all work.
+            </p>
+
+            <p>
+                Remember, the stability is based on the eigenvalues of the
+                Jacobian matrix
+                <md>
+                    \textrm{Jacobian,}\,\, J = \begin{bmatrix}\frac{\partial f}{\partial{x}} &amp; \frac{\partial f}{\partial{y}} \\  \\ \frac{\partial g}{\partial{x}} &amp; \frac{\partial g}{\partial{y}}\end{bmatrix},
+                </md>
+                where the trace, <m>T</m>, and determinant, <m>D</m>, give the
+                eigenvalues of
+                <md>
+                    \lambda_{1}, \lambda_{2} = \frac{T \pm \sqrt{T^{2} - 4D}}{2}.
+                </md>
+            </p>
+        </statement>
+    </exercise>
+
+    <p>
+        <term>Last Retake of 1D ODE Models: </term>
+    </p>
+
+    <exercise workspace="1.5in">
+        <statement>
+            <p>
+                Determine fixed point(s) and corresponding stability for the
+                following differential equation.
+                Show all work.
+                <md>
+                    \frac{dx}{dt} = \cos(x)
+                </md>
+            </p>
+        </statement>
+    </exercise>
+</worksheet>
