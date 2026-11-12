@@ -1315,6 +1315,69 @@ var ptx_lunr_docs = [
   "body": "  We have 45 meters squared of material to build a box with a square base and no top. Determine the dimensions of the box that will maximize the enclosed volume.   "
 },
 {
+  "id": "quiz_documents-9",
+  "level": "1",
+  "url": "quiz_documents-9.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Quiz 8 - MTH 305 - Regan",
+  "body": " Quiz 8 - MTH 305 - Regan  This quiz covers Markov chains, and retakes on single and multiple equation ODE models, their fixed point(s), and stability. Read all DIRECTIONS carefully. Good luck!    In the Coimbatore forest, Tamil Nadu, India, elephants migrate between three areas, Anaikatti (A), Periya Thadagam (PT), and Nanjundapuram (N). The probability that an elephant will migrate from one region to another on any given day can be summarized as follows:  10% chance of moving from PT to A  15% chance of moving from PT to N  9% chance of moving from A to PT  22% chance of moving from A to N  8% chance of moving from N to A  26% chance of moving from N to PT       Create the appropriate probability transition matrix M.      Is there a steady-state vector? Explain your reasoning.      Let's say you are given the following output from Python:   Eigenvalue and eigenvector output for a probability transition matrix.   What is the steady-state vector?      What percentage of the elephants will be in each area in the long run? Does this depend on how many elephants start in each region? Explain.      Retake of 2D ODE Models:     Find the fixed point(s) for the following system of differential equations.   Determine the stability of one of the fixed points. Note: just need to state whether it is stable\/unstable if you don't know specifics (e.g., spiral sink). Show all work.  Remember, the stability is based on the eigenvalues of the Jacobian matrix where the trace, , and determinant, , give the eigenvalues of      Last Retake of 1D ODE Models:     Determine fixed point(s) and corresponding stability for the following differential equation. Show all work.     "
+},
+{
+  "id": "quiz_documents-9-2",
+  "level": "2",
+  "url": "quiz_documents-9.html#quiz_documents-9-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "DIRECTIONS "
+},
+{
+  "id": "quiz_documents-9-3",
+  "level": "2",
+  "url": "quiz_documents-9.html#quiz_documents-9-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  In the Coimbatore forest, Tamil Nadu, India, elephants migrate between three areas, Anaikatti (A), Periya Thadagam (PT), and Nanjundapuram (N). The probability that an elephant will migrate from one region to another on any given day can be summarized as follows:  10% chance of moving from PT to A  15% chance of moving from PT to N  9% chance of moving from A to PT  22% chance of moving from A to N  8% chance of moving from N to A  26% chance of moving from N to PT       Create the appropriate probability transition matrix M.      Is there a steady-state vector? Explain your reasoning.      Let's say you are given the following output from Python:   Eigenvalue and eigenvector output for a probability transition matrix.   What is the steady-state vector?      What percentage of the elephants will be in each area in the long run? Does this depend on how many elephants start in each region? Explain.    "
+},
+{
+  "id": "quiz_documents-9-4",
+  "level": "2",
+  "url": "quiz_documents-9.html#quiz_documents-9-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Retake of 2D ODE Models: "
+},
+{
+  "id": "quiz_documents-9-5",
+  "level": "2",
+  "url": "quiz_documents-9.html#quiz_documents-9-5",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Find the fixed point(s) for the following system of differential equations.   Determine the stability of one of the fixed points. Note: just need to state whether it is stable\/unstable if you don't know specifics (e.g., spiral sink). Show all work.  Remember, the stability is based on the eigenvalues of the Jacobian matrix where the trace, , and determinant, , give the eigenvalues of    "
+},
+{
+  "id": "quiz_documents-9-6",
+  "level": "2",
+  "url": "quiz_documents-9.html#quiz_documents-9-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Last Retake of 1D ODE Models: "
+},
+{
+  "id": "quiz_documents-9-7",
+  "level": "2",
+  "url": "quiz_documents-9.html#quiz_documents-9-7",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Determine fixed point(s) and corresponding stability for the following differential equation. Show all work.    "
+},
+{
   "id": "final_project-2",
   "level": "1",
   "url": "final_project-2.html",
