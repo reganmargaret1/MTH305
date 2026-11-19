@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Quiz 9 - MTH 305 - Regan</title>
+
+    <page>
+        <p>
+            This quiz covers regression models, and retakes on Markov chains,
+            and multiple equation ODE models, their fixed point(s), and
+            stability.
+            Read all <term>DIRECTIONS</term> carefully.
+            Good luck!
+        </p>
+
+        <exercise>
+            <introduction>
+                <p>
+                    The following components will be related to regression
+                    models and understanding their output.
+                </p>
+            </introduction>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        The image below is a fitted line plot displaying the
+                        relationship between semiconductor electron mobility and
+                        the natural log of the density for real experimental
+                        data.
+                        This is polynomial regression and has an <m>R^2</m>
+                        value of <m>98.5%</m>.
+                        The second part of the image below is a graph of the
+                        residual error between the fit and the real data.
+                        Based on these graphs, do you consider this a good model
+                        for the data?
+                        Explain.
+                    </p>
+
+                    <image source="images/09-quiz1.png" width="60%">
+                        <shortdescription>
+                            Sample polynomial regression.
+                        </shortdescription>
+                    </image>
+                </statement>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        For a multiple linear regression model, we use multiple
+                        inputs, or <q>features,</q> for the fitting of the data.
+                        Consider the fit equation for Penguin data of
+                        <md>
+                            \textrm{body_mass_g} = c_1*\textrm{bill_length_mm} + c_2*\textrm{bill_depth_mm} + b.
+                        </md>
+                        After completing the regression, the model output the
+                        following:
+                    </p>
+
+                    <image source="images/09-quiz2.png" width="60%">
+                        <shortdescription>
+                            Sample multiple linear regression.
+                        </shortdescription>
+                    </image>
+
+                    <p>
+                        What do the first two numbers of the output array mean?
+                        Using these numbers, what can you conclude about the
+                        impact of the bill length and bill depth on body mass?
+                        If the <m>R^2</m> is 0.467, what do you think of the
+                        model?
+                        Explain.
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Based on the following linear regression, what do you
+                        expect to be the approximate body mass of a penguin with
+                        a bill length of 56 mm?
+                    </p>
+
+                    <image source="images/09-quiz3.png" width="60%">
+                        <shortdescription>
+                            Linear regression for bill length vs.
+                            body mass of palmer penguin data.
+                        </shortdescription>
+                    </image>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <p>
+            <term>Retake of Markov chains: </term>
+        </p>
+
+        <exercise>
+            <introduction>
+                <p>
+                    In the Coimbatore forest, Tamil Nadu, India, elephants
+                    migrate between three areas, Anaikatti (A), Periya Thadagam
+                    (PT), and Nanjundapuram (N).
+                    The probability that an elephant will migrate from one
+                    region to another on any given day can be summarized as
+                    follows:
+                    <ul>
+                        <li>10% chance of moving from PT to A</li>
+                        <li>15% chance of moving from PT to N</li>
+                        <li>9% chance of moving from A to PT</li>
+                        <li>22% chance of moving from A to N</li>
+                        <li>8% chance of moving from N to A</li>
+                        <li>26% chance of moving from N to PT</li>
+                    </ul>
+                </p>
+            </introduction>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Create the appropriate probability transition matrix M.
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Is there a steady-state vector?
+                        Explain your reasoning.
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Let's say you are given the following output from
+                        Python:
+                    </p>
+
+                    <p>
+                        What is the steady-state vector?
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="2in">
+                <statement>
+                    <p>
+                        What percentage of the elephants will be in each area in
+                        the long run?
+                        Does this depend on how many elephants start in each
+                        region?
+                        Explain.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <p>
+            <term>Last Retake of 2D ODE Models: </term>
+        </p>
+
+        <exercise workspace="2in">
+            <statement>
+                <p>
+                    Find the fixed point(s) for the following system of
+                    differential equations.
+                    <md>
+                        <mrow>
+                    \frac{dx}{dt} \amp = x(2-xy) \\
+                    </mrow>
+                        <mrow>
+                    \frac{dy}{dt} \amp = 3y(y - x) \\
+                     </mrow>
+                    </md>
+                </p>
+
+                <p>
+                    Determine the stability of one of the fixed points.
+                    Note: just need to state whether it is stable/unstable if
+                    you don't know specifics (e.g., spiral sink).
+                    Show all work.
+                </p>
+
+                <p>
+                    Remember, the stability is based on the eigenvalues of the
+                    Jacobian matrix
+                    <md>
+                        \textrm{Jacobian,}\,\, J = \begin{bmatrix}\frac{\partial f}{\partial{x}} &amp; \frac{\partial f}{\partial{y}} \\  \\ \frac{\partial g}{\partial{x}} &amp; \frac{\partial g}{\partial{y}}\end{bmatrix},
+                    </md>
+                    where the trace, <m>T</m>, and determinant, <m>D</m>, give
+                    the eigenvalues of
+                    <md>
+                        \lambda_{1}, \lambda_{2} = \frac{T \pm \sqrt{T^{2} - 4D}}{2}.
+                    </md>
+                </p>
+            </statement>
+        </exercise>
+    </page>
+</worksheet>
