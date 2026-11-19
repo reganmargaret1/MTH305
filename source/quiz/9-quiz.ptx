@@ -28,7 +28,7 @@
                         the natural log of the density for real experimental
                         data.
                         This is polynomial regression and has an <m>R^2</m>
-                        value of <m>98.5%</m>.
+                        value of <m>98.5\%</m>.
                         The second part of the image below is a graph of the
                         residual error between the fit and the real data.
                         Based on these graphs, do you consider this a good model
@@ -36,7 +36,7 @@
                         Explain.
                     </p>
 
-                    <image source="images/09-quiz1.png" width="60%">
+                    <image source="images/09-quiz1.png" width="50%">
                         <shortdescription>
                             Sample polynomial regression.
                         </shortdescription>
@@ -51,13 +51,13 @@
                         inputs, or <q>features,</q> for the fitting of the data.
                         Consider the fit equation for Penguin data of
                         <md>
-                            \textrm{body_mass_g} = c_1*\textrm{bill_length_mm} + c_2*\textrm{bill_depth_mm} + b.
+                            \textrm{body\_mass\_g} = c_1*\textrm{bill\_length\_mm} + c_2*\textrm{bill\_depth\_mm} + b.
                         </md>
                         After completing the regression, the model output the
                         following:
                     </p>
 
-                    <image source="images/09-quiz2.png" width="60%">
+                    <image source="images/09-quiz2.png" width="50%">
                         <shortdescription>
                             Sample multiple linear regression.
                         </shortdescription>
@@ -82,7 +82,7 @@
                         a bill length of 56 mm?
                     </p>
 
-                    <image source="images/09-quiz3.png" width="60%">
+                    <image source="images/09-quiz3.png" width="50%">
                         <shortdescription>
                             Linear regression for bill length vs.
                             body mass of palmer penguin data.
@@ -101,49 +101,19 @@
         <exercise>
             <introduction>
                 <p>
-                    In the Coimbatore forest, Tamil Nadu, India, elephants
-                    migrate between three areas, Anaikatti (A), Periya Thadagam
-                    (PT), and Nanjundapuram (N).
-                    The probability that an elephant will migrate from one
-                    region to another on any given day can be summarized as
-                    follows:
-                    <ul>
-                        <li>10% chance of moving from PT to A</li>
-                        <li>15% chance of moving from PT to N</li>
-                        <li>9% chance of moving from A to PT</li>
-                        <li>22% chance of moving from A to N</li>
-                        <li>8% chance of moving from N to A</li>
-                        <li>26% chance of moving from N to PT</li>
-                    </ul>
+                    Consider the following description related to predicting the
+                    weather each day.
+                    If today is a clear day, then tomorrow has a 60% chance of
+                    being a clear day.
+                    If today is a rainy day, then tomorrow has a 70% chance of
+                    being a rainy day.
                 </p>
             </introduction>
 
-            <task workspace="1in">
+            <task workspace="2in">
                 <statement>
                     <p>
-                        Create the appropriate probability transition matrix M.
-                    </p>
-                </statement>
-            </task>
-
-            <task workspace="1in">
-                <statement>
-                    <p>
-                        Is there a steady-state vector?
-                        Explain your reasoning.
-                    </p>
-                </statement>
-            </task>
-
-            <task workspace="1in">
-                <statement>
-                    <p>
-                        Let's say you are given the following output from
-                        Python:
-                    </p>
-
-                    <p>
-                        What is the steady-state vector?
+                        Create the appropriate probability transition matrix.
                     </p>
                 </statement>
             </task>
@@ -151,11 +121,10 @@
             <task workspace="2in">
                 <statement>
                     <p>
-                        What percentage of the elephants will be in each area in
-                        the long run?
-                        Does this depend on how many elephants start in each
-                        region?
-                        Explain.
+                        Without being told the initial state, would you be able
+                        to determine the chance that it is rainy on day 365?
+                        Explain the process you would use and why you are able
+                        to do this.
                     </p>
                 </statement>
             </task>
